@@ -39,6 +39,7 @@ PI40 = [
 ]
 PICO_LEFT = ["P1:GP0", "P2:GP1", "P3:GND", "P4:GP2", "P5:GP3", "P6:GP4", "P7:GP5", "P8:GND", "P9:GP6", "P10:GP7", "P11:GP8", "P12:GP9", "P13:GND", "P14:GP10", "P15:GP11", "P16:GP12", "P17:GP13", "P18:GND", "P19:GP14", "P20:GP15"]
 PICO_RIGHT = ["P40:VBUS", "P39:VSYS", "P38:GND", "P37:3V3_EN", "P36:3V3", "P35:ADC_VREF", "P34:GP28/ADC2", "P33:AGND", "P32:GP27/ADC1", "P31:GP26/ADC0", "P30:RUN", "P29:GP22", "P28:GND", "P27:GP21", "P26:GP20", "P25:GP19", "P24:GP18", "P23:GND", "P22:GP17", "P21:GP16"]
+PICO_DEBUG = [("SWCLK", .53, .603), ("SWD-GND", .60, .603), ("SWDIO", .67, .603)]
 
 
 SPECS = [
@@ -47,7 +48,7 @@ SPECS = [
     {"asset": "espressif.esp32-s3-devkitc-1-v1.1", "from": "1.1.0", "revision": "1.2.0", "art": "esp32-s3-devkitc-1-v1.1.png", "source": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html", "reusePins": True, "layout": "esp"},
     {"asset": "espressif.esp32-s3-devkitc-1-n8r8-rev1.0", "from": "1.0.1", "revision": "1.1.0", "art": "esp32-s3-devkitc-1-n8r8-v1.0.png", "source": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html", "copyPins": "espressif.esp32-s3-devkitc-1-v1.1@1.1.0", "layout": "esp"},
     {"asset": "raspberry-pi.zero-2-wh", "from": "1.0.2", "revision": "1.1.0", "art": "raspberry-pi-zero-2-wh.png", "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio-and-the-40-pin-header", "points": edge(PI40[0::2], y=.115, left=.12, right=.82) + edge(PI40[1::2], y=.205, left=.12, right=.82)},
-    {"asset": "raspberry-pi.pico-w-sc0918", "from": "1.0.0", "revision": "1.1.0", "art": "raspberry-pi-pico-w.png", "source": "https://datasheets.raspberrypi.com/picow/PicoW-A4-Pinout.pdf", "points": column(PICO_LEFT, x=.255, top=.105, bottom=.895) + column(PICO_RIGHT, x=.745, top=.105, bottom=.895)},
+    {"asset": "raspberry-pi.pico-w-sc0918", "from": "1.1.0", "revision": "1.2.0", "art": "raspberry-pi-pico-w-v2.png", "source": "https://datasheets.raspberrypi.com/picow/PicoW-A4-Pinout.pdf", "points": column(PICO_LEFT, x=.26, top=.065, bottom=.935) + column(PICO_RIGHT, x=.74, top=.065, bottom=.935) + PICO_DEBUG},
     {"asset": "sindri-custom.standing-desk-controller", "from": "1.0.0", "revision": "1.1.0", "art": "sindri-standing-desk-controller.png", "source": None, "reusePins": True, "layout": "edge-existing", "status": "AI_CONCEPT_TOP_PROJECT_PIN_MAP_UNVERIFIED"},
     {"asset": "sindri-custom.standing-desk-driver", "from": "1.0.0", "revision": "1.1.0", "art": "sindri-standing-desk-driver.png", "source": None, "reusePins": True, "layout": "edge-existing", "status": "AI_CONCEPT_TOP_PROJECT_PIN_MAP_UNVERIFIED"},
 ]

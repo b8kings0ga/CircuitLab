@@ -53,8 +53,8 @@
       "ref": "orange-pi.zero-3-v1.3@1.1.0"
     },
     {
-      "pins": 40,
-      "ref": "raspberry-pi.pico-w-sc0918@1.1.0"
+      "pins": 43,
+      "ref": "raspberry-pi.pico-w-sc0918@1.2.0"
     },
     {
       "pins": 40,

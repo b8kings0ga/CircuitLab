@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.1 — 2026-09-03
+
+- Correct the Pico W board body so its twenty main pads per side run from the first top pad to the final bottom pad without AI-invented extra corner contacts.
+- Realign all 40 main Pico W anchors to the complete edge-pad span.
+- Add the three documented SWD points: SWCLK, debug GND, and SWDIO, bringing the Pico W interactive total to 43.
+
 ## 0.8.0 — 2026-09-03
 
 - Replace photo galleries in the latest Board revisions with one generated true-top board view.
