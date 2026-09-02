@@ -22,6 +22,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Run end-to-end software loop
         run: python scripts/verify_platform.py
+      - name: Run HTTP API end-to-end circuits
+        run: python scripts/verify_api_e2e.py
       - name: Create and validate a fresh workspace
         run: |
           python scripts/init_lab.py /tmp/circuitlab-ci

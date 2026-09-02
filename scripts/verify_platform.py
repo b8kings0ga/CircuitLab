@@ -7,6 +7,7 @@ import tempfile
 from pathlib import Path
 
 from _platform import COMPONENT_SCHEMA, HIL_SCHEMA, ComponentRegistry, HilEngine, generate_fixture
+from verify_e2e_scenarios import verify_all as verify_e2e_scenarios
 
 
 def sample_component() -> dict:
@@ -78,11 +79,13 @@ def verify(root: Path) -> dict:
     generated = {path.name for path in Path(fixture["directory"]).iterdir()}
     if not required_fixture <= generated:
         raise AssertionError(f"fixture package is incomplete: {sorted(required_fixture - generated)}")
+    circuits = verify_e2e_scenarios(root / "e2e")
     return {
         "status": "PASS", "dataRoot": str(root), "component": installed, "idempotentInstall": unchanged,
         "calibrated": calibrated["ref"], "procurement": procurement, "fixtureFiles": sorted(generated),
         "hil": {"prepared": prepared["state"], "armed": armed["state"], "final": report["state"], "reportSha256": report["reportSha256"]},
         "unsafe48VRejected": voltage_rejected,
+        "circuits": circuits,
     }
 
 

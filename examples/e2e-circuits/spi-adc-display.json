@@ -1,0 +1,46 @@
+{
+  "schema": "circuitlab-e2e-scenario/v1",
+  "id": "spi-adc-display",
+  "title": "XIAO ESP32-S3 SPI ADC acquisition and MAX7219 display driver",
+  "verificationStatus": "SOFTWARE_VERIFIED_PHYSICAL_UNVERIFIED",
+  "components": [
+    {"alias": "mcu", "ref": "seeed.xiao-esp32s3@1.3.0"},
+    {"alias": "adc", "ref": "microchip.mcp3008-i-p-856@1.0.0"},
+    {"alias": "display", "ref": "analog-devices.max7219cng-453@1.0.0"}
+  ],
+  "nets": [
+    {"name": "3V3", "endpoints": ["mcu:3V3", "adc:VDD", "adc:VREF"]},
+    {"name": "5V", "endpoints": ["mcu:5V", "display:V+"]},
+    {"name": "GND", "endpoints": ["mcu:GND", "adc:AGND", "adc:DGND", "display:GND1", "display:GND2"]},
+    {"name": "SPI_CLK", "endpoints": ["mcu:D8", "adc:CLK", "display:CLK"]},
+    {"name": "SPI_MOSI", "endpoints": ["mcu:D10", "adc:DIN", "display:DIN"]},
+    {"name": "SPI_MISO", "endpoints": ["mcu:D9", "adc:DOUT"]},
+    {"name": "ADC_CS", "endpoints": ["mcu:D2", "adc:CS/SHDN"]},
+    {"name": "DISPLAY_LOAD", "endpoints": ["mcu:D3", "display:LOAD"]},
+    {"name": "ANALOG_IN_0", "endpoints": ["adc:CH0"]}
+  ],
+  "fixture": {
+    "id": "spi-adc-display-fixture",
+    "revision": 1,
+    "maximumVoltage": 5,
+    "maximumCurrentMa": 500,
+    "minimumSpacingMm": 2.54,
+    "testPoints": [
+      {"id": "TP1", "pinRef": "adc:CH0", "visualAnchor": "adc:CH0", "pad": "J1.1", "logicalNet": "ANALOG_IN_0", "xMm": 20, "yMm": 10},
+      {"id": "TP2", "pinRef": "mcu:D8", "visualAnchor": "mcu:D8", "pad": "J1.2", "logicalNet": "SPI_CLK", "xMm": 20, "yMm": 15},
+      {"id": "TP3", "pinRef": "mcu:D10", "visualAnchor": "mcu:D10", "pad": "J1.3", "logicalNet": "SPI_MOSI", "xMm": 20, "yMm": 20},
+      {"id": "TP4", "pinRef": "mcu:D9", "visualAnchor": "mcu:D9", "pad": "J1.4", "logicalNet": "SPI_MISO", "xMm": 20, "yMm": 25},
+      {"id": "TP5", "pinRef": "display:LOAD", "visualAnchor": "display:LOAD", "pad": "J1.5", "logicalNet": "DISPLAY_LOAD", "xMm": 20, "yMm": 30}
+    ]
+  },
+  "hil": {
+    "driver": "mock",
+    "safety": {"maximumVoltage": 5, "maximumCurrentMa": 500},
+    "tests": [
+      {"id": "spi-loop", "op": "spi", "expected": "a55a"},
+      {"id": "adc-midscale", "op": "adc", "sample": 512, "minimum": 500, "maximum": 524},
+      {"id": "display-load-pulse", "op": "pulse", "sample": 1, "minimum": 1, "maximum": 1},
+      {"id": "current-budget", "op": "current", "sample": 180, "minimum": 1, "maximum": 500}
+    ]
+  }
+}

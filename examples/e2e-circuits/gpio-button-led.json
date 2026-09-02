@@ -1,0 +1,42 @@
+{
+  "schema": "circuitlab-e2e-scenario/v1",
+  "id": "gpio-button-led",
+  "title": "XIAO ESP32-S3 button input and current-limited LED",
+  "verificationStatus": "SOFTWARE_VERIFIED_PHYSICAL_UNVERIFIED",
+  "components": [
+    {"alias": "mcu", "ref": "seeed.xiao-esp32s3@1.3.0"},
+    {"alias": "button", "ref": "adafruit.tactile-button-12mm-1119@1.0.0"},
+    {"alias": "r220", "ref": "adafruit.resistor-cf-220r-2780@1.0.1"},
+    {"alias": "led", "ref": "adafruit.diffused-green-led-5mm-298@1.0.0"}
+  ],
+  "nets": [
+    {"name": "3V3", "endpoints": ["mcu:3V3", "button:1"]},
+    {"name": "GND", "endpoints": ["mcu:GND", "button:2", "led:K"]},
+    {"name": "BUTTON_SIG", "endpoints": ["button:3", "mcu:D0"]},
+    {"name": "LED_DRIVE", "endpoints": ["mcu:D1", "r220:T1"]},
+    {"name": "LED_LIMITED", "endpoints": ["r220:T2", "led:A"]}
+  ],
+  "fixture": {
+    "id": "gpio-button-led-fixture",
+    "revision": 1,
+    "maximumVoltage": 3.3,
+    "maximumCurrentMa": 120,
+    "minimumSpacingMm": 2.54,
+    "testPoints": [
+      {"id": "TP1", "pinRef": "mcu:D0", "visualAnchor": "mcu:D0", "pad": "J1.1", "logicalNet": "BUTTON_SIG", "xMm": 10, "yMm": 10},
+      {"id": "TP2", "pinRef": "mcu:D1", "visualAnchor": "mcu:D1", "pad": "J1.2", "logicalNet": "LED_DRIVE", "xMm": 10, "yMm": 15},
+      {"id": "TP3", "pinRef": "led:A", "visualAnchor": "led:A", "pad": "J1.3", "logicalNet": "LED_LIMITED", "xMm": 10, "yMm": 20},
+      {"id": "TP4", "pinRef": "mcu:GND", "visualAnchor": "mcu:GND", "pad": "J1.4", "logicalNet": "GND", "xMm": 10, "yMm": 25}
+    ]
+  },
+  "hil": {
+    "driver": "mock",
+    "safety": {"maximumVoltage": 3.3, "maximumCurrentMa": 120},
+    "tests": [
+      {"id": "button-low", "op": "gpio", "expected": true},
+      {"id": "led-pwm", "op": "pwm", "sample": 0.5, "minimum": 0.49, "maximum": 0.51},
+      {"id": "current-limit", "op": "current", "sample": 8.2, "minimum": 1, "maximum": 15},
+      {"id": "heartbeat", "op": "heartbeat", "expected": true}
+    ]
+  }
+}

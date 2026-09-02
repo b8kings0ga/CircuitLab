@@ -1,0 +1,48 @@
+{
+  "schema": "circuitlab-e2e-scenario/v1",
+  "id": "temperature-motor-interlock",
+  "title": "XIAO ESP32-S3 temperature monitored motor safety interlock",
+  "verificationStatus": "SOFTWARE_VERIFIED_PHYSICAL_UNVERIFIED",
+  "components": [
+    {"alias": "mcu", "ref": "seeed.xiao-esp32s3@1.3.0"},
+    {"alias": "temperature", "ref": "analog-devices.ds18b20-to92-374@1.0.0"},
+    {"alias": "driver", "ref": "texas-instruments.l293dne-807@1.0.0"},
+    {"alias": "stop", "ref": "adafruit.tactile-button-12mm-1119@1.0.0"}
+  ],
+  "nets": [
+    {"name": "3V3", "endpoints": ["mcu:3V3", "temperature:VDD", "driver:VCC1", "stop:1"]},
+    {"name": "5V_MOTOR", "endpoints": ["mcu:5V", "driver:VCC2"]},
+    {"name": "GND", "endpoints": ["mcu:GND", "temperature:GND", "driver:GND1", "driver:GND2", "driver:GND3", "driver:GND4", "driver:2A", "stop:2"]},
+    {"name": "ONEWIRE", "endpoints": ["mcu:D6", "temperature:DQ"]},
+    {"name": "MOTOR_ENABLE", "endpoints": ["mcu:D0", "driver:1,2EN"]},
+    {"name": "MOTOR_DIRECTION", "endpoints": ["mcu:D1", "driver:1A"]},
+    {"name": "EMERGENCY_STOP", "endpoints": ["mcu:D2", "stop:3"]},
+    {"name": "MOTOR_A", "endpoints": ["driver:1Y"]},
+    {"name": "MOTOR_B", "endpoints": ["driver:2Y"]}
+  ],
+  "fixture": {
+    "id": "temperature-motor-interlock-fixture",
+    "revision": 1,
+    "maximumVoltage": 5,
+    "maximumCurrentMa": 800,
+    "minimumSpacingMm": 2.54,
+    "testPoints": [
+      {"id": "TP1", "pinRef": "temperature:DQ", "visualAnchor": "temperature:DQ", "pad": "J1.1", "logicalNet": "ONEWIRE", "xMm": 25, "yMm": 10},
+      {"id": "TP2", "pinRef": "driver:1,2EN", "visualAnchor": "driver:1,2EN", "pad": "J1.2", "logicalNet": "MOTOR_ENABLE", "xMm": 25, "yMm": 15},
+      {"id": "TP3", "pinRef": "stop:3", "visualAnchor": "stop:3", "pad": "J1.3", "logicalNet": "EMERGENCY_STOP", "xMm": 25, "yMm": 20},
+      {"id": "TP4", "pinRef": "driver:1Y", "visualAnchor": "driver:1Y", "pad": "J1.4", "logicalNet": "MOTOR_A", "xMm": 25, "yMm": 25},
+      {"id": "TP5", "pinRef": "driver:2Y", "visualAnchor": "driver:2Y", "pad": "J1.5", "logicalNet": "MOTOR_B", "xMm": 25, "yMm": 30}
+    ]
+  },
+  "hil": {
+    "driver": "mock",
+    "safety": {"maximumVoltage": 5, "maximumCurrentMa": 800},
+    "tests": [
+      {"id": "temperature-read", "op": "pulse", "sample": 24.5, "minimum": -20, "maximum": 80},
+      {"id": "emergency-stop", "op": "gpio", "expected": true},
+      {"id": "motor-enable", "op": "gpio", "expected": true},
+      {"id": "motor-current", "op": "current", "sample": 310, "minimum": 1, "maximum": 800},
+      {"id": "safe-reset", "op": "reset", "expected": true}
+    ]
+  }
+}

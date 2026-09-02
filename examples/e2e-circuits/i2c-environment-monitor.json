@@ -1,0 +1,41 @@
+{
+  "schema": "circuitlab-e2e-scenario/v1",
+  "id": "i2c-environment-monitor",
+  "title": "XIAO ESP32-S3 I2C temperature, light and CO2 monitor",
+  "verificationStatus": "SOFTWARE_VERIFIED_PHYSICAL_UNVERIFIED",
+  "components": [
+    {"alias": "mcu", "ref": "seeed.xiao-esp32s3@1.3.0"},
+    {"alias": "climate", "ref": "adafruit.sht45-5665@1.0.0"},
+    {"alias": "light", "ref": "adafruit.bh1750-4681@1.0.0"},
+    {"alias": "co2", "ref": "adafruit.scd40-5187@1.0.0"}
+  ],
+  "nets": [
+    {"name": "3V3", "endpoints": ["mcu:3V3", "climate:VIN", "light:VIN", "co2:VIN"]},
+    {"name": "GND", "endpoints": ["mcu:GND", "climate:GND", "light:GND", "co2:GND"]},
+    {"name": "I2C_SDA", "endpoints": ["mcu:D4", "climate:SDA", "light:SDA", "co2:SDA"]},
+    {"name": "I2C_SCL", "endpoints": ["mcu:D5", "climate:SCL", "light:SCL", "co2:SCL"]}
+  ],
+  "fixture": {
+    "id": "i2c-environment-monitor-fixture",
+    "revision": 1,
+    "maximumVoltage": 3.3,
+    "maximumCurrentMa": 350,
+    "minimumSpacingMm": 2.54,
+    "testPoints": [
+      {"id": "TP1", "pinRef": "mcu:D4", "visualAnchor": "mcu:D4", "pad": "J1.1", "logicalNet": "I2C_SDA", "xMm": 15, "yMm": 10},
+      {"id": "TP2", "pinRef": "mcu:D5", "visualAnchor": "mcu:D5", "pad": "J1.2", "logicalNet": "I2C_SCL", "xMm": 15, "yMm": 15},
+      {"id": "TP3", "pinRef": "co2:VIN", "visualAnchor": "co2:VIN", "pad": "J1.3", "logicalNet": "3V3", "xMm": 15, "yMm": 20},
+      {"id": "TP4", "pinRef": "co2:GND", "visualAnchor": "co2:GND", "pad": "J1.4", "logicalNet": "GND", "xMm": 15, "yMm": 25}
+    ]
+  },
+  "hil": {
+    "driver": "mock",
+    "safety": {"maximumVoltage": 3.3, "maximumCurrentMa": 350},
+    "tests": [
+      {"id": "i2c-discovery", "op": "i2c", "expected": "0x23,0x44,0x62"},
+      {"id": "temperature", "op": "adc", "sample": 23.4, "minimum": -20, "maximum": 80},
+      {"id": "co2-reading", "op": "i2c", "sample": 612, "minimum": 350, "maximum": 5000},
+      {"id": "heartbeat", "op": "heartbeat", "expected": true}
+    ]
+  }
+}

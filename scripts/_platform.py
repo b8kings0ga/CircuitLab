@@ -21,6 +21,7 @@ from circuitlab_platform import (  # noqa: E402,F401
     is_chip_package,
     import_sindri_assets,
     require_chip_package,
+    sha256_json,
     validate_component,
 )
 

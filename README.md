@@ -32,8 +32,18 @@ Run the complete software-only acceptance loop:
 
 ```bash
 python3 scripts/verify_platform.py
+python3 scripts/verify_e2e_scenarios.py
+python3 scripts/verify_api_e2e.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
+
+The catalog-backed E2E suite designs four reviewable circuits from exact bundled
+products: a button/LED GPIO loop, a three-sensor I2C environment monitor, an SPI
+ADC/display path, and a temperature-monitored motor interlock. Every scenario
+validates real package pin names and visual anchors, generates the complete
+unverified fixture package, and runs the bounded mock HIL state machine. These
+checks establish software continuity only; they do not claim physical electrical
+validation.
 
 Search the hardware catalog and generate the redistributable starter views:
 
