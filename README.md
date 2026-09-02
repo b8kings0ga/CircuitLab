@@ -10,6 +10,7 @@ It is both a standalone application template and a Codex Skill. The repository h
 - `component-package/v1`, `fixture-package/v1`, `hil-plan/v1`, and `fixture-driver/v1` contracts.
 - Immutable JSON component registry with rebuildable SQLite indexes.
 - Exact-part discovery for pinned Wokwi data and checksum-verified step.parts models.
+- Fail-closed official manufacturer image discovery, immutable capture, and human-confirmed attachment.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.

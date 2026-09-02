@@ -276,6 +276,17 @@ class Handler(BaseHTTPRequestHandler):
             query = parse_qs(parsed.query).get("q", [""])[0]
             self._json({"components": circuit_platform().registry.list(query)})
             return
+        if parsed.path == "/api/component-media":
+            params = parse_qs(parsed.query)
+            reference = params.get("ref", [""])[0]
+            name = params.get("file", [""])[0]
+            try:
+                self._send_file(circuit_platform().registry.visual_file(reference, name), cache="private, max-age=31536000, immutable")
+            except KeyError:
+                self.send_error(HTTPStatus.NOT_FOUND)
+            except ValueError:
+                self.send_error(HTTPStatus.BAD_REQUEST)
+            return
         if parsed.path.startswith("/api/components/"):
             reference = unquote(parsed.path.removeprefix("/api/components/"))
             self._json(circuit_platform().registry.get(reference))
@@ -368,12 +379,15 @@ class Handler(BaseHTTPRequestHandler):
         if not candidate.is_file():
             self.send_error(HTTPStatus.NOT_FOUND)
             return
+        self._send_file(candidate, send_body=send_body)
+
+    def _send_file(self, candidate: Path, send_body: bool = True, cache: str = "no-store") -> None:
         content_type = mimetypes.guess_type(candidate.name)[0] or "application/octet-stream"
         body = candidate.read_bytes()
         self.send_response(HTTPStatus.OK)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "no-store")
+        self.send_header("Cache-Control", cache)
         self.end_headers()
         if send_body:
             try:

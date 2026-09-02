@@ -57,6 +57,18 @@ class CircuitLabPlatformTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown electrical pin"):
             self.registry.install(invalid)
 
+    def test_component_visual_files_are_allowlisted(self) -> None:
+        self.registry.install(component(), {"appearance.webp": b"image", "secret.txt": b"secret"})
+        package = self.registry.get("circuitlab.test-board@1.0.0")
+        package["visual"]["appearance"] = "appearance.webp"
+        # The immutable package cannot be rewritten, so install the file-bearing visual as a new revision.
+        package.pop("procurement", None); package.pop("packageSha256", None)
+        package["identity"]["revision"] = "1.0.1"
+        self.registry.install(package, {"appearance.webp": b"image", "secret.txt": b"secret"})
+        self.assertEqual(self.registry.visual_file("circuitlab.test-board@1.0.1", "appearance.webp").read_bytes(), b"image")
+        with self.assertRaises(KeyError):
+            self.registry.visual_file("circuitlab.test-board@1.0.1", "secret.txt")
+
     def test_fixture_emits_complete_unverified_package(self) -> None:
         result = generate_fixture({
             "id": "reference", "revision": 1, "maximumVoltage": 3.3, "minimumSpacingMm": 2.54,

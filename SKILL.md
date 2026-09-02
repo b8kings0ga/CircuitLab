@@ -11,7 +11,7 @@ This repository is the canonical generic core and installable Codex Skill. Keep 
 
 - New lab: run `scripts/init_lab.py TARGET`, edit the generated config/diagram/adapter, then run `scripts/validate_instance.py TARGET`.
 - Existing instance: inspect live `/healthz`, `/api/lab-config`, `/api/diagram`, and `/api/state` before editing.
-- Component work: read [component assets](references/component-assets.md), search the local registry first, then acquire only an exact confirmed MPN.
+- Component work: read [component assets](references/component-assets.md), search the local registry first, then acquire only an exact confirmed MPN. For official product photos, use the discover → capture → human-confirmed attach flow; never scrape arbitrary search-result images or reuse touchpoints after an appearance changes.
 - Touchpoint or fixture work: read [fixtures](references/fixtures.md); never infer electrical identity from image coordinates.
 - HIL work: read [HIL safety](references/hil.md); software mock/replay is available, while real serial, flash, power, restore, purchase, and fabrication remain fail-closed until separately verified and authorized.
 - Generic rendering or routing change: edit `assets/template/core`, run `scripts/update_manifest.py`, run `sync_instance.py --apply`, and test both a fresh lab and the project instance.

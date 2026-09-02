@@ -361,6 +361,10 @@ textarea:focus { outline: 1px solid #4ac7ff; border-color: #4ac7ff; }
 .component-stats div { padding: 10px; border: 1px solid #303531; background: #141715; }
 .component-stats small { display: block; color: #6f7871; font-size: 8px; }
 .component-stats strong { display: block; margin-top: 6px; overflow: hidden; font: 700 10px ui-monospace, monospace; text-overflow: ellipsis; }
+.component-gallery { display: grid; grid-auto-columns: minmax(170px, 1fr); grid-auto-flow: column; gap: 10px; margin: 16px 0; overflow-x: auto; padding-bottom: 4px; }
+.component-gallery figure { margin: 0; overflow: hidden; border: 1px solid #303531; background: #f3f5f1; }
+.component-gallery img { display: block; width: 100%; height: 190px; object-fit: contain; }
+.component-gallery figcaption { padding: 8px 10px; border-top: 1px solid #303531; background: #141715; color: #8f9991; font: 700 9px ui-monospace, monospace; text-transform: uppercase; }
 .pin-preview,
 .result-console { overflow: auto; border: 1px solid #303531; border-radius: 6px; background: #0f1210; color: #b7beb8; font: 10px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .pin-preview { max-height: 310px; padding: 12px; }

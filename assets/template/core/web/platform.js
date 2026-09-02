@@ -107,6 +107,23 @@
     heading.textContent = `${component.identity.manufacturer} ${component.identity.mpn}`;
     const ref = document.createElement("code");
     ref.textContent = reference;
+    const gallery = document.createElement("div");
+    gallery.className = "component-gallery";
+    const visualRows = [];
+    if (component.visual?.appearance) visualRows.push({ name: "primary", path: component.visual.appearance, view: "primary" });
+    for (const row of component.visual?.views || []) {
+      if (row.path && !visualRows.some(item => item.path === row.path)) visualRows.push(row);
+    }
+    for (const row of visualRows) {
+      const figure = document.createElement("figure");
+      const image = document.createElement("img");
+      image.loading = "lazy";
+      image.alt = `${component.identity.mpn} ${row.view || row.name || "product view"}`;
+      image.src = `/api/component-media?ref=${encodeURIComponent(reference)}&file=${encodeURIComponent(row.path)}`;
+      const caption = document.createElement("figcaption");
+      caption.textContent = row.view || row.name || row.path;
+      figure.append(image, caption); gallery.appendChild(figure);
+    }
     const stats = document.createElement("div");
     stats.className = "component-stats";
     const values = [
@@ -126,7 +143,9 @@
     const pins = document.createElement("pre");
     pins.className = "pin-preview";
     pins.textContent = (component.electrical?.pins || []).map(pin => `${pin.number}  ${pin.name}  ${pin.direction}`).join("\n") || "No pins recorded";
-    detail.append(eyebrow, heading, ref, stats, pins);
+    detail.append(eyebrow, heading, ref);
+    if (visualRows.length) detail.append(gallery);
+    detail.append(stats, pins);
   }
 
   async function loadReports() {

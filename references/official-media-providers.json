@@ -1,0 +1,16 @@
+{
+  "schema": "official-media-providers/v1",
+  "providers": [
+    {"manufacturer": "Espressif Systems", "domains": ["espressif.com", "docs.espressif.com", "dl.espressif.com"]},
+    {"manufacturer": "Arduino", "domains": ["arduino.cc", "store.arduino.cc", "docs.arduino.cc"]},
+    {"manufacturer": "Raspberry Pi Ltd", "domains": ["raspberrypi.com", "assets.raspberrypi.com", "datasheets.raspberrypi.com", "pip.raspberrypi.com", "pip-assets.raspberrypi.com"]},
+    {"manufacturer": "Nordic Semiconductor", "domains": ["nordicsemi.com", "docs.nordicsemi.com", "docs-be.nordicsemi.com"]},
+    {"manufacturer": "STMicroelectronics", "domains": ["st.com", "st.com.cn"]},
+    {"manufacturer": "Seeed Studio", "domains": ["seeedstudio.com", "wiki.seeedstudio.com", "files.seeedstudio.com"]},
+    {"manufacturer": "Adafruit Industries", "domains": ["adafruit.com", "learn.adafruit.com", "cdn-learn.adafruit.com"]},
+    {"manufacturer": "Texas Instruments", "domains": ["ti.com"]},
+    {"manufacturer": "Analog Devices", "domains": ["analog.com"]},
+    {"manufacturer": "Bosch Sensortec", "domains": ["bosch-sensortec.com"]},
+    {"manufacturer": "TDK InvenSense", "domains": ["invensense.tdk.com", "tdk.com"]}
+  ]
+}

@@ -233,6 +233,22 @@ class ComponentRegistry:
             snapshot.pop("payload_json", None)
         return package
 
+    def visual_file(self, reference: str, name: str) -> Path:
+        package = self.get(reference)
+        visual = package.get("visual", {})
+        allowed = {visual.get("appearance"), visual.get("symbol")}
+        allowed.update(row.get("path") for row in visual.get("views", []) if isinstance(row, dict))
+        if name not in allowed or not isinstance(name, str):
+            raise KeyError(name)
+        relative = Path(name)
+        if relative.is_absolute() or ".." in relative.parts:
+            raise ValueError("unsafe component visual path")
+        root = self.package_path(reference).parent.resolve()
+        target = (root / relative).resolve()
+        if root not in target.parents or not target.is_file():
+            raise KeyError(name)
+        return target
+
     def calibrate(self, reference: str, appearance_sha256: str, points: dict[str, dict[str, float]]) -> dict[str, Any]:
         current = self.get(reference)
         if current.get("visual", {}).get("appearanceSha256") != appearance_sha256:
@@ -694,4 +710,3 @@ class CircuitLabPlatform:
             "configPath": str(self.config_path),
             "active": True,
         }]
-
