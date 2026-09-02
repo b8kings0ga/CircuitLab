@@ -236,7 +236,8 @@ class ComponentRegistry:
     def visual_file(self, reference: str, name: str) -> Path:
         package = self.get(reference)
         visual = package.get("visual", {})
-        allowed = {visual.get("appearance"), visual.get("symbol")}
+        physical = package.get("physical", {})
+        allowed = {visual.get("appearance"), visual.get("symbol"), visual.get("geometry"), physical.get("geometry")}
         allowed.update(row.get("path") for row in visual.get("views", []) if isinstance(row, dict))
         if name not in allowed or not isinstance(name, str):
             raise KeyError(name)

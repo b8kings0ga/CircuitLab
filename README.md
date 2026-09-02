@@ -11,6 +11,7 @@ It is both a standalone application template and a Codex Skill. The repository h
 - Immutable JSON component registry with rebuildable SQLite indexes.
 - Exact-part discovery for pinned Wokwi data and checksum-verified step.parts models.
 - Fail-closed official manufacturer image discovery, immutable capture, and human-confirmed attachment.
+- Deterministic interactive board views generated from explicit manufacturer DXF/footprint/pinout coordinates, with a reviewed XIAO ESP32S3 example.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.
@@ -32,6 +33,16 @@ Run the complete software-only acceptance loop:
 python3 scripts/verify_platform.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
+
+Generate the XIAO ESP32S3-style board view shown in CircuitLab:
+
+```bash
+python3 scripts/generate_board_view.py \
+  assets/board-specs/seeed-xiao-esp32s3.json \
+  --output /tmp/circuitlab-xiao
+```
+
+This produces an original scalable SVG, explicit pin geometry, and a component package with 14 wireable touchpoints. See `references/board-views.md` for the evidence and verification boundary.
 
 ## Install as a Codex Skill
 

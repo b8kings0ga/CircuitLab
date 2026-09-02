@@ -1,0 +1,38 @@
+{
+  "schema": "board-view-spec/v1",
+  "identity": {
+    "assetId": "seeed.xiao-esp32s3",
+    "revision": "1.1.0",
+    "manufacturer": "Seeed Studio",
+    "mpn": "XIAO ESP32S3",
+    "level": "development-board"
+  },
+  "orientation": "FRONT · USB",
+  "canvas": { "widthMm": 18.1, "heightMm": 23.4 },
+  "pcb": { "xMm": 0.15, "yMm": 2.35, "widthMm": 17.8, "heightMm": 21.0 },
+  "usb": { "xMm": 4.8, "yMm": 0.0, "widthMm": 8.5, "heightMm": 3.8 },
+  "shield": { "xMm": 5.2, "yMm": 7.5, "widthMm": 7.7, "heightMm": 8.5 },
+  "pins": [
+    { "name": "D0", "number": "1", "xMm": 1.4335, "yMm": 4.9305, "side": "left", "functions": ["GPIO1", "A0"] },
+    { "name": "D1", "number": "2", "xMm": 1.4335, "yMm": 7.4705, "side": "left", "functions": ["GPIO2", "A1"] },
+    { "name": "D2", "number": "3", "xMm": 1.4335, "yMm": 10.0105, "side": "left", "functions": ["GPIO3", "A2"] },
+    { "name": "D3", "number": "4", "xMm": 1.4335, "yMm": 12.5505, "side": "left", "functions": ["GPIO4", "A3"] },
+    { "name": "D4", "number": "5", "xMm": 1.4335, "yMm": 15.0905, "side": "left", "functions": ["GPIO5", "SDA"] },
+    { "name": "D5", "number": "6", "xMm": 1.4335, "yMm": 17.6305, "side": "left", "functions": ["GPIO6", "SCL"] },
+    { "name": "D6", "number": "7", "xMm": 1.4335, "yMm": 20.1705, "side": "left", "functions": ["GPIO43", "TX"] },
+    { "name": "5V", "number": "14", "xMm": 16.51, "yMm": 4.9305, "side": "right", "direction": "power" },
+    { "name": "GND", "number": "13", "xMm": 16.51, "yMm": 7.4705, "side": "right", "direction": "power" },
+    { "name": "3V3", "number": "12", "xMm": 16.51, "yMm": 10.0105, "side": "right", "direction": "power" },
+    { "name": "D10", "number": "11", "xMm": 16.51, "yMm": 12.5505, "side": "right", "functions": ["GPIO9", "MOSI"] },
+    { "name": "D9", "number": "10", "xMm": 16.51, "yMm": 15.0905, "side": "right", "functions": ["GPIO8", "MISO"] },
+    { "name": "D8", "number": "9", "xMm": 16.51, "yMm": 17.6305, "side": "right", "functions": ["GPIO7", "SCK"] },
+    { "name": "D7", "number": "8", "xMm": 16.51, "yMm": 20.1705, "side": "right", "functions": ["GPIO44", "RX"] }
+  ],
+  "evidence": {
+    "sources": [
+      { "type": "manufacturer-product-documentation", "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/" },
+      { "type": "manufacturer-dxf", "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_v1.1_Dimensioning.dxf", "sha256": "5fd32e3ba7a4bd85b8cc0f5d9413e26dd947e84e27b2d0f03350a7d367903f23", "capturedAt": "2026-09-02" },
+      { "type": "manufacturer-pinout", "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Sense_Pinout.xlsx", "sha256": "d31153ed6a9bb5c2e0ab1bd1ec5bd620620664c06ec4bb55cf74caf0a08b8365", "capturedAt": "2026-09-02" }
+    ]
+  }
+}

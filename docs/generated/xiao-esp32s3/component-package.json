@@ -1,0 +1,259 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO1",
+          "A0"
+        ],
+        "name": "D0",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO2",
+          "A1"
+        ],
+        "name": "D1",
+        "number": "2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO3",
+          "A2"
+        ],
+        "name": "D2",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO4",
+          "A3"
+        ],
+        "name": "D3",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO5",
+          "SDA"
+        ],
+        "name": "D4",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO6",
+          "SCL"
+        ],
+        "name": "D5",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO43",
+          "TX"
+        ],
+        "name": "D6",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "5V",
+        "number": "14"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "13"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3V3",
+        "number": "12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO9",
+          "MOSI"
+        ],
+        "name": "D10",
+        "number": "11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO8",
+          "MISO"
+        ],
+        "name": "D9",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO7",
+          "SCK"
+        ],
+        "name": "D8",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO44",
+          "RX"
+        ],
+        "name": "D7",
+        "number": "8"
+      }
+    ],
+    "status": "UNVERIFIED"
+  },
+  "evidence": {
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_EXPLICIT_DESIGN_COORDINATES",
+    "sources": [
+      {
+        "type": "manufacturer-product-documentation",
+        "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"
+      },
+      {
+        "capturedAt": "2026-09-02",
+        "sha256": "5fd32e3ba7a4bd85b8cc0f5d9413e26dd947e84e27b2d0f03350a7d367903f23",
+        "type": "manufacturer-dxf",
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_v1.1_Dimensioning.dxf"
+      },
+      {
+        "capturedAt": "2026-09-02",
+        "sha256": "d31153ed6a9bb5c2e0ab1bd1ec5bd620620664c06ec4bb55cf74caf0a08b8365",
+        "type": "manufacturer-pinout",
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Sense_Pinout.xlsx"
+      }
+    ],
+    "specSha256": "63c5e3087f9065548d364943ed30e4255870e78448af1f5bbd3808d54bed35fc"
+  },
+  "identity": {
+    "assetId": "seeed.xiao-esp32s3",
+    "level": "development-board",
+    "manufacturer": "Seeed Studio",
+    "mpn": "XIAO ESP32S3",
+    "revision": "1.1.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "geometry": "board.json",
+    "heightMm": 21.0,
+    "widthMm": 17.8
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "D0",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.21070513
+      },
+      {
+        "pin": "D1",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.31925214
+      },
+      {
+        "pin": "D2",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.42779915
+      },
+      {
+        "pin": "D3",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.53634615
+      },
+      {
+        "pin": "D4",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.64489316
+      },
+      {
+        "pin": "D5",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.75344017
+      },
+      {
+        "pin": "D6",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.0791989,
+        "y": 0.86198718
+      },
+      {
+        "pin": "5V",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.21070513
+      },
+      {
+        "pin": "GND",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.31925214
+      },
+      {
+        "pin": "3V3",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.42779915
+      },
+      {
+        "pin": "D10",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.53634615
+      },
+      {
+        "pin": "D9",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.64489316
+      },
+      {
+        "pin": "D8",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.75344017
+      },
+      {
+        "pin": "D7",
+        "status": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+        "x": 0.9121547,
+        "y": 0.86198718
+      }
+    ],
+    "appearance": "board.svg",
+    "appearanceSha256": "12b043c1d3e96ec7726731174ce4c7ce094d706e94e79a6b55dd99ff7fa25c76",
+    "coordinateStatus": "OFFICIAL_DESIGN_DERIVED_UNVERIFIED",
+    "geometry": "board.json",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "board.svg",
+        "view": "interactive-top"
+      }
+    ]
+  }
+}

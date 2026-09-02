@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — 2026-09-02
+
+- Add deterministic `board-view-spec/v1` to original interactive SVG generation.
+- Add a XIAO ESP32S3 reference view with 14 explicit wireable touchpoints.
+- Lock the official Seeed Studio DXF and pinout evidence by SHA-256.
+- Expose component geometry files through the local media API for Workbench consumers.
+- Keep design-derived boards fail-closed as `OFFICIAL_DESIGN_DERIVED_UNVERIFIED`.
+
 ## 0.2.0 — 2026-09-02
 
 - Add fail-closed official manufacturer media discovery for MCU, module, and development-board pages.

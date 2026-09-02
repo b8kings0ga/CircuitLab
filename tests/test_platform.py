@@ -58,14 +58,16 @@ class CircuitLabPlatformTests(unittest.TestCase):
             self.registry.install(invalid)
 
     def test_component_visual_files_are_allowlisted(self) -> None:
-        self.registry.install(component(), {"appearance.webp": b"image", "secret.txt": b"secret"})
+        self.registry.install(component(), {"appearance.webp": b"image", "board.json": b"{}", "secret.txt": b"secret"})
         package = self.registry.get("circuitlab.test-board@1.0.0")
         package["visual"]["appearance"] = "appearance.webp"
+        package["visual"]["geometry"] = "board.json"
         # The immutable package cannot be rewritten, so install the file-bearing visual as a new revision.
         package.pop("procurement", None); package.pop("packageSha256", None)
         package["identity"]["revision"] = "1.0.1"
-        self.registry.install(package, {"appearance.webp": b"image", "secret.txt": b"secret"})
+        self.registry.install(package, {"appearance.webp": b"image", "board.json": b"{}", "secret.txt": b"secret"})
         self.assertEqual(self.registry.visual_file("circuitlab.test-board@1.0.1", "appearance.webp").read_bytes(), b"image")
+        self.assertEqual(self.registry.visual_file("circuitlab.test-board@1.0.1", "board.json").read_bytes(), b"{}")
         with self.assertRaises(KeyError):
             self.registry.visual_file("circuitlab.test-board@1.0.1", "secret.txt")
 
