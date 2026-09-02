@@ -1,0 +1,116 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.amg8833-3538",
+  "canvasWidth": 50,
+  "color": "#151a18",
+  "height": 25.3,
+  "level": "thermal-array-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mechanicalPads": [
+    {
+      "x": 2.4,
+      "y": 2.4
+    },
+    {
+      "x": 6.56,
+      "y": 2.4
+    },
+    {
+      "x": 10.72,
+      "y": 2.4
+    },
+    {
+      "x": 14.88,
+      "y": 2.4
+    },
+    {
+      "x": 19.04,
+      "y": 2.4
+    },
+    {
+      "x": 23.2,
+      "y": 2.4
+    }
+  ],
+  "mpn": "AMG8833 Grid-EYE #3538 (STEMMA QT revision)",
+  "parts": [
+    [
+      7.2,
+      7.0,
+      11.2,
+      10.5,
+      "GRID-EYE"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 22.9
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.56,
+      "y": 22.9
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.72,
+      "y": 22.9
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.88,
+      "y": 22.9
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 19.04,
+      "y": 22.9
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt"
+      ],
+      "name": "INT",
+      "number": "6",
+      "side": "bottom",
+      "x": 23.2,
+      "y": 22.9
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/3538",
+    "https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/pinouts"
+  ],
+  "subtitle": "8×8 THERMAL ARRAY · I²C",
+  "width": 25.6
+}

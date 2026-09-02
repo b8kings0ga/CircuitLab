@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354.4" role="img" aria-label="AMG8833 Grid-EYE #3538 (STEMMA QT revision) interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="97.6" y="48" width="204.8" height="202.4" rx="9" fill="#151a18" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="200" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="200" y="306.4" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">AMG8833 Grid-EYE #3538 (STEMMA QT revision)</text>
+<text x="200" y="323.2" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">8×8 THERMAL ARRAY · I²C</text>
+<circle cx="116" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="116" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="284" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="284" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="116" cy="232" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="116" cy="232" r="3.4" fill="#e9ece8"/>
+<circle cx="284" cy="232" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="284" cy="232" r="3.4" fill="#e9ece8"/>
+<g data-mechanical-pad="unconnected"><circle cx="116.8" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="116.8" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="116.8" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<g data-mechanical-pad="unconnected"><circle cx="150.08" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="150.08" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="150.08" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<g data-mechanical-pad="unconnected"><circle cx="183.36" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="183.36" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="183.36" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<g data-mechanical-pad="unconnected"><circle cx="216.64" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="216.64" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="216.64" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<g data-mechanical-pad="unconnected"><circle cx="249.92" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="249.92" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="249.92" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<g data-mechanical-pad="unconnected"><circle cx="283.2" cy="67.2" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="283.2" cy="67.2" r="5.5" fill="#f5f7f4"/><circle cx="283.2" cy="67.2" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>
+<rect x="95.6" y="135.032" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<rect x="285.4" y="135.032" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<path d="M200 146L116.8 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M200 146L150.08 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M200 146L183.36 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M200 146L216.64 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M200 146L249.92 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M200 146L283.2 231.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="155.2" y="104" width="89.6" height="84" rx="5" fill="#e8e7df" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="200" y="149" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">GRID-EYE</text>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="116.8" cy="231.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="116.8" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="116.8" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="116.8" y="268" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VIN</text>
+</g>
+<g id="pin-3VO" data-pin="3VO">
+<circle cx="150.08" cy="231.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="150.08" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="150.08" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="150.08" y="268" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">3VO</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="183.36" cy="231.2" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="183.36" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="183.36" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="183.36" y="268" text-anchor="middle" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="216.64" cy="231.2" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="216.64" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="216.64" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="216.64" y="268" text-anchor="middle" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SCL</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="249.92" cy="231.2" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="249.92" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="249.92" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="249.92" y="268" text-anchor="middle" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SDA</text>
+</g>
+<g id="pin-INT" data-pin="INT">
+<circle cx="283.2" cy="231.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="283.2" cy="231.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="283.2" cy="231.2" r="2.4" fill="#3e4641"/>
+<text x="283.2" y="268" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">INT</text>
+</g>
+</svg>

@@ -1,0 +1,131 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-ADDRESS"
+        ],
+        "name": "ADDR",
+        "number": "6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "392aaf10462cdb1ddb84d45bd6f72ac711dc9a272eab64f38157335b263293f8",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/4681"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.bh1750-4681",
+    "level": "ambient-light-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "BH1750 Ambient Light Sensor #4681",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.7,
+    "package": "assembled-module",
+    "widthMm": 25.3
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28645833,
+        "y": 0.58038147
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.371875,
+        "y": 0.58038147
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.45729167,
+        "y": 0.58038147
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.54270833,
+        "y": 0.58038147
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.628125,
+        "y": 0.58038147
+      },
+      {
+        "pin": "ADDR",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.71354167,
+        "y": 0.58038147
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "635c81576b59db84ca4296b8be65c75b16ff8534ff988450b238c0c8aa5282ac",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.ds3231-3013",
+  "canvasWidth": 52,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 17.6,
+  "level": "real-time-clock-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "DS3231 Precision RTC #3013",
+  "parts": [
+    [
+      6.8,
+      4.0,
+      9.4,
+      6.8,
+      "DS3231"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.2
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.0,
+      "y": 15.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.6,
+      "y": 15.2
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 10.2,
+      "y": 15.2
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "backup-battery"
+      ],
+      "name": "BAT",
+      "number": "5",
+      "side": "bottom",
+      "x": 12.8,
+      "y": 15.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "32.768kHz-output"
+      ],
+      "name": "32K",
+      "number": "6",
+      "side": "bottom",
+      "x": 15.4,
+      "y": 15.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "square-wave",
+        "interrupt"
+      ],
+      "name": "SQW",
+      "number": "7",
+      "side": "bottom",
+      "x": 18.0,
+      "y": 15.2
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "reset"
+      ],
+      "name": "RST",
+      "number": "8",
+      "side": "bottom",
+      "x": 20.6,
+      "y": 15.2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/3013",
+    "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts"
+  ],
+  "subtitle": "PRECISION RTC · I²C 0x68",
+  "width": 23.0
+}

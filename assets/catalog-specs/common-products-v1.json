@@ -203,6 +203,150 @@
         {"name": "B-K", "number": "4", "x": 5.75, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["blue-cathode"]}
       ],
       "sources": ["https://www.adafruit.com/product/302", "https://www.adafruit.com/datasheets/FD-5WSRGB-A.PDF"]
+    },
+    {
+      "assetId": "adafruit.ds3231-3013",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "DS3231 Precision RTC #3013",
+      "level": "real-time-clock-module",
+      "shape": "module",
+      "width": 23.0,
+      "height": 17.6,
+      "canvasWidth": 52,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "PRECISION RTC · I²C 0x68",
+      "densePins": true,
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 2.4, "y": 15.2, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 5.0, "y": 15.2, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "3", "x": 7.6, "y": 15.2, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "4", "x": 10.2, "y": 15.2, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "BAT", "number": "5", "x": 12.8, "y": 15.2, "side": "bottom", "direction": "power", "functions": ["backup-battery"]},
+        {"name": "32K", "number": "6", "x": 15.4, "y": 15.2, "side": "bottom", "direction": "output", "functions": ["32.768kHz-output"]},
+        {"name": "SQW", "number": "7", "x": 18.0, "y": 15.2, "side": "bottom", "direction": "output", "functions": ["square-wave", "interrupt"]},
+        {"name": "RST", "number": "8", "x": 20.6, "y": 15.2, "side": "bottom", "direction": "bidirectional", "functions": ["reset"]}
+      ],
+      "parts": [[6.8, 4.0, 9.4, 6.8, "DS3231"]],
+      "sources": [
+        "https://www.adafruit.com/product/3013",
+        "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.sht31d-2857",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "SHT31-D #2857 (STEMMA QT revision)",
+      "level": "temperature-humidity-sensor-module",
+      "shape": "module",
+      "width": 12.7,
+      "height": 18.0,
+      "canvasWidth": 46,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "TEMP / HUMIDITY · I²C 0x44 / 0x45",
+      "densePins": true,
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 1.7, "y": 15.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 3.25, "y": 15.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "3", "x": 4.8, "y": 15.6, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "4", "x": 6.35, "y": 15.6, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "ADR", "number": "5", "x": 7.9, "y": 15.6, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS"]},
+        {"name": "RST", "number": "6", "x": 9.45, "y": 15.6, "side": "bottom", "direction": "input", "functions": ["reset"]},
+        {"name": "ALR", "number": "7", "x": 11.0, "y": 15.6, "side": "bottom", "direction": "output", "functions": ["alert"]}
+      ],
+      "parts": [[3.2, 4.5, 6.3, 6.3, "SHT31"]],
+      "sources": [
+        "https://www.adafruit.com/product/2857",
+        "https://learn.adafruit.com/adafruit-sht31-d-temperature-and-humidity-sensor-breakout/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.bh1750-4681",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "BH1750 Ambient Light Sensor #4681",
+      "level": "ambient-light-sensor-module",
+      "shape": "module",
+      "width": 25.3,
+      "height": 17.7,
+      "canvasWidth": 48,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "AMBIENT LIGHT · I²C 0x23 / 0x5C",
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 2.4, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 6.5, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 10.6, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "4", "x": 14.7, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "5", "x": 18.8, "y": 15.3, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "ADDR", "number": "6", "x": 22.9, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS"]}
+      ],
+      "parts": [[8.9, 4.1, 7.5, 7.4, "BH1750"]],
+      "sources": [
+        "https://www.adafruit.com/product/4681",
+        "https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.tsl2591-1980",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "TSL2591 High Dynamic Range Light Sensor #1980",
+      "level": "ambient-light-sensor-module",
+      "shape": "module",
+      "width": 25.4,
+      "height": 17.8,
+      "canvasWidth": 48,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "HDR LIGHT · I²C 0x29",
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 2.4, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 6.52, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 10.64, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "4", "x": 14.76, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "5", "x": 18.88, "y": 15.4, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "INT", "number": "6", "x": 23.0, "y": 15.4, "side": "bottom", "direction": "output", "functions": ["interrupt"]}
+      ],
+      "parts": [[8.7, 4.0, 8.0, 7.6, "TSL2591"]],
+      "sources": [
+        "https://www.adafruit.com/product/1980",
+        "https://learn.adafruit.com/adafruit-tsl2591/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.amg8833-3538",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "AMG8833 Grid-EYE #3538 (STEMMA QT revision)",
+      "level": "thermal-array-sensor-module",
+      "shape": "module",
+      "width": 25.6,
+      "height": 25.3,
+      "canvasWidth": 50,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "8×8 THERMAL ARRAY · I²C",
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 2.4, "y": 22.9, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 6.56, "y": 22.9, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 10.72, "y": 22.9, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "4", "x": 14.88, "y": 22.9, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "5", "x": 19.04, "y": 22.9, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "INT", "number": "6", "x": 23.2, "y": 22.9, "side": "bottom", "direction": "output", "functions": ["interrupt"]}
+      ],
+      "mechanicalPads": [
+        {"x": 2.4, "y": 2.4}, {"x": 6.56, "y": 2.4}, {"x": 10.72, "y": 2.4},
+        {"x": 14.88, "y": 2.4}, {"x": 19.04, "y": 2.4}, {"x": 23.2, "y": 2.4}
+      ],
+      "parts": [[7.2, 7.0, 11.2, 10.5, "GRID-EYE"]],
+      "sources": [
+        "https://www.adafruit.com/product/3538",
+        "https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/pinouts"
+      ]
     }
   ]
 }

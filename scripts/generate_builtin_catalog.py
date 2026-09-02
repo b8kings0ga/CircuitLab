@@ -291,14 +291,19 @@ def render(spec: dict[str, Any]) -> str:
         '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>',
         f'<rect x="{board_x:g}" y="{board_y:g}" width="{board_width:g}" height="{board_height:g}" rx="9" fill="{spec["color"]}" stroke="{STYLE["boardStroke"]}" stroke-width="2" filter="url(#s)"/>',
         f'<text x="{canvas_width * scale / 2:g}" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>',
+    ] + ([] if spec.get("mechanicalPads") else [
         f'<text x="{board_x + 10:g}" y="{board_y + 15:g}" fill="{STYLE["silk"]}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(spec["manufacturer"])}</text>',
         f'<text x="{board_x + 10:g}" y="{board_y + 25:g}" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">{esc(spec["mpn"])}</text>',
+    ]) + [
         f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (13 if spec.get("densePins") else 7)) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
         f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (15.1 if spec.get("densePins") else 9.1)) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
     ]
     for hole_x, hole_y in ((2.3, 2.3), (physical_width - 2.3, 2.3), (2.3, spec["height"] - 2.3), (physical_width - 2.3, spec["height"] - 2.3)):
         hx = (offset_x + hole_x) * scale; hy = (BOARD_Y + hole_y) * scale
         lines.append(f'<circle cx="{hx:g}" cy="{hy:g}" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="{hx:g}" cy="{hy:g}" r="3.4" fill="#e9ece8"/>')
+    for pad in spec.get("mechanicalPads", []):
+        px = (offset_x + float(pad["x"])) * scale; py = (BOARD_Y + float(pad["y"])) * scale
+        lines.append(f'<g data-mechanical-pad="unconnected"><circle cx="{px:g}" cy="{py:g}" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="{px:g}" cy="{py:g}" r="5.5" fill="#f5f7f4"/><circle cx="{px:g}" cy="{py:g}" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>')
     if spec["manufacturer"] == "Adafruit Industries":
         connector_y = (BOARD_Y + spec["height"] * .43) * scale
         lines.extend([

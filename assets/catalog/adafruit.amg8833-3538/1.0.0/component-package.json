@@ -1,0 +1,131 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt"
+        ],
+        "name": "INT",
+        "number": "6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "4d796bf2c35b2ae5eaed083c4bcf84076a75e61b214da7fb6e27005a40a864b1",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/3538"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.amg8833-3538",
+    "level": "thermal-array-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "AMG8833 Grid-EYE #3538 (STEMMA QT revision)",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 25.3,
+    "package": "assembled-module",
+    "widthMm": 25.6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.292,
+        "y": 0.6523702
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.3752,
+        "y": 0.6523702
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4584,
+        "y": 0.6523702
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5416,
+        "y": 0.6523702
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6248,
+        "y": 0.6523702
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.708,
+        "y": 0.6523702
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "66d3904a2183ff57ae09ec56fa585d0b1baae963a3b2551c632f38a49b279c4e",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 30)
+        self.assertEqual(len(CATALOG), 35)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))

@@ -1,0 +1,90 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.tsl2591-1980",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "ambient-light-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "TSL2591 High Dynamic Range Light Sensor #1980",
+  "parts": [
+    [
+      8.7,
+      4.0,
+      8.0,
+      7.6,
+      "TSL2591"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.52,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.64,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.76,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 18.88,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt"
+      ],
+      "name": "INT",
+      "number": "6",
+      "side": "bottom",
+      "x": 23.0,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/1980",
+    "https://learn.adafruit.com/adafruit-tsl2591/pinouts"
+  ],
+  "subtitle": "HDR LIGHT · I²C 0x29",
+  "width": 25.4
+}

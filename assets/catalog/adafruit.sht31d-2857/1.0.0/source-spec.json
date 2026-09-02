@@ -1,0 +1,104 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.sht31d-2857",
+  "canvasWidth": 46,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 18.0,
+  "level": "temperature-humidity-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "SHT31-D #2857 (STEMMA QT revision)",
+  "parts": [
+    [
+      3.2,
+      4.5,
+      6.3,
+      6.3,
+      "SHT31"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.7,
+      "y": 15.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 3.25,
+      "y": 15.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "3",
+      "side": "bottom",
+      "x": 4.8,
+      "y": 15.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 6.35,
+      "y": 15.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS"
+      ],
+      "name": "ADR",
+      "number": "5",
+      "side": "bottom",
+      "x": 7.9,
+      "y": 15.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "reset"
+      ],
+      "name": "RST",
+      "number": "6",
+      "side": "bottom",
+      "x": 9.45,
+      "y": 15.6
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "alert"
+      ],
+      "name": "ALR",
+      "number": "7",
+      "side": "bottom",
+      "x": 11.0,
+      "y": 15.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/2857",
+    "https://learn.adafruit.com/adafruit-sht31-d-temperature-and-humidity-sensor-breakout/pinouts"
+  ],
+  "subtitle": "TEMP / HUMIDITY · I²C 0x44 / 0x45",
+  "width": 12.7
+}

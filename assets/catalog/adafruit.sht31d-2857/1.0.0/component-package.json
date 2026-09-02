@@ -1,0 +1,147 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-ADDRESS"
+        ],
+        "name": "ADR",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "reset"
+        ],
+        "name": "RST",
+        "number": "6"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "alert"
+        ],
+        "name": "ALR",
+        "number": "7"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "f9c7e0803f16c3431bff0592f7f7315e4129262897b28973ef8e114e1df6363d",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/2857"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-sht31-d-temperature-and-humidity-sensor-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.sht31d-2857",
+    "level": "temperature-humidity-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "SHT31-D #2857 (STEMMA QT revision)",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 18.0,
+    "package": "assembled-module",
+    "widthMm": 12.7
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39891304,
+        "y": 0.50232558
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4326087,
+        "y": 0.50232558
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46630435,
+        "y": 0.50232558
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.50232558
+      },
+      {
+        "pin": "ADR",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53369565,
+        "y": 0.50232558
+      },
+      {
+        "pin": "RST",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5673913,
+        "y": 0.50232558
+      },
+      {
+        "pin": "ALR",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60108696,
+        "y": 0.50232558
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "22636b2ac026f7b9231e198a3e9dd1ba1f8412a8613e1e99a056191b7623785c",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

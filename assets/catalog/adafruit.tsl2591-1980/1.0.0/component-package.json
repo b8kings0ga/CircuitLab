@@ -1,0 +1,131 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt"
+        ],
+        "name": "INT",
+        "number": "6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "830e35703bb7126e4207c6b4d432682bafcc543e945b5d4980ac566110ae8d6f",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/1980"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-tsl2591/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.tsl2591-1980",
+    "level": "ambient-light-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "TSL2591 High Dynamic Range Light Sensor #1980",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28541667,
+        "y": 0.58152174
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.37125,
+        "y": 0.58152174
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.45708333,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.54291667,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.62875,
+        "y": 0.58152174
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.71458333,
+        "y": 0.58152174
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "f65232f900e75a805aa4cefb7c5ec6e9b5359013077c308f333d944c11d43ba4",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

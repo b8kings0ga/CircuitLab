@@ -1,0 +1,162 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "4"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "backup-battery"
+        ],
+        "name": "BAT",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "32.768kHz-output"
+        ],
+        "name": "32K",
+        "number": "6"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "square-wave",
+          "interrupt"
+        ],
+        "name": "SQW",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "reset"
+        ],
+        "name": "RST",
+        "number": "8"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "eb82b2c3ac5bbb0e002928e335ca0cc1a26bf0bd5811b4aa33ac3cf146615504",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/3013"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.ds3231-3013",
+    "level": "real-time-clock-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "DS3231 Precision RTC #3013",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.6,
+    "package": "assembled-module",
+    "widthMm": 23.0
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.325,
+        "y": 0.49765258
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.375,
+        "y": 0.49765258
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.425,
+        "y": 0.49765258
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.475,
+        "y": 0.49765258
+      },
+      {
+        "pin": "BAT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.525,
+        "y": 0.49765258
+      },
+      {
+        "pin": "32K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.575,
+        "y": 0.49765258
+      },
+      {
+        "pin": "SQW",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.625,
+        "y": 0.49765258
+      },
+      {
+        "pin": "RST",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.675,
+        "y": 0.49765258
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "dcd4b31c51730c11739c97b967e1895cee2a83283801c7a1ac0f66e3b5119a3b",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}
