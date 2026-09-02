@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 21)
+        self.assertEqual(len(CATALOG), 30)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -30,6 +30,9 @@ class BuiltinCatalogTests(unittest.TestCase):
         self.assertIn(("display", "display"), categories)
         for sensor_type in ("distance", "magnetic", "gas", "sound", "light", "environment", "motion-imu", "current"):
             self.assertIn(("sensor", sensor_type), categories)
+        self.assertIn(("passive", "resistor"), categories)
+        self.assertIn(("control", "button-switch"), categories)
+        self.assertIn(("indicator", "led"), categories)
 
 
 if __name__ == "__main__":

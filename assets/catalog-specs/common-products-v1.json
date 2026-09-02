@@ -1,0 +1,208 @@
+{
+  "schema": "circuitlab-common-products/v1",
+  "products": [
+    {
+      "assetId": "adafruit.bmp280-2651",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "BMP280 #2651",
+      "level": "pressure-temperature-sensor-module",
+      "shape": "module",
+      "width": 19.2,
+      "height": 17.9,
+      "canvasWidth": 45,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "PRESSURE / TEMP · I²C / SPI",
+      "densePins": true,
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 2.4, "y": 15.5, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 4.8, "y": 15.5, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 7.2, "y": 15.5, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCK", "number": "4", "x": 9.6, "y": 15.5, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "SPI-SCK"]},
+        {"name": "SDO", "number": "5", "x": 12.0, "y": 15.5, "side": "bottom", "direction": "output", "functions": ["SPI-MISO", "I2C-ADDRESS"]},
+        {"name": "SDI", "number": "6", "x": 14.4, "y": 15.5, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "SPI-MOSI"]},
+        {"name": "CS", "number": "7", "x": 16.8, "y": 15.5, "side": "bottom", "direction": "input", "functions": ["SPI-CS"]}
+      ],
+      "parts": [[6.2, 4.2, 6.8, 6.8, "BMP280"]],
+      "sources": [
+        "https://www.adafruit.com/product/2651",
+        "https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.bno055-2472",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "BNO055 #2472",
+      "level": "nine-axis-imu-module",
+      "shape": "module",
+      "width": 20,
+      "height": 27,
+      "canvasWidth": 56,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "9-DOF FUSION IMU · I²C / UART",
+      "densePins": true,
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 1.7, "y": 24.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 3.55, "y": 24.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 5.4, "y": 24.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SDA", "number": "4", "x": 7.25, "y": 24.6, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "UART-TX"]},
+        {"name": "SCL", "number": "5", "x": 9.1, "y": 24.6, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "UART-RX"]},
+        {"name": "RST", "number": "6", "x": 10.9, "y": 24.6, "side": "bottom", "direction": "input", "functions": []},
+        {"name": "INT", "number": "7", "x": 12.75, "y": 24.6, "side": "bottom", "direction": "output", "functions": []},
+        {"name": "ADR", "number": "8", "x": 14.6, "y": 24.6, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS"]},
+        {"name": "PS0", "number": "9", "x": 16.45, "y": 24.6, "side": "bottom", "direction": "input", "functions": ["PROTOCOL-SELECT"]},
+        {"name": "PS1", "number": "10", "x": 18.3, "y": 24.6, "side": "bottom", "direction": "input", "functions": ["PROTOCOL-SELECT"]}
+      ],
+      "parts": [[6.2, 7.2, 7.6, 7.6, "BNO055"]],
+      "sources": [
+        "https://www.adafruit.com/product/2472",
+        "https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-100r-4293",
+      "revision": "1.0.1",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "100Ω CF 1/4W 5% #4293",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18,
+      "height": 4,
+      "canvasWidth": 30,
+      "subtitle": "100Ω · 1/4W · 5% · NON-POLAR",
+      "bands": ["#7a3b1e", "#111111", "#7a3b1e", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/4293", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-220r-2780",
+      "revision": "1.0.1",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "220Ω CF 1/4W 5% #2780",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18,
+      "height": 4,
+      "canvasWidth": 30,
+      "subtitle": "220Ω · 1/4W · 5% · NON-POLAR",
+      "bands": ["#d71920", "#d71920", "#7a3b1e", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2780", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-1k-4294",
+      "revision": "1.0.1",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "1kΩ CF 1/4W 5% #4294",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18,
+      "height": 4,
+      "canvasWidth": 30,
+      "subtitle": "1kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#7a3b1e", "#111111", "#d71920", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/4294", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-10k-2784",
+      "revision": "1.0.1",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "10kΩ CF 1/4W 5% #2784",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18,
+      "height": 4,
+      "canvasWidth": 30,
+      "subtitle": "10kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#7a3b1e", "#111111", "#f28c28", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2784", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.tactile-button-6mm-367",
+      "revision": "1.0.2",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "6mm Tactile Button #367",
+      "level": "momentary-button",
+      "shape": "tactile-button",
+      "package": "6mm-through-hole-switch",
+      "width": 6,
+      "height": 6,
+      "canvasWidth": 20,
+      "subtitle": "SPST-NO · FOUR PHYSICAL LEADS",
+      "pins": [
+        {"name": "1", "number": "1", "x": 6, "y": 1.25, "side": "right", "direction": "passive", "functions": ["contact-A"]},
+        {"name": "2", "number": "2", "x": 0, "y": 1.25, "side": "left", "direction": "passive", "functions": ["contact-B"]},
+        {"name": "3", "number": "3", "x": 6, "y": 4.75, "side": "right", "direction": "passive", "functions": ["contact-A"]},
+        {"name": "4", "number": "4", "x": 0, "y": 4.75, "side": "left", "direction": "passive", "functions": ["contact-B"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/367", "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"]
+    },
+    {
+      "assetId": "adafruit.diffused-red-led-5mm-299",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "Diffused Red 5mm LED #299",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_DIAMETER_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7,
+      "height": 9,
+      "canvasWidth": 20,
+      "lensColor": "#e13a3a",
+      "subtitle": "RED · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/299", "https://learn.adafruit.com/all-about-leds/what-is-an-led"]
+    },
+    {
+      "assetId": "adafruit.diffused-rgb-led-5mm-302",
+      "revision": "1.0.0",
+      "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+      "mpn": "FD-5WSRGB-A / Adafruit #302",
+      "level": "indicator-led",
+      "shape": "rgb-led",
+      "package": "t1-3-4-radial-led-4-lead",
+      "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7,
+      "height": 9,
+      "canvasWidth": 22,
+      "lensColor": "#d9ddd9",
+      "subtitle": "RGB · COMMON ANODE · FOUR LEADS",
+      "pins": [
+        {"name": "CA", "number": "1", "x": 1.25, "y": 8.3, "side": "bottom", "direction": "power", "functions": ["common-anode"]},
+        {"name": "R-K", "number": "2", "x": 2.75, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["red-cathode"]},
+        {"name": "G-K", "number": "3", "x": 4.25, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["green-cathode"]},
+        {"name": "B-K", "number": "4", "x": 5.75, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["blue-cathode"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/302", "https://www.adafruit.com/datasheets/FD-5WSRGB-A.PDF"]
+    }
+  ]
+}

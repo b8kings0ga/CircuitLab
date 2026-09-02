@@ -1,0 +1,133 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.bno055-2472",
+  "canvasWidth": 56,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 27,
+  "level": "nine-axis-imu-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "BNO055 #2472",
+  "parts": [
+    [
+      6.2,
+      7.2,
+      7.6,
+      7.6,
+      "BNO055"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.7,
+      "y": 24.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 3.55,
+      "y": 24.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 5.4,
+      "y": 24.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA",
+        "UART-TX"
+      ],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 7.25,
+      "y": 24.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL",
+        "UART-RX"
+      ],
+      "name": "SCL",
+      "number": "5",
+      "side": "bottom",
+      "x": 9.1,
+      "y": 24.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "RST",
+      "number": "6",
+      "side": "bottom",
+      "x": 10.9,
+      "y": 24.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "7",
+      "side": "bottom",
+      "x": 12.75,
+      "y": 24.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS"
+      ],
+      "name": "ADR",
+      "number": "8",
+      "side": "bottom",
+      "x": 14.6,
+      "y": 24.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "PROTOCOL-SELECT"
+      ],
+      "name": "PS0",
+      "number": "9",
+      "side": "bottom",
+      "x": 16.45,
+      "y": 24.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "PROTOCOL-SELECT"
+      ],
+      "name": "PS1",
+      "number": "10",
+      "side": "bottom",
+      "x": 18.3,
+      "y": 24.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/2472",
+    "https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts"
+  ],
+  "subtitle": "9-DOF FUSION IMU · I²C / UART",
+  "width": 20
+}

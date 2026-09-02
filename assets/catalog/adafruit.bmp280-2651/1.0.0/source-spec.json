@@ -1,0 +1,105 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.bmp280-2651",
+  "canvasWidth": 45,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 17.9,
+  "level": "pressure-temperature-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "BMP280 #2651",
+  "parts": [
+    [
+      6.2,
+      4.2,
+      6.8,
+      6.8,
+      "BMP280"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.8,
+      "y": 15.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.2,
+      "y": 15.5
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL",
+        "SPI-SCK"
+      ],
+      "name": "SCK",
+      "number": "4",
+      "side": "bottom",
+      "x": 9.6,
+      "y": 15.5
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "SPI-MISO",
+        "I2C-ADDRESS"
+      ],
+      "name": "SDO",
+      "number": "5",
+      "side": "bottom",
+      "x": 12.0,
+      "y": 15.5
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA",
+        "SPI-MOSI"
+      ],
+      "name": "SDI",
+      "number": "6",
+      "side": "bottom",
+      "x": 14.4,
+      "y": 15.5
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-CS"
+      ],
+      "name": "CS",
+      "number": "7",
+      "side": "bottom",
+      "x": 16.8,
+      "y": 15.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/2651",
+    "https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/pinouts"
+  ],
+  "subtitle": "PRESSURE / TEMP · I²C / SPI",
+  "width": 19.2
+}

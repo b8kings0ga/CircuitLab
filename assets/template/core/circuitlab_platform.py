@@ -106,6 +106,12 @@ def component_family(package: dict[str, Any]) -> tuple[str, str]:
         return "board", "development-board" if level == "development-board" else "single-board-computer"
     if "display" in level or level in {"operator-panel"}:
         return "display", "display"
+    if "resistor" in level:
+        return "passive", "resistor"
+    if "button" in level or "switch" in level:
+        return "control", "button-switch"
+    if level == "indicator-led" or level.endswith("-led"):
+        return "indicator", "led"
     if any(marker in level for marker in ("distance", "time-of-flight", "tof")):
         return "sensor", "distance"
     if any(marker in level for marker in ("magnetic", "magnetometer")):

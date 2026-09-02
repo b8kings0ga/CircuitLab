@@ -216,6 +216,36 @@ CATALOG: list[dict[str, Any]] = [
 ]
 
 
+DECLARATIVE_CATALOG_PATH = Path(__file__).resolve().parents[1] / "assets" / "catalog-specs" / "common-products-v1.json"
+
+
+def load_declarative_catalog(path: Path = DECLARATIVE_CATALOG_PATH) -> list[dict[str, Any]]:
+    """Load reviewed product facts separately from rendering code.
+
+    Keeping exact identities, evidence URLs and pin tables in JSON makes catalog
+    growth reviewable and prevents the renderer from becoming a second database.
+    """
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema") != "circuitlab-common-products/v1":
+        raise ValueError(f"unsupported catalog schema in {path}")
+    products = payload.get("products")
+    if not isinstance(products, list):
+        raise ValueError(f"products must be a list in {path}")
+    required = {"assetId", "revision", "manufacturer", "mpn", "level", "width", "height", "canvasWidth", "subtitle", "pins", "sources"}
+    for product in products:
+        missing = sorted(required - set(product))
+        if missing:
+            raise ValueError(f"{product.get('assetId', '<unknown>')} missing {', '.join(missing)}")
+        if len({row["name"] for row in product["pins"]}) != len(product["pins"]):
+            raise ValueError(f"{product['assetId']} has duplicate pin names")
+        if not product["pins"] or not all(str(url).startswith("https://") for url in product["sources"]):
+            raise ValueError(f"{product['assetId']} requires pins and HTTPS evidence")
+    return products
+
+
+CATALOG.extend(load_declarative_catalog())
+
+
 def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
@@ -246,6 +276,8 @@ def pin_colour(row: dict[str, Any]) -> str:
 
 
 def render(spec: dict[str, Any]) -> str:
+    if spec.get("shape", "module") != "module":
+        return render_primitive(spec)
     scale = 8
     physical_width = spec["width"]
     canvas_width = spec["canvasWidth"]
@@ -311,15 +343,83 @@ def render(spec: dict[str, Any]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_primitive(spec: dict[str, Any]) -> str:
+    """Render deterministic orthographic primitives without copying product photos."""
+    scale = 10
+    canvas_width = float(spec["canvasWidth"])
+    height = float(spec["height"] + BOARD_Y + FOOTER)
+    offset_x = (canvas_width - float(spec["width"])) / 2
+    x0 = offset_x * scale
+    y0 = BOARD_Y * scale
+    width = float(spec["width"]) * scale
+    body_height = float(spec["height"]) * scale
+    shape = spec["shape"]
+    lines = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {canvas_width * scale:g} {height * scale:g}" role="img" aria-label="{esc(spec["mpn"])} interactive top view">',
+        '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>',
+        f'<text x="{canvas_width * scale / 2:g}" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>',
+    ]
+    if shape == "axial-resistor":
+        cy = y0 + body_height / 2
+        lines += [
+            f'<path d="M{x0:g} {cy:g}H{x0 + width:g}" stroke="url(#metal)" stroke-width="5"/>',
+            f'<rect x="{x0 + width * .28:g}" y="{y0:g}" width="{width * .44:g}" height="{body_height:g}" rx="{body_height / 2:g}" fill="#d8b978" stroke="#846d43" stroke-width="2" filter="url(#s)"/>',
+        ]
+        for index, colour in enumerate(spec.get("bands", [])):
+            bx = x0 + width * (.34 + index * .08)
+            lines.append(f'<rect x="{bx:g}" y="{y0 + 2:g}" width="5" height="{body_height - 4:g}" fill="{esc(colour)}"/>')
+    elif shape == "tactile-button":
+        lines += [
+            f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="8" fill="#202723" stroke="#707b75" stroke-width="2" filter="url(#s)"/>',
+            f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .29:g}" fill="#b9c1bd" stroke="#f0f3f1" stroke-width="2"/>',
+        ]
+    elif shape in {"led", "rgb-led"}:
+        cx = x0 + width / 2
+        cy = y0 + body_height * .43
+        fill = spec.get("lensColor", "#e64f4f")
+        lines += [
+            f'<circle cx="{cx:g}" cy="{cy:g}" r="{min(width, body_height) * .37:g}" fill="{esc(fill)}" fill-opacity=".76" stroke="#f5f7f4" stroke-width="2" filter="url(#s)"/>',
+            f'<circle cx="{cx - width * .1:g}" cy="{cy - body_height * .12:g}" r="{min(width, body_height) * .08:g}" fill="#fff" opacity=".55"/>',
+        ]
+    for row in spec["pins"]:
+        x = (offset_x + float(row["x"])) * scale
+        y = (BOARD_Y + float(row["y"])) * scale
+        colour = pin_colour(row)
+        if row["side"] == "left":
+            label_x, label_y, label_anchor = x - 12, y + 3, "end"
+        elif row["side"] == "right":
+            label_x, label_y, label_anchor = x + 12, y + 3, "start"
+        else:
+            label_x, label_y, label_anchor = x, (BOARD_Y + spec["height"] + 2.5) * scale, "middle"
+        lines += [
+            f'<g id="pin-{esc(row["name"])}" data-pin="{esc(row["name"])}">',
+            f'<circle cx="{x:g}" cy="{y:g}" r="8.4" fill="{colour}" stroke="#16201a" stroke-width="1.5"/>',
+            f'<circle cx="{x:g}" cy="{y:g}" r="4.8" fill="#f5f7f4"/>',
+            f'<text x="{label_x:g}" y="{label_y:g}" text-anchor="{label_anchor}" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(row["name"])}</text>',
+            '</g>',
+        ]
+    lines += [
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 7) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 9.1) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
+        '</svg>',
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def package_for(spec: dict[str, Any], svg: bytes) -> dict[str, Any]:
     canvas_width = float(spec["canvasWidth"]); height = float(spec["height"] + BOARD_Y + (19.0 if spec.get("densePins") else FOOTER)); offset_x = (canvas_width - float(spec["width"])) / 2
+    source_urls = spec["sources"] if "sources" in spec else [spec["source"]]
+    is_declarative = "sources" in spec
+    physical = {"widthMm": spec["width"], "heightMm": spec["height"], "package": spec.get("package", "assembled-module")}
+    if is_declarative:
+        physical["dimensionStatus"] = spec.get("dimensionStatus", "OFFICIAL_PRODUCT_DIMENSIONS")
     return {
         "schema": "component-package/v1",
         "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": "active"},
         "electrical": {"status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED", "pins": [{key: row[key] for key in ("name", "number", "direction", "functions")} for row in spec["pins"]]},
         "visual": {"appearance": "top.svg", "appearanceSha256": hashlib.sha256(svg).hexdigest(), "style": STYLE["schema"], "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED", "anchors": [{"pin": row["name"], "x": round((offset_x + row["x"]) / canvas_width, 8), "y": round((BOARD_Y + row["y"]) / height, 8), "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED"} for row in spec["pins"]], "views": [{"name": "interactive-top", "view": "original-vector-top", "path": "top.svg"}]},
-        "physical": {"widthMm": spec["width"], "heightMm": spec["height"], "package": "assembled-module"},
-        "evidence": {"capturedAt": "2026-09-02T00:00:00Z", "sources": [{"type": "manufacturer-pinout-documentation", "url": spec["source"]}], "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE", "sourceSpecSha256": hashlib.sha256(json.dumps(spec, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()},
+        "physical": physical,
+        "evidence": {"capturedAt": "2026-09-03T00:00:00Z" if is_declarative else "2026-09-02T00:00:00Z", "sources": [{"type": "official-product-or-pinout" if is_declarative else "manufacturer-pinout-documentation", "url": url} for url in source_urls], "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE", "sourceSpecSha256": hashlib.sha256(json.dumps(spec, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()},
     }
 
 

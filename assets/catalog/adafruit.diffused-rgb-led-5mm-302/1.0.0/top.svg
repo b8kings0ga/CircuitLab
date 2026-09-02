@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 280" role="img" aria-label="FD-5WSRGB-A / Adafruit #302 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="110" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<circle cx="110" cy="98.7" r="25.9" fill="#d9ddd9" fill-opacity=".76" stroke="#f5f7f4" stroke-width="2" filter="url(#s)"/>
+<circle cx="103" cy="87.9" r="5.6" fill="#fff" opacity=".55"/>
+<g id="pin-CA" data-pin="CA">
+<circle cx="87.5" cy="143" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="87.5" cy="143" r="4.8" fill="#f5f7f4"/>
+<text x="87.5" y="175" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CA</text>
+</g>
+<g id="pin-R-K" data-pin="R-K">
+<circle cx="102.5" cy="143" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="102.5" cy="143" r="4.8" fill="#f5f7f4"/>
+<text x="102.5" y="175" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">R-K</text>
+</g>
+<g id="pin-G-K" data-pin="G-K">
+<circle cx="117.5" cy="143" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="117.5" cy="143" r="4.8" fill="#f5f7f4"/>
+<text x="117.5" y="175" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">G-K</text>
+</g>
+<g id="pin-B-K" data-pin="B-K">
+<circle cx="132.5" cy="143" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="132.5" cy="143" r="4.8" fill="#f5f7f4"/>
+<text x="132.5" y="175" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">B-K</text>
+</g>
+<text x="110" y="220" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">FD-5WSRGB-A / Adafruit #302</text>
+<text x="110" y="241" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">RGB · COMMON ANODE · FOUR LEADS</text>
+</svg>

@@ -98,7 +98,7 @@
         <section class="platform-view" data-view="projects">
           <div class="platform-hero">
             <div><span>ACTIVE PROJECT</span><strong id="projectName">Loading</strong><small id="projectSchema"></small></div>
-            <div><span>HARDWARE</span><strong id="componentCount">0</strong><small>boards · sensors · displays · chips</small></div>
+            <div><span>HARDWARE</span><strong id="componentCount">0</strong><small>boards · sensors · displays · chips · primitives</small></div>
             <div><span>MAXIMUM VOLTAGE</span><strong id="maximumVoltage">24 V</strong><small>low-voltage boundary</small></div>
           </div>
           <div class="platform-card">
@@ -109,13 +109,16 @@
         </section>
 
         <section class="platform-view active" data-view="components">
-          <p class="scope-note">REAL BOARDS · SENSOR MODULES · DISPLAYS · PACKAGED CHIPS</p>
+          <p class="scope-note">REAL BOARDS · SENSOR MODULES · DISPLAYS · PACKAGED CHIPS · COMMON CIRCUIT PRIMITIVES</p>
           <div id="hardwarePipelineStatus" class="pipeline-status">PIPELINE · CHECKING LOCAL EVIDENCE</div>
           <div class="chip-filter-bar" aria-label="Hardware family">
             <button class="active" data-chip-family="board" type="button">Boards</button>
             <button data-chip-family="sensor" type="button">Sensors</button>
             <button data-chip-family="display" type="button">Displays</button>
             <button data-chip-family="chip" type="button">MCU / IC</button>
+            <button data-chip-family="passive" type="button">Resistors</button>
+            <button data-chip-family="control" type="button">Buttons</button>
+            <button data-chip-family="indicator" type="button">LEDs</button>
             <button data-chip-family="all" type="button">All hardware</button>
           </div>
           <div id="sensorTypeFilters" class="chip-filter-bar sensor-types" aria-label="Sensor type">
@@ -131,7 +134,7 @@
             <button data-sensor-type="current" type="button">Current</button>
           </div>
           <div class="platform-actions">
-            <input id="componentSearch" type="search" placeholder="Search ESP32, Orange Pi, display, sensor or exact MPN">
+            <input id="componentSearch" type="search" placeholder="Search ESP32, sensor, resistor, button, LED or exact MPN">
             <button id="componentRefresh" type="button">Refresh</button>
           </div>
           <div class="split-workspace">

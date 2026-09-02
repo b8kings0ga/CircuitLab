@@ -17,6 +17,22 @@
       "ref": "adafruit.bme688-5046@1.1.0"
     },
     {
+      "pins": 7,
+      "ref": "adafruit.bmp280-2651@1.0.0"
+    },
+    {
+      "pins": 10,
+      "ref": "adafruit.bno055-2472@1.0.0"
+    },
+    {
+      "pins": 2,
+      "ref": "adafruit.diffused-red-led-5mm-299@1.0.0"
+    },
+    {
+      "pins": 4,
+      "ref": "adafruit.diffused-rgb-led-5mm-302@1.0.0"
+    },
+    {
       "pins": 28,
       "ref": "adafruit.feather-nrf52840-express-4062@1.1.0"
     },
@@ -49,6 +65,22 @@
       "ref": "adafruit.pir-motion-189@1.0.0"
     },
     {
+      "pins": 2,
+      "ref": "adafruit.resistor-cf-100r-4293@1.0.1"
+    },
+    {
+      "pins": 2,
+      "ref": "adafruit.resistor-cf-10k-2784@1.0.1"
+    },
+    {
+      "pins": 2,
+      "ref": "adafruit.resistor-cf-1k-4294@1.0.1"
+    },
+    {
+      "pins": 2,
+      "ref": "adafruit.resistor-cf-220r-2780@1.0.1"
+    },
+    {
       "pins": 5,
       "ref": "adafruit.scd40-5187@1.0.0"
     },
@@ -67,6 +99,10 @@
     {
       "pins": 12,
       "ref": "adafruit.st7789-4313@1.0.1"
+    },
+    {
+      "pins": 4,
+      "ref": "adafruit.tactile-button-6mm-367@1.0.2"
     },
     {
       "pins": 6,

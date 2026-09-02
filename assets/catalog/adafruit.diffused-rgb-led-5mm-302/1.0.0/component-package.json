@@ -1,0 +1,109 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "common-anode"
+        ],
+        "name": "CA",
+        "number": "1"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "red-cathode"
+        ],
+        "name": "R-K",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "green-cathode"
+        ],
+        "name": "G-K",
+        "number": "3"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "blue-cathode"
+        ],
+        "name": "B-K",
+        "number": "4"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "143befc73b661cc98437138dad0602045490af7befa1830b5bb4eaa746d67298",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/302"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/datasheets/FD-5WSRGB-A.PDF"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.diffused-rgb-led-5mm-302",
+    "level": "indicator-led",
+    "lifecycle": "active",
+    "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+    "mpn": "FD-5WSRGB-A / Adafruit #302",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+    "heightMm": 9,
+    "package": "t1-3-4-radial-led-4-lead",
+    "widthMm": 7
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "CA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39772727,
+        "y": 0.51071429
+      },
+      {
+        "pin": "R-K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46590909,
+        "y": 0.51071429
+      },
+      {
+        "pin": "G-K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53409091,
+        "y": 0.51071429
+      },
+      {
+        "pin": "B-K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60227273,
+        "y": 0.51071429
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "d9a654862e3db2e82d766df480633e6ce3ae67ed0c35c1e4d8ba85da9edc26d9",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

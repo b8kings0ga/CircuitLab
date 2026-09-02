@@ -1,0 +1,148 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL",
+          "SPI-SCK"
+        ],
+        "name": "SCK",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "SPI-MISO",
+          "I2C-ADDRESS"
+        ],
+        "name": "SDO",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA",
+          "SPI-MOSI"
+        ],
+        "name": "SDI",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "7"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "5d18162a14d0f811631a94804ddb5436d6b7246c28a5e59720edc00733fceafd",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/2651"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.bmp280-2651",
+    "level": "pressure-temperature-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "BMP280 #2651",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.9,
+    "package": "assembled-module",
+    "widthMm": 19.2
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.34,
+        "y": 0.5011655
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39333333,
+        "y": 0.5011655
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.44666667,
+        "y": 0.5011655
+      },
+      {
+        "pin": "SCK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.5011655
+      },
+      {
+        "pin": "SDO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.55333333,
+        "y": 0.5011655
+      },
+      {
+        "pin": "SDI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60666667,
+        "y": 0.5011655
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66,
+        "y": 0.5011655
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "06772aff567a2eabf12ccfeee34f98e66a21be92cd8d335d68ed782e5b5af1cc",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

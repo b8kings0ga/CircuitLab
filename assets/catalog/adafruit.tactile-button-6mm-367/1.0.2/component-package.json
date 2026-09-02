@@ -1,0 +1,109 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "contact-A"
+        ],
+        "name": "1",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "contact-B"
+        ],
+        "name": "2",
+        "number": "2"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "contact-A"
+        ],
+        "name": "3",
+        "number": "3"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "contact-B"
+        ],
+        "name": "4",
+        "number": "4"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "6d6e54541b0af0bd9046b81f4b2780b5305f9dd13dd0ce3ba1de6a1ba5a46a66",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/367"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.tactile-button-6mm-367",
+    "level": "momentary-button",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "6mm Tactile Button #367",
+    "revision": "1.0.2",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 6,
+    "package": "6mm-through-hole-switch",
+    "widthMm": 6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.65,
+        "y": 0.29
+      },
+      {
+        "pin": "2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35,
+        "y": 0.29
+      },
+      {
+        "pin": "3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.65,
+        "y": 0.43
+      },
+      {
+        "pin": "4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35,
+        "y": 0.43
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "901a1be100357794f62126cda94c3324335ae9fd4a3d6b0623915253961d00af",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

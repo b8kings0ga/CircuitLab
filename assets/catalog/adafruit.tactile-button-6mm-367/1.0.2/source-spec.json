@@ -1,0 +1,64 @@
+{
+  "assetId": "adafruit.tactile-button-6mm-367",
+  "canvasWidth": 20,
+  "height": 6,
+  "level": "momentary-button",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "6mm Tactile Button #367",
+  "package": "6mm-through-hole-switch",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-A"
+      ],
+      "name": "1",
+      "number": "1",
+      "side": "right",
+      "x": 6,
+      "y": 1.25
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-B"
+      ],
+      "name": "2",
+      "number": "2",
+      "side": "left",
+      "x": 0,
+      "y": 1.25
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-A"
+      ],
+      "name": "3",
+      "number": "3",
+      "side": "right",
+      "x": 6,
+      "y": 4.75
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-B"
+      ],
+      "name": "4",
+      "number": "4",
+      "side": "left",
+      "x": 0,
+      "y": 4.75
+    }
+  ],
+  "revision": "1.0.2",
+  "schema": "hardware-source-spec/v1",
+  "shape": "tactile-button",
+  "sources": [
+    "https://www.adafruit.com/product/367",
+    "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"
+  ],
+  "subtitle": "SPST-NO · FOUR PHYSICAL LEADS",
+  "width": 6
+}

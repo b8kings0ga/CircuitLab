@@ -1,0 +1,66 @@
+{
+  "assetId": "adafruit.diffused-rgb-led-5mm-302",
+  "canvasWidth": 22,
+  "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+  "height": 9,
+  "lensColor": "#d9ddd9",
+  "level": "indicator-led",
+  "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+  "mpn": "FD-5WSRGB-A / Adafruit #302",
+  "package": "t1-3-4-radial-led-4-lead",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "common-anode"
+      ],
+      "name": "CA",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.25,
+      "y": 8.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "red-cathode"
+      ],
+      "name": "R-K",
+      "number": "2",
+      "side": "bottom",
+      "x": 2.75,
+      "y": 8.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "green-cathode"
+      ],
+      "name": "G-K",
+      "number": "3",
+      "side": "bottom",
+      "x": 4.25,
+      "y": 8.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "blue-cathode"
+      ],
+      "name": "B-K",
+      "number": "4",
+      "side": "bottom",
+      "x": 5.75,
+      "y": 8.3
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "rgb-led",
+  "sources": [
+    "https://www.adafruit.com/product/302",
+    "https://www.adafruit.com/datasheets/FD-5WSRGB-A.PDF"
+  ],
+  "subtitle": "RGB · COMMON ANODE · FOUR LEADS",
+  "width": 7
+}

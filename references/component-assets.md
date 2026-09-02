@@ -2,9 +2,11 @@
 
 CircuitLab stores immutable `component-package/v1` revisions below its configured data directory. JSON packages are authoritative; SQLite is a rebuildable search, procurement, and run index.
 
-## Primary scope: chips and directly usable hardware
+## Primary scope: chips, directly usable hardware, and common primitives
 
-The primary registry and UI surface the latest exact revision of packaged semiconductors, development boards, single-board computers, sensor modules, and displays. Keep unrelated motors, switches, power supplies, fixtures, raw PCB assemblies, and discrete passives outside the default catalog. Historical imports remain immutable and can be audited with `component_assets.py search --all-history --all-revisions`.
+The primary registry and UI surface the latest exact revision of packaged semiconductors, development boards, single-board computers, sensor modules, displays, and the common breadboard primitives needed to complete a circuit: exact resistor values, buttons/switches, and LEDs. Keep unrelated motors, power supplies, fixtures, and raw PCB assemblies outside the default catalog. Historical imports remain immutable and can be audited with `component_assets.py search --all-history --all-revisions`.
+
+Primitive parts follow the same evidence rules as modules. A resistor needs an exact product/value, wattage, tolerance, package, two explicit terminals, and official datasheet or product evidence. A button needs every physical lead plus its documented internal contact grouping and state. An LED needs every lead, polarity or common terminal, color-channel identity, and official product/datasheet evidence. Diagrammatic lead spans must be marked as such and must never be presented as fabrication coordinates.
 
 For boards and modules, record the exact board revision or product ID, an official top view when permitted, the official pin table, and explicit visual anchors. If official imagery is local-only or unsuitable for redistribution, create an original CircuitLab SVG from published dimensions and pin tables. Mark it `OFFICIAL_DESIGN_DERIVED_UNVERIFIED`; never trace a photograph or infer pin identity from pixels.
 
@@ -12,7 +14,7 @@ Run `python3 scripts/component_assets.py audit-chips` to identify missing packag
 
 Do not start from a board photo. For every chip, collect the exact orderable MPN, package code, official package-top or package drawing, pin table, absolute-maximum ratings, datasheet revision, and a footprint from manufacturer material or a pinned KiCad release.
 
-## Repeatable board and sensor workflow
+## Repeatable hardware workflow
 
 Use `python3 scripts/hardware_pipeline.py run --online` to execute the complete
 pipeline. Network access is never implicit: omit `--online` to inspect only the
