@@ -3,7 +3,7 @@
   const workbench = document.getElementById("workbenchView");
   const platformButton = document.getElementById("platformButton");
   const title = document.getElementById("platformTitle");
-  const state = { info: null, view: "components", prepared: null, chipFamily: "sensor", sensorType: "all", componentRows: [] };
+  const state = { info: null, view: "components", prepared: null, chipFamily: "board", sensorType: "all", componentRows: [], selectedRef: null };
 
   const fixtureExample = {
     id: "rune-pogo-reference",
@@ -49,7 +49,7 @@
     platformButton.textContent = "Workbench";
     document.querySelectorAll("[data-platform-view]").forEach(button => button.classList.toggle("active", button.dataset.platformView === view));
     document.querySelectorAll(".platform-view").forEach(panel => panel.classList.toggle("active", panel.dataset.view === view));
-    title.textContent = view === "components" ? "Sensors & MCUs" : view[0].toUpperCase() + view.slice(1);
+    title.textContent = view === "components" ? "Hardware Library" : view[0].toUpperCase() + view.slice(1);
     if (view === "components") loadComponents();
     if (view === "reports") loadReports();
   }
@@ -68,6 +68,14 @@
   function recordButton(component) {
     const button = document.createElement("button");
     button.type = "button";
+    if (component.preview) {
+      const image = document.createElement("img");
+      image.className = "component-thumb";
+      image.loading = "lazy";
+      image.alt = "";
+      image.src = `/api/component-media?ref=${encodeURIComponent(component.ref)}&file=${encodeURIComponent(component.preview)}`;
+      button.append(image);
+    }
     const heading = document.createElement("strong");
     heading.textContent = component.mpn;
     const manufacturer = document.createElement("span");
@@ -83,10 +91,11 @@
 
   async function loadComponents() {
     const query = encodeURIComponent(document.getElementById("componentSearch").value.trim());
-    const { components } = await request(`/api/components?scope=chips&latest=1&q=${query}`);
+    const { components } = await request(`/api/components?scope=all&latest=1&q=${query}`);
     state.componentRows = components;
     const filtered = components.filter(component => {
-      if (state.chipFamily !== "all" && component.family !== state.chipFamily) return false;
+      if (state.chipFamily === "chip" && component.scope !== "chip") return false;
+      if (!["all", "chip"].includes(state.chipFamily) && component.family !== state.chipFamily) return false;
       if (state.chipFamily === "sensor" && state.sensorType !== "all" && component.sensor_type !== state.sensorType) return false;
       return true;
     });
@@ -98,12 +107,15 @@
     if (!filtered.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = "No matching chip assets. Acquire an exact packaged sensor or MCU MPN.";
+      empty.textContent = "No matching hardware assets in this category.";
       list.appendChild(empty);
+    } else if (!filtered.some(component => component.ref === state.selectedRef)) {
+      await loadComponent(filtered[0].ref, list.querySelector("button"));
     }
   }
 
   async function loadComponent(reference, selectedButton) {
+    state.selectedRef = reference;
     document.querySelectorAll("#componentList > button").forEach(button => button.classList.toggle("active", button === selectedButton));
     const component = await request(`/api/components/${encodeURIComponent(reference)}`);
     const detail = document.getElementById("componentDetail");
@@ -123,6 +135,8 @@
     for (const row of component.visual?.views || []) {
       if (row.path && !visualRows.some(item => item.path === row.path)) visualRows.push(row);
     }
+    const viewPriority = row => /pinout/i.test(row.view || row.name || "") ? 1 : /primary|top/i.test(row.view || row.name || "") ? 0 : 2;
+    visualRows.sort((left, right) => viewPriority(left) - viewPriority(right));
     for (const row of visualRows) {
       const figure = document.createElement("figure");
       const image = document.createElement("img");

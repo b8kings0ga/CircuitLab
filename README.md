@@ -1,20 +1,20 @@
 # CircuitLab
 
-CircuitLab is a portable, local-first circuit-development workspace. Its primary asset scope is packaged silicon: MCU/SoC, sensor IC, and supporting analog, interface, driver, logic, memory, and power-management ICs.
+CircuitLab is a portable, local-first circuit-development workspace. Its Hardware Library covers exact packaged silicon, development boards, single-board computers, sensor modules, and displays with evidence-backed images, pin tables, and original interactive top views.
 
 It is both a standalone application template and a Codex Skill. The repository has no runtime dependency on Rune or Sindri. Rune can consume the shared core through its own adapter, and Sindri assets can be imported read-only.
 
 ## What is included
 
-- Single-browser PWA with a chip-only default catalog plus Projects, Workbench, Touchpoints, Fixture, HIL, and Reports.
+- Single-browser PWA with a visual Hardware Library plus Projects, Workbench, Touchpoints, Fixture, HIL, and Reports.
 - `component-package/v1`, `fixture-package/v1`, `hil-plan/v1`, and `fixture-driver/v1` contracts.
 - Immutable JSON component registry with rebuildable SQLite indexes.
-- Latest-revision search for exact packaged-chip MPNs; historical board/module imports stay hidden unless explicitly audited.
-- Fail-closed official chip-package image discovery, immutable capture, and human-confirmed attachment.
+- Latest-revision search for exact chip MPNs and exact board/module products.
+- Fail-closed official image discovery plus deterministic original SVG top views derived from documented dimensions and pin tables.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.
-- Board, module, PCB fabrication, and fixture workflows remain optional secondary capabilities and are not part of ordinary component acquisition.
+- PCB fabrication and fixture workflows remain optional secondary capabilities.
 
 ## Quick start
 
@@ -33,14 +33,15 @@ python3 scripts/verify_platform.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Search the focused chip catalog:
+Search the hardware catalog and generate the redistributable starter views:
 
 ```bash
 python3 scripts/component_assets.py search BME280
 python3 scripts/component_assets.py search ESP32-S3
+python3 scripts/generate_builtin_catalog.py --install
 ```
 
-Ordinary acquisition rejects development boards and assembled modules. Use `--all-history --all-revisions` only when auditing earlier imports.
+Packaged-chip acquisition remains strict; board and module assets use the immutable general registry after their exact product and version are confirmed.
 
 ## Install as a Codex Skill
 

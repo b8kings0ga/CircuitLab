@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 356" role="img" aria-label="0.96inch OLED (B) interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter></defs>
+<rect x="100" y="24" width="264" height="268" rx="9" fill="#184a7d" stroke="#7d867f" stroke-width="2" filter="url(#s)"/>
+<text x="232" y="332" text-anchor="middle" fill="#dce4de" font-family="ui-monospace,monospace" font-size="11" font-weight="700">0.96inch OLED (B)</text>
+<text x="232" y="348" text-anchor="middle" fill="#77e39d" font-family="ui-monospace,monospace" font-size="7">DISPLAY · 128×64 · SPI / I²C</text>
+<rect x="144.8" y="57.6" width="173.6" height="113.6" rx="5" fill="#09131e" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="231.6" y="117.4" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">OLED 128×64</text>
+<g id="pin-VCC" data-pin="VCC">
+<circle cx="120" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="120" cy="272" r="3.2" fill="#3e4641"/>
+<text x="120" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">VCC</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="151.6" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="151.6" cy="272" r="3.2" fill="#3e4641"/>
+<text x="151.6" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">GND</text>
+</g>
+<g id="pin-NC" data-pin="NC">
+<circle cx="183.2" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="183.2" cy="272" r="3.2" fill="#3e4641"/>
+<text x="183.2" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">NC</text>
+</g>
+<g id="pin-DIN" data-pin="DIN">
+<circle cx="214.8" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="214.8" cy="272" r="3.2" fill="#3e4641"/>
+<text x="214.8" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">DIN</text>
+</g>
+<g id="pin-CLK" data-pin="CLK">
+<circle cx="246.4" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="246.4" cy="272" r="3.2" fill="#3e4641"/>
+<text x="246.4" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">CLK</text>
+</g>
+<g id="pin-CS" data-pin="CS">
+<circle cx="278" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="278" cy="272" r="3.2" fill="#3e4641"/>
+<text x="278" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">CS</text>
+</g>
+<g id="pin-D/C" data-pin="D/C">
+<circle cx="309.6" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="309.6" cy="272" r="3.2" fill="#3e4641"/>
+<text x="309.6" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D/C</text>
+</g>
+<g id="pin-RES" data-pin="RES">
+<circle cx="341.2" cy="272" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="341.2" cy="272" r="3.2" fill="#3e4641"/>
+<text x="341.2" y="309.6" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">RES</text>
+</g>
+</svg>

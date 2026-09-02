@@ -1,0 +1,130 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCK",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "SDO",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDI",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CS",
+        "number": "7"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.bme688-5046",
+    "level": "voc-gas-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "BME688 #5046",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28958333,
+        "y": 0.63888889
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.359375,
+        "y": 0.63888889
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42916667,
+        "y": 0.63888889
+      },
+      {
+        "pin": "SCK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.49895833,
+        "y": 0.63888889
+      },
+      {
+        "pin": "SDO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.56875,
+        "y": 0.63888889
+      },
+      {
+        "pin": "SDI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63854167,
+        "y": 0.63888889
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.70833333,
+        "y": 0.63888889
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "f4be8e2fb451c69abd10b2ae8479ee20af894c7017d7568ce5609865fccd42a3",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

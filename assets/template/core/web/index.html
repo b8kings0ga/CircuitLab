@@ -79,7 +79,7 @@
     <section id="platformShell" class="platform-shell" hidden aria-label="CircuitLab platform">
       <nav class="platform-nav" aria-label="CircuitLab workspaces">
         <button data-platform-view="projects" type="button">Projects</button>
-        <button class="active" data-platform-view="components" type="button">Sensors & MCUs</button>
+        <button class="active" data-platform-view="components" type="button">Hardware Library</button>
         <button data-platform-view="touchpoints" type="button">Touchpoints</button>
         <button data-platform-view="fixture" type="button">Fixture</button>
         <button data-platform-view="hil" type="button">HIL</button>
@@ -90,7 +90,7 @@
         <header class="platform-heading">
           <div>
             <span>CIRCUITLAB / LOCAL-FIRST</span>
-            <h1 id="platformTitle">Sensors & MCUs</h1>
+            <h1 id="platformTitle">Hardware Library</h1>
           </div>
           <div id="platformSafety" class="safety-badge">PHYSICAL_UNVERIFIED</div>
         </header>
@@ -98,7 +98,7 @@
         <section class="platform-view" data-view="projects">
           <div class="platform-hero">
             <div><span>ACTIVE PROJECT</span><strong id="projectName">Loading</strong><small id="projectSchema"></small></div>
-            <div><span>CHIPS</span><strong id="componentCount">0</strong><small>latest MCU · sensor · IC assets</small></div>
+            <div><span>HARDWARE</span><strong id="componentCount">0</strong><small>boards · sensors · displays · chips</small></div>
             <div><span>MAXIMUM VOLTAGE</span><strong id="maximumVoltage">24 V</strong><small>low-voltage boundary</small></div>
           </div>
           <div class="platform-card">
@@ -109,27 +109,32 @@
         </section>
 
         <section class="platform-view active" data-view="components">
-          <p class="scope-note">PACKAGED CHIPS ONLY · ONE LATEST REVISION PER EXACT MPN</p>
-          <div class="chip-filter-bar" aria-label="Chip family">
-            <button class="active" data-chip-family="sensor" type="button">Sensors</button>
-            <button data-chip-family="controller" type="button">MCU / SoC</button>
-            <button data-chip-family="support" type="button">Support IC</button>
-            <button data-chip-family="all" type="button">All chips</button>
+          <p class="scope-note">REAL BOARDS · SENSOR MODULES · DISPLAYS · PACKAGED CHIPS</p>
+          <div class="chip-filter-bar" aria-label="Hardware family">
+            <button class="active" data-chip-family="board" type="button">Boards</button>
+            <button data-chip-family="sensor" type="button">Sensors</button>
+            <button data-chip-family="display" type="button">Displays</button>
+            <button data-chip-family="chip" type="button">MCU / IC</button>
+            <button data-chip-family="all" type="button">All hardware</button>
           </div>
           <div id="sensorTypeFilters" class="chip-filter-bar sensor-types" aria-label="Sensor type">
             <span>SENSOR TYPE</span>
             <button class="active" data-sensor-type="all" type="button">All sensors</button>
             <button data-sensor-type="environment" type="button">Environment</button>
             <button data-sensor-type="motion-imu" type="button">Motion / IMU</button>
+            <button data-sensor-type="distance" type="button">Distance</button>
+            <button data-sensor-type="magnetic" type="button">Magnetic</button>
+            <button data-sensor-type="gas" type="button">Gas / VOC</button>
+            <button data-sensor-type="sound" type="button">Sound</button>
             <button data-sensor-type="current" type="button">Current</button>
           </div>
           <div class="platform-actions">
-            <input id="componentSearch" type="search" placeholder="Search MCU, sensor IC, manufacturer or exact MPN">
+            <input id="componentSearch" type="search" placeholder="Search ESP32, Orange Pi, display, sensor or exact MPN">
             <button id="componentRefresh" type="button">Refresh</button>
           </div>
           <div class="split-workspace">
             <div id="componentList" class="record-list"></div>
-            <article id="componentDetail" class="detail-card empty-state">Select an immutable chip revision.</article>
+            <article id="componentDetail" class="detail-card empty-state">Select an immutable hardware revision.</article>
           </div>
         </section>
 

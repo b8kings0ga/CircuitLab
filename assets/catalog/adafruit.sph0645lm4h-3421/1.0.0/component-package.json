@@ -1,0 +1,118 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3V",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "BCLK",
+        "number": "3"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "DOUT",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "LRCLK",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SEL",
+        "number": "6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.sph0645lm4h-3421",
+    "level": "digital-microphone-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "SPH0645LM4H #3421",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 15.2,
+    "package": "assembled-module",
+    "widthMm": 22.9
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "3V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.29891304,
+        "y": 0.61068702
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.37934783,
+        "y": 0.61068702
+      },
+      {
+        "pin": "BCLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.45978261,
+        "y": 0.61068702
+      },
+      {
+        "pin": "DOUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.54021739,
+        "y": 0.61068702
+      },
+      {
+        "pin": "LRCLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.62065217,
+        "y": 0.61068702
+      },
+      {
+        "pin": "SEL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.70108696,
+        "y": 0.61068702
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "d41642807731382339de978656429b82792a2909e251e6cd9e2c79281635eda5",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

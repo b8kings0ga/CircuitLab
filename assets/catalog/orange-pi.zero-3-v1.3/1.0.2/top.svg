@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 528" role="img" aria-label="Orange Pi Zero 3 v1.3 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter></defs>
+<rect x="320" y="24" width="400" height="440" rx="9" fill="#e86b1f" stroke="#7d867f" stroke-width="2" filter="url(#s)"/>
+<text x="520" y="504" text-anchor="middle" fill="#dce4de" font-family="ui-monospace,monospace" font-size="11" font-weight="700">Orange Pi Zero 3 v1.3</text>
+<text x="520" y="520" text-anchor="middle" fill="#77e39d" font-family="ui-monospace,monospace" font-size="7">H618 · 26-PIN GPIO</text>
+<rect x="384" y="96" width="216" height="216" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="492" y="207" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">H618</text>
+<rect x="384" y="336" width="160" height="80" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="464" y="379" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">LPDDR4</text>
+<rect x="600" y="64" width="96" height="128" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="648" y="131" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">RJ45</text>
+<rect x="600" y="232" width="96" height="64" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="648" y="267" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">USB-C</text>
+<g id="pin-P01_3V3" data-pin="P01_3V3">
+<circle cx="656" cy="120" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="120" r="3.2" fill="#3e4641"/>
+<text x="752" y="122.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">1 3V3</text>
+</g>
+<g id="pin-P02_5V" data-pin="P02_5V">
+<circle cx="688" cy="120" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="120" r="3.2" fill="#3e4641"/>
+<text x="872" y="122.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">2 5V</text>
+</g>
+<g id="pin-P03_SDA" data-pin="P03_SDA">
+<circle cx="656" cy="144" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="144" r="3.2" fill="#3e4641"/>
+<text x="752" y="146.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">3 PH5 / SDA</text>
+</g>
+<g id="pin-P04_5V" data-pin="P04_5V">
+<circle cx="688" cy="144" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="144" r="3.2" fill="#3e4641"/>
+<text x="872" y="146.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">4 5V</text>
+</g>
+<g id="pin-P05_SCL" data-pin="P05_SCL">
+<circle cx="656" cy="168" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="168" r="3.2" fill="#3e4641"/>
+<text x="752" y="170.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">5 PH4 / SCL</text>
+</g>
+<g id="pin-P06_GND" data-pin="P06_GND">
+<circle cx="688" cy="168" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="168" r="3.2" fill="#3e4641"/>
+<text x="872" y="170.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">6 GND</text>
+</g>
+<g id="pin-P07_PC9" data-pin="P07_PC9">
+<circle cx="656" cy="192" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="192" r="3.2" fill="#3e4641"/>
+<text x="752" y="194.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">7 PC9</text>
+</g>
+<g id="pin-P08_TX" data-pin="P08_TX">
+<circle cx="688" cy="192" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="192" r="3.2" fill="#3e4641"/>
+<text x="872" y="194.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">8 PH2 / TX</text>
+</g>
+<g id="pin-P09_GND" data-pin="P09_GND">
+<circle cx="656" cy="216" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="216" r="3.2" fill="#3e4641"/>
+<text x="752" y="218.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">9 GND</text>
+</g>
+<g id="pin-P10_RX" data-pin="P10_RX">
+<circle cx="688" cy="216" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="216" r="3.2" fill="#3e4641"/>
+<text x="872" y="218.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">10 PH3 / RX</text>
+</g>
+<g id="pin-P11_PC6" data-pin="P11_PC6">
+<circle cx="656" cy="240" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="240" r="3.2" fill="#3e4641"/>
+<text x="752" y="242.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">11 PC6</text>
+</g>
+<g id="pin-P12_PC11" data-pin="P12_PC11">
+<circle cx="688" cy="240" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="240" r="3.2" fill="#3e4641"/>
+<text x="872" y="242.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">12 PC11</text>
+</g>
+<g id="pin-P13_PC5" data-pin="P13_PC5">
+<circle cx="656" cy="264" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="264" r="3.2" fill="#3e4641"/>
+<text x="752" y="266.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">13 PC5</text>
+</g>
+<g id="pin-P14_GND" data-pin="P14_GND">
+<circle cx="688" cy="264" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="264" r="3.2" fill="#3e4641"/>
+<text x="872" y="266.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">14 GND</text>
+</g>
+<g id="pin-P15_PC8" data-pin="P15_PC8">
+<circle cx="656" cy="288" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="288" r="3.2" fill="#3e4641"/>
+<text x="752" y="290.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">15 PC8</text>
+</g>
+<g id="pin-P16_PC15" data-pin="P16_PC15">
+<circle cx="688" cy="288" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="288" r="3.2" fill="#3e4641"/>
+<text x="872" y="290.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">16 PC15</text>
+</g>
+<g id="pin-P17_3V3" data-pin="P17_3V3">
+<circle cx="656" cy="312" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="312" r="3.2" fill="#3e4641"/>
+<text x="752" y="314.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">17 3V3</text>
+</g>
+<g id="pin-P18_PC14" data-pin="P18_PC14">
+<circle cx="688" cy="312" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="312" r="3.2" fill="#3e4641"/>
+<text x="872" y="314.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">18 PC14</text>
+</g>
+<g id="pin-P19_MOSI" data-pin="P19_MOSI">
+<circle cx="656" cy="336" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="336" r="3.2" fill="#3e4641"/>
+<text x="752" y="338.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">19 PH7 / MOSI</text>
+</g>
+<g id="pin-P20_GND" data-pin="P20_GND">
+<circle cx="688" cy="336" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="336" r="3.2" fill="#3e4641"/>
+<text x="872" y="338.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">20 GND</text>
+</g>
+<g id="pin-P21_MISO" data-pin="P21_MISO">
+<circle cx="656" cy="360" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="360" r="3.2" fill="#3e4641"/>
+<text x="752" y="362.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">21 PH8 / MISO</text>
+</g>
+<g id="pin-P22_PC7" data-pin="P22_PC7">
+<circle cx="688" cy="360" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="360" r="3.2" fill="#3e4641"/>
+<text x="872" y="362.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">22 PC7</text>
+</g>
+<g id="pin-P23_CLK" data-pin="P23_CLK">
+<circle cx="656" cy="384" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="384" r="3.2" fill="#3e4641"/>
+<text x="752" y="386.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">23 PH6 / CLK</text>
+</g>
+<g id="pin-P24_CS" data-pin="P24_CS">
+<circle cx="688" cy="384" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="384" r="3.2" fill="#3e4641"/>
+<text x="872" y="386.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">24 PH9 / CS</text>
+</g>
+<g id="pin-P25_GND" data-pin="P25_GND">
+<circle cx="656" cy="408" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="656" cy="408" r="3.2" fill="#3e4641"/>
+<text x="752" y="410.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">25 GND</text>
+</g>
+<g id="pin-P26_PC10" data-pin="P26_PC10">
+<circle cx="688" cy="408" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>
+<circle cx="688" cy="408" r="3.2" fill="#3e4641"/>
+<text x="872" y="410.5" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">26 PC10</text>
+</g>
+</svg>

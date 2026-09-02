@@ -98,6 +98,18 @@ class CircuitLabPlatformTests(unittest.TestCase):
         current = component(); current["identity"]["level"] = "isolated-current-sensor"
         self.assertEqual(component_family(current), ("sensor", "current"))
 
+    def test_board_display_and_sensor_module_taxonomy(self) -> None:
+        def family(level: str) -> tuple[str, str]:
+            return component_family({"identity": {"level": level}})
+
+        self.assertEqual(family("development-board"), ("board", "development-board"))
+        self.assertEqual(family("linux-single-board-computer"), ("board", "single-board-computer"))
+        self.assertEqual(family("oled-display-module"), ("display", "display"))
+        self.assertEqual(family("distance-sensor-module"), ("sensor", "distance"))
+        self.assertEqual(family("magnetometer-module"), ("sensor", "magnetic"))
+        self.assertEqual(family("voc-gas-sensor-module"), ("sensor", "gas"))
+        self.assertEqual(family("digital-microphone-module"), ("sensor", "sound"))
+
     def test_fixture_emits_complete_unverified_package(self) -> None:
         result = generate_fixture({
             "id": "reference", "revision": 1, "maximumVoltage": 3.3, "minimumSpacingMm": 2.54,

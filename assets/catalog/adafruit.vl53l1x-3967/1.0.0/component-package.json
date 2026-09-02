@@ -1,0 +1,118 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCL",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDA",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "GPIO",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "XSHUT",
+        "number": "6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-vl53l1x/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.vl53l1x-3967",
+    "level": "distance-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "VL53L1X ToF #3967",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28541667,
+        "y": 0.63888889
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.37083333,
+        "y": 0.63888889
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.45625,
+        "y": 0.63888889
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.54166667,
+        "y": 0.63888889
+      },
+      {
+        "pin": "GPIO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.62708333,
+        "y": 0.63888889
+      },
+      {
+        "pin": "XSHUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.7125,
+        "y": 0.63888889
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "4caa7bc051561f342cdb9cefdfea80f98b0227a85a2ef5ad3fd9af76d427a282",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

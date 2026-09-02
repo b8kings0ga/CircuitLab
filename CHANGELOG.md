@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 — 2026-09-02
+
+- Expand the primary Hardware Library to boards, single-board computers, sensor modules, displays, and packaged chips.
+- Show official/local component imagery as thumbnails and prioritize pinout diagrams in component details.
+- Add deterministic original top-view SVG assets for XIAO ESP32S3, Orange Pi Zero 3, Waveshare OLED, VL53L1X distance, LIS3MDL magnetic, BME688 gas/VOC, and SPH0645LM4H sound modules.
+- Install the seven offline starter assets automatically for every fresh CircuitLab project.
+- Preserve Espressif's imported product media while adding the official 44-pin J1/J3 table as a new immutable ESP32-S3-DevKitC-1 revision.
+
 ## 0.5.0 — 2026-09-02
 
 - Open CircuitLab directly on a dedicated Sensors & MCUs catalog.

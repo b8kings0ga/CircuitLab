@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "pins": 26,
+      "ref": "orange-pi.zero-3-v1.3@1.0.2"
+    },
+    {
+      "pins": 6,
+      "ref": "adafruit.vl53l1x-3967@1.0.0"
+    },
+    {
+      "pins": 9,
+      "ref": "adafruit.lis3mdl-4479@1.0.0"
+    },
+    {
+      "pins": 7,
+      "ref": "adafruit.bme688-5046@1.0.0"
+    },
+    {
+      "pins": 6,
+      "ref": "adafruit.sph0645lm4h-3421@1.0.0"
+    },
+    {
+      "pins": 8,
+      "ref": "waveshare.0.96inch-oled-b@1.1.0"
+    },
+    {
+      "pins": 14,
+      "ref": "seeed.xiao-esp32s3@1.2.0"
+    }
+  ],
+  "schema": "circuitlab-catalog/v1"
+}

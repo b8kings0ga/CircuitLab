@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 
@@ -22,6 +24,7 @@ def main() -> None:
     parser.add_argument("target", type=Path)
     parser.add_argument("--board-svg", type=Path)
     parser.add_argument("--board-json", type=Path)
+    parser.add_argument("--skip-catalog", action="store_true", help="Do not install the bundled offline hardware catalog.")
     args = parser.parse_args()
     if bool(args.board_svg) != bool(args.board_json):
         parser.error("--board-svg and --board-json must be provided together")
@@ -47,6 +50,9 @@ def main() -> None:
             "geometry": "/assets/custom-board/board.json",
         })
         config_path.write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
+
+    if not args.skip_catalog:
+        subprocess.run([sys.executable, str(SKILL_ROOT / "scripts" / "generate_builtin_catalog.py"), "--install"], check=True, stdout=subprocess.DEVNULL)
 
     print(target)
 

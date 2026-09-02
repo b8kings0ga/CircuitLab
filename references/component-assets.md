@@ -2,9 +2,11 @@
 
 CircuitLab stores immutable `component-package/v1` revisions below its configured data directory. JSON packages are authoritative; SQLite is a rebuildable search, procurement, and run index.
 
-## Default scope: packaged chips only
+## Primary scope: chips and directly usable hardware
 
-The primary registry and UI surface only the latest revision of packaged semiconductors: MCU/SoC, sensor IC, and supporting analog, interface, driver, logic, memory, and power-management ICs. Development boards, modules, displays, motors, switches, power supplies, PCB assemblies, and discrete passives stay outside the default scope. Historical imports remain immutable and can be audited with `component_assets.py search --all-history --all-revisions`, but ordinary acquisition rejects them.
+The primary registry and UI surface the latest exact revision of packaged semiconductors, development boards, single-board computers, sensor modules, and displays. Keep unrelated motors, switches, power supplies, fixtures, raw PCB assemblies, and discrete passives outside the default catalog. Historical imports remain immutable and can be audited with `component_assets.py search --all-history --all-revisions`.
+
+For boards and modules, record the exact board revision or product ID, an official top view when permitted, the official pin table, and explicit visual anchors. If official imagery is local-only or unsuitable for redistribution, create an original CircuitLab SVG from published dimensions and pin tables. Mark it `OFFICIAL_DESIGN_DERIVED_UNVERIFIED`; never trace a photograph or infer pin identity from pixels.
 
 Run `python3 scripts/component_assets.py audit-chips` to identify missing package codes, pin tables, datasheet evidence, footprints, and package appearances before scheduling more online collection.
 
@@ -18,7 +20,7 @@ Do not start from a board photo. For every chip, collect the exact orderable MPN
 4. Use pinned Wokwi or step.parts content when provenance and redistribution status are explicit.
 5. Keep community or reverse-engineered material `CANDIDATE_UNVERIFIED`.
 
-Acquisition requires an exact packaged-chip MPN. Store source URL, capture time, SHA-256, license status, and transformation details. Board, module, and assembled-product candidates are rejected by the normal acquire path.
+Acquisition requires an exact packaged-chip MPN or exact board/module product and revision. Store source URL, capture time, SHA-256, license status, and transformation details. Chip acquisition remains fail-closed through `install_chip`; board/module imports use the general immutable registry after explicit type validation.
 
 Use `scripts/import_sindri_assets.py` for a read-only migration. CircuitLab copies bytes and records the Sindri directory hash; it never edits Sindri.
 

@@ -102,13 +102,25 @@ def require_chip_package(package: dict[str, Any]) -> dict[str, Any]:
 
 def component_family(package: dict[str, Any]) -> tuple[str, str]:
     level = str(package.get("identity", {}).get("level", "")).casefold().replace("_", "-")
+    if level in {"development-board", "linux-single-board-computer", "controller-board", "motor-driver-board"}:
+        return "board", "development-board" if level == "development-board" else "single-board-computer"
+    if "display" in level or level in {"operator-panel"}:
+        return "display", "display"
+    if any(marker in level for marker in ("distance", "time-of-flight", "tof")):
+        return "sensor", "distance"
+    if any(marker in level for marker in ("magnetic", "magnetometer")):
+        return "sensor", "magnetic"
+    if any(marker in level for marker in ("gas", "air-quality", "voc")):
+        return "sensor", "gas"
+    if any(marker in level for marker in ("sound", "microphone", "audio-sensor")):
+        return "sensor", "sound"
     if level in {"environmental-sensor"}:
         return "sensor", "environment"
-    if level in {"six-axis-imu", "mems-sensor"}:
+    if level in {"six-axis-imu", "mems-sensor", "imu"}:
         return "sensor", "motion-imu"
-    if level in {"isolated-current-sensor"}:
+    if level in {"isolated-current-sensor", "current-sensor"}:
         return "sensor", "current"
-    if level == "sensor-ic" or level.endswith("-sensor"):
+    if level == "sensor-ic" or "sensor" in level:
         return "sensor", "general"
     if level in {"microcontroller", "wireless-microcontroller", "soc", "wireless-soc", "processor", "fpga"}:
         return "controller", "mcu-soc"
@@ -268,6 +280,8 @@ class ComponentRegistry:
             package = load_json(Path(item["package_path"]))
             item["scope"] = "chip" if is_chip_package(package) else "history"
             item["family"], item["sensor_type"] = component_family(package)
+            visual = package.get("visual", {})
+            item["preview"] = visual.get("appearance") if isinstance(visual, dict) else None
             if scope == "chips" and item["scope"] != "chip":
                 continue
             items.append(item)
@@ -770,8 +784,8 @@ class CircuitLabPlatform:
             "project": self.config["id"],
             "physicalStatus": PHYSICAL_STATUS,
             "maximumVoltage": MAX_VOLTAGE,
-            "componentCount": len(self.registry.list(scope="chips", latest_only=True)),
-            "componentScope": "chips",
+            "componentCount": len(self.registry.list(scope="all", latest_only=True)),
+            "componentScope": "hardware",
             "capabilities": ["projects", "components", "workbench", "touchpoints", "fixture", "hil", "reports"],
         }
 
