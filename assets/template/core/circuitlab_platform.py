@@ -100,6 +100,21 @@ def require_chip_package(package: dict[str, Any]) -> dict[str, Any]:
     return package
 
 
+def component_family(package: dict[str, Any]) -> tuple[str, str]:
+    level = str(package.get("identity", {}).get("level", "")).casefold().replace("_", "-")
+    if level in {"environmental-sensor"}:
+        return "sensor", "environment"
+    if level in {"six-axis-imu", "mems-sensor"}:
+        return "sensor", "motion-imu"
+    if level in {"isolated-current-sensor"}:
+        return "sensor", "current"
+    if level == "sensor-ic" or level.endswith("-sensor"):
+        return "sensor", "general"
+    if level in {"microcontroller", "wireless-microcontroller", "soc", "wireless-soc", "processor", "fpga"}:
+        return "controller", "mcu-soc"
+    return "support", "support-ic"
+
+
 def validate_component(package: object) -> dict[str, Any]:
     if not isinstance(package, dict) or package.get("schema") != COMPONENT_SCHEMA:
         raise ValueError(f"component package schema must be {COMPONENT_SCHEMA}")
@@ -252,6 +267,7 @@ class ComponentRegistry:
             item = dict(row)
             package = load_json(Path(item["package_path"]))
             item["scope"] = "chip" if is_chip_package(package) else "history"
+            item["family"], item["sensor_type"] = component_family(package)
             if scope == "chips" and item["scope"] != "chip":
                 continue
             items.append(item)

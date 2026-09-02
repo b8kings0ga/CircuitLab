@@ -10,7 +10,7 @@ CORE = Path(__file__).resolve().parents[1] / "assets" / "template" / "core"
 if str(CORE) not in sys.path:
     sys.path.insert(0, str(CORE))
 
-from circuitlab_platform import COMPONENT_SCHEMA, HIL_SCHEMA, ComponentRegistry, HilEngine, generate_fixture
+from circuitlab_platform import COMPONENT_SCHEMA, HIL_SCHEMA, ComponentRegistry, HilEngine, component_family, generate_fixture
 
 
 def component() -> dict:
@@ -87,6 +87,16 @@ class CircuitLabPlatformTests(unittest.TestCase):
         board["physical"]["package"] = "assembled-board"
         with self.assertRaisesRegex(ValueError, "chip-only acquisition rejected"):
             self.registry.install_chip(board)
+
+    def test_sensor_and_controller_taxonomy(self) -> None:
+        controller = component()
+        self.assertEqual(component_family(controller), ("controller", "mcu-soc"))
+        environment = component(); environment["identity"]["level"] = "environmental-sensor"
+        self.assertEqual(component_family(environment), ("sensor", "environment"))
+        motion = component(); motion["identity"]["level"] = "six-axis-imu"
+        self.assertEqual(component_family(motion), ("sensor", "motion-imu"))
+        current = component(); current["identity"]["level"] = "isolated-current-sensor"
+        self.assertEqual(component_family(current), ("sensor", "current"))
 
     def test_fixture_emits_complete_unverified_package(self) -> None:
         result = generate_fixture({

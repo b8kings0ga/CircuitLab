@@ -366,6 +366,11 @@ textarea:focus { outline: 1px solid #4ac7ff; border-color: #4ac7ff; }
 .component-gallery img { display: block; width: 100%; height: 190px; object-fit: contain; }
 .component-gallery figcaption { padding: 8px 10px; border-top: 1px solid #303531; background: #141715; color: #8f9991; font: 700 9px ui-monospace, monospace; text-transform: uppercase; }
 .scope-note { margin: 0 0 10px; color: #72d995; font: 700 9px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; }
+.chip-filter-bar { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 10px; }
+.chip-filter-bar button { height: 30px; padding: 0 12px; border-color: #344039; background: #151a17; color: #aab4ac; font-size: 10px; }
+.chip-filter-bar button.active { border-color: #6dff9d; background: #20372a; color: #dfffea; }
+.chip-filter-bar.sensor-types { align-items: center; padding: 8px; border: 1px solid #29312c; background: #121512; }
+.chip-filter-bar.sensor-types > span { margin-right: 4px; color: #778179; font: 700 8px ui-monospace, monospace; letter-spacing: .08em; }
 .pin-preview,
 .result-console { overflow: auto; border: 1px solid #303531; border-radius: 6px; background: #0f1210; color: #b7beb8; font: 10px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .pin-preview { max-height: 310px; padding: 12px; }

@@ -16,6 +16,7 @@ from circuitlab_platform import (  # noqa: E402,F401
     CircuitLabPlatform,
     ComponentRegistry,
     HilEngine,
+    component_family,
     generate_fixture,
     is_chip_package,
     import_sindri_assets,

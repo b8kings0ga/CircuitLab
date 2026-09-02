@@ -78,8 +78,8 @@
 
     <section id="platformShell" class="platform-shell" hidden aria-label="CircuitLab platform">
       <nav class="platform-nav" aria-label="CircuitLab workspaces">
-        <button class="active" data-platform-view="projects" type="button">Projects</button>
-        <button data-platform-view="components" type="button">Chips</button>
+        <button data-platform-view="projects" type="button">Projects</button>
+        <button class="active" data-platform-view="components" type="button">Sensors & MCUs</button>
         <button data-platform-view="touchpoints" type="button">Touchpoints</button>
         <button data-platform-view="fixture" type="button">Fixture</button>
         <button data-platform-view="hil" type="button">HIL</button>
@@ -90,12 +90,12 @@
         <header class="platform-heading">
           <div>
             <span>CIRCUITLAB / LOCAL-FIRST</span>
-            <h1 id="platformTitle">Projects</h1>
+            <h1 id="platformTitle">Sensors & MCUs</h1>
           </div>
           <div id="platformSafety" class="safety-badge">PHYSICAL_UNVERIFIED</div>
         </header>
 
-        <section class="platform-view active" data-view="projects">
+        <section class="platform-view" data-view="projects">
           <div class="platform-hero">
             <div><span>ACTIVE PROJECT</span><strong id="projectName">Loading</strong><small id="projectSchema"></small></div>
             <div><span>CHIPS</span><strong id="componentCount">0</strong><small>latest MCU · sensor · IC assets</small></div>
@@ -108,8 +108,21 @@
           </div>
         </section>
 
-        <section class="platform-view" data-view="components">
-          <p class="scope-note">CHIPS ONLY · LATEST REVISION · MCU / SOC / SENSOR IC / SUPPORT IC</p>
+        <section class="platform-view active" data-view="components">
+          <p class="scope-note">PACKAGED CHIPS ONLY · ONE LATEST REVISION PER EXACT MPN</p>
+          <div class="chip-filter-bar" aria-label="Chip family">
+            <button class="active" data-chip-family="sensor" type="button">Sensors</button>
+            <button data-chip-family="controller" type="button">MCU / SoC</button>
+            <button data-chip-family="support" type="button">Support IC</button>
+            <button data-chip-family="all" type="button">All chips</button>
+          </div>
+          <div id="sensorTypeFilters" class="chip-filter-bar sensor-types" aria-label="Sensor type">
+            <span>SENSOR TYPE</span>
+            <button class="active" data-sensor-type="all" type="button">All sensors</button>
+            <button data-sensor-type="environment" type="button">Environment</button>
+            <button data-sensor-type="motion-imu" type="button">Motion / IMU</button>
+            <button data-sensor-type="current" type="button">Current</button>
+          </div>
           <div class="platform-actions">
             <input id="componentSearch" type="search" placeholder="Search MCU, sensor IC, manufacturer or exact MPN">
             <button id="componentRefresh" type="button">Refresh</button>

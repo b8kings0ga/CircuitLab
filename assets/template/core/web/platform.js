@@ -3,7 +3,7 @@
   const workbench = document.getElementById("workbenchView");
   const platformButton = document.getElementById("platformButton");
   const title = document.getElementById("platformTitle");
-  const state = { info: null, view: "projects", prepared: null };
+  const state = { info: null, view: "components", prepared: null, chipFamily: "sensor", sensorType: "all", componentRows: [] };
 
   const fixtureExample = {
     id: "rune-pogo-reference",
@@ -49,7 +49,7 @@
     platformButton.textContent = "Workbench";
     document.querySelectorAll("[data-platform-view]").forEach(button => button.classList.toggle("active", button.dataset.platformView === view));
     document.querySelectorAll(".platform-view").forEach(panel => panel.classList.toggle("active", panel.dataset.view === view));
-    title.textContent = view === "components" ? "Chips" : view[0].toUpperCase() + view.slice(1);
+    title.textContent = view === "components" ? "Sensors & MCUs" : view[0].toUpperCase() + view.slice(1);
     if (view === "components") loadComponents();
     if (view === "reports") loadReports();
   }
@@ -75,7 +75,7 @@
     const ref = document.createElement("small");
     ref.textContent = component.ref;
     const status = document.createElement("i");
-    status.textContent = component.status;
+    status.textContent = (component.sensor_type || component.family || "chip").replaceAll("-", " ").toUpperCase();
     button.append(heading, manufacturer, ref, status);
     button.addEventListener("click", () => loadComponent(component.ref, button));
     return button;
@@ -84,12 +84,21 @@
   async function loadComponents() {
     const query = encodeURIComponent(document.getElementById("componentSearch").value.trim());
     const { components } = await request(`/api/components?scope=chips&latest=1&q=${query}`);
+    state.componentRows = components;
+    const filtered = components.filter(component => {
+      if (state.chipFamily !== "all" && component.family !== state.chipFamily) return false;
+      if (state.chipFamily === "sensor" && state.sensorType !== "all" && component.sensor_type !== state.sensorType) return false;
+      return true;
+    });
     const list = document.getElementById("componentList");
-    list.replaceChildren(...components.map(recordButton));
-    if (!components.length) {
+    list.replaceChildren(...filtered.map(recordButton));
+    document.querySelectorAll("[data-chip-family]").forEach(button => button.classList.toggle("active", button.dataset.chipFamily === state.chipFamily));
+    document.querySelectorAll("[data-sensor-type]").forEach(button => button.classList.toggle("active", button.dataset.sensorType === state.sensorType));
+    document.getElementById("sensorTypeFilters").hidden = state.chipFamily !== "sensor";
+    if (!filtered.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = "No chip assets found. Acquire an exact MCU, SoC, sensor IC, or support IC MPN.";
+      empty.textContent = "No matching chip assets. Acquire an exact packaged sensor or MCU MPN.";
       list.appendChild(empty);
     }
   }
@@ -128,6 +137,7 @@
     stats.className = "component-stats";
     const values = [
       ["LEVEL", component.identity.level],
+      ["TYPE", (component.identity.level || "chip").replaceAll("-", " ")],
       ["ELECTRICAL", component.electrical?.status || "UNVERIFIED"],
       ["TOUCHPOINTS", String(component.visual?.anchors?.length || 0)],
       ["COORDINATES", component.visual?.coordinateStatus || "UNVERIFIED"],
@@ -182,6 +192,12 @@
   platformButton.addEventListener("click", () => shell.hidden ? setView(state.view) : setView("workbench"));
   document.getElementById("componentRefresh").addEventListener("click", loadComponents);
   document.getElementById("componentSearch").addEventListener("input", () => window.clearTimeout(state.searchTimer) || (state.searchTimer = window.setTimeout(loadComponents, 180)));
+  document.querySelectorAll("[data-chip-family]").forEach(button => button.addEventListener("click", () => {
+    state.chipFamily = button.dataset.chipFamily; state.sensorType = "all"; loadComponents();
+  }));
+  document.querySelectorAll("[data-sensor-type]").forEach(button => button.addEventListener("click", () => {
+    state.chipFamily = "sensor"; state.sensorType = button.dataset.sensorType; loadComponents();
+  }));
   document.getElementById("reportsRefresh").addEventListener("click", loadReports);
 
   document.getElementById("touchpointForm").addEventListener("submit", async event => {

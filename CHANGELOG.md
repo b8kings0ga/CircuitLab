@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 — 2026-09-02
+
+- Open CircuitLab directly on a dedicated Sensors & MCUs catalog.
+- Separate sensors, MCU/SoC parts, support ICs, and the complete chip list.
+- Classify sensor chips into environment, motion/IMU, current, and general sensor groups.
+- Keep filters grounded in immutable component metadata instead of adding placeholder devices.
+
 ## 0.4.0 — 2026-09-02
 
 - Make packaged chips the default and enforced acquisition scope.
