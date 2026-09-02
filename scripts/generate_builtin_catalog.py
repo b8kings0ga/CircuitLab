@@ -411,7 +411,7 @@ def render_primitive(spec: dict[str, Any]) -> str:
     """Render deterministic orthographic primitives without copying product photos."""
     scale = 10
     canvas_width = float(spec["canvasWidth"])
-    height = float(spec["height"] + BOARD_Y + FOOTER)
+    height = float(spec["height"] + BOARD_Y + (19.0 if spec.get("densePins") else FOOTER))
     offset_x = (canvas_width - float(spec["width"])) / 2
     x0 = offset_x * scale
     y0 = BOARD_Y * scale
@@ -443,6 +443,45 @@ def render_primitive(spec: dict[str, Any]) -> str:
             f'<rect x="{x0 + width * .18:g}" y="{y0 + body_height * .26:g}" width="{width * .64:g}" height="{body_height * .48:g}" rx="4" fill="#080b09" stroke="#3d4842"/>',
             f'<rect x="{x0 + width * .24:g}" y="{y0 + body_height * .16:g}" width="{width * .25:g}" height="{body_height * .68:g}" rx="3" fill="#d8ddda" stroke="#f5f7f4" stroke-width="1.5"/>',
         ]
+    elif shape == "discrete":
+        kind = spec.get("bodyKind", "package")
+        label = esc(spec.get("bodyLabel", ""))
+        if kind == "photoresistor":
+            lines += [
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .44:g}" fill="#d7b96f" stroke="#735f31" stroke-width="2" filter="url(#s)"/>',
+                f'<path d="M{x0 + width * .2:g} {y0 + body_height * .35:g}H{x0 + width * .35:g}L{x0 + width * .45:g} {y0 + body_height * .65:g}L{x0 + width * .55:g} {y0 + body_height * .35:g}L{x0 + width * .65:g} {y0 + body_height * .65:g}H{x0 + width * .8:g}" fill="none" stroke="#7b5830" stroke-width="3"/>',
+            ]
+        elif kind in {"to92", "ir-receiver"}:
+            lines += [
+                f'<path d="M{x0:g} {y0 + body_height:g}V{y0 + body_height * .38:g}Q{x0 + width / 2:g} {y0 - body_height * .18:g} {x0 + width:g} {y0 + body_height * .38:g}V{y0 + body_height:g}Z" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>',
+                f'<text x="{x0 + width / 2:g}" y="{y0 + body_height * .65:g}" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="{max(6, min(width, body_height) * .16):g}" font-weight="800">{label}</text>',
+            ]
+        elif kind in {"piezo", "potentiometer"}:
+            lines += [
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .45:g}" fill="#8d9792" stroke="#e9eeeb" stroke-width="2" filter="url(#s)"/>',
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .13:g}" fill="#202723"/>',
+            ]
+            if kind == "potentiometer":
+                lines.append(f'<path d="M{x0 + width * .35:g} {y0 + body_height * .65:g}L{x0 + width * .65:g} {y0 + body_height * .35:g}" stroke="#f5f7f4" stroke-width="3"/>')
+        elif kind == "cylinder":
+            lines += [
+                f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="{width / 2:g}" fill="#76817b" stroke="#d8dedb" stroke-width="2" filter="url(#s)"/>',
+                f'<path d="M{x0 + width * .25:g} {y0 + body_height * .18:g}H{x0 + width * .75:g}" stroke="#e8ecea" stroke-width="2"/>',
+            ]
+        elif kind == "to220":
+            lines += [
+                f'<rect x="{x0 + width * .12:g}" y="{y0:g}" width="{width * .76:g}" height="{body_height * .38:g}" rx="3" fill="url(#metal)" stroke="#6d7671"/>',
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height * .18:g}" r="{width * .09:g}" fill="#2b312e"/>',
+                f'<rect x="{x0:g}" y="{y0 + body_height * .3:g}" width="{width:g}" height="{body_height * .58:g}" rx="3" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>',
+                f'<text x="{x0 + width / 2:g}" y="{y0 + body_height * .62:g}" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800">{label}</text>',
+            ]
+        elif kind == "axial-diode":
+            cy = y0 + body_height / 2
+            lines += [
+                f'<path d="M{x0:g} {cy:g}H{x0 + width:g}" stroke="url(#metal)" stroke-width="5"/>',
+                f'<rect x="{x0 + width * .28:g}" y="{y0:g}" width="{width * .44:g}" height="{body_height:g}" rx="5" fill="#202421" stroke="#080a09" stroke-width="2" filter="url(#s)"/>',
+                f'<rect x="{x0 + width * .61:g}" y="{y0 + 2:g}" width="6" height="{body_height - 4:g}" fill="#d8deda"/>',
+            ]
     elif shape in {"led", "rgb-led"}:
         cx = x0 + width / 2
         cy = y0 + body_height * .43
@@ -467,13 +506,16 @@ def render_primitive(spec: dict[str, Any]) -> str:
             label_x, label_y, label_anchor = x - 12, y + 3, "end"
         elif row["side"] == "right":
             label_x, label_y, label_anchor = x + 12, y + 3, "start"
+        elif spec.get("densePins"):
+            label_x, label_y, label_anchor = x, (BOARD_Y + spec["height"] + 2.0) * scale, "start"
         else:
             label_x, label_y, label_anchor = x, (BOARD_Y + spec["height"] + 2.5) * scale, "middle"
+        label_transform = f' transform="rotate(-62 {label_x:g} {label_y:g})"' if spec.get("densePins") and row["side"] not in {"left", "right"} else ""
         lines += [
             f'<g id="pin-{esc(row["name"])}" data-pin="{esc(row["name"])}">',
             f'<circle cx="{x:g}" cy="{y:g}" r="8.4" fill="{colour}" stroke="#16201a" stroke-width="1.5"/>',
             f'<circle cx="{x:g}" cy="{y:g}" r="4.8" fill="#f5f7f4"/>',
-            f'<text x="{label_x:g}" y="{label_y:g}" text-anchor="{label_anchor}" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(row["name"])}</text>',
+            f'<text x="{label_x:g}" y="{label_y:g}" text-anchor="{label_anchor}"{label_transform} fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(row["name"])}</text>',
             '</g>',
         ]
     lines += [

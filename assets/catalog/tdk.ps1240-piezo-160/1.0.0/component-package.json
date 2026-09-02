@@ -1,0 +1,81 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "piezo-terminal"
+        ],
+        "name": "T1",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "piezo-terminal"
+        ],
+        "name": "T2",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "0c0f232da32703567e4b4b8c9ea55a7b787ca29263ac1a33d71c307b230d36f9",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/160"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/160/160_ds.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "tdk.ps1240-piezo-160",
+    "level": "audio-transducer",
+    "lifecycle": "active",
+    "manufacturer": "TDK / Adafruit Industries",
+    "mpn": "PS1240 / Adafruit #160",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+    "heightMm": 12,
+    "package": "radial-piezo",
+    "widthMm": 12
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "T1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.44230769,
+        "y": 0.56451613
+      },
+      {
+        "pin": "T2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.55769231,
+        "y": 0.56451613
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "eabe8d751a280b78e86e4af0e76e726058fed849272a9f45d9dce33ca511bd56",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

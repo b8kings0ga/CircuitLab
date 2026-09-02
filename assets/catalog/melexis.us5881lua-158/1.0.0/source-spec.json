@@ -1,0 +1,55 @@
+{
+  "assetId": "melexis.us5881lua-158",
+  "bodyKind": "to92",
+  "bodyLabel": "5881",
+  "canvasWidth": 20,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 6,
+  "level": "magnetic-sensor",
+  "manufacturer": "Melexis / Adafruit Industries",
+  "mpn": "US5881LUA / Adafruit #158",
+  "package": "TO-92-UA-3",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "3.5V-to-24V-supply"
+      ],
+      "name": "VDD",
+      "number": "1",
+      "side": "bottom",
+      "x": 1,
+      "y": 5.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 5.5
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "open-drain-output"
+      ],
+      "name": "OUT",
+      "number": "3",
+      "side": "bottom",
+      "x": 4,
+      "y": 5.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/158",
+    "https://www.adafruit.com/datasheets/US5881_rev007.pdf"
+  ],
+  "subtitle": "UNIPOLAR HALL SWITCH · OPEN DRAIN",
+  "width": 5
+}

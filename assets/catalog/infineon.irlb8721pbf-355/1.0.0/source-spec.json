@@ -1,0 +1,58 @@
+{
+  "assetId": "infineon.irlb8721pbf-355",
+  "bodyKind": "to220",
+  "bodyLabel": "8721",
+  "canvasWidth": 24,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 15,
+  "level": "n-channel-mosfet",
+  "manufacturer": "Infineon / Adafruit Industries",
+  "mpn": "IRLB8721PbF / Adafruit #355",
+  "package": "TO-220AB-GDS",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "gate"
+      ],
+      "name": "G",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 14.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "drain",
+        "tab"
+      ],
+      "name": "D",
+      "number": "2",
+      "side": "bottom",
+      "x": 5,
+      "y": 14.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "source"
+      ],
+      "name": "S",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.5,
+      "y": 14.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/355",
+    "https://cdn-shop.adafruit.com/datasheets/irlb8721pbf.pdf"
+  ],
+  "subtitle": "N-MOSFET · 30V · GDS",
+  "width": 10
+}

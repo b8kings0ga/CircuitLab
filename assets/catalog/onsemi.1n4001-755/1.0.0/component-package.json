@@ -1,0 +1,82 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "anode"
+        ],
+        "name": "A",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "cathode",
+          "banded-end"
+        ],
+        "name": "K",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "1362aeb8aa0aead801f0344135f86ceb9725d1d962c5cb93ad70edb2317f82f7",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/755"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/1N4001-D.PDF"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "onsemi.1n4001-755",
+    "level": "rectifier-diode",
+    "lifecycle": "active",
+    "manufacturer": "onsemi / Adafruit Industries",
+    "mpn": "1N4001 / Adafruit #755",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+    "heightMm": 4,
+    "package": "CASE-59-10-axial",
+    "widthMm": 18
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "A",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.21666667,
+        "y": 0.34782609
+      },
+      {
+        "pin": "K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.78333333,
+        "y": 0.34782609
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "7622c2eaf23b56d27196e6a608af5b5c6d5387d19bbf30e7cb620967c6035e4f",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

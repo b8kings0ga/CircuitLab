@@ -1,0 +1,44 @@
+{
+  "assetId": "tdk.ps1240-piezo-160",
+  "bodyKind": "piezo",
+  "canvasWidth": 26,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+  "height": 12,
+  "level": "audio-transducer",
+  "manufacturer": "TDK / Adafruit Industries",
+  "mpn": "PS1240 / Adafruit #160",
+  "package": "radial-piezo",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "piezo-terminal"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "bottom",
+      "x": 4.5,
+      "y": 11.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "piezo-terminal"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "bottom",
+      "x": 7.5,
+      "y": 11.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/160",
+    "https://cdn-shop.adafruit.com/product-files/160/160_ds.pdf"
+  ],
+  "subtitle": "PIEZO · 2–10kHz · NON-POLAR",
+  "width": 12
+}

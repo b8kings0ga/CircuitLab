@@ -1,0 +1,77 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "switch-contact"
+        ],
+        "name": "T1",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "switch-contact"
+        ],
+        "name": "T2",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "2f84c511f25f9af613cda05718ab334f197583d1b018262d37022b3e236b170c",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/1766"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.fast-vibration-switch-1766",
+    "level": "vibration-switch",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "Fast Vibration Sensor Switch #1766",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_DIAGRAMMATIC_LEADS",
+    "heightMm": 15,
+    "package": "radial-spring-vibration-switch",
+    "widthMm": 5
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "T1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.455,
+        "y": 0.60294118
+      },
+      {
+        "pin": "T2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.545,
+        "y": 0.60294118
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "8861e10bedcf3d9869af38da4337c9c87ea8ec852fdb4112afbf32525b22ed33",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

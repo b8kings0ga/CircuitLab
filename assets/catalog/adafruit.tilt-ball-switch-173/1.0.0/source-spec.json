@@ -1,0 +1,44 @@
+{
+  "assetId": "adafruit.tilt-ball-switch-173",
+  "bodyKind": "cylinder",
+  "canvasWidth": 20,
+  "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_DIAGRAMMATIC_LEADS",
+  "height": 23,
+  "level": "tilt-switch",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "Tilt Ball Switch #173",
+  "package": "radial-ball-tilt-switch",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.6,
+      "y": 22.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "bottom",
+      "x": 3.4,
+      "y": 22.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/173",
+    "https://learn.adafruit.com/tilt-sensor"
+  ],
+  "subtitle": "TILT CONTACT · ORIENTATION SWITCH",
+  "width": 5
+}

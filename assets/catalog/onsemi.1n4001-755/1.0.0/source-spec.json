@@ -1,0 +1,45 @@
+{
+  "assetId": "onsemi.1n4001-755",
+  "bodyKind": "axial-diode",
+  "canvasWidth": 30,
+  "dimensionStatus": "OFFICIAL_DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+  "height": 4,
+  "level": "rectifier-diode",
+  "manufacturer": "onsemi / Adafruit Industries",
+  "mpn": "1N4001 / Adafruit #755",
+  "package": "CASE-59-10-axial",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "anode"
+      ],
+      "name": "A",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "cathode",
+        "banded-end"
+      ],
+      "name": "K",
+      "number": "2",
+      "side": "right",
+      "x": 17.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/755",
+    "https://cdn-shop.adafruit.com/datasheets/1N4001-D.PDF"
+  ],
+  "subtitle": "RECTIFIER · 1A · 50V · POLARIZED",
+  "width": 18
+}

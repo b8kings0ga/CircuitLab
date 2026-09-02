@@ -69,6 +69,10 @@
       "ref": "adafruit.ds3231-3013@1.0.0"
     },
     {
+      "pins": 2,
+      "ref": "adafruit.fast-vibration-switch-1766@1.0.0"
+    },
+    {
       "pins": 28,
       "ref": "adafruit.feather-nrf52840-express-4062@1.1.0"
     },
@@ -137,8 +141,16 @@
       "ref": "adafruit.pcf8523-3295@1.0.0"
     },
     {
+      "pins": 2,
+      "ref": "adafruit.photoresistor-mj5516-161@1.0.0"
+    },
+    {
       "pins": 3,
       "ref": "adafruit.pir-motion-189@1.0.0"
+    },
+    {
+      "pins": 3,
+      "ref": "adafruit.pn2222-to92-756@1.0.0"
     },
     {
       "pins": 2,
@@ -229,6 +241,10 @@
       "ref": "adafruit.tca9548a-2717@1.0.0"
     },
     {
+      "pins": 2,
+      "ref": "adafruit.tilt-ball-switch-173@1.0.0"
+    },
+    {
       "pins": 6,
       "ref": "adafruit.tsl2591-1980@1.0.0"
     },
@@ -253,6 +269,10 @@
       "ref": "adafruit.vl53l1x-3967@1.1.0"
     },
     {
+      "pins": 3,
+      "ref": "analog-devices.tmp36-to92-165@1.0.0"
+    },
+    {
       "pins": 30,
       "ref": "arduino.nano-33-iot-abx00027@1.1.0"
     },
@@ -263,6 +283,18 @@
     {
       "pins": 44,
       "ref": "espressif.esp32-s3-devkitc-1-v1.1@1.2.0"
+    },
+    {
+      "pins": 3,
+      "ref": "infineon.irlb8721pbf-355@1.0.0"
+    },
+    {
+      "pins": 3,
+      "ref": "melexis.us5881lua-158@1.0.0"
+    },
+    {
+      "pins": 2,
+      "ref": "onsemi.1n4001-755@1.0.0"
     },
     {
       "pins": 26,
@@ -279,6 +311,18 @@
     {
       "pins": 14,
       "ref": "seeed.xiao-esp32s3@1.3.0"
+    },
+    {
+      "pins": 2,
+      "ref": "tdk.ps1240-piezo-160@1.0.0"
+    },
+    {
+      "pins": 3,
+      "ref": "tt-electronics.p160-10k-pot-562@1.0.0"
+    },
+    {
+      "pins": 3,
+      "ref": "vishay.tsop38238-157@1.0.0"
     },
     {
       "pins": 8,

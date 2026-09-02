@@ -1,0 +1,95 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "emitter"
+        ],
+        "name": "E",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "base"
+        ],
+        "name": "B",
+        "number": "2"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "collector"
+        ],
+        "name": "C",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "857ca115de43ecedf5f281a8a4bf1eb3a4ef27bedd7abed5364d9d0a16f89e83",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/756"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/756/PID756%20datasheet.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.pn2222-to92-756",
+    "level": "npn-transistor",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "PN2222 TO-92 / Adafruit #756",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+    "heightMm": 6,
+    "package": "TO-92-EBC",
+    "widthMm": 5
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "E",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.425,
+        "y": 0.37096774
+      },
+      {
+        "pin": "B",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.37096774
+      },
+      {
+        "pin": "C",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.575,
+        "y": 0.37096774
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "0888da9b5f233f3931c3414782f395df671e38fe2de172ca35ecd0002ff009c4",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

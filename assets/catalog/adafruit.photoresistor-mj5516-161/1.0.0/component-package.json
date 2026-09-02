@@ -1,0 +1,81 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "resistive-terminal"
+        ],
+        "name": "T1",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "resistive-terminal"
+        ],
+        "name": "T2",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "893f925a41f243bb475e2d9eb0a26a357dcd087f9a154aefa0e83d5a15fc1c0b",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/161"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/161/C2255-001_MFG_PN__HaiWang_MJ5516.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.photoresistor-mj5516-161",
+    "level": "light-sensor",
+    "lifecycle": "active",
+    "manufacturer": "HaiWang / Adafruit Industries",
+    "mpn": "MJ5516 / Adafruit #161",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+    "heightMm": 6,
+    "package": "radial-photoresistor",
+    "widthMm": 6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "T1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.45,
+        "y": 0.46
+      },
+      {
+        "pin": "T2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.55,
+        "y": 0.46
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "81a530e1375820bd7264bb385bfac5ae4f2172deecb17d2d565c22d4f0d6d412",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

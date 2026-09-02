@@ -1,0 +1,54 @@
+{
+  "assetId": "analog-devices.tmp36-to92-165",
+  "bodyKind": "to92",
+  "bodyLabel": "TMP36",
+  "canvasWidth": 20,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_MANUFACTURER_PINOUT",
+  "height": 6,
+  "level": "temperature-sensor",
+  "manufacturer": "Analog Devices / Adafruit Industries",
+  "mpn": "TMP36 TO-92 / Adafruit #165",
+  "package": "TO-92-3",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "supply"
+      ],
+      "name": "+VS",
+      "number": "1",
+      "side": "bottom",
+      "x": 1,
+      "y": 5.5
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "analog-temperature"
+      ],
+      "name": "VOUT",
+      "number": "2",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 5.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 4,
+      "y": 5.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/165"
+  ],
+  "subtitle": "ANALOG TEMPERATURE · 2.7–5.5V",
+  "width": 5
+}

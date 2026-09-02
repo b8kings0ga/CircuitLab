@@ -1,0 +1,95 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "resistive-end"
+        ],
+        "name": "CCW",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "wiper"
+        ],
+        "name": "W",
+        "number": "2"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "resistive-end"
+        ],
+        "name": "CW",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "b70c5dc31455bea8a1028ddb3f13f02a0ab60b775e1a4e0efef55943f453ffca",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/562"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/562/p160.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "tt-electronics.p160-10k-pot-562",
+    "level": "variable-resistor",
+    "lifecycle": "active",
+    "manufacturer": "TT Electronics / Adafruit Industries",
+    "mpn": "P160KN-0QC15B10K / Adafruit #562",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+    "heightMm": 16,
+    "package": "16mm-panel-breadboard-potentiometer",
+    "widthMm": 16
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "CCW",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33333333,
+        "y": 0.52439024
+      },
+      {
+        "pin": "W",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.52439024
+      },
+      {
+        "pin": "CW",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66666667,
+        "y": 0.52439024
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "2bbd15fc9b91ebcc52dfe41cf257f5c6c2bff26b659dc3dfd5c15774588b6bf8",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

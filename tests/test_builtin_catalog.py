@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 64)
+        self.assertEqual(len(CATALOG), 75)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -114,6 +114,27 @@ class BuiltinCatalogTests(unittest.TestCase):
             self.assertEqual([pin["name"] for pin in specs[asset_id]["pins"]], ["A", "K"])
             self.assertEqual(specs[asset_id]["pins"][0]["functions"], ["anode", "long-lead"])
             self.assertEqual(specs[asset_id]["pins"][1]["functions"], ["cathode", "short-lead"])
+
+        documented_discretes = {
+            "adafruit.photoresistor-mj5516-161": ["T1", "T2"],
+            "analog-devices.tmp36-to92-165": ["+VS", "VOUT", "GND"],
+            "melexis.us5881lua-158": ["VDD", "GND", "OUT"],
+            "tdk.ps1240-piezo-160": ["T1", "T2"],
+            "adafruit.fast-vibration-switch-1766": ["T1", "T2"],
+            "adafruit.tilt-ball-switch-173": ["T1", "T2"],
+            "tt-electronics.p160-10k-pot-562": ["CCW", "W", "CW"],
+            "adafruit.pn2222-to92-756": ["E", "B", "C"],
+            "infineon.irlb8721pbf-355": ["G", "D", "S"],
+            "onsemi.1n4001-755": ["A", "K"],
+            "vishay.tsop38238-157": ["OUT", "GND", "VS"],
+        }
+        for asset_id, expected_pins in documented_discretes.items():
+            self.assertEqual([pin["name"] for pin in specs[asset_id]["pins"]], expected_pins)
+
+        mosfet = specs["infineon.irlb8721pbf-355"]
+        self.assertIn("tab", mosfet["pins"][1]["functions"])
+        diode = specs["onsemi.1n4001-755"]
+        self.assertIn("banded-end", diode["pins"][1]["functions"])
 
 
 if __name__ == "__main__":

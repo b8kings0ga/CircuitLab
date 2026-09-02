@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 410" role="img" aria-label="P160KN-0QC15B10K / Adafruit #562 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="150" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<circle cx="150" cy="140" r="72" fill="#8d9792" stroke="#e9eeeb" stroke-width="2" filter="url(#s)"/>
+<circle cx="150" cy="140" r="20.8" fill="#202723"/>
+<path d="M126 164L174 116" stroke="#f5f7f4" stroke-width="3"/>
+<g id="pin-CCW" data-pin="CCW">
+<circle cx="100" cy="215" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="100" cy="215" r="4.8" fill="#f5f7f4"/>
+<text x="100" y="240" text-anchor="start" transform="rotate(-62 100 240)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CCW</text>
+</g>
+<g id="pin-W" data-pin="W">
+<circle cx="150" cy="215" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="150" cy="215" r="4.8" fill="#f5f7f4"/>
+<text x="150" y="240" text-anchor="start" transform="rotate(-62 150 240)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">W</text>
+</g>
+<g id="pin-CW" data-pin="CW">
+<circle cx="200" cy="215" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="200" cy="215" r="4.8" fill="#f5f7f4"/>
+<text x="200" y="240" text-anchor="start" transform="rotate(-62 200 240)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CW</text>
+</g>
+<text x="150" y="290" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">P160KN-0QC15B10K / Adafruit #562</text>
+<text x="150" y="311" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">10kΩ LINEAR · 300° ROTATION</text>
+</svg>

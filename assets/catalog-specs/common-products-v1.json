@@ -1179,6 +1179,100 @@
         "https://www.adafruit.com/product/385",
         "https://learn.adafruit.com/dht/connecting-to-a-dhtxx-sensor"
       ]
+    },
+    {
+      "assetId": "adafruit.photoresistor-mj5516-161", "revision": "1.0.0", "manufacturer": "HaiWang / Adafruit Industries", "mpn": "MJ5516 / Adafruit #161", "level": "light-sensor", "shape": "discrete", "bodyKind": "photoresistor", "package": "radial-photoresistor", "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS", "width": 6, "height": 6, "canvasWidth": 20, "subtitle": "CdS PHOTORESISTOR · NON-POLAR",
+      "pins": [
+        {"name": "T1", "number": "1", "x": 2, "y": 5.5, "side": "bottom", "direction": "passive", "functions": ["resistive-terminal"]},
+        {"name": "T2", "number": "2", "x": 4, "y": 5.5, "side": "bottom", "direction": "passive", "functions": ["resistive-terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/161", "https://cdn-shop.adafruit.com/product-files/161/C2255-001_MFG_PN__HaiWang_MJ5516.pdf"]
+    },
+    {
+      "assetId": "analog-devices.tmp36-to92-165", "revision": "1.0.0", "manufacturer": "Analog Devices / Adafruit Industries", "mpn": "TMP36 TO-92 / Adafruit #165", "level": "temperature-sensor", "shape": "discrete", "bodyKind": "to92", "bodyLabel": "TMP36", "package": "TO-92-3", "dimensionStatus": "OFFICIAL_PRODUCT_AND_MANUFACTURER_PINOUT", "width": 5, "height": 6, "canvasWidth": 20, "densePins": true, "subtitle": "ANALOG TEMPERATURE · 2.7–5.5V",
+      "pins": [
+        {"name": "+VS", "number": "1", "x": 1, "y": 5.5, "side": "bottom", "direction": "power", "functions": ["supply"]},
+        {"name": "VOUT", "number": "2", "x": 2.5, "y": 5.5, "side": "bottom", "direction": "output", "functions": ["analog-temperature"]},
+        {"name": "GND", "number": "3", "x": 4, "y": 5.5, "side": "bottom", "direction": "power", "functions": []}
+      ],
+      "sources": ["https://www.adafruit.com/product/165"]
+    },
+    {
+      "assetId": "melexis.us5881lua-158", "revision": "1.0.0", "manufacturer": "Melexis / Adafruit Industries", "mpn": "US5881LUA / Adafruit #158", "level": "magnetic-sensor", "shape": "discrete", "bodyKind": "to92", "bodyLabel": "5881", "package": "TO-92-UA-3", "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT", "width": 5, "height": 6, "canvasWidth": 20, "densePins": true, "subtitle": "UNIPOLAR HALL SWITCH · OPEN DRAIN",
+      "pins": [
+        {"name": "VDD", "number": "1", "x": 1, "y": 5.5, "side": "bottom", "direction": "power", "functions": ["3.5V-to-24V-supply"]},
+        {"name": "GND", "number": "2", "x": 2.5, "y": 5.5, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "OUT", "number": "3", "x": 4, "y": 5.5, "side": "bottom", "direction": "output", "functions": ["open-drain-output"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/158", "https://www.adafruit.com/datasheets/US5881_rev007.pdf"]
+    },
+    {
+      "assetId": "tdk.ps1240-piezo-160", "revision": "1.0.0", "manufacturer": "TDK / Adafruit Industries", "mpn": "PS1240 / Adafruit #160", "level": "audio-transducer", "shape": "discrete", "bodyKind": "piezo", "package": "radial-piezo", "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS", "width": 12, "height": 12, "canvasWidth": 26, "subtitle": "PIEZO · 2–10kHz · NON-POLAR",
+      "pins": [
+        {"name": "T1", "number": "1", "x": 4.5, "y": 11.5, "side": "bottom", "direction": "passive", "functions": ["piezo-terminal"]},
+        {"name": "T2", "number": "2", "x": 7.5, "y": 11.5, "side": "bottom", "direction": "passive", "functions": ["piezo-terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/160", "https://cdn-shop.adafruit.com/product-files/160/160_ds.pdf"]
+    },
+    {
+      "assetId": "adafruit.fast-vibration-switch-1766", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "Fast Vibration Sensor Switch #1766", "level": "vibration-switch", "shape": "discrete", "bodyKind": "cylinder", "package": "radial-spring-vibration-switch", "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_DIAGRAMMATIC_LEADS", "width": 5, "height": 15, "canvasWidth": 20, "subtitle": "MOTION CONTACT · NORMALLY OPEN",
+      "pins": [
+        {"name": "T1", "number": "1", "x": 1.6, "y": 14.5, "side": "bottom", "direction": "passive", "functions": ["switch-contact"]},
+        {"name": "T2", "number": "2", "x": 3.4, "y": 14.5, "side": "bottom", "direction": "passive", "functions": ["switch-contact"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/1766"]
+    },
+    {
+      "assetId": "adafruit.tilt-ball-switch-173", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "Tilt Ball Switch #173", "level": "tilt-switch", "shape": "discrete", "bodyKind": "cylinder", "package": "radial-ball-tilt-switch", "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_DIAGRAMMATIC_LEADS", "width": 5, "height": 23, "canvasWidth": 20, "subtitle": "TILT CONTACT · ORIENTATION SWITCH",
+      "pins": [
+        {"name": "T1", "number": "1", "x": 1.6, "y": 22.5, "side": "bottom", "direction": "passive", "functions": ["switch-contact"]},
+        {"name": "T2", "number": "2", "x": 3.4, "y": 22.5, "side": "bottom", "direction": "passive", "functions": ["switch-contact"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/173", "https://learn.adafruit.com/tilt-sensor"]
+    },
+    {
+      "assetId": "tt-electronics.p160-10k-pot-562", "revision": "1.0.0", "manufacturer": "TT Electronics / Adafruit Industries", "mpn": "P160KN-0QC15B10K / Adafruit #562", "level": "variable-resistor", "shape": "discrete", "bodyKind": "potentiometer", "package": "16mm-panel-breadboard-potentiometer", "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS", "width": 16, "height": 16, "canvasWidth": 30, "densePins": true, "subtitle": "10kΩ LINEAR · 300° ROTATION",
+      "pins": [
+        {"name": "CCW", "number": "1", "x": 3, "y": 15.5, "side": "bottom", "direction": "passive", "functions": ["resistive-end"]},
+        {"name": "W", "number": "2", "x": 8, "y": 15.5, "side": "bottom", "direction": "passive", "functions": ["wiper"]},
+        {"name": "CW", "number": "3", "x": 13, "y": 15.5, "side": "bottom", "direction": "passive", "functions": ["resistive-end"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/562", "https://cdn-shop.adafruit.com/product-files/562/p160.pdf"]
+    },
+    {
+      "assetId": "adafruit.pn2222-to92-756", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "PN2222 TO-92 / Adafruit #756", "level": "npn-transistor", "shape": "discrete", "bodyKind": "to92", "bodyLabel": "2222", "package": "TO-92-EBC", "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT", "width": 5, "height": 6, "canvasWidth": 20, "densePins": true, "subtitle": "NPN BJT · STANDARD EBC PINOUT",
+      "pins": [
+        {"name": "E", "number": "1", "x": 1, "y": 5.5, "side": "bottom", "direction": "passive", "functions": ["emitter"]},
+        {"name": "B", "number": "2", "x": 2.5, "y": 5.5, "side": "bottom", "direction": "input", "functions": ["base"]},
+        {"name": "C", "number": "3", "x": 4, "y": 5.5, "side": "bottom", "direction": "passive", "functions": ["collector"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/756", "https://cdn-shop.adafruit.com/product-files/756/PID756%20datasheet.pdf"]
+    },
+    {
+      "assetId": "infineon.irlb8721pbf-355", "revision": "1.0.0", "manufacturer": "Infineon / Adafruit Industries", "mpn": "IRLB8721PbF / Adafruit #355", "level": "n-channel-mosfet", "shape": "discrete", "bodyKind": "to220", "bodyLabel": "8721", "package": "TO-220AB-GDS", "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT", "width": 10, "height": 15, "canvasWidth": 24, "densePins": true, "subtitle": "N-MOSFET · 30V · GDS",
+      "pins": [
+        {"name": "G", "number": "1", "x": 2.5, "y": 14.5, "side": "bottom", "direction": "input", "functions": ["gate"]},
+        {"name": "D", "number": "2", "x": 5, "y": 14.5, "side": "bottom", "direction": "passive", "functions": ["drain", "tab"]},
+        {"name": "S", "number": "3", "x": 7.5, "y": 14.5, "side": "bottom", "direction": "passive", "functions": ["source"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/355", "https://cdn-shop.adafruit.com/datasheets/irlb8721pbf.pdf"]
+    },
+    {
+      "assetId": "onsemi.1n4001-755", "revision": "1.0.0", "manufacturer": "onsemi / Adafruit Industries", "mpn": "1N4001 / Adafruit #755", "level": "rectifier-diode", "shape": "discrete", "bodyKind": "axial-diode", "package": "CASE-59-10-axial", "dimensionStatus": "OFFICIAL_DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN", "width": 18, "height": 4, "canvasWidth": 30, "subtitle": "RECTIFIER · 1A · 50V · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["anode"]},
+        {"name": "K", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["cathode", "banded-end"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/755", "https://cdn-shop.adafruit.com/datasheets/1N4001-D.PDF"]
+    },
+    {
+      "assetId": "vishay.tsop38238-157", "revision": "1.0.0", "manufacturer": "Vishay / Adafruit Industries", "mpn": "TSOP38238 / Adafruit #157", "level": "infrared-light-sensor", "shape": "discrete", "bodyKind": "ir-receiver", "bodyLabel": "38k", "package": "molded-3-lead-ir-receiver", "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT", "width": 7, "height": 8, "canvasWidth": 22, "densePins": true, "subtitle": "IR RECEIVER · 38kHz · 2.5–5.5V",
+      "pins": [
+        {"name": "OUT", "number": "1", "x": 1.2, "y": 7.5, "side": "bottom", "direction": "output", "functions": ["demodulated-output"]},
+        {"name": "GND", "number": "2", "x": 3.5, "y": 7.5, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "VS", "number": "3", "x": 5.8, "y": 7.5, "side": "bottom", "direction": "power", "functions": ["supply"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/157", "https://cdn-shop.adafruit.com/datasheets/tsop382.pdf"]
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "assetId": "tt-electronics.p160-10k-pot-562",
+  "bodyKind": "potentiometer",
+  "canvasWidth": 30,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+  "height": 16,
+  "level": "variable-resistor",
+  "manufacturer": "TT Electronics / Adafruit Industries",
+  "mpn": "P160KN-0QC15B10K / Adafruit #562",
+  "package": "16mm-panel-breadboard-potentiometer",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "resistive-end"
+      ],
+      "name": "CCW",
+      "number": "1",
+      "side": "bottom",
+      "x": 3,
+      "y": 15.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "wiper"
+      ],
+      "name": "W",
+      "number": "2",
+      "side": "bottom",
+      "x": 8,
+      "y": 15.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "resistive-end"
+      ],
+      "name": "CW",
+      "number": "3",
+      "side": "bottom",
+      "x": 13,
+      "y": 15.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/562",
+    "https://cdn-shop.adafruit.com/product-files/562/p160.pdf"
+  ],
+  "subtitle": "10kΩ LINEAR · 300° ROTATION",
+  "width": 16
+}

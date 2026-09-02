@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 310" role="img" aria-label="TMP36 TO-92 / Adafruit #165 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="100" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<path d="M75 120V82.8Q100 49.2 125 82.8V120Z" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>
+<text x="100" y="99" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="8" font-weight="800">TMP36</text>
+<g id="pin-+VS" data-pin="+VS">
+<circle cx="85" cy="115" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="85" cy="115" r="4.8" fill="#f5f7f4"/>
+<text x="85" y="140" text-anchor="start" transform="rotate(-62 85 140)" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">+VS</text>
+</g>
+<g id="pin-VOUT" data-pin="VOUT">
+<circle cx="100" cy="115" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="100" cy="115" r="4.8" fill="#f5f7f4"/>
+<text x="100" y="140" text-anchor="start" transform="rotate(-62 100 140)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VOUT</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="115" cy="115" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="115" cy="115" r="4.8" fill="#f5f7f4"/>
+<text x="115" y="140" text-anchor="start" transform="rotate(-62 115 140)" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND</text>
+</g>
+<text x="100" y="190" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">TMP36 TO-92 / Adafruit #165</text>
+<text x="100" y="211" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">ANALOG TEMPERATURE · 2.7–5.5V</text>
+</svg>

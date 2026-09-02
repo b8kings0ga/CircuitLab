@@ -1,0 +1,43 @@
+{
+  "assetId": "adafruit.fast-vibration-switch-1766",
+  "bodyKind": "cylinder",
+  "canvasWidth": 20,
+  "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_DIAGRAMMATIC_LEADS",
+  "height": 15,
+  "level": "vibration-switch",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "Fast Vibration Sensor Switch #1766",
+  "package": "radial-spring-vibration-switch",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.6,
+      "y": 14.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "bottom",
+      "x": 3.4,
+      "y": 14.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/1766"
+  ],
+  "subtitle": "MOTION CONTACT · NORMALLY OPEN",
+  "width": 5
+}

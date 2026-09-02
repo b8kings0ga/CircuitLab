@@ -1,0 +1,55 @@
+{
+  "assetId": "vishay.tsop38238-157",
+  "bodyKind": "ir-receiver",
+  "bodyLabel": "38k",
+  "canvasWidth": 22,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+  "height": 8,
+  "level": "infrared-light-sensor",
+  "manufacturer": "Vishay / Adafruit Industries",
+  "mpn": "TSOP38238 / Adafruit #157",
+  "package": "molded-3-lead-ir-receiver",
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "demodulated-output"
+      ],
+      "name": "OUT",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.2,
+      "y": 7.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 3.5,
+      "y": 7.5
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "supply"
+      ],
+      "name": "VS",
+      "number": "3",
+      "side": "bottom",
+      "x": 5.8,
+      "y": 7.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/157",
+    "https://cdn-shop.adafruit.com/datasheets/tsop382.pdf"
+  ],
+  "subtitle": "IR RECEIVER · 38kHz · 2.5–5.5V",
+  "width": 7
+}

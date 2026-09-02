@@ -1,0 +1,93 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "output",
+        "functions": [
+          "demodulated-output"
+        ],
+        "name": "OUT",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "supply"
+        ],
+        "name": "VS",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "d07bbc59871d1cec9a38a1fdc1c2819994c583336bfb1cfcb82503e0b8143885",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/157"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/tsop382.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "vishay.tsop38238-157",
+    "level": "infrared-light-sensor",
+    "lifecycle": "active",
+    "manufacturer": "Vishay / Adafruit Industries",
+    "mpn": "TSOP38238 / Adafruit #157",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+    "heightMm": 8,
+    "package": "molded-3-lead-ir-receiver",
+    "widthMm": 7
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "OUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39545455,
+        "y": 0.40909091
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.40909091
+      },
+      {
+        "pin": "VS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60454545,
+        "y": 0.40909091
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "22d4428166d64c7765e77430e73b8d4e5d0f7d8c20c1790dcad7dc48068212aa",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

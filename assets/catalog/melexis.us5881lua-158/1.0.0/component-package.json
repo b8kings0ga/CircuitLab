@@ -1,0 +1,93 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "3.5V-to-24V-supply"
+        ],
+        "name": "VDD",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "open-drain-output"
+        ],
+        "name": "OUT",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "4171fbca1fb1eebacd2b846fbd1323c6fe0cb1d6f0b4b6c77c5551ea063f0b1c",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/158"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/datasheets/US5881_rev007.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "melexis.us5881lua-158",
+    "level": "magnetic-sensor",
+    "lifecycle": "active",
+    "manufacturer": "Melexis / Adafruit Industries",
+    "mpn": "US5881LUA / Adafruit #158",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+    "heightMm": 6,
+    "package": "TO-92-UA-3",
+    "widthMm": 5
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VDD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.425,
+        "y": 0.37096774
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.37096774
+      },
+      {
+        "pin": "OUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.575,
+        "y": 0.37096774
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "f5a658fb3a34990001bdbef4b5f1f60e0cbf599852f977e0b66ae4090b86213b",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "assetId": "adafruit.pn2222-to92-756",
+  "bodyKind": "to92",
+  "bodyLabel": "2222",
+  "canvasWidth": 20,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+  "height": 6,
+  "level": "npn-transistor",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "PN2222 TO-92 / Adafruit #756",
+  "package": "TO-92-EBC",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "emitter"
+      ],
+      "name": "E",
+      "number": "1",
+      "side": "bottom",
+      "x": 1,
+      "y": 5.5
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "base"
+      ],
+      "name": "B",
+      "number": "2",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 5.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "collector"
+      ],
+      "name": "C",
+      "number": "3",
+      "side": "bottom",
+      "x": 4,
+      "y": 5.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/756",
+    "https://cdn-shop.adafruit.com/product-files/756/PID756%20datasheet.pdf"
+  ],
+  "subtitle": "NPN BJT · STANDARD EBC PINOUT",
+  "width": 5
+}

@@ -1,0 +1,89 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "supply"
+        ],
+        "name": "+VS",
+        "number": "1"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "analog-temperature"
+        ],
+        "name": "VOUT",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "3f955731d9862218c86a2c3a69e06e6d2444654f1eecd3dac0dd711b04c46ea8",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/165"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "analog-devices.tmp36-to92-165",
+    "level": "temperature-sensor",
+    "lifecycle": "active",
+    "manufacturer": "Analog Devices / Adafruit Industries",
+    "mpn": "TMP36 TO-92 / Adafruit #165",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_MANUFACTURER_PINOUT",
+    "heightMm": 6,
+    "package": "TO-92-3",
+    "widthMm": 5
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "+VS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.425,
+        "y": 0.37096774
+      },
+      {
+        "pin": "VOUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.37096774
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.575,
+        "y": 0.37096774
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "42a90b19aaf086247fe3b68204ca4335f08420430310e7d49102e9702b760a85",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}
