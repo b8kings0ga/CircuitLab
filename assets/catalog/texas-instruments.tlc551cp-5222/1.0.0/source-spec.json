@@ -1,0 +1,109 @@
+{
+  "assetId": "texas-instruments.tlc551cp-5222",
+  "bodyKind": "dip",
+  "bodyLabel": "TLC551",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 10.2,
+  "level": "timer-oscillator",
+  "manufacturer": "Texas Instruments / Adafruit Industries",
+  "mpn": "TLC551CP / Adafruit #5222",
+  "package": "PDIP-8-P",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 1.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "trigger"
+      ],
+      "name": "TRIG",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "timer-output"
+      ],
+      "name": "OUT",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "reset-active-low"
+      ],
+      "name": "RESET",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "control-voltage"
+      ],
+      "name": "CONT",
+      "number": "5",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "threshold"
+      ],
+      "name": "THRES",
+      "number": "6",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "discharge"
+      ],
+      "name": "DISCH",
+      "number": "7",
+      "side": "right",
+      "x": 9.5,
+      "y": 4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "1V-to-15V-supply"
+      ],
+      "name": "VDD",
+      "number": "8",
+      "side": "right",
+      "x": 9.5,
+      "y": 1.8
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/5222",
+    "https://cdn-shop.adafruit.com/product-files/5222/tlc551.pdf"
+  ],
+  "subtitle": "CMOS 555 TIMER · 1–15V · 1.8MHz",
+  "width": 10
+}

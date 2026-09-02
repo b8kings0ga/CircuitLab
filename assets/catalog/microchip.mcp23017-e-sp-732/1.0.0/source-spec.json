@@ -1,0 +1,329 @@
+{
+  "assetId": "microchip.mcp23017-e-sp-732",
+  "bodyKind": "dip",
+  "bodyLabel": "MCP23017",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 35.6,
+  "level": "gpio-expander",
+  "manufacturer": "Microchip Technology / Adafruit Industries",
+  "mpn": "MCP23017-E/SP / Adafruit #732",
+  "package": "PDIP-28-SP",
+  "pins": [
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B0"
+      ],
+      "name": "GPB0",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 1.8
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B1"
+      ],
+      "name": "GPB1",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.25
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B2"
+      ],
+      "name": "GPB2",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.7
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B3"
+      ],
+      "name": "GPB3",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 9.15
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B4"
+      ],
+      "name": "GPB4",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 11.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B5"
+      ],
+      "name": "GPB5",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 14.05
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B6"
+      ],
+      "name": "GPB6",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 16.5
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-B7"
+      ],
+      "name": "GPB7",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 18.95
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "2.7V-to-5.5V-supply"
+      ],
+      "name": "VDD",
+      "number": "9",
+      "side": "left",
+      "x": 0.5,
+      "y": 21.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VSS",
+      "number": "10",
+      "side": "left",
+      "x": 0.5,
+      "y": 23.85
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "not-connected"
+      ],
+      "name": "NC1",
+      "number": "11",
+      "side": "left",
+      "x": 0.5,
+      "y": 26.3
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "i2c-clock"
+      ],
+      "name": "SCL",
+      "number": "12",
+      "side": "left",
+      "x": 0.5,
+      "y": 28.75
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "i2c-data"
+      ],
+      "name": "SDA",
+      "number": "13",
+      "side": "left",
+      "x": 0.5,
+      "y": 31.2
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "not-connected"
+      ],
+      "name": "NC2",
+      "number": "14",
+      "side": "left",
+      "x": 0.5,
+      "y": 33.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "address-select-0"
+      ],
+      "name": "A0",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 33.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "address-select-1"
+      ],
+      "name": "A1",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 31.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "address-select-2"
+      ],
+      "name": "A2",
+      "number": "17",
+      "side": "right",
+      "x": 9.5,
+      "y": 28.75
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "hardware-reset"
+      ],
+      "name": "RESET",
+      "number": "18",
+      "side": "right",
+      "x": 9.5,
+      "y": 26.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "port-B-interrupt"
+      ],
+      "name": "INTB",
+      "number": "19",
+      "side": "right",
+      "x": 9.5,
+      "y": 23.85
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "port-A-interrupt"
+      ],
+      "name": "INTA",
+      "number": "20",
+      "side": "right",
+      "x": 9.5,
+      "y": 21.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A0"
+      ],
+      "name": "GPA0",
+      "number": "21",
+      "side": "right",
+      "x": 9.5,
+      "y": 18.95
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A1"
+      ],
+      "name": "GPA1",
+      "number": "22",
+      "side": "right",
+      "x": 9.5,
+      "y": 16.5
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A2"
+      ],
+      "name": "GPA2",
+      "number": "23",
+      "side": "right",
+      "x": 9.5,
+      "y": 14.05
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A3"
+      ],
+      "name": "GPA3",
+      "number": "24",
+      "side": "right",
+      "x": 9.5,
+      "y": 11.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A4"
+      ],
+      "name": "GPA4",
+      "number": "25",
+      "side": "right",
+      "x": 9.5,
+      "y": 9.15
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A5"
+      ],
+      "name": "GPA5",
+      "number": "26",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.7
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A6"
+      ],
+      "name": "GPA6",
+      "number": "27",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.25
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "port-A7"
+      ],
+      "name": "GPA7",
+      "number": "28",
+      "side": "right",
+      "x": 9.5,
+      "y": 1.8
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/732",
+    "https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf"
+  ],
+  "subtitle": "16-BIT GPIO EXPANDER · I²C",
+  "width": 10
+}

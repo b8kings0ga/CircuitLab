@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 546" role="img" aria-label="MCP23017-E/SP / Adafruit #732 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="140" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="100" y="60" width="80" height="356" rx="5" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>
+<path d="M129 60A11 11 0 0 0 151 60" fill="none" stroke="#c8d0cc" stroke-width="2"/>
+<circle cx="113" cy="83" r="3" fill="#89948e"/>
+<text x="140" y="238" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800" transform="rotate(90 140 238)">MCP23017</text>
+<g id="pin-GPB0" data-pin="GPB0">
+<circle cx="95" cy="78" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="78" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="81" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB0</text>
+</g>
+<g id="pin-GPB1" data-pin="GPB1">
+<circle cx="95" cy="102.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="102.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="105.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB1</text>
+</g>
+<g id="pin-GPB2" data-pin="GPB2">
+<circle cx="95" cy="127" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="127" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="130" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB2</text>
+</g>
+<g id="pin-GPB3" data-pin="GPB3">
+<circle cx="95" cy="151.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="151.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="154.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB3</text>
+</g>
+<g id="pin-GPB4" data-pin="GPB4">
+<circle cx="95" cy="176" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="176" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="179" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB4</text>
+</g>
+<g id="pin-GPB5" data-pin="GPB5">
+<circle cx="95" cy="200.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="200.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="203.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB5</text>
+</g>
+<g id="pin-GPB6" data-pin="GPB6">
+<circle cx="95" cy="225" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="225" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="228" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB6</text>
+</g>
+<g id="pin-GPB7" data-pin="GPB7">
+<circle cx="95" cy="249.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="249.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="252.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPB7</text>
+</g>
+<g id="pin-VDD" data-pin="VDD">
+<circle cx="95" cy="274" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="274" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="277" text-anchor="end" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VDD</text>
+</g>
+<g id="pin-VSS" data-pin="VSS">
+<circle cx="95" cy="298.5" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="298.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="301.5" text-anchor="end" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VSS</text>
+</g>
+<g id="pin-NC1" data-pin="NC1">
+<circle cx="95" cy="323" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="323" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="326" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">NC1</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="95" cy="347.5" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="347.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="350.5" text-anchor="end" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SCL</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="95" cy="372" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="372" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="375" text-anchor="end" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SDA</text>
+</g>
+<g id="pin-NC2" data-pin="NC2">
+<circle cx="95" cy="398" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="398" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="401" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">NC2</text>
+</g>
+<g id="pin-A0" data-pin="A0">
+<circle cx="185" cy="398" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="398" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="401" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A0</text>
+</g>
+<g id="pin-A1" data-pin="A1">
+<circle cx="185" cy="372" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="372" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="375" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A1</text>
+</g>
+<g id="pin-A2" data-pin="A2">
+<circle cx="185" cy="347.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="347.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="350.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A2</text>
+</g>
+<g id="pin-RESET" data-pin="RESET">
+<circle cx="185" cy="323" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="323" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="326" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">RESET</text>
+</g>
+<g id="pin-INTB" data-pin="INTB">
+<circle cx="185" cy="298.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="298.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="301.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">INTB</text>
+</g>
+<g id="pin-INTA" data-pin="INTA">
+<circle cx="185" cy="274" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="274" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="277" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">INTA</text>
+</g>
+<g id="pin-GPA0" data-pin="GPA0">
+<circle cx="185" cy="249.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="249.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="252.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA0</text>
+</g>
+<g id="pin-GPA1" data-pin="GPA1">
+<circle cx="185" cy="225" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="225" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="228" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA1</text>
+</g>
+<g id="pin-GPA2" data-pin="GPA2">
+<circle cx="185" cy="200.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="200.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="203.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA2</text>
+</g>
+<g id="pin-GPA3" data-pin="GPA3">
+<circle cx="185" cy="176" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="176" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="179" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA3</text>
+</g>
+<g id="pin-GPA4" data-pin="GPA4">
+<circle cx="185" cy="151.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="151.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="154.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA4</text>
+</g>
+<g id="pin-GPA5" data-pin="GPA5">
+<circle cx="185" cy="127" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="127" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="130" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA5</text>
+</g>
+<g id="pin-GPA6" data-pin="GPA6">
+<circle cx="185" cy="102.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="102.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="105.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA6</text>
+</g>
+<g id="pin-GPA7" data-pin="GPA7">
+<circle cx="185" cy="78" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="78" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="81" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GPA7</text>
+</g>
+<text x="140" y="486" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">MCP23017-E/SP / Adafruit #732</text>
+<text x="140" y="507" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">16-BIT GPIO EXPANDER · I²C</text>
+</svg>

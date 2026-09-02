@@ -1,0 +1,77 @@
+{
+  "assetId": "bourns.pec11-4215f-s24-377",
+  "bodyKind": "rotary-encoder",
+  "canvasWidth": 27,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+  "height": 13.2,
+  "level": "rotary-encoder-switch",
+  "manufacturer": "Bourns / Adafruit Industries",
+  "mpn": "PEC11-4215F-S24 / Adafruit #377",
+  "package": "PEC11-PC-pin-horizontal-push-switch",
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "quadrature-channel-A"
+      ],
+      "name": "A",
+      "number": "A",
+      "side": "bottom",
+      "x": 4.1,
+      "y": 12.7
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "quadrature-common"
+      ],
+      "name": "C",
+      "number": "C",
+      "side": "bottom",
+      "x": 6.6,
+      "y": 12.7
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "quadrature-channel-B"
+      ],
+      "name": "B",
+      "number": "B",
+      "side": "bottom",
+      "x": 9.1,
+      "y": 12.7
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "momentary-switch-contact"
+      ],
+      "name": "S1",
+      "number": "S1",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.6
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "momentary-switch-contact"
+      ],
+      "name": "S2",
+      "number": "S2",
+      "side": "right",
+      "x": 12.7,
+      "y": 6.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/377",
+    "https://cdn-shop.adafruit.com/datasheets/pec11.pdf"
+  ],
+  "subtitle": "12-PULSE ENCODER · MOMENTARY PUSH",
+  "width": 13.2
+}

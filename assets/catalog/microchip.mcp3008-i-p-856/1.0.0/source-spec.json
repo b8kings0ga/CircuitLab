@@ -1,0 +1,199 @@
+{
+  "assetId": "microchip.mcp3008-i-p-856",
+  "bodyKind": "dip",
+  "bodyLabel": "MCP3008",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 19.3,
+  "level": "analog-to-digital-converter",
+  "manufacturer": "Microchip Technology / Adafruit Industries",
+  "mpn": "MCP3008-I/P / Adafruit #856",
+  "package": "PDIP-16",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-0"
+      ],
+      "name": "CH0",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-1"
+      ],
+      "name": "CH1",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-2"
+      ],
+      "name": "CH2",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-3"
+      ],
+      "name": "CH3",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-4"
+      ],
+      "name": "CH4",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 10.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-5"
+      ],
+      "name": "CH5",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-6"
+      ],
+      "name": "CH6",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 15.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-7"
+      ],
+      "name": "CH7",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 17.4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "digital-ground"
+      ],
+      "name": "DGND",
+      "number": "9",
+      "side": "right",
+      "x": 9.5,
+      "y": 17.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "chip-select-shutdown"
+      ],
+      "name": "CS/SHDN",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 15.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "spi-data-in"
+      ],
+      "name": "DIN",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 13
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "spi-data-out"
+      ],
+      "name": "DOUT",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 10.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "spi-clock"
+      ],
+      "name": "CLK",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.6
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "analog-ground"
+      ],
+      "name": "AGND",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "reference-voltage"
+      ],
+      "name": "VREF",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.2
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "2.7V-to-5.5V-supply"
+      ],
+      "name": "VDD",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/856",
+    "https://cdn-shop.adafruit.com/datasheets/MCP3008.pdf"
+  ],
+  "subtitle": "8-CHANNEL · 10-BIT · SPI ADC",
+  "width": 10
+}

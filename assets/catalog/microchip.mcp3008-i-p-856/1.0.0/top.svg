@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 383" role="img" aria-label="MCP3008-I/P / Adafruit #856 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="140" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="100" y="60" width="80" height="193" rx="5" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>
+<path d="M129 60A11 11 0 0 0 151 60" fill="none" stroke="#c8d0cc" stroke-width="2"/>
+<circle cx="113" cy="83" r="3" fill="#89948e"/>
+<text x="140" y="156.5" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800" transform="rotate(90 140 156.5)">MCP3008</text>
+<g id="pin-CH0" data-pin="CH0">
+<circle cx="95" cy="80" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="83" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH0</text>
+</g>
+<g id="pin-CH1" data-pin="CH1">
+<circle cx="95" cy="102" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="102" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="105" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH1</text>
+</g>
+<g id="pin-CH2" data-pin="CH2">
+<circle cx="95" cy="124" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="124" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="127" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH2</text>
+</g>
+<g id="pin-CH3" data-pin="CH3">
+<circle cx="95" cy="146" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="146" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="149" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH3</text>
+</g>
+<g id="pin-CH4" data-pin="CH4">
+<circle cx="95" cy="168" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="168" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="171" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH4</text>
+</g>
+<g id="pin-CH5" data-pin="CH5">
+<circle cx="95" cy="190" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="190" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="193" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH5</text>
+</g>
+<g id="pin-CH6" data-pin="CH6">
+<circle cx="95" cy="212" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="212" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="215" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH6</text>
+</g>
+<g id="pin-CH7" data-pin="CH7">
+<circle cx="95" cy="234" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="234" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="237" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CH7</text>
+</g>
+<g id="pin-DGND" data-pin="DGND">
+<circle cx="185" cy="234" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="234" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="237" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DGND</text>
+</g>
+<g id="pin-CS/SHDN" data-pin="CS/SHDN">
+<circle cx="185" cy="212" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="212" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="215" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CS/SHDN</text>
+</g>
+<g id="pin-DIN" data-pin="DIN">
+<circle cx="185" cy="190" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="190" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="193" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIN</text>
+</g>
+<g id="pin-DOUT" data-pin="DOUT">
+<circle cx="185" cy="168" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="168" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="171" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DOUT</text>
+</g>
+<g id="pin-CLK" data-pin="CLK">
+<circle cx="185" cy="146" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="146" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="149" text-anchor="start" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CLK</text>
+</g>
+<g id="pin-AGND" data-pin="AGND">
+<circle cx="185" cy="124" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="124" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="127" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">AGND</text>
+</g>
+<g id="pin-VREF" data-pin="VREF">
+<circle cx="185" cy="102" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="102" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="105" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VREF</text>
+</g>
+<g id="pin-VDD" data-pin="VDD">
+<circle cx="185" cy="80" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="83" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VDD</text>
+</g>
+<text x="140" y="323" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">MCP3008-I/P / Adafruit #856</text>
+<text x="140" y="344" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">8-CHANNEL · 10-BIT · SPI ADC</text>
+</svg>

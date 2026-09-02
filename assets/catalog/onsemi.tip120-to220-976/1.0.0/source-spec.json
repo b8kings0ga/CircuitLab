@@ -1,0 +1,58 @@
+{
+  "assetId": "onsemi.tip120-to220-976",
+  "bodyKind": "to220",
+  "bodyLabel": "TIP120",
+  "canvasWidth": 24,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 15,
+  "level": "npn-darlington-transistor",
+  "manufacturer": "onsemi / Adafruit Industries",
+  "mpn": "TIP120 / Adafruit #976",
+  "package": "TO-220-BCE",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "base"
+      ],
+      "name": "B",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 14.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "collector",
+        "tab"
+      ],
+      "name": "C",
+      "number": "2",
+      "side": "bottom",
+      "x": 5,
+      "y": 14.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "emitter"
+      ],
+      "name": "E",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.5,
+      "y": 14.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/976",
+    "https://cdn-shop.adafruit.com/datasheets/TIP120.pdf"
+  ],
+  "subtitle": "NPN DARLINGTON · 60V · 5A",
+  "width": 10
+}

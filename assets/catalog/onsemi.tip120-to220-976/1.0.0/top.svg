@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 400" role="img" aria-label="TIP120 / Adafruit #976 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="120" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="82" y="60" width="76" height="57" rx="3" fill="url(#metal)" stroke="#6d7671"/>
+<circle cx="120" cy="87" r="9" fill="#2b312e"/>
+<rect x="70" y="105" width="100" height="87" rx="3" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>
+<text x="120" y="153" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800">TIP120</text>
+<g id="pin-B" data-pin="B">
+<circle cx="95" cy="205" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="205" r="4.8" fill="#f5f7f4"/>
+<text x="95" y="230" text-anchor="start" transform="rotate(-62 95 230)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">B</text>
+</g>
+<g id="pin-C" data-pin="C">
+<circle cx="120" cy="205" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="120" cy="205" r="4.8" fill="#f5f7f4"/>
+<text x="120" y="230" text-anchor="start" transform="rotate(-62 120 230)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">C</text>
+</g>
+<g id="pin-E" data-pin="E">
+<circle cx="145" cy="205" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="145" cy="205" r="4.8" fill="#f5f7f4"/>
+<text x="145" y="230" text-anchor="start" transform="rotate(-62 145 230)" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">E</text>
+</g>
+<text x="120" y="280" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">TIP120 / Adafruit #976</text>
+<text x="120" y="301" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">NPN DARLINGTON · 60V · 5A</text>
+</svg>

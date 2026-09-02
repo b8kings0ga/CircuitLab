@@ -1,0 +1,277 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-0"
+        ],
+        "name": "CH0",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-1"
+        ],
+        "name": "CH1",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-2"
+        ],
+        "name": "CH2",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-3"
+        ],
+        "name": "CH3",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-4"
+        ],
+        "name": "CH4",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-5"
+        ],
+        "name": "CH5",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-6"
+        ],
+        "name": "CH6",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-7"
+        ],
+        "name": "CH7",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "digital-ground"
+        ],
+        "name": "DGND",
+        "number": "9"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "chip-select-shutdown"
+        ],
+        "name": "CS/SHDN",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "spi-data-in"
+        ],
+        "name": "DIN",
+        "number": "11"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "spi-data-out"
+        ],
+        "name": "DOUT",
+        "number": "12"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "spi-clock"
+        ],
+        "name": "CLK",
+        "number": "13"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "analog-ground"
+        ],
+        "name": "AGND",
+        "number": "14"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "reference-voltage"
+        ],
+        "name": "VREF",
+        "number": "15"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "2.7V-to-5.5V-supply"
+        ],
+        "name": "VDD",
+        "number": "16"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "08badb4a159363ac018e4a15ad7b6daa1eb353c7b870c9850c43bc61d36e8e55",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/856"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/MCP3008.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "microchip.mcp3008-i-p-856",
+    "level": "analog-to-digital-converter",
+    "lifecycle": "active",
+    "manufacturer": "Microchip Technology / Adafruit Industries",
+    "mpn": "MCP3008-I/P / Adafruit #856",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+    "heightMm": 19.3,
+    "package": "PDIP-16",
+    "widthMm": 10
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "CH0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.20887728
+      },
+      {
+        "pin": "CH1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.26631854
+      },
+      {
+        "pin": "CH2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.32375979
+      },
+      {
+        "pin": "CH3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.38120104
+      },
+      {
+        "pin": "CH4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.4386423
+      },
+      {
+        "pin": "CH5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.49608355
+      },
+      {
+        "pin": "CH6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.5535248
+      },
+      {
+        "pin": "CH7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.61096606
+      },
+      {
+        "pin": "DGND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.61096606
+      },
+      {
+        "pin": "CS/SHDN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.5535248
+      },
+      {
+        "pin": "DIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.49608355
+      },
+      {
+        "pin": "DOUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.4386423
+      },
+      {
+        "pin": "CLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.38120104
+      },
+      {
+        "pin": "AGND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.32375979
+      },
+      {
+        "pin": "VREF",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.26631854
+      },
+      {
+        "pin": "VDD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.20887728
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "9a425b5fbd6f3843e49ea985d23db3c11cb74ca0a6a003a5665f02b68fb1aa79",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

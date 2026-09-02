@@ -1,0 +1,44 @@
+{
+  "assetId": "adafruit.ntc-10k-3950-372",
+  "bodyKind": "thermistor",
+  "canvasWidth": 30,
+  "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+  "height": 4,
+  "level": "temperature-sensor",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "10K Precision Epoxy Thermistor B3950 / Adafruit #372",
+  "package": "epoxy-coated-wired-NTC",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "thermistor-terminal"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "thermistor-terminal"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "right",
+      "x": 17.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/372",
+    "https://learn.adafruit.com/thermistor"
+  ],
+  "subtitle": "10kΩ NTC · B3950 · NON-POLAR",
+  "width": 18
+}

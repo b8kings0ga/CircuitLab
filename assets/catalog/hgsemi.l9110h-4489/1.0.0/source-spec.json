@@ -1,0 +1,111 @@
+{
+  "assetId": "hgsemi.l9110h-4489",
+  "bodyKind": "dip",
+  "bodyLabel": "L9110H",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 10.2,
+  "level": "dual-motor-driver",
+  "manufacturer": "HGSEMI / Adafruit Industries",
+  "mpn": "L9110H / Adafruit #4489",
+  "package": "DIP-8-DP",
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "A-output"
+      ],
+      "name": "OA",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 1.8
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "supply"
+      ],
+      "name": "VCC1",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "supply"
+      ],
+      "name": "VCC2",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "B-output"
+      ],
+      "name": "OB",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground"
+      ],
+      "name": "GND1",
+      "number": "5",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "A-input"
+      ],
+      "name": "IA",
+      "number": "6",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "B-input"
+      ],
+      "name": "IB",
+      "number": "7",
+      "side": "right",
+      "x": 9.5,
+      "y": 4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground"
+      ],
+      "name": "GND2",
+      "number": "8",
+      "side": "right",
+      "x": 9.5,
+      "y": 1.8
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/4489",
+    "https://cdn-shop.adafruit.com/product-files/4489/4489_datasheet-l9110.pdf"
+  ],
+  "subtitle": "DUAL H-BRIDGE · 2.5–12V · 800mA",
+  "width": 10
+}

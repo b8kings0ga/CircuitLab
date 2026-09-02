@@ -1,0 +1,443 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B0"
+        ],
+        "name": "GPB0",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B1"
+        ],
+        "name": "GPB1",
+        "number": "2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B2"
+        ],
+        "name": "GPB2",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B3"
+        ],
+        "name": "GPB3",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B4"
+        ],
+        "name": "GPB4",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B5"
+        ],
+        "name": "GPB5",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B6"
+        ],
+        "name": "GPB6",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-B7"
+        ],
+        "name": "GPB7",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "2.7V-to-5.5V-supply"
+        ],
+        "name": "VDD",
+        "number": "9"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VSS",
+        "number": "10"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "not-connected"
+        ],
+        "name": "NC1",
+        "number": "11"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "i2c-clock"
+        ],
+        "name": "SCL",
+        "number": "12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "i2c-data"
+        ],
+        "name": "SDA",
+        "number": "13"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "not-connected"
+        ],
+        "name": "NC2",
+        "number": "14"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "address-select-0"
+        ],
+        "name": "A0",
+        "number": "15"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "address-select-1"
+        ],
+        "name": "A1",
+        "number": "16"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "address-select-2"
+        ],
+        "name": "A2",
+        "number": "17"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "hardware-reset"
+        ],
+        "name": "RESET",
+        "number": "18"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "port-B-interrupt"
+        ],
+        "name": "INTB",
+        "number": "19"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "port-A-interrupt"
+        ],
+        "name": "INTA",
+        "number": "20"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A0"
+        ],
+        "name": "GPA0",
+        "number": "21"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A1"
+        ],
+        "name": "GPA1",
+        "number": "22"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A2"
+        ],
+        "name": "GPA2",
+        "number": "23"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A3"
+        ],
+        "name": "GPA3",
+        "number": "24"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A4"
+        ],
+        "name": "GPA4",
+        "number": "25"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A5"
+        ],
+        "name": "GPA5",
+        "number": "26"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A6"
+        ],
+        "name": "GPA6",
+        "number": "27"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "port-A7"
+        ],
+        "name": "GPA7",
+        "number": "28"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "a0f82d3abf26b35f80a4c4ed59e4dd85234f0d8bd4a4bf06796216c0925e9604",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/732"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "microchip.mcp23017-e-sp-732",
+    "level": "gpio-expander",
+    "lifecycle": "active",
+    "manufacturer": "Microchip Technology / Adafruit Industries",
+    "mpn": "MCP23017-E/SP / Adafruit #732",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+    "heightMm": 35.6,
+    "package": "PDIP-28-SP",
+    "widthMm": 10
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "GPB0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.14285714
+      },
+      {
+        "pin": "GPB1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.18772894
+      },
+      {
+        "pin": "GPB2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.23260073
+      },
+      {
+        "pin": "GPB3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.27747253
+      },
+      {
+        "pin": "GPB4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.32234432
+      },
+      {
+        "pin": "GPB5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.36721612
+      },
+      {
+        "pin": "GPB6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.41208791
+      },
+      {
+        "pin": "GPB7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.45695971
+      },
+      {
+        "pin": "VDD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.5018315
+      },
+      {
+        "pin": "VSS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.5467033
+      },
+      {
+        "pin": "NC1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.59157509
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.63644689
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.68131868
+      },
+      {
+        "pin": "NC2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.72893773
+      },
+      {
+        "pin": "A0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.72893773
+      },
+      {
+        "pin": "A1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.68131868
+      },
+      {
+        "pin": "A2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.63644689
+      },
+      {
+        "pin": "RESET",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.59157509
+      },
+      {
+        "pin": "INTB",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.5467033
+      },
+      {
+        "pin": "INTA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.5018315
+      },
+      {
+        "pin": "GPA0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.45695971
+      },
+      {
+        "pin": "GPA1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.41208791
+      },
+      {
+        "pin": "GPA2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.36721612
+      },
+      {
+        "pin": "GPA3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.32234432
+      },
+      {
+        "pin": "GPA4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.27747253
+      },
+      {
+        "pin": "GPA5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.23260073
+      },
+      {
+        "pin": "GPA6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.18772894
+      },
+      {
+        "pin": "GPA7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.14285714
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "fd807efb3ed4fc02175abc509733fdd1947f5f85a4788e927170c4f0b3e8dd8b",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

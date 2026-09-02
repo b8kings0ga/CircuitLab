@@ -1,0 +1,43 @@
+{
+  "assetId": "adafruit.magnetic-contact-switch-375",
+  "bodyKind": "reed-switch",
+  "canvasWidth": 43,
+  "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+  "height": 15.2,
+  "level": "reed-switch",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "Magnetic Contact Switch / Adafruit #375",
+  "package": "wired-ABS-magnetic-contact",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 7.6
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "switch-contact"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "right",
+      "x": 28.5,
+      "y": 7.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/375"
+  ],
+  "subtitle": "NORMALLY OPEN · MAGNETIC CONTACT",
+  "width": 29
+}

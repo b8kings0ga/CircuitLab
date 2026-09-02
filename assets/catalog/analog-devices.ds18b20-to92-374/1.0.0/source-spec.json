@@ -1,0 +1,55 @@
+{
+  "assetId": "analog-devices.ds18b20-to92-374",
+  "bodyKind": "to92",
+  "bodyLabel": "18B20",
+  "canvasWidth": 20,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+  "height": 6,
+  "level": "temperature-sensor",
+  "manufacturer": "Analog Devices / Adafruit Industries",
+  "mpn": "DS18B20+ TO-92 / Adafruit #374",
+  "package": "TO-92-3",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "1",
+      "side": "bottom",
+      "x": 1,
+      "y": 5.5
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "one-wire-data"
+      ],
+      "name": "DQ",
+      "number": "2",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 5.5
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "optional-supply"
+      ],
+      "name": "VDD",
+      "number": "3",
+      "side": "bottom",
+      "x": 4,
+      "y": 5.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/374",
+    "https://cdn-shop.adafruit.com/datasheets/DS18B20.pdf"
+  ],
+  "subtitle": "1-WIRE DIGITAL TEMPERATURE · 3–5.5V",
+  "width": 5
+}

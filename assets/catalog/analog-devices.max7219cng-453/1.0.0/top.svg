@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 508" role="img" aria-label="MAX7219CNG / Adafruit #453 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="140" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="100" y="60" width="80" height="318" rx="5" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>
+<path d="M129 60A11 11 0 0 0 151 60" fill="none" stroke="#c8d0cc" stroke-width="2"/>
+<circle cx="113" cy="83" r="3" fill="#89948e"/>
+<text x="140" y="219" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800" transform="rotate(90 140 219)">MAX7219</text>
+<g id="pin-DIN" data-pin="DIN">
+<circle cx="95" cy="80" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="83" text-anchor="end" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIN</text>
+</g>
+<g id="pin-DIG0" data-pin="DIG0">
+<circle cx="95" cy="105.3" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="105.3" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="108.3" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG0</text>
+</g>
+<g id="pin-DIG4" data-pin="DIG4">
+<circle cx="95" cy="130.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="130.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="133.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG4</text>
+</g>
+<g id="pin-GND1" data-pin="GND1">
+<circle cx="95" cy="155.8" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="155.8" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="158.8" text-anchor="end" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND1</text>
+</g>
+<g id="pin-DIG6" data-pin="DIG6">
+<circle cx="95" cy="181" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="181" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="184" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG6</text>
+</g>
+<g id="pin-DIG2" data-pin="DIG2">
+<circle cx="95" cy="206.3" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="206.3" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="209.3" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG2</text>
+</g>
+<g id="pin-DIG3" data-pin="DIG3">
+<circle cx="95" cy="231.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="231.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="234.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG3</text>
+</g>
+<g id="pin-DIG7" data-pin="DIG7">
+<circle cx="95" cy="256.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="256.8" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="259.8" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG7</text>
+</g>
+<g id="pin-GND2" data-pin="GND2">
+<circle cx="95" cy="282" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="282" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="285" text-anchor="end" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND2</text>
+</g>
+<g id="pin-DIG5" data-pin="DIG5">
+<circle cx="95" cy="307.3" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="307.3" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="310.3" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG5</text>
+</g>
+<g id="pin-DIG1" data-pin="DIG1">
+<circle cx="95" cy="332.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="332.5" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="335.5" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DIG1</text>
+</g>
+<g id="pin-LOAD" data-pin="LOAD">
+<circle cx="95" cy="358" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="95" cy="358" r="4.8" fill="#f5f7f4"/>
+<text x="83" y="361" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">LOAD</text>
+</g>
+<g id="pin-CLK" data-pin="CLK">
+<circle cx="185" cy="358" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="358" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="361" text-anchor="start" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CLK</text>
+</g>
+<g id="pin-SEGA" data-pin="SEGA">
+<circle cx="185" cy="332.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="332.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="335.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGA</text>
+</g>
+<g id="pin-SEGF" data-pin="SEGF">
+<circle cx="185" cy="307.3" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="307.3" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="310.3" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGF</text>
+</g>
+<g id="pin-SEGB" data-pin="SEGB">
+<circle cx="185" cy="282" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="282" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="285" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGB</text>
+</g>
+<g id="pin-SEGG" data-pin="SEGG">
+<circle cx="185" cy="256.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="256.8" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="259.8" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGG</text>
+</g>
+<g id="pin-ISET" data-pin="ISET">
+<circle cx="185" cy="231.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="231.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="234.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">ISET</text>
+</g>
+<g id="pin-V+" data-pin="V+">
+<circle cx="185" cy="206.3" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="206.3" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="209.3" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">V+</text>
+</g>
+<g id="pin-SEGC" data-pin="SEGC">
+<circle cx="185" cy="181" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="181" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="184" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGC</text>
+</g>
+<g id="pin-SEGE" data-pin="SEGE">
+<circle cx="185" cy="155.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="155.8" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="158.8" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGE</text>
+</g>
+<g id="pin-SEGDP" data-pin="SEGDP">
+<circle cx="185" cy="130.5" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="130.5" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="133.5" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGDP</text>
+</g>
+<g id="pin-SEGD" data-pin="SEGD">
+<circle cx="185" cy="105.3" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="105.3" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="108.3" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SEGD</text>
+</g>
+<g id="pin-DOUT" data-pin="DOUT">
+<circle cx="185" cy="80" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="185" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="197" y="83" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DOUT</text>
+</g>
+<text x="140" y="448" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">MAX7219CNG / Adafruit #453</text>
+<text x="140" y="469" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">8-DIGIT LED DRIVER · SERIAL</text>
+</svg>

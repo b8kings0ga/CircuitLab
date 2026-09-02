@@ -1,0 +1,163 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "trigger"
+        ],
+        "name": "TRIG",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "timer-output"
+        ],
+        "name": "OUT",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "reset-active-low"
+        ],
+        "name": "RESET",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "control-voltage"
+        ],
+        "name": "CONT",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "threshold"
+        ],
+        "name": "THRES",
+        "number": "6"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "discharge"
+        ],
+        "name": "DISCH",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "1V-to-15V-supply"
+        ],
+        "name": "VDD",
+        "number": "8"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "ab72b7e0d293ec9aae755cbe7a42fa59b7e7b3d2729d13dd8504c46459425d62",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/5222"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/5222/tlc551.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "texas-instruments.tlc551cp-5222",
+    "level": "timer-oscillator",
+    "lifecycle": "active",
+    "manufacturer": "Texas Instruments / Adafruit Industries",
+    "mpn": "TLC551CP / Adafruit #5222",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+    "heightMm": 10.2,
+    "package": "PDIP-8-P",
+    "widthMm": 10
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.26712329
+      },
+      {
+        "pin": "TRIG",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.34246575
+      },
+      {
+        "pin": "OUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.41780822
+      },
+      {
+        "pin": "RESET",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.33928571,
+        "y": 0.49315068
+      },
+      {
+        "pin": "CONT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.49315068
+      },
+      {
+        "pin": "THRES",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.41780822
+      },
+      {
+        "pin": "DISCH",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.34246575
+      },
+      {
+        "pin": "VDD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66071429,
+        "y": 0.26712329
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "58de3229deab76513d9490c0aac423ba978aabd00801c69f2d2bde06757e256c",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

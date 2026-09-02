@@ -1,0 +1,199 @@
+{
+  "assetId": "texas-instruments.l293dne-807",
+  "bodyKind": "dip",
+  "bodyLabel": "L293D",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 19.3,
+  "level": "dual-h-bridge-driver",
+  "manufacturer": "Texas Instruments / Adafruit Industries",
+  "mpn": "L293DNE / Adafruit #807",
+  "package": "PDIP-16-NE",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "drivers-1-2-enable"
+      ],
+      "name": "1,2EN",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "driver-1-input"
+      ],
+      "name": "1A",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "driver-1-output"
+      ],
+      "name": "1Y",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground-heat-sink"
+      ],
+      "name": "GND1",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.6
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground-heat-sink"
+      ],
+      "name": "GND2",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 10.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "driver-2-output"
+      ],
+      "name": "2Y",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "driver-2-input"
+      ],
+      "name": "2A",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 15.2
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "output-supply"
+      ],
+      "name": "VCC2",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 17.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "drivers-3-4-enable"
+      ],
+      "name": "3,4EN",
+      "number": "9",
+      "side": "right",
+      "x": 9.5,
+      "y": 17.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "driver-3-input"
+      ],
+      "name": "3A",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 15.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "driver-3-output"
+      ],
+      "name": "3Y",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 13
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground-heat-sink"
+      ],
+      "name": "GND3",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 10.8
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground-heat-sink"
+      ],
+      "name": "GND4",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.6
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "driver-4-output"
+      ],
+      "name": "4Y",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "driver-4-input"
+      ],
+      "name": "4A",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.2
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "logic-supply"
+      ],
+      "name": "VCC1",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/807",
+    "https://cdn-shop.adafruit.com/datasheets/l293d.pdf"
+  ],
+  "subtitle": "DUAL H-BRIDGE · 600mA/CHANNEL",
+  "width": 10
+}

@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 75)
+        self.assertEqual(len(CATALOG), 93)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -127,6 +127,24 @@ class BuiltinCatalogTests(unittest.TestCase):
             "infineon.irlb8721pbf-355": ["G", "D", "S"],
             "onsemi.1n4001-755": ["A", "K"],
             "vishay.tsop38238-157": ["OUT", "GND", "VS"],
+            "bourns.pec11-4215f-s24-377": ["A", "C", "B", "S1", "S2"],
+            "texas-instruments.sn74hc595n-450": ["QB", "QC", "QD", "QE", "QF", "QG", "QH", "GND", "QH'", "SRCLR", "SRCLK", "RCLK", "OE", "SER", "QA", "VCC"],
+            "microchip.mcp3008-i-p-856": ["CH0", "CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7", "DGND", "CS/SHDN", "DIN", "DOUT", "CLK", "AGND", "VREF", "VDD"],
+            "toshiba.uln2803apg-970": ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8", "GND", "COM", "O8", "O7", "O6", "O5", "O4", "O3", "O2", "O1"],
+            "analog-devices.max7219cng-453": ["DIN", "DIG0", "DIG4", "GND1", "DIG6", "DIG2", "DIG3", "DIG7", "GND2", "DIG5", "DIG1", "LOAD", "CLK", "SEGA", "SEGF", "SEGB", "SEGG", "ISET", "V+", "SEGC", "SEGE", "SEGDP", "SEGD", "DOUT"],
+            "texas-instruments.l293dne-807": ["1,2EN", "1A", "1Y", "GND1", "GND2", "2Y", "2A", "VCC2", "3,4EN", "3A", "3Y", "GND3", "GND4", "4Y", "4A", "VCC1"],
+            "analog-devices.ds18b20-to92-374": ["GND", "DQ", "VDD"],
+            "onsemi.tip120-to220-976": ["B", "C", "E"],
+            "stmicroelectronics.l7805cv-2164": ["IN", "GND", "OUT"],
+            "adafruit.ntc-10k-3950-372": ["T1", "T2"],
+            "adafruit.magnetic-contact-switch-375": ["T1", "T2"],
+            "texas-instruments.tlc551cp-5222": ["GND", "TRIG", "OUT", "RESET", "CONT", "THRES", "DISCH", "VDD"],
+            "microchip.mcp23017-e-sp-732": ["GPB0", "GPB1", "GPB2", "GPB3", "GPB4", "GPB5", "GPB6", "GPB7", "VDD", "VSS", "NC1", "SCL", "SDA", "NC2", "A0", "A1", "A2", "RESET", "INTB", "INTA", "GPA0", "GPA1", "GPA2", "GPA3", "GPA4", "GPA5", "GPA6", "GPA7"],
+            "texas-instruments.tlv2462cp-808": ["1OUT", "1IN-", "1IN+", "GND", "2IN+", "2IN-", "2OUT", "VDD+"],
+            "texas-instruments.sn74ahct125n-1787": ["1OE", "1A", "1Y", "2OE", "2A", "2Y", "GND", "3Y", "3A", "3OE", "4Y", "4A", "4OE", "VCC"],
+            "diodes-inc.74ahct14-dip-3877": ["1A", "1Y", "2A", "2Y", "3A", "3Y", "GND", "4Y", "4A", "5Y", "5A", "6Y", "6A", "VCC"],
+            "hgsemi.l9110h-4489": ["OA", "VCC1", "VCC2", "OB", "GND1", "IA", "IB", "GND2"],
+            "microchip.mcp23008-e-p-593": ["SCL", "SDA", "A2", "A1", "A0", "RESET", "NC", "INT", "VSS", "GP0", "GP1", "GP2", "GP3", "GP4", "GP5", "GP6", "GP7", "VDD"],
         }
         for asset_id, expected_pins in documented_discretes.items():
             self.assertEqual([pin["name"] for pin in specs[asset_id]["pins"]], expected_pins)

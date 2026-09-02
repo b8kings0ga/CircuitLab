@@ -1,0 +1,219 @@
+{
+  "assetId": "toshiba.uln2803apg-970",
+  "bodyKind": "dip",
+  "bodyLabel": "ULN2803A",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 22.8,
+  "level": "darlington-driver",
+  "manufacturer": "Toshiba / Adafruit Industries",
+  "mpn": "ULN2803APG / Adafruit #970",
+  "package": "DIP18-P-300-2.54F",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "channel-1-input"
+      ],
+      "name": "I1",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-2-input"
+      ],
+      "name": "I2",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.35
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-3-input"
+      ],
+      "name": "I3",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.7
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-4-input"
+      ],
+      "name": "I4",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 9.05
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-5-input"
+      ],
+      "name": "I5",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 11.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-6-input"
+      ],
+      "name": "I6",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13.75
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-7-input"
+      ],
+      "name": "I7",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 16.1
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "channel-8-input"
+      ],
+      "name": "I8",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 18.45
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "9",
+      "side": "left",
+      "x": 0.5,
+      "y": 20.8
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "clamp-diode-common"
+      ],
+      "name": "COM",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 20.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-8-output"
+      ],
+      "name": "O8",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 18.45
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-7-output"
+      ],
+      "name": "O7",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 16.1
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-6-output"
+      ],
+      "name": "O6",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 13.75
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-5-output"
+      ],
+      "name": "O5",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 11.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-4-output"
+      ],
+      "name": "O4",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 9.05
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-3-output"
+      ],
+      "name": "O3",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.7
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-2-output"
+      ],
+      "name": "O2",
+      "number": "17",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.35
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "channel-1-output"
+      ],
+      "name": "O1",
+      "number": "18",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/970",
+    "https://cdn-shop.adafruit.com/datasheets/ULN2803A.pdf"
+  ],
+  "subtitle": "8-CHANNEL DARLINGTON SINK DRIVER",
+  "width": 10
+}

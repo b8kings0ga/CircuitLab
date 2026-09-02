@@ -1,0 +1,123 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "output",
+        "functions": [
+          "quadrature-channel-A"
+        ],
+        "name": "A",
+        "number": "A"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "quadrature-common"
+        ],
+        "name": "C",
+        "number": "C"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "quadrature-channel-B"
+        ],
+        "name": "B",
+        "number": "B"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "momentary-switch-contact"
+        ],
+        "name": "S1",
+        "number": "S1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "momentary-switch-contact"
+        ],
+        "name": "S2",
+        "number": "S2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "740a4d11fab2aa55316bd0ea387b572b6550c8cf01ca9ae9064f52d7221933c9",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/377"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/datasheets/pec11.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "bourns.pec11-4215f-s24-377",
+    "level": "rotary-encoder-switch",
+    "lifecycle": "active",
+    "manufacturer": "Bourns / Adafruit Industries",
+    "mpn": "PEC11-4215F-S24 / Adafruit #377",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_DIMENSIONS",
+    "heightMm": 13.2,
+    "package": "PEC11-PC-pin-horizontal-push-switch",
+    "widthMm": 13.2
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "A",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.40740741,
+        "y": 0.58074534
+      },
+      {
+        "pin": "C",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.58074534
+      },
+      {
+        "pin": "B",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.59259259,
+        "y": 0.58074534
+      },
+      {
+        "pin": "S1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.27407407,
+        "y": 0.39130435
+      },
+      {
+        "pin": "S2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.72592593,
+        "y": 0.39130435
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "ed273888d75a65ba21c4e3c90abeb6b4bade703570cec29da1dc9088512e9868",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

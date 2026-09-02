@@ -1,0 +1,175 @@
+{
+  "assetId": "texas-instruments.sn74ahct125n-1787",
+  "bodyKind": "dip",
+  "bodyLabel": "74AHCT125",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 17.8,
+  "level": "quad-level-shifter-buffer",
+  "manufacturer": "Texas Instruments / Adafruit Industries",
+  "mpn": "SN74AHCT125N / Adafruit #1787",
+  "package": "PDIP-14-N",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-1-output-enable-active-low"
+      ],
+      "name": "1OE",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-1-input"
+      ],
+      "name": "1A",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "buffer-1-output"
+      ],
+      "name": "1Y",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-2-output-enable-active-low"
+      ],
+      "name": "2OE",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.9
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-2-input"
+      ],
+      "name": "2A",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 11.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "buffer-2-output"
+      ],
+      "name": "2Y",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 15.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "buffer-3-output"
+      ],
+      "name": "3Y",
+      "number": "8",
+      "side": "right",
+      "x": 9.5,
+      "y": 15.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-3-input"
+      ],
+      "name": "3A",
+      "number": "9",
+      "side": "right",
+      "x": 9.5,
+      "y": 13.5
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-3-output-enable-active-low"
+      ],
+      "name": "3OE",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 11.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "buffer-4-output"
+      ],
+      "name": "4Y",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.9
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-4-input"
+      ],
+      "name": "4A",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "buffer-4-output-enable-active-low"
+      ],
+      "name": "4OE",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.3
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "4.5V-to-5.5V-supply"
+      ],
+      "name": "VCC",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/1787",
+    "https://www.adafruit.com/images/product-files/1787/1787AHC125.pdf"
+  ],
+  "subtitle": "QUAD 3-STATE BUFFER · 3V-TO-5V LOGIC",
+  "width": 10
+}

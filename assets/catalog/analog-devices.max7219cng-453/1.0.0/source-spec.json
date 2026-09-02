@@ -1,0 +1,287 @@
+{
+  "assetId": "analog-devices.max7219cng-453",
+  "bodyKind": "dip",
+  "bodyLabel": "MAX7219",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 31.8,
+  "level": "led-display-driver",
+  "manufacturer": "Analog Devices / Adafruit Industries",
+  "mpn": "MAX7219CNG / Adafruit #453",
+  "package": "narrow-PDIP-24",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "serial-data-input"
+      ],
+      "name": "DIN",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-0"
+      ],
+      "name": "DIG0",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.53
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-4"
+      ],
+      "name": "DIG4",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 7.05
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground"
+      ],
+      "name": "GND1",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 9.58
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-6"
+      ],
+      "name": "DIG6",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 12.1
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-2"
+      ],
+      "name": "DIG2",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 14.63
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-3"
+      ],
+      "name": "DIG3",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 17.15
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-7"
+      ],
+      "name": "DIG7",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 19.68
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground"
+      ],
+      "name": "GND2",
+      "number": "9",
+      "side": "left",
+      "x": 0.5,
+      "y": 22.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-5"
+      ],
+      "name": "DIG5",
+      "number": "10",
+      "side": "left",
+      "x": 0.5,
+      "y": 24.73
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "digit-drive-1"
+      ],
+      "name": "DIG1",
+      "number": "11",
+      "side": "left",
+      "x": 0.5,
+      "y": 27.25
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "load-data"
+      ],
+      "name": "LOAD",
+      "number": "12",
+      "side": "left",
+      "x": 0.5,
+      "y": 29.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "serial-clock"
+      ],
+      "name": "CLK",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 29.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-A"
+      ],
+      "name": "SEGA",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 27.25
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-F"
+      ],
+      "name": "SEGF",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 24.73
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-B"
+      ],
+      "name": "SEGB",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 22.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-G"
+      ],
+      "name": "SEGG",
+      "number": "17",
+      "side": "right",
+      "x": 9.5,
+      "y": 19.68
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "segment-current-set"
+      ],
+      "name": "ISET",
+      "number": "18",
+      "side": "right",
+      "x": 9.5,
+      "y": 17.15
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "5V-supply"
+      ],
+      "name": "V+",
+      "number": "19",
+      "side": "right",
+      "x": 9.5,
+      "y": 14.63
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-C"
+      ],
+      "name": "SEGC",
+      "number": "20",
+      "side": "right",
+      "x": 9.5,
+      "y": 12.1
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-E"
+      ],
+      "name": "SEGE",
+      "number": "21",
+      "side": "right",
+      "x": 9.5,
+      "y": 9.58
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "decimal-point"
+      ],
+      "name": "SEGDP",
+      "number": "22",
+      "side": "right",
+      "x": 9.5,
+      "y": 7.05
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "segment-D"
+      ],
+      "name": "SEGD",
+      "number": "23",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.53
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "serial-data-output"
+      ],
+      "name": "DOUT",
+      "number": "24",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/453",
+    "https://cdn-shop.adafruit.com/datasheets/MAX7219.pdf"
+  ],
+  "subtitle": "8-DIGIT LED DRIVER · SERIAL",
+  "width": 10
+}

@@ -1,0 +1,175 @@
+{
+  "assetId": "diodes-inc.74ahct14-dip-3877",
+  "bodyKind": "dip",
+  "bodyLabel": "74AHCT14",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 17.8,
+  "level": "hex-schmitt-inverter",
+  "manufacturer": "Diodes Incorporated / Adafruit Industries",
+  "mpn": "74AHCT14 DIP-14 / Adafruit #3877",
+  "package": "PDIP-14",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-1-input"
+      ],
+      "name": "1A",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-1-output"
+      ],
+      "name": "1Y",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.3
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-2-input"
+      ],
+      "name": "2A",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.6
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-2-output"
+      ],
+      "name": "2Y",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.9
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-3-input"
+      ],
+      "name": "3A",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 11.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-3-output"
+      ],
+      "name": "3Y",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 15.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-4-output"
+      ],
+      "name": "4Y",
+      "number": "8",
+      "side": "right",
+      "x": 9.5,
+      "y": 15.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-4-input"
+      ],
+      "name": "4A",
+      "number": "9",
+      "side": "right",
+      "x": 9.5,
+      "y": 13.5
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-5-output"
+      ],
+      "name": "5Y",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 11.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-5-input"
+      ],
+      "name": "5A",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.9
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "inverter-6-output"
+      ],
+      "name": "6Y",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "inverter-6-input"
+      ],
+      "name": "6A",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.3
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "4.5V-to-5.5V-supply"
+      ],
+      "name": "VCC",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/3877",
+    "https://cdn-shop.adafruit.com/product-files/3877/3877_74AHCT14.pdf"
+  ],
+  "subtitle": "HEX SCHMITT INVERTER · 5V LOGIC",
+  "width": 10
+}

@@ -1,0 +1,58 @@
+{
+  "assetId": "stmicroelectronics.l7805cv-2164",
+  "bodyKind": "to220",
+  "bodyLabel": "7805",
+  "canvasWidth": 24,
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_PRODUCT_AND_DATASHEET_PINOUT",
+  "height": 15,
+  "level": "linear-voltage-regulator",
+  "manufacturer": "STMicroelectronics / Adafruit Industries",
+  "mpn": "L7805CV / Adafruit #2164",
+  "package": "TO-220-IN-GND-OUT",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "voltage-input"
+      ],
+      "name": "IN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 14.5
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "ground",
+        "tab"
+      ],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 5,
+      "y": 14.5
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "regulated-5V-output"
+      ],
+      "name": "OUT",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.5,
+      "y": 14.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/2164",
+    "https://cdn-shop.adafruit.com/product-files/2164/L7805CV.pdf"
+  ],
+  "subtitle": "5V LINEAR REGULATOR · UP TO 1.5A",
+  "width": 10
+}

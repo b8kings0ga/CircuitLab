@@ -1,0 +1,197 @@
+{
+  "assetId": "texas-instruments.sn74hc595n-450",
+  "bodyKind": "dip",
+  "bodyLabel": "74HC595",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 19.3,
+  "level": "shift-register",
+  "manufacturer": "Texas Instruments / Adafruit Industries",
+  "mpn": "SN74HC595N / Adafruit #450",
+  "package": "PDIP-16-N",
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-B"
+      ],
+      "name": "QB",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-C"
+      ],
+      "name": "QC",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-D"
+      ],
+      "name": "QD",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-E"
+      ],
+      "name": "QE",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.6
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-F"
+      ],
+      "name": "QF",
+      "number": "5",
+      "side": "left",
+      "x": 0.5,
+      "y": 10.8
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-G"
+      ],
+      "name": "QG",
+      "number": "6",
+      "side": "left",
+      "x": 0.5,
+      "y": 13
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-H"
+      ],
+      "name": "QH",
+      "number": "7",
+      "side": "left",
+      "x": 0.5,
+      "y": 15.2
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "8",
+      "side": "left",
+      "x": 0.5,
+      "y": 17.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "serial-output"
+      ],
+      "name": "QH'",
+      "number": "9",
+      "side": "right",
+      "x": 9.5,
+      "y": 17.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "shift-register-clear-active-low"
+      ],
+      "name": "SRCLR",
+      "number": "10",
+      "side": "right",
+      "x": 9.5,
+      "y": 15.2
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "shift-register-clock"
+      ],
+      "name": "SRCLK",
+      "number": "11",
+      "side": "right",
+      "x": 9.5,
+      "y": 13
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "storage-register-clock"
+      ],
+      "name": "RCLK",
+      "number": "12",
+      "side": "right",
+      "x": 9.5,
+      "y": 10.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "output-enable-active-low"
+      ],
+      "name": "OE",
+      "number": "13",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "serial-data-input"
+      ],
+      "name": "SER",
+      "number": "14",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "parallel-output-A"
+      ],
+      "name": "QA",
+      "number": "15",
+      "side": "right",
+      "x": 9.5,
+      "y": 4.2
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "2V-to-6V-supply"
+      ],
+      "name": "VCC",
+      "number": "16",
+      "side": "right",
+      "x": 9.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/450",
+    "https://cdn-shop.adafruit.com/datasheets/sn74hc595.pdf"
+  ],
+  "subtitle": "8-BIT SERIAL-IN · PARALLEL-OUT",
+  "width": 10
+}

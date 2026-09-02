@@ -482,6 +482,29 @@ def render_primitive(spec: dict[str, Any]) -> str:
                 f'<rect x="{x0 + width * .28:g}" y="{y0:g}" width="{width * .44:g}" height="{body_height:g}" rx="5" fill="#202421" stroke="#080a09" stroke-width="2" filter="url(#s)"/>',
                 f'<rect x="{x0 + width * .61:g}" y="{y0 + 2:g}" width="6" height="{body_height - 4:g}" fill="#d8deda"/>',
             ]
+        elif kind == "dip":
+            lines += [
+                f'<rect x="{x0 + width * .1:g}" y="{y0:g}" width="{width * .8:g}" height="{body_height:g}" rx="5" fill="#171b19" stroke="#68736d" stroke-width="2" filter="url(#s)"/>',
+                f'<path d="M{x0 + width * .39:g} {y0:g}A{width * .11:g} {width * .11:g} 0 0 0 {x0 + width * .61:g} {y0:g}" fill="none" stroke="#c8d0cc" stroke-width="2"/>',
+                f'<circle cx="{x0 + width * .23:g}" cy="{y0 + width * .23:g}" r="3" fill="#89948e"/>',
+                f'<text x="{x0 + width / 2:g}" y="{y0 + body_height / 2:g}" text-anchor="middle" fill="#dfe6e2" font-family="ui-monospace,monospace" font-size="7" font-weight="800" transform="rotate(90 {x0 + width / 2:g} {y0 + body_height / 2:g})">{label}</text>',
+            ]
+        elif kind == "rotary-encoder":
+            lines += [
+                f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="4" fill="#9ba49f" stroke="#eef2ef" stroke-width="2" filter="url(#s)"/>',
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .32:g}" fill="#cdd3d0" stroke="#66716b" stroke-width="2"/>',
+                f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .13:g}" fill="#59635e"/>',
+            ]
+        elif kind == "thermistor":
+            lines += [
+                f'<path d="M{x0:g} {y0 + body_height / 2:g}H{x0 + width:g}" stroke="url(#metal)" stroke-width="4"/>',
+                f'<ellipse cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" rx="{width * .28:g}" ry="{body_height * .42:g}" fill="#33584a" stroke="#8fb6a3" stroke-width="2" filter="url(#s)"/>',
+            ]
+        elif kind == "reed-switch":
+            lines += [
+                f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="4" fill="#f0f3ef" stroke="#a7b0aa" stroke-width="2" filter="url(#s)"/>',
+                f'<path d="M{x0 + width * .18:g} {y0 + body_height * .5:g}L{x0 + width * .48:g} {y0 + body_height * .5:g}M{x0 + width * .48:g} {y0 + body_height * .5:g}L{x0 + width * .78:g} {y0 + body_height * .32:g}" stroke="#78827c" stroke-width="2"/>',
+            ]
     elif shape in {"led", "rgb-led"}:
         cx = x0 + width / 2
         cy = y0 + body_height * .43

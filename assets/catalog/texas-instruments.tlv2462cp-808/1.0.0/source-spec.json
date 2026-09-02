@@ -1,0 +1,109 @@
+{
+  "assetId": "texas-instruments.tlv2462cp-808",
+  "bodyKind": "dip",
+  "bodyLabel": "TLV2462",
+  "canvasWidth": 28,
+  "dimensionStatus": "OFFICIAL_DATASHEET_PACKAGE_AND_PINOUT",
+  "height": 10.2,
+  "level": "dual-operational-amplifier",
+  "manufacturer": "Texas Instruments / Adafruit Industries",
+  "mpn": "TLV2462CP / Adafruit #808",
+  "package": "PDIP-8-P",
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "amplifier-1-output"
+      ],
+      "name": "1OUT",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 1.8
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "amplifier-1-inverting-input"
+      ],
+      "name": "1IN-",
+      "number": "2",
+      "side": "left",
+      "x": 0.5,
+      "y": 4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "amplifier-1-noninverting-input"
+      ],
+      "name": "1IN+",
+      "number": "3",
+      "side": "left",
+      "x": 0.5,
+      "y": 6.2
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "4",
+      "side": "left",
+      "x": 0.5,
+      "y": 8.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "amplifier-2-noninverting-input"
+      ],
+      "name": "2IN+",
+      "number": "5",
+      "side": "right",
+      "x": 9.5,
+      "y": 8.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "amplifier-2-inverting-input"
+      ],
+      "name": "2IN-",
+      "number": "6",
+      "side": "right",
+      "x": 9.5,
+      "y": 6.2
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "amplifier-2-output"
+      ],
+      "name": "2OUT",
+      "number": "7",
+      "side": "right",
+      "x": 9.5,
+      "y": 4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "positive-supply"
+      ],
+      "name": "VDD+",
+      "number": "8",
+      "side": "right",
+      "x": 9.5,
+      "y": 1.8
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "discrete",
+  "sources": [
+    "https://www.adafruit.com/product/808",
+    "https://cdn-shop.adafruit.com/datasheets/tlv2462.pdf"
+  ],
+  "subtitle": "DUAL RAIL-TO-RAIL OP-AMP · 2.7–6V",
+  "width": 10
+}
