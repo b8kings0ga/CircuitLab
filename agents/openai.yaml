@@ -1,0 +1,5 @@
+interface:
+  display_name: "CircuitLab"
+  short_description: "Build circuits, fixtures, and software HIL"
+  brand_color: "#6DFF9D"
+  default_prompt: "Use $circuitlab to build, inspect, validate, or operate a local circuit-development workspace."

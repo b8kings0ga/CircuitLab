@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check syntax
+        run: python -m py_compile scripts/*.py assets/template/core/*.py tests/*.py
+      - name: Validate template manifest
+        run: python scripts/update_manifest.py --check
+      - name: Validate Wokwi Elements bundle
+        run: python scripts/verify_wokwi_assets.py
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Run end-to-end software loop
+        run: python scripts/verify_platform.py
+      - name: Create and validate a fresh workspace
+        run: |
+          python scripts/init_lab.py /tmp/circuitlab-ci
+          python scripts/validate_instance.py /tmp/circuitlab-ci
+          python scripts/sync_instance.py --target /tmp/circuitlab-ci --check

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+.circuitlab/
+reports/
+fixtures/
+registry/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal

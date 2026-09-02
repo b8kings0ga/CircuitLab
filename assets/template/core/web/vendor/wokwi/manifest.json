@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "files": {
+    "README.md": "12c22c3298481733f6f9607687f19f4786627c209e35ef4f4b3107a91f54feea",
+    "elements/LICENSE": "45166536e672aaf4cbeacc4dbbffe973ee5ac4bd0f7125b4cbb0f54a7886d34a",
+    "elements/catalog.json": "839cefc9c5b389088415c3c8c99f3952b5f6dc3554bdd6e3dd5c0219a85e77d0",
+    "elements/wokwi-elements.bundle.min.js": "ed4d37538924828fe78aa3163ee98130ecc1d7bdc533575dbf127383317605b0",
+    "sources.json": "4c07dcdf6aa5943cef4aaa5f4182ef3a9fa529171adf83bac6615f9df46df787"
+  }
+}

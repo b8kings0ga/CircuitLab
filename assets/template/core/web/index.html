@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/circuit-lab-icon.svg" type="image/svg+xml">
+    <title>CircuitLab</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span id="brandMark" class="brand-mark">C</span>
+        <div>
+          <strong id="brandName">CircuitLab</strong>
+          <span id="brandSubtitle">Offline hardware simulation</span>
+        </div>
+      </div>
+      <div id="statusStrip" class="status-strip" aria-label="Runtime status"></div>
+      <div class="toolbar">
+        <button id="platformButton" class="platform-button" type="button" title="Open CircuitLab platform">CircuitLab</button>
+        <div class="mode-switch" role="group" aria-label="Interaction mode">
+          <button class="active" data-interaction-mode="run" type="button" aria-pressed="true">Run</button>
+          <button data-interaction-mode="layout" type="button" aria-pressed="false">Layout</button>
+        </div>
+        <button id="rotateLeftButton" class="icon-button" type="button" title="Rotate selected module left" aria-label="Rotate selected module left" disabled>↶</button>
+        <button id="rotateRightButton" class="icon-button" type="button" title="Rotate selected module right" aria-label="Rotate selected module right" disabled>↷</button>
+        <button id="autoRouteButton" type="button" title="Automatically route wires around modules">Route</button>
+        <button id="fitButton" type="button" title="Fit circuit">Fit</button>
+        <button id="layoutResetButton" type="button" title="Restore default module positions">Default</button>
+        <button id="resetButton" type="button" title="Reset simulation">Reset</button>
+      </div>
+    </header>
+
+    <main id="workbenchView">
+      <section class="stage" aria-label="Circuit canvas">
+        <canvas id="circuitCanvas"></canvas>
+        <div id="partsLayer" class="parts-layer" aria-hidden="true"></div>
+        <canvas id="connectionOverlay" class="connection-overlay" aria-hidden="true"></canvas>
+        <div class="canvas-key">
+          <span><i class="key-dot signal"></i>Signal</span>
+          <span><i class="key-dot ground"></i>GND bus</span>
+          <span><i class="key-dot power"></i>Power</span>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <section class="panel compact-panel">
+          <div class="panel-title">
+            <h2 id="statePanelTitle">State</h2>
+            <span id="statePanelBadge" class="mode-label"></span>
+          </div>
+          <div class="bit-grid" id="bitGrid"></div>
+          <div class="buffer-track"><span id="bufferTrack"></span></div>
+          <div id="bufferMeta" class="buffer-meta"></div>
+        </section>
+
+        <section class="panel wiring-panel">
+          <div class="panel-title">
+            <h2>Wiring</h2>
+            <span id="wiringValidation" class="validation-badge">Checking</span>
+          </div>
+          <div id="wireTrace" class="wire-trace" aria-live="polite">
+            <span>Select a wire or solder pad</span>
+          </div>
+          <div id="wiringList" class="wiring-list" aria-label="Soldering map"></div>
+        </section>
+
+        <section class="panel serial-panel">
+          <div class="panel-title">
+            <h2>Serial monitor</h2>
+            <button id="clearButton" class="text-button" type="button">Clear</button>
+          </div>
+          <div id="serialLog" class="serial-log" role="log" aria-live="polite"></div>
+        </section>
+      </aside>
+    </main>
+
+    <section id="platformShell" class="platform-shell" hidden aria-label="CircuitLab platform">
+      <nav class="platform-nav" aria-label="CircuitLab workspaces">
+        <button class="active" data-platform-view="projects" type="button">Projects</button>
+        <button data-platform-view="components" type="button">Components</button>
+        <button data-platform-view="touchpoints" type="button">Touchpoints</button>
+        <button data-platform-view="fixture" type="button">Fixture</button>
+        <button data-platform-view="hil" type="button">HIL</button>
+        <button data-platform-view="reports" type="button">Reports</button>
+        <button data-platform-view="workbench" type="button">Workbench ↗</button>
+      </nav>
+      <div class="platform-content">
+        <header class="platform-heading">
+          <div>
+            <span>CIRCUITLAB / LOCAL-FIRST</span>
+            <h1 id="platformTitle">Projects</h1>
+          </div>
+          <div id="platformSafety" class="safety-badge">PHYSICAL_UNVERIFIED</div>
+        </header>
+
+        <section class="platform-view active" data-view="projects">
+          <div class="platform-hero">
+            <div><span>ACTIVE PROJECT</span><strong id="projectName">Loading</strong><small id="projectSchema"></small></div>
+            <div><span>COMPONENTS</span><strong id="componentCount">0</strong><small>immutable revisions</small></div>
+            <div><span>MAXIMUM VOLTAGE</span><strong id="maximumVoltage">24 V</strong><small>low-voltage boundary</small></div>
+          </div>
+          <div class="platform-card">
+            <h2>Software-verified development loop</h2>
+            <p>Acquire an exact component, inspect or calibrate its pins, place it in the Workbench, generate an unverified fixture package, then run an armed mock HIL plan and retain the report.</p>
+            <div class="flow-strip"><span>COMPONENT</span><i>→</i><span>TOUCHPOINTS</span><i>→</i><span>WORKBENCH</span><i>→</i><span>FIXTURE</span><i>→</i><span>HIL</span><i>→</i><span>REPORT</span></div>
+          </div>
+        </section>
+
+        <section class="platform-view" data-view="components">
+          <div class="platform-actions">
+            <input id="componentSearch" type="search" placeholder="Search manufacturer, MPN, asset ID">
+            <button id="componentRefresh" type="button">Refresh</button>
+          </div>
+          <div class="split-workspace">
+            <div id="componentList" class="record-list"></div>
+            <article id="componentDetail" class="detail-card empty-state">Select an immutable component revision.</article>
+          </div>
+        </section>
+
+        <section class="platform-view" data-view="touchpoints">
+          <div class="platform-card two-column-card">
+            <div>
+              <span class="eyebrow">VISUAL ≠ ELECTRICAL</span>
+              <h2>Touchpoint calibration</h2>
+              <p>Visual coordinates are normalized to the locked appearance hash. Calibration never upgrades electrical pin identity.</p>
+            </div>
+            <form id="touchpointForm" class="platform-form">
+              <label>Component ref<input name="ref" placeholder="asset.id@1.0.0" required></label>
+              <label>Appearance SHA-256<input name="appearanceSha256" pattern="[a-f0-9]{64}" required></label>
+              <label>Every pin point as JSON<textarea name="points" rows="7" placeholder='{"GND":{"x":0.1,"y":0.8}}' required></textarea></label>
+              <button type="submit">Create calibrated revision</button>
+            </form>
+          </div>
+          <pre id="touchpointResult" class="result-console">No calibration submitted.</pre>
+        </section>
+
+        <section class="platform-view" data-view="fixture">
+          <div class="platform-card two-column-card">
+            <div>
+              <span class="eyebrow">DO NOT FABRICATE</span>
+              <h2>Pogo fixture package</h2>
+              <p>Every point must bind one electrical pin, visual anchor, PCB pad and logical HIL net. Spacing and the 24 V boundary are validated before files are emitted.</p>
+            </div>
+            <form id="fixtureForm" class="platform-form">
+              <label>Fixture request JSON<textarea name="fixture" rows="13" required></textarea></label>
+              <button type="submit">Generate unverified package</button>
+            </form>
+          </div>
+          <pre id="fixtureResult" class="result-console">No fixture generated.</pre>
+        </section>
+
+        <section class="platform-view" data-view="hil">
+          <div class="hil-grid">
+            <article class="platform-card">
+              <span class="eyebrow">FIXTURE-DRIVER/V1</span><h2>Arm once, run a bounded session</h2>
+              <p>Mock and replay are enabled. Serial, flash, power and restore remain locked until exact hardware is physically verified.</p>
+              <button id="hilDemoButton" type="button">Prepare mock HIL</button>
+              <button id="hilArmButton" type="button" disabled>Arm prepared job</button>
+              <button id="hilRunButton" type="button" disabled>Run test plan</button>
+              <button id="hilAbortButton" class="danger-button" type="button" disabled>Abort</button>
+            </article>
+            <article class="platform-card"><span class="eyebrow">SESSION</span><div id="hilState" class="hil-state">IDLE</div><dl id="hilBinding" class="binding-list"></dl></article>
+          </div>
+          <pre id="hilEvents" class="result-console">Ready for a software-only HIL session.</pre>
+        </section>
+
+        <section class="platform-view" data-view="reports">
+          <div class="platform-actions"><span>Immutable software HIL evidence</span><button id="reportsRefresh" type="button">Refresh</button></div>
+          <div id="reportsList" class="report-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <script src="/vendor/wokwi/elements/wokwi-elements.bundle.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/platform.js"></script>
+  </body>
+</html>

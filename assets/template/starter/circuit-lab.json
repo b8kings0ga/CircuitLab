@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "templateVersion": 2,
+  "id": "starter-lab",
+  "diagram": "diagram.json",
+  "adapter": "lab_adapter:create_adapter",
+  "data": {
+    "env": "CIRCUITLAB_LAYOUT_DIR",
+    "default": "~/.local/share/circuitlab/starter-lab",
+    "layout": "circuit-layout.json"
+  },
+  "platform": {
+    "env": "CIRCUITLAB_DATA_DIR",
+    "default": "~/.local/share/circuitlab"
+  },
+  "frontend": {
+    "name": "CircuitLab Starter",
+    "subtitle": "Generic low-voltage offline simulation",
+    "mark": "CL",
+    "resetInput": { "type": "reset" },
+    "partSizes": {
+      "wokwi-text": { "width": 280, "height": 24 },
+      "board-circuitlab-dev": { "width": 180, "height": 234 },
+      "wokwi-pushbutton": { "width": 58, "height": 58 },
+      "wokwi-led": { "width": 36, "height": 58 },
+      "wokwi-resistor": { "width": 54, "height": 20 }
+    },
+    "boards": {
+      "board-circuitlab-dev": {
+        "asset": "/assets/circuitlab-dev-board/board.svg",
+        "geometry": "/assets/circuitlab-dev-board/board.json"
+      }
+    },
+    "orientations": { "s3": "FRONT · USB" },
+    "keyboard": { "Space": "button" },
+    "controls": {
+      "button": { "kind": "momentary", "statePath": "button", "press": { "type": "button", "down": true }, "release": { "type": "button", "down": false } },
+      "led": { "kind": "indicator", "statePath": "led" }
+    },
+    "ui": {
+      "statusStrip": [
+        { "kind": "badge", "path": "connected", "labels": { "false": "Offline", "true": "Ready" }, "tones": { "false": "offline", "true": "online" } },
+        { "template": "{event_cursor} events" }
+      ],
+      "statePanel": {
+        "title": "Input state",
+        "badge": { "path": "button", "labels": { "false": "Released", "true": "Pressed" }, "tones": { "true": "air" }, "className": "mode-label" },
+        "fields": [
+          { "label": "Button", "path": "button", "labels": { "false": "0", "true": "1" } },
+          { "label": "LED", "path": "led", "labels": { "false": "0", "true": "1" } }
+        ],
+        "meta": [
+          { "label": "Events", "path": "event_cursor" }
+        ]
+      }
+    },
+    "wiring": {
+      "boardPartIds": ["s3"],
+      "sharedPins": ["s3:GND"],
+      "groundPins": ["s3:GND"],
+      "powerPins": [],
+      "groundTrace": "ALL RETURNS → DEV BOARD · GND",
+      "partLabels": { "s3": "DEV BOARD", "button": "BUTTON", "led": "LED", "ledR": "LED RESISTOR" },
+      "expectedConnections": [
+        ["button:1.r", "s3:D0"], ["button:2.r", "s3:GND"],
+        ["led:A", "ledR:1"], ["ledR:2", "s3:D10"], ["led:C", "s3:GND"]
+      ],
+      "groundConnectionIds": ["button:2.r>s3:GND", "led:C>s3:GND"],
+      "rows": [
+        { "wireId": "button:1.r>s3:D0", "label": "BUTTON", "pin": "D0", "color": "green" },
+        { "wireId": "ledR:2>s3:D10", "label": "LED", "pin": "D10", "color": "yellow" },
+        { "wireId": "ground-bus", "label": "ALL RETURNS", "pin": "GND", "color": "black", "className": "ground-row" }
+      ]
+    }
+  }
+}

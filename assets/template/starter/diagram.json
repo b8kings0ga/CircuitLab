@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "CircuitLab",
+  "editor": "circuitlab",
+  "parts": [
+    { "type": "wokwi-text", "id": "title", "top": -45, "left": 40, "attrs": { "text": "STARTER / BUTTON + LED", "font-size": "20", "color": "white" } },
+    { "type": "wokwi-pushbutton", "id": "button", "top": 95, "left": -70, "attrs": { "color": "blue", "label": "INPUT" } },
+    { "type": "board-circuitlab-dev", "id": "s3", "top": 15, "left": 90, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": 100, "left": 355, "attrs": { "color": "green", "label": "STATUS" } },
+    { "type": "wokwi-resistor", "id": "ledR", "top": 132, "left": 285, "rotate": 90, "attrs": { "value": "1000" } }
+  ],
+  "connections": [
+    ["button:1.r", "s3:D0", "green", []],
+    ["button:2.r", "s3:GND", "black", []],
+    ["led:A", "ledR:1", "yellow", []],
+    ["ledR:2", "s3:D10", "yellow", []],
+    ["led:C", "s3:GND", "black", []]
+  ]
+}

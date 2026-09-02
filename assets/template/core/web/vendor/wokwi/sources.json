@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "elements": {
+    "url": "https://github.com/wokwi/wokwi-elements",
+    "revision": "2007dd58f0d555d114a8f43a29eec917472c724f",
+    "license": "MIT"
+  },
+  "boards": {
+    "url": "https://github.com/wokwi/wokwi-boards",
+    "revision": "1f2ce028e6d88ef0d78bc2f15438a2e128a8aa6b",
+    "license": "not distributed; review before any local import"
+  }
+}
