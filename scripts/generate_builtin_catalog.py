@@ -437,6 +437,12 @@ def render_primitive(spec: dict[str, Any]) -> str:
             f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="8" fill="#202723" stroke="#707b75" stroke-width="2" filter="url(#s)"/>',
             f'<circle cx="{x0 + width / 2:g}" cy="{y0 + body_height / 2:g}" r="{min(width, body_height) * .29:g}" fill="#b9c1bd" stroke="#f0f3f1" stroke-width="2"/>',
         ]
+    elif shape == "slide-switch":
+        lines += [
+            f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="5" fill="#151b18" stroke="#737d77" stroke-width="2" filter="url(#s)"/>',
+            f'<rect x="{x0 + width * .18:g}" y="{y0 + body_height * .26:g}" width="{width * .64:g}" height="{body_height * .48:g}" rx="4" fill="#080b09" stroke="#3d4842"/>',
+            f'<rect x="{x0 + width * .24:g}" y="{y0 + body_height * .16:g}" width="{width * .25:g}" height="{body_height * .68:g}" rx="3" fill="#d8ddda" stroke="#f5f7f4" stroke-width="1.5"/>',
+        ]
     elif shape in {"led", "rgb-led"}:
         cx = x0 + width / 2
         cy = y0 + body_height * .43

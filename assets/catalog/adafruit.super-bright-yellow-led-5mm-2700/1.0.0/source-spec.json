@@ -1,0 +1,46 @@
+{
+  "assetId": "adafruit.super-bright-yellow-led-5mm-2700",
+  "canvasWidth": 20,
+  "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+  "height": 9,
+  "lensColor": "#f6d94a",
+  "level": "indicator-led",
+  "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+  "mpn": "FD-5TY45-4 / Adafruit #2700",
+  "package": "t1-3-4-radial-led",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "anode",
+        "long-lead"
+      ],
+      "name": "A",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 8.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "cathode",
+        "short-lead"
+      ],
+      "name": "K",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.6,
+      "y": 8.3
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "led",
+  "sources": [
+    "https://www.adafruit.com/product/2700",
+    "https://cdn-shop.adafruit.com/product-files/2700/P2700_FD-5TY45-4.pdf"
+  ],
+  "subtitle": "YELLOW · 588–594nm · 5mm · POLARIZED",
+  "width": 7
+}

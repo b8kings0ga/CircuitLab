@@ -1,0 +1,54 @@
+{
+  "assetId": "adafruit.spdt-slide-switch-805",
+  "canvasWidth": 25,
+  "dimensionStatus": "OFFICIAL_DATASHEET_BODY_AND_PIN_PITCH",
+  "height": 4.1,
+  "level": "selector-switch",
+  "manufacturer": "Dongguan Haoyu Electronics / Adafruit Industries",
+  "mpn": "SS-12E17G2 / Adafruit #805",
+  "package": "spdt-through-hole-slide-switch",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "throw-A"
+      ],
+      "name": "A",
+      "number": "1",
+      "side": "bottom",
+      "x": 3.3,
+      "y": 4.1
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "common"
+      ],
+      "name": "COM",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.8,
+      "y": 4.1
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "throw-B"
+      ],
+      "name": "B",
+      "number": "3",
+      "side": "bottom",
+      "x": 8.3,
+      "y": 4.1
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "slide-switch",
+  "sources": [
+    "https://www.adafruit.com/product/805",
+    "https://cdn-shop.adafruit.com/product-files/805/SS-12E17G2-revised.pdf"
+  ],
+  "subtitle": "SPDT · COM SELECTS A OR B",
+  "width": 11.6
+}

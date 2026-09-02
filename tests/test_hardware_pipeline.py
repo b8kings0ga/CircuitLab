@@ -25,7 +25,7 @@ class HardwarePipelineTests(unittest.TestCase):
 
     def test_latest_catalog_has_complete_pin_anchor_coverage(self) -> None:
         rows = validate_catalog()
-        self.assertEqual(len(rows), 58)
+        self.assertEqual(len(rows), 71)
         self.assertTrue(all(row["status"] == "VALID" for row in rows))
         self.assertTrue(all(row["pins"] > 0 for row in rows))
         drawn = [row for row in rows if row["style"] == "circuitlab-ai-top-style/v1"]

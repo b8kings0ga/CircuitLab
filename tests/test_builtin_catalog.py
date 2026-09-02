@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 51)
+        self.assertEqual(len(CATALOG), 64)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -81,6 +81,39 @@ class BuiltinCatalogTests(unittest.TestCase):
         dht = specs["adafruit.dht22-am2302-385"]
         self.assertEqual([pin["name"] for pin in dht["pins"]], ["VCC", "DATA", "NC", "GND"])
         self.assertEqual(dht["lifecycle"], "not-stocked")
+
+    def test_common_resistors_leds_and_switches_preserve_documented_contacts(self) -> None:
+        specs = {spec["assetId"]: spec for spec in CATALOG}
+        resistor_bands = {
+            "adafruit.resistor-cf-470r-2781": ["#f0cf38", "#7b4fa3", "#7a3b1e", "#c7a329"],
+            "adafruit.resistor-cf-2k2-2782": ["#d71920", "#d71920", "#d71920", "#c7a329"],
+            "adafruit.resistor-cf-4k7-2783": ["#f0cf38", "#7b4fa3", "#d71920", "#c7a329"],
+            "adafruit.resistor-cf-22k-2785": ["#d71920", "#d71920", "#f28c28", "#c7a329"],
+            "adafruit.resistor-cf-47k-2786": ["#f0cf38", "#7b4fa3", "#f28c28", "#c7a329"],
+            "adafruit.resistor-cf-100k-2787": ["#7a3b1e", "#111111", "#f0cf38", "#c7a329"],
+        }
+        for asset_id, bands in resistor_bands.items():
+            self.assertEqual(specs[asset_id]["bands"], bands)
+            self.assertEqual([pin["name"] for pin in specs[asset_id]["pins"]], ["T1", "T2"])
+
+        button = specs["adafruit.tactile-button-12mm-1119"]
+        self.assertEqual([pin["name"] for pin in button["pins"]], ["1", "2", "3", "4"])
+        self.assertEqual([pin["functions"][0] for pin in button["pins"]], ["contact-A", "contact-B", "contact-A", "contact-B"])
+
+        slide = specs["adafruit.spdt-slide-switch-805"]
+        self.assertEqual([pin["name"] for pin in slide["pins"]], ["A", "COM", "B"])
+        self.assertEqual([pin["functions"][0] for pin in slide["pins"]], ["throw-A", "common", "throw-B"])
+
+        for asset_id in (
+            "adafruit.diffused-green-led-5mm-298",
+            "adafruit.super-bright-yellow-led-5mm-2700",
+            "adafruit.super-bright-white-led-5mm-754",
+            "adafruit.ir333-a-led-940nm-387",
+            "adafruit.uv-led-400nm-1793",
+        ):
+            self.assertEqual([pin["name"] for pin in specs[asset_id]["pins"]], ["A", "K"])
+            self.assertEqual(specs[asset_id]["pins"][0]["functions"], ["anode", "long-lead"])
+            self.assertEqual(specs[asset_id]["pins"][1]["functions"], ["cathode", "short-lead"])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,83 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "anode",
+          "long-lead"
+        ],
+        "name": "A",
+        "number": "1"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "cathode",
+          "short-lead"
+        ],
+        "name": "K",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "123046d659ddc95b012672bc220862f2d53341ea906234a6efb645157379a650",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/754"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/754/P754B_datasheet_FD-5TW-1.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.super-bright-white-led-5mm-754",
+    "level": "indicator-led",
+    "lifecycle": "active",
+    "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+    "mpn": "FD-5TW-1 / Adafruit #754",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+    "heightMm": 9,
+    "package": "t1-3-4-radial-led",
+    "widthMm": 7
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "A",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.445,
+        "y": 0.51071429
+      },
+      {
+        "pin": "K",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.555,
+        "y": 0.51071429
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "2b2ea80567e9699a3df77423783c46ee1b1883435ab5f9971ac0318032153637",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

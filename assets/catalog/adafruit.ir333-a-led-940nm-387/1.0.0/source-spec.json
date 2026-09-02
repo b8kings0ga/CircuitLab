@@ -1,0 +1,46 @@
+{
+  "assetId": "adafruit.ir333-a-led-940nm-387",
+  "canvasWidth": 20,
+  "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+  "height": 9,
+  "lensColor": "#7389a9",
+  "level": "indicator-led",
+  "manufacturer": "Everlight Electronics / Adafruit Industries",
+  "mpn": "IR333-A / Adafruit #387",
+  "package": "t1-3-4-radial-led",
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "anode",
+        "long-lead"
+      ],
+      "name": "A",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 8.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "cathode",
+        "short-lead"
+      ],
+      "name": "K",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.6,
+      "y": 8.3
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "led",
+  "sources": [
+    "https://www.adafruit.com/product/387",
+    "https://cdn-shop.adafruit.com/datasheets/IR333_A_datasheet.pdf"
+  ],
+  "subtitle": "INFRARED · 940nm · 5mm · POLARIZED",
+  "width": 7
+}

@@ -1,0 +1,49 @@
+{
+  "assetId": "adafruit.resistor-cf-470r-2781",
+  "bands": [
+    "#f0cf38",
+    "#7b4fa3",
+    "#7a3b1e",
+    "#c7a329"
+  ],
+  "canvasWidth": 30,
+  "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+  "height": 4,
+  "level": "through-hole-resistor",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "470Ω CF 1/4W 5% #2781",
+  "package": "axial-through-hole",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "terminal"
+      ],
+      "name": "T1",
+      "number": "1",
+      "side": "left",
+      "x": 0.5,
+      "y": 2
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "terminal"
+      ],
+      "name": "T2",
+      "number": "2",
+      "side": "right",
+      "x": 17.5,
+      "y": 2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "axial-resistor",
+  "sources": [
+    "https://www.adafruit.com/product/2781",
+    "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"
+  ],
+  "subtitle": "470Ω · 1/4W · 5% · NON-POLAR",
+  "width": 18
+}

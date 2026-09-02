@@ -1,0 +1,81 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "terminal"
+        ],
+        "name": "T1",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "terminal"
+        ],
+        "name": "T2",
+        "number": "2"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "12f22d767818798613015cbf7b85a353af5d2c6ddbef0410fafa27ea40107a06",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/2781"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.resistor-cf-470r-2781",
+    "level": "through-hole-resistor",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "470Ω CF 1/4W 5% #2781",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+    "heightMm": 4,
+    "package": "axial-through-hole",
+    "widthMm": 18
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "T1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.21666667,
+        "y": 0.34782609
+      },
+      {
+        "pin": "T2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.78333333,
+        "y": 0.34782609
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "137ec7fae51f3014456fca919d9199049a99bc14f22cff85a6b8eaa406e46be2",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

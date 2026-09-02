@@ -123,6 +123,60 @@
       "sources": ["https://www.adafruit.com/product/4294", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
     },
     {
+      "assetId": "adafruit.resistor-cf-470r-2781",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "470Ω CF 1/4W 5% #2781",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "470Ω · 1/4W · 5% · NON-POLAR",
+      "bands": ["#f0cf38", "#7b4fa3", "#7a3b1e", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2781", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-2k2-2782",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "2.2kΩ CF 1/4W 5% #2782",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "2.2kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#d71920", "#d71920", "#d71920", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2782", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-4k7-2783",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "4.7kΩ CF 1/4W 5% #2783",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "4.7kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#f0cf38", "#7b4fa3", "#d71920", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2783", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
       "assetId": "adafruit.resistor-cf-10k-2784",
       "revision": "1.0.1",
       "manufacturer": "Adafruit Industries",
@@ -141,6 +195,61 @@
         {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
       ],
       "sources": ["https://www.adafruit.com/product/2784", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-22k-2785",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "22kΩ CF 1/4W 5% #2785",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "22kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#d71920", "#d71920", "#f28c28", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "lifecycle": "not-stocked",
+      "sources": ["https://www.adafruit.com/product/2785", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-47k-2786",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "47kΩ CF 1/4W 5% #2786",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "47kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#f0cf38", "#7b4fa3", "#f28c28", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2786", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.resistor-cf-100k-2787",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "100kΩ CF 1/4W 5% #2787",
+      "level": "through-hole-resistor",
+      "shape": "axial-resistor",
+      "package": "axial-through-hole",
+      "dimensionStatus": "DATASHEET_BODY_WITH_DIAGRAMMATIC_LEAD_SPAN",
+      "width": 18, "height": 4, "canvasWidth": 30,
+      "subtitle": "100kΩ · 1/4W · 5% · NON-POLAR",
+      "bands": ["#7a3b1e", "#111111", "#f0cf38", "#c7a329"],
+      "pins": [
+        {"name": "T1", "number": "1", "x": 0.5, "y": 2, "side": "left", "direction": "passive", "functions": ["terminal"]},
+        {"name": "T2", "number": "2", "x": 17.5, "y": 2, "side": "right", "direction": "passive", "functions": ["terminal"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2787", "https://cdn-shop.adafruit.com/product-files/2780/Resistor_Data_Sheet.pdf"]
     },
     {
       "assetId": "adafruit.tactile-button-6mm-367",
@@ -163,6 +272,43 @@
       "sources": ["https://www.adafruit.com/product/367", "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"]
     },
     {
+      "assetId": "adafruit.tactile-button-12mm-1119",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "12mm Tactile Button #1119",
+      "level": "momentary-button",
+      "shape": "tactile-button",
+      "package": "12mm-through-hole-switch",
+      "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_EXAMPLE_DATASHEET_CONTACT_LAYOUT",
+      "width": 12, "height": 12, "canvasWidth": 26,
+      "subtitle": "SPST-NO · FOUR PHYSICAL LEADS",
+      "pins": [
+        {"name": "1", "number": "1", "x": 12, "y": 9.5, "side": "right", "direction": "passive", "functions": ["contact-A"]},
+        {"name": "2", "number": "2", "x": 0, "y": 9.5, "side": "left", "direction": "passive", "functions": ["contact-B"]},
+        {"name": "3", "number": "3", "x": 12, "y": 2.5, "side": "right", "direction": "passive", "functions": ["contact-A"]},
+        {"name": "4", "number": "4", "x": 0, "y": 2.5, "side": "left", "direction": "passive", "functions": ["contact-B"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/1119", "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"]
+    },
+    {
+      "assetId": "adafruit.spdt-slide-switch-805",
+      "revision": "1.0.0",
+      "manufacturer": "Dongguan Haoyu Electronics / Adafruit Industries",
+      "mpn": "SS-12E17G2 / Adafruit #805",
+      "level": "selector-switch",
+      "shape": "slide-switch",
+      "package": "spdt-through-hole-slide-switch",
+      "dimensionStatus": "OFFICIAL_DATASHEET_BODY_AND_PIN_PITCH",
+      "width": 11.6, "height": 4.1, "canvasWidth": 25,
+      "subtitle": "SPDT · COM SELECTS A OR B",
+      "pins": [
+        {"name": "A", "number": "1", "x": 3.3, "y": 4.1, "side": "bottom", "direction": "passive", "functions": ["throw-A"]},
+        {"name": "COM", "number": "2", "x": 5.8, "y": 4.1, "side": "bottom", "direction": "passive", "functions": ["common"]},
+        {"name": "B", "number": "3", "x": 8.3, "y": 4.1, "side": "bottom", "direction": "passive", "functions": ["throw-B"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/805", "https://cdn-shop.adafruit.com/product-files/805/SS-12E17G2-revised.pdf"]
+    },
+    {
       "assetId": "adafruit.diffused-red-led-5mm-299",
       "revision": "1.0.0",
       "manufacturer": "Adafruit Industries",
@@ -181,6 +327,96 @@
         {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
       ],
       "sources": ["https://www.adafruit.com/product/299", "https://learn.adafruit.com/all-about-leds/what-is-an-led"]
+    },
+    {
+      "assetId": "adafruit.diffused-green-led-5mm-298",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "Diffused Green 5mm LED #298",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_DIAMETER_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7, "height": 9, "canvasWidth": 20,
+      "lensColor": "#37c96b",
+      "subtitle": "GREEN · 565nm · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/298", "https://learn.adafruit.com/all-about-leds/what-is-an-led"]
+    },
+    {
+      "assetId": "adafruit.super-bright-yellow-led-5mm-2700",
+      "revision": "1.0.0",
+      "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+      "mpn": "FD-5TY45-4 / Adafruit #2700",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7, "height": 9, "canvasWidth": 20,
+      "lensColor": "#f6d94a",
+      "subtitle": "YELLOW · 588–594nm · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/2700", "https://cdn-shop.adafruit.com/product-files/2700/P2700_FD-5TY45-4.pdf"]
+    },
+    {
+      "assetId": "adafruit.super-bright-white-led-5mm-754",
+      "revision": "1.0.0",
+      "manufacturer": "Shenzhen Fedy Technology / Adafruit Industries",
+      "mpn": "FD-5TW-1 / Adafruit #754",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7, "height": 9, "canvasWidth": 20,
+      "lensColor": "#e9f4ff",
+      "subtitle": "COOL WHITE · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/754", "https://cdn-shop.adafruit.com/product-files/754/P754B_datasheet_FD-5TW-1.pdf"]
+    },
+    {
+      "assetId": "adafruit.ir333-a-led-940nm-387",
+      "revision": "1.0.0",
+      "manufacturer": "Everlight Electronics / Adafruit Industries",
+      "mpn": "IR333-A / Adafruit #387",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7, "height": 9, "canvasWidth": 20,
+      "lensColor": "#7389a9",
+      "subtitle": "INFRARED · 940nm · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/387", "https://cdn-shop.adafruit.com/datasheets/IR333_A_datasheet.pdf"]
+    },
+    {
+      "assetId": "adafruit.uv-led-400nm-1793",
+      "revision": "1.0.0",
+      "manufacturer": "Lucky Light Electronics / Adafruit Industries",
+      "mpn": "504UVC2E-Q5C / Adafruit #1793",
+      "level": "indicator-led",
+      "shape": "led",
+      "package": "t1-3-4-radial-led",
+      "dimensionStatus": "OFFICIAL_PACKAGE_DRAWING_DIAGRAMMATIC_LEAD_LENGTH",
+      "width": 7, "height": 9, "canvasWidth": 20,
+      "lensColor": "#9f6fe8",
+      "subtitle": "UVA · 400nm · 5mm · POLARIZED",
+      "pins": [
+        {"name": "A", "number": "1", "x": 2.4, "y": 8.3, "side": "bottom", "direction": "input", "functions": ["anode", "long-lead"]},
+        {"name": "K", "number": "2", "x": 4.6, "y": 8.3, "side": "bottom", "direction": "output", "functions": ["cathode", "short-lead"]}
+      ],
+      "sources": ["https://www.adafruit.com/product/1793", "https://cdn-shop.adafruit.com/datasheets/1793datasheet.pdf"]
     },
     {
       "assetId": "adafruit.diffused-rgb-led-5mm-302",

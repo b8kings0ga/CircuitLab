@@ -1,0 +1,95 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "passive",
+        "functions": [
+          "throw-A"
+        ],
+        "name": "A",
+        "number": "1"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "common"
+        ],
+        "name": "COM",
+        "number": "2"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "throw-B"
+        ],
+        "name": "B",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "22eb0fce71a808a569daa1ac9cce50d904286f04420692bfe9956f8eb53256bc",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/805"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://cdn-shop.adafruit.com/product-files/805/SS-12E17G2-revised.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.spdt-slide-switch-805",
+    "level": "selector-switch",
+    "lifecycle": "active",
+    "manufacturer": "Dongguan Haoyu Electronics / Adafruit Industries",
+    "mpn": "SS-12E17G2 / Adafruit #805",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_DATASHEET_BODY_AND_PIN_PITCH",
+    "heightMm": 4.1,
+    "package": "spdt-through-hole-slide-switch",
+    "widthMm": 11.6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "A",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4,
+        "y": 0.43722944
+      },
+      {
+        "pin": "COM",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.43722944
+      },
+      {
+        "pin": "B",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6,
+        "y": 0.43722944
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "08e84d72695d33a32d727737debfd57adb3867b42df0baf15af9ee45afe45c7d",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 310" role="img" aria-label="12mm Tactile Button #1119 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="130" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="70" y="60" width="120" height="120" rx="8" fill="#202723" stroke="#707b75" stroke-width="2" filter="url(#s)"/>
+<circle cx="130" cy="120" r="34.8" fill="#b9c1bd" stroke="#f0f3f1" stroke-width="2"/>
+<g id="pin-1" data-pin="1">
+<circle cx="190" cy="155" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="190" cy="155" r="4.8" fill="#f5f7f4"/>
+<text x="202" y="158" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">1</text>
+</g>
+<g id="pin-2" data-pin="2">
+<circle cx="70" cy="155" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="70" cy="155" r="4.8" fill="#f5f7f4"/>
+<text x="58" y="158" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">2</text>
+</g>
+<g id="pin-3" data-pin="3">
+<circle cx="190" cy="85" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="190" cy="85" r="4.8" fill="#f5f7f4"/>
+<text x="202" y="88" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">3</text>
+</g>
+<g id="pin-4" data-pin="4">
+<circle cx="70" cy="85" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="70" cy="85" r="4.8" fill="#f5f7f4"/>
+<text x="58" y="88" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">4</text>
+</g>
+<text x="130" y="250" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">12mm Tactile Button #1119</text>
+<text x="130" y="271" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">SPST-NO · FOUR PHYSICAL LEADS</text>
+</svg>

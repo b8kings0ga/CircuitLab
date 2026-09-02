@@ -1,0 +1,65 @@
+{
+  "assetId": "adafruit.tactile-button-12mm-1119",
+  "canvasWidth": 26,
+  "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS_EXAMPLE_DATASHEET_CONTACT_LAYOUT",
+  "height": 12,
+  "level": "momentary-button",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "12mm Tactile Button #1119",
+  "package": "12mm-through-hole-switch",
+  "pins": [
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-A"
+      ],
+      "name": "1",
+      "number": "1",
+      "side": "right",
+      "x": 12,
+      "y": 9.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-B"
+      ],
+      "name": "2",
+      "number": "2",
+      "side": "left",
+      "x": 0,
+      "y": 9.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-A"
+      ],
+      "name": "3",
+      "number": "3",
+      "side": "right",
+      "x": 12,
+      "y": 2.5
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "contact-B"
+      ],
+      "name": "4",
+      "number": "4",
+      "side": "left",
+      "x": 0,
+      "y": 2.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "tactile-button",
+  "sources": [
+    "https://www.adafruit.com/product/1119",
+    "https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf"
+  ],
+  "subtitle": "SPST-NO · FOUR PHYSICAL LEADS",
+  "width": 12
+}

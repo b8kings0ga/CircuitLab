@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 230" role="img" aria-label="2.2kΩ CF 1/4W 5% #2782 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="150" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<path d="M60 80H240" stroke="url(#metal)" stroke-width="5"/>
+<rect x="110.4" y="60" width="79.2" height="40" rx="20" fill="#d8b978" stroke="#846d43" stroke-width="2" filter="url(#s)"/>
+<rect x="121.2" y="62" width="5" height="36" fill="#d71920"/>
+<rect x="135.6" y="62" width="5" height="36" fill="#d71920"/>
+<rect x="150" y="62" width="5" height="36" fill="#d71920"/>
+<rect x="164.4" y="62" width="5" height="36" fill="#c7a329"/>
+<g id="pin-T1" data-pin="T1">
+<circle cx="65" cy="80" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="65" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="53" y="83" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">T1</text>
+</g>
+<g id="pin-T2" data-pin="T2">
+<circle cx="235" cy="80" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="235" cy="80" r="4.8" fill="#f5f7f4"/>
+<text x="247" y="83" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">T2</text>
+</g>
+<text x="150" y="170" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">2.2kΩ CF 1/4W 5% #2782</text>
+<text x="150" y="191" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">2.2kΩ · 1/4W · 5% · NON-POLAR</text>
+</svg>
