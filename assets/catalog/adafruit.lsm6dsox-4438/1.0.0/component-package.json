@@ -1,0 +1,243 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "output",
+        "functions": [
+          "aux-clock"
+        ],
+        "name": "SCX",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "aux-data"
+        ],
+        "name": "SDX",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "aux-chip-select"
+        ],
+        "name": "AUX_CS",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "aux-data-out"
+        ],
+        "name": "AUX_DO",
+        "number": "4"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "5"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "3VO",
+        "number": "6"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL",
+          "SPI-SCK"
+        ],
+        "name": "SCL",
+        "number": "8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA",
+          "SPI-MOSI"
+        ],
+        "name": "SDA",
+        "number": "9"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "SPI-MISO",
+          "I2C-address"
+        ],
+        "name": "DO",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "11"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt-1"
+        ],
+        "name": "INT1",
+        "number": "12"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt-2"
+        ],
+        "name": "INT2",
+        "number": "13"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "db1942034bf92ce5d2984b4106ee2a305a7db8f258e8c116cb146c38c2c2c5e4",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/4438"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/lsm6dsox-and-ism330dhc-6-dof-imu/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.lsm6dsox-4438",
+    "level": "six-axis-imu-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "LSM6DSOX 6-DoF IMU #4438",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "additionalContacts": [
+      {
+        "kind": "duplicate-plated-contact",
+        "net": "GND",
+        "status": "DOCUMENTED_PHYSICAL_CONTACT_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61470588,
+        "y": 0.19626168
+      }
+    ],
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "SCX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38529412,
+        "y": 0.19626168
+      },
+      {
+        "pin": "SDX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.44264706,
+        "y": 0.19626168
+      },
+      {
+        "pin": "AUX_CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.19626168
+      },
+      {
+        "pin": "AUX_DO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.55735294,
+        "y": 0.19626168
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.34705882,
+        "y": 0.5
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38529412,
+        "y": 0.5
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42352941,
+        "y": 0.5
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46176471,
+        "y": 0.5
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.5
+      },
+      {
+        "pin": "DO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53823529,
+        "y": 0.5
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57647059,
+        "y": 0.5
+      },
+      {
+        "pin": "INT1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61470588,
+        "y": 0.5
+      },
+      {
+        "pin": "INT2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.65294118,
+        "y": 0.5
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "11a6da223f192549af6fc197aa75311e5fb3b357aff1396a88e2f5893ad1a9a5",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

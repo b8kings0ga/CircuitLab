@@ -541,6 +541,150 @@
         "https://www.adafruit.com/product/4407",
         "https://learn.adafruit.com/adafruit-mlx90640-ir-thermal-camera/pinouts"
       ]
+    },
+    {
+      "assetId": "adafruit.icm20948-4554",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "ICM-20948 9-DoF IMU #4554",
+      "level": "nine-axis-imu-module",
+      "shape": "module",
+      "width": 25.7,
+      "height": 17.7,
+      "canvasWidth": 64,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "9-DOF IMU · I²C / SPI · AUX I²C",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "duplicateContacts": [
+        {"net": "GND", "label": "G", "x": 14.5, "y": 2.4, "side": "top", "direction": "power"}
+      ],
+      "pins": [
+        {"name": "FS", "number": "1", "x": 4.3, "y": 2.4, "side": "top", "direction": "input", "functions": ["frame-sync-1v8"]},
+        {"name": "AD", "number": "2", "x": 7.7, "y": 2.4, "side": "top", "direction": "bidirectional", "functions": ["aux-I2C-data-1v8"]},
+        {"name": "AC", "number": "3", "x": 11.1, "y": 2.4, "side": "top", "direction": "output", "functions": ["aux-I2C-clock-1v8"]},
+        {"name": "SDO", "number": "4", "x": 17.9, "y": 2.4, "side": "top", "direction": "output", "functions": ["SPI-MISO", "I2C-address"]},
+        {"name": "CS", "number": "5", "x": 21.3, "y": 2.4, "side": "top", "direction": "input", "functions": ["SPI-CS"]},
+        {"name": "VIN", "number": "6", "x": 4.3, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "1V8", "number": "7", "x": 7.7, "y": 15.3, "side": "bottom", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "8", "x": 11.1, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "9", "x": 14.5, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "SPI-SCK"]},
+        {"name": "SDA", "number": "10", "x": 17.9, "y": 15.3, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "SPI-MOSI"]},
+        {"name": "INT", "number": "11", "x": 21.3, "y": 15.3, "side": "bottom", "direction": "output", "functions": ["interrupt"]}
+      ],
+      "parts": [[8.5, 5.1, 8.7, 7.5, "ICM20948"]],
+      "sources": [
+        "https://www.adafruit.com/product/4554",
+        "https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.lsm6dsox-4438",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "LSM6DSOX 6-DoF IMU #4438",
+      "level": "six-axis-imu-module",
+      "shape": "module",
+      "width": 25.6,
+      "height": 17.8,
+      "canvasWidth": 68,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "6-DOF IMU · I²C / SPI · AUX BUS",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "duplicateContacts": [
+        {"net": "GND", "label": "GND", "x": 20.6, "y": 2.4, "side": "top", "direction": "power"}
+      ],
+      "pins": [
+        {"name": "SCX", "number": "1", "x": 5.0, "y": 2.4, "side": "top", "direction": "output", "functions": ["aux-clock"]},
+        {"name": "SDX", "number": "2", "x": 8.9, "y": 2.4, "side": "top", "direction": "bidirectional", "functions": ["aux-data"]},
+        {"name": "AUX_CS", "number": "3", "x": 12.8, "y": 2.4, "side": "top", "direction": "output", "functions": ["aux-chip-select"]},
+        {"name": "AUX_DO", "number": "4", "x": 16.7, "y": 2.4, "side": "top", "direction": "input", "functions": ["aux-data-out"]},
+        {"name": "VIN", "number": "5", "x": 2.4, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "6", "x": 5.0, "y": 15.4, "side": "bottom", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "7", "x": 7.6, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "8", "x": 10.2, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "SPI-SCK"]},
+        {"name": "SDA", "number": "9", "x": 12.8, "y": 15.4, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "SPI-MOSI"]},
+        {"name": "DO", "number": "10", "x": 15.4, "y": 15.4, "side": "bottom", "direction": "output", "functions": ["SPI-MISO", "I2C-address"]},
+        {"name": "CS", "number": "11", "x": 18.0, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["SPI-CS"]},
+        {"name": "INT1", "number": "12", "x": 20.6, "y": 15.4, "side": "bottom", "direction": "output", "functions": ["interrupt-1"]},
+        {"name": "INT2", "number": "13", "x": 23.2, "y": 15.4, "side": "bottom", "direction": "output", "functions": ["interrupt-2"]}
+      ],
+      "parts": [[8.4, 5.1, 8.8, 7.2, "LSM6DSOX"]],
+      "sources": [
+        "https://www.adafruit.com/product/4438",
+        "https://learn.adafruit.com/lsm6dsox-and-ism330dhc-6-dof-imu/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.dps310-4494",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "DPS310 Pressure Sensor #4494",
+      "level": "barometric-pressure-sensor-module",
+      "lifecycle": "not-stocked",
+      "shape": "module",
+      "width": 25.5,
+      "height": 17.7,
+      "canvasWidth": 62,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "PRESSURE / ALTITUDE · I²C / SPI",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 3.3, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 6.45, "y": 15.3, "side": "bottom", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "3", "x": 9.6, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCK", "number": "4", "x": 12.75, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "SPI-SCK"]},
+        {"name": "SDI", "number": "5", "x": 15.9, "y": 15.3, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "SPI-MOSI"]},
+        {"name": "SDO", "number": "6", "x": 19.05, "y": 15.3, "side": "bottom", "direction": "output", "functions": ["SPI-MISO", "I2C-address"]},
+        {"name": "CS", "number": "7", "x": 22.2, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["SPI-CS"]}
+      ],
+      "parts": [[9.0, 4.0, 7.5, 7.4, "DPS310"]],
+      "sources": [
+        "https://www.adafruit.com/product/4494",
+        "https://learn.adafruit.com/adafruit-dps310-precision-barometric-pressure-sensor/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.drv2605l-2305-stemma-qt",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "DRV2605L Haptic Controller #2305 (STEMMA QT)",
+      "level": "haptic-motor-controller-module",
+      "shape": "module",
+      "width": 25.8,
+      "height": 17.8,
+      "canvasWidth": 68,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "HAPTIC DRIVER · I²C 0x5A",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "duplicateContacts": [
+        {"net": "MOTOR-", "label": "M−", "x": 7.2, "y": 2.7, "side": "top"},
+        {"net": "MOTOR+", "label": "M+", "x": 18.6, "y": 2.7, "side": "top"}
+      ],
+      "pins": [
+        {"name": "MOTOR-", "number": "1", "x": 10.2, "y": 2.7, "side": "top", "direction": "output", "functions": ["haptic-motor-negative"]},
+        {"name": "MOTOR+", "number": "2", "x": 15.6, "y": 2.7, "side": "top", "direction": "output", "functions": ["haptic-motor-positive"]},
+        {"name": "VIN", "number": "3", "x": 5.2, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "4", "x": 9.05, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "5", "x": 12.9, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "6", "x": 16.75, "y": 15.4, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "INT", "number": "7", "x": 20.6, "y": 15.4, "side": "bottom", "direction": "bidirectional", "functions": ["trigger", "analog-audio-input"]}
+      ],
+      "parts": [[9.0, 5.1, 7.8, 7.2, "DRV2605L"]],
+      "sources": [
+        "https://www.adafruit.com/product/2305",
+        "https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts"
+      ]
     }
   ]
 }

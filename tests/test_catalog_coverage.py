@@ -14,8 +14,8 @@ from catalog_coverage import coverage  # noqa: E402
 class CatalogCoverageTests(unittest.TestCase):
     def test_reports_truthful_progress_to_one_hundred(self) -> None:
         report = coverage(ROOT / "assets" / "catalog", 100)
-        self.assertEqual(report["verified"], 48)
-        self.assertEqual(report["remaining"], 52)
+        self.assertEqual(report["verified"], 52)
+        self.assertEqual(report["remaining"], 48)
         self.assertFalse(report["complete"])
         self.assertEqual(report["families"]["passive/resistor"], 4)
         self.assertEqual(report["families"]["control/button-switch"], 1)

@@ -1,0 +1,215 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "frame-sync-1v8"
+        ],
+        "name": "FS",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "aux-I2C-data-1v8"
+        ],
+        "name": "AD",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "aux-I2C-clock-1v8"
+        ],
+        "name": "AC",
+        "number": "3"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "SPI-MISO",
+          "I2C-address"
+        ],
+        "name": "SDO",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "5"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "6"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "1V8",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "8"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL",
+          "SPI-SCK"
+        ],
+        "name": "SCL",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA",
+          "SPI-MOSI"
+        ],
+        "name": "SDA",
+        "number": "10"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt"
+        ],
+        "name": "INT",
+        "number": "11"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "1b1418193da33296dbf8d4f645ada2f5e16767ded7ea5910f67dc1227b3c5f1b",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/4554"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.icm20948-4554",
+    "level": "nine-axis-imu-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "ICM-20948 9-DoF IMU #4554",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "additionalContacts": [
+      {
+        "kind": "duplicate-plated-contact",
+        "net": "GND",
+        "status": "DOCUMENTED_PHYSICAL_CONTACT_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52578125,
+        "y": 0.19672131
+      }
+    ],
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.7,
+    "package": "assembled-module",
+    "widthMm": 25.7
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "FS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36640625,
+        "y": 0.19672131
+      },
+      {
+        "pin": "AD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.41953125,
+        "y": 0.19672131
+      },
+      {
+        "pin": "AC",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47265625,
+        "y": 0.19672131
+      },
+      {
+        "pin": "SDO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57890625,
+        "y": 0.19672131
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63203125,
+        "y": 0.19672131
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36640625,
+        "y": 0.49882904
+      },
+      {
+        "pin": "1V8",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.41953125,
+        "y": 0.49882904
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47265625,
+        "y": 0.49882904
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52578125,
+        "y": 0.49882904
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57890625,
+        "y": 0.49882904
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63203125,
+        "y": 0.49882904
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "a95d06da101a85e040ce58cd2c1d287735d18c2a2ef74fb9c05dd532d37d0adf",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

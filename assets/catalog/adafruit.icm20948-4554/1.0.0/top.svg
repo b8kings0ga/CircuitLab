@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 341.6" role="img" aria-label="ICM-20948 9-DoF IMU #4554 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="153.2" y="48" width="205.6" height="141.6" rx="9" fill="#151a18" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="256" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="256" y="293.6" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">ICM-20948 9-DoF IMU #4554</text>
+<text x="256" y="310.4" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">9-DOF IMU · I²C / SPI · AUX I²C</text>
+<circle cx="171.6" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="171.6" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="340.4" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="340.4" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="171.6" cy="171.2" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="171.6" cy="171.2" r="3.4" fill="#e9ece8"/>
+<circle cx="340.4" cy="171.2" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="340.4" cy="171.2" r="3.4" fill="#e9ece8"/>
+<rect x="151.2" y="108.888" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<rect x="341.8" y="108.888" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<g data-duplicate-contact="GND">
+<circle cx="269.2" cy="67.2" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="269.2" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="269.2" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="269.2" y="44.8" transform="rotate(-62 269.2 44.8)" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">G</text>
+<title>Additional physical contact for GND; canonical electrical pin remains the primary anchor</title>
+</g>
+<path d="M256 118.8L187.6 67.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L214.8 67.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L242 67.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L296.4 67.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L323.6 67.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L187.6 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L214.8 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L242 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L269.2 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L296.4 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 118.8L323.6 170.4" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="221.2" y="88.8" width="69.6" height="60" rx="5" fill="#d8ddd9" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="256" y="121.8" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">ICM20948</text>
+<g id="pin-FS" data-pin="FS">
+<circle cx="187.6" cy="67.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="187.6" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="187.6" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="187.6" y="44.8" transform="rotate(-62 187.6 44.8)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">FS</text>
+</g>
+<g id="pin-AD" data-pin="AD">
+<circle cx="214.8" cy="67.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="214.8" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="214.8" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="214.8" y="44.8" transform="rotate(-62 214.8 44.8)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">AD</text>
+</g>
+<g id="pin-AC" data-pin="AC">
+<circle cx="242" cy="67.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="242" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="242" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="242" y="44.8" transform="rotate(-62 242 44.8)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">AC</text>
+</g>
+<g id="pin-SDO" data-pin="SDO">
+<circle cx="296.4" cy="67.2" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="296.4" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="296.4" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="296.4" y="44.8" transform="rotate(-62 296.4 44.8)" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SDO</text>
+</g>
+<g id="pin-CS" data-pin="CS">
+<circle cx="323.6" cy="67.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="323.6" cy="67.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="323.6" cy="67.2" r="2.4" fill="#3e4641"/>
+<text x="323.6" y="44.8" transform="rotate(-62 323.6 44.8)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">CS</text>
+</g>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="187.6" cy="170.4" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="187.6" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="187.6" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="187.6" y="205.6" transform="rotate(-62 187.6 205.6)" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">VIN</text>
+</g>
+<g id="pin-1V8" data-pin="1V8">
+<circle cx="214.8" cy="170.4" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="214.8" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="214.8" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="214.8" y="205.6" transform="rotate(-62 214.8 205.6)" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">1V8</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="242" cy="170.4" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="242" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="242" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="242" y="205.6" transform="rotate(-62 242 205.6)" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">GND</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="269.2" cy="170.4" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="269.2" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="269.2" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="269.2" y="205.6" transform="rotate(-62 269.2 205.6)" text-anchor="start" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SCL</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="296.4" cy="170.4" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="296.4" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="296.4" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="296.4" y="205.6" transform="rotate(-62 296.4 205.6)" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SDA</text>
+</g>
+<g id="pin-INT" data-pin="INT">
+<circle cx="323.6" cy="170.4" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="323.6" cy="170.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="323.6" cy="170.4" r="2.4" fill="#3e4641"/>
+<text x="323.6" y="205.6" transform="rotate(-62 323.6 205.6)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">INT</text>
+</g>
+</svg>

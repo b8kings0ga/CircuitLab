@@ -1,0 +1,163 @@
+{
+  "accent": "#d8ddd9",
+  "assetId": "adafruit.icm20948-4554",
+  "canvasWidth": 64,
+  "color": "#151a18",
+  "densePins": true,
+  "duplicateContacts": [
+    {
+      "direction": "power",
+      "label": "G",
+      "net": "GND",
+      "side": "top",
+      "x": 14.5,
+      "y": 2.4
+    }
+  ],
+  "height": 17.7,
+  "level": "nine-axis-imu-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "ICM-20948 9-DoF IMU #4554",
+  "parts": [
+    [
+      8.5,
+      5.1,
+      8.7,
+      7.5,
+      "ICM20948"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "frame-sync-1v8"
+      ],
+      "name": "FS",
+      "number": "1",
+      "side": "top",
+      "x": 4.3,
+      "y": 2.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "aux-I2C-data-1v8"
+      ],
+      "name": "AD",
+      "number": "2",
+      "side": "top",
+      "x": 7.7,
+      "y": 2.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "aux-I2C-clock-1v8"
+      ],
+      "name": "AC",
+      "number": "3",
+      "side": "top",
+      "x": 11.1,
+      "y": 2.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "SPI-MISO",
+        "I2C-address"
+      ],
+      "name": "SDO",
+      "number": "4",
+      "side": "top",
+      "x": 17.9,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-CS"
+      ],
+      "name": "CS",
+      "number": "5",
+      "side": "top",
+      "x": 21.3,
+      "y": 2.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "6",
+      "side": "bottom",
+      "x": 4.3,
+      "y": 15.3
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "1V8",
+      "number": "7",
+      "side": "bottom",
+      "x": 7.7,
+      "y": 15.3
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "8",
+      "side": "bottom",
+      "x": 11.1,
+      "y": 15.3
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL",
+        "SPI-SCK"
+      ],
+      "name": "SCL",
+      "number": "9",
+      "side": "bottom",
+      "x": 14.5,
+      "y": 15.3
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA",
+        "SPI-MOSI"
+      ],
+      "name": "SDA",
+      "number": "10",
+      "side": "bottom",
+      "x": 17.9,
+      "y": 15.3
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt"
+      ],
+      "name": "INT",
+      "number": "11",
+      "side": "bottom",
+      "x": 21.3,
+      "y": 15.3
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/4554",
+    "https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu/pinouts"
+  ],
+  "subtitle": "9-DOF IMU · I²C / SPI · AUX I²C",
+  "suppressBoardIdentity": true,
+  "topPinLabelMode": "above-rotated",
+  "width": 25.7
+}

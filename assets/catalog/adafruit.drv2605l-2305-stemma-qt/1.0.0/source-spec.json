@@ -1,0 +1,123 @@
+{
+  "accent": "#d8ddd9",
+  "assetId": "adafruit.drv2605l-2305-stemma-qt",
+  "canvasWidth": 68,
+  "color": "#151a18",
+  "densePins": true,
+  "duplicateContacts": [
+    {
+      "label": "M−",
+      "net": "MOTOR-",
+      "side": "top",
+      "x": 7.2,
+      "y": 2.7
+    },
+    {
+      "label": "M+",
+      "net": "MOTOR+",
+      "side": "top",
+      "x": 18.6,
+      "y": 2.7
+    }
+  ],
+  "height": 17.8,
+  "level": "haptic-motor-controller-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "DRV2605L Haptic Controller #2305 (STEMMA QT)",
+  "parts": [
+    [
+      9.0,
+      5.1,
+      7.8,
+      7.2,
+      "DRV2605L"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "haptic-motor-negative"
+      ],
+      "name": "MOTOR-",
+      "number": "1",
+      "side": "top",
+      "x": 10.2,
+      "y": 2.7
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "haptic-motor-positive"
+      ],
+      "name": "MOTOR+",
+      "number": "2",
+      "side": "top",
+      "x": 15.6,
+      "y": 2.7
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "3",
+      "side": "bottom",
+      "x": 5.2,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "4",
+      "side": "bottom",
+      "x": 9.05,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "5",
+      "side": "bottom",
+      "x": 12.9,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "6",
+      "side": "bottom",
+      "x": 16.75,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "trigger",
+        "analog-audio-input"
+      ],
+      "name": "INT",
+      "number": "7",
+      "side": "bottom",
+      "x": 20.6,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/2305",
+    "https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts"
+  ],
+  "subtitle": "HAPTIC DRIVER · I²C 0x5A",
+  "suppressBoardIdentity": true,
+  "topPinLabelMode": "above-rotated",
+  "width": 25.8
+}

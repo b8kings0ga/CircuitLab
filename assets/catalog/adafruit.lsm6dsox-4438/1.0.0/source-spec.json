@@ -1,0 +1,185 @@
+{
+  "accent": "#d8ddd9",
+  "assetId": "adafruit.lsm6dsox-4438",
+  "canvasWidth": 68,
+  "color": "#151a18",
+  "densePins": true,
+  "duplicateContacts": [
+    {
+      "direction": "power",
+      "label": "GND",
+      "net": "GND",
+      "side": "top",
+      "x": 20.6,
+      "y": 2.4
+    }
+  ],
+  "height": 17.8,
+  "level": "six-axis-imu-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "LSM6DSOX 6-DoF IMU #4438",
+  "parts": [
+    [
+      8.4,
+      5.1,
+      8.8,
+      7.2,
+      "LSM6DSOX"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "aux-clock"
+      ],
+      "name": "SCX",
+      "number": "1",
+      "side": "top",
+      "x": 5.0,
+      "y": 2.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "aux-data"
+      ],
+      "name": "SDX",
+      "number": "2",
+      "side": "top",
+      "x": 8.9,
+      "y": 2.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "aux-chip-select"
+      ],
+      "name": "AUX_CS",
+      "number": "3",
+      "side": "top",
+      "x": 12.8,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "aux-data-out"
+      ],
+      "name": "AUX_DO",
+      "number": "4",
+      "side": "top",
+      "x": 16.7,
+      "y": 2.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "5",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "3VO",
+      "number": "6",
+      "side": "bottom",
+      "x": 5.0,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "7",
+      "side": "bottom",
+      "x": 7.6,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL",
+        "SPI-SCK"
+      ],
+      "name": "SCL",
+      "number": "8",
+      "side": "bottom",
+      "x": 10.2,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA",
+        "SPI-MOSI"
+      ],
+      "name": "SDA",
+      "number": "9",
+      "side": "bottom",
+      "x": 12.8,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "SPI-MISO",
+        "I2C-address"
+      ],
+      "name": "DO",
+      "number": "10",
+      "side": "bottom",
+      "x": 15.4,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-CS"
+      ],
+      "name": "CS",
+      "number": "11",
+      "side": "bottom",
+      "x": 18.0,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt-1"
+      ],
+      "name": "INT1",
+      "number": "12",
+      "side": "bottom",
+      "x": 20.6,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt-2"
+      ],
+      "name": "INT2",
+      "number": "13",
+      "side": "bottom",
+      "x": 23.2,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/4438",
+    "https://learn.adafruit.com/lsm6dsox-and-ism330dhc-6-dof-imu/pinouts"
+  ],
+  "subtitle": "6-DOF IMU · I²C / SPI · AUX BUS",
+  "suppressBoardIdentity": true,
+  "topPinLabelMode": "above-rotated",
+  "width": 25.6
+}

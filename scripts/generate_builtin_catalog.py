@@ -328,6 +328,25 @@ def render(spec: dict[str, Any]) -> str:
             f'<title>Additional physical contact for {net}; canonical electrical pin remains the header anchor</title>',
             '</g>',
         ])
+    for contact in spec.get("duplicateContacts", []):
+        cx = (offset_x + float(contact["x"])) * scale; cy = (BOARD_Y + float(contact["y"])) * scale
+        net = str(contact["net"]); label = str(contact.get("label", net))
+        colour = pin_colour({"name": net, "direction": contact.get("direction", "passive")})
+        lines.extend([
+            f'<g data-duplicate-contact="{esc(net)}">',
+            f'<circle cx="{cx:g}" cy="{cy:g}" r="8.4" fill="{colour}" stroke="#16201a" stroke-width="1.5"/>',
+            f'<circle cx="{cx:g}" cy="{cy:g}" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>',
+            f'<circle cx="{cx:g}" cy="{cy:g}" r="2.4" fill="#3e4641"/>',
+        ])
+        if contact.get("side") == "top":
+            label_y = (BOARD_Y - .4) * scale
+            lines.append(f'<text x="{cx:g}" y="{label_y:g}" transform="rotate(-62 {cx:g} {label_y:g})" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
+        elif contact.get("side") == "left":
+            lines.append(f'<text x="{cx + 12:g}" y="{cy + 2.5:g}" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
+        lines.extend([
+            f'<title>Additional physical contact for {esc(net)}; canonical electrical pin remains the primary anchor</title>',
+            '</g>',
+        ])
     for x, y, width, part_height, label in spec["parts"]:
         px = (offset_x + x) * scale; py = (BOARD_Y + y) * scale
         part_width = width * scale; rendered_height = part_height * scale
@@ -443,20 +462,27 @@ def package_for(spec: dict[str, Any], svg: bytes) -> dict[str, Any]:
     physical = {"widthMm": spec["width"], "heightMm": spec["height"], "package": spec.get("package", "assembled-module")}
     if is_declarative:
         physical["dimensionStatus"] = spec.get("dimensionStatus", "OFFICIAL_PRODUCT_DIMENSIONS")
-    if spec.get("terminalContacts"):
+    additional_contacts = [
+        {**contact, "kind": "duplicate-terminal-contact"}
+        for contact in spec.get("terminalContacts", [])
+    ] + [
+        {**contact, "kind": "duplicate-plated-contact"}
+        for contact in spec.get("duplicateContacts", [])
+    ]
+    if additional_contacts:
         physical["additionalContacts"] = [
             {
                 "net": contact["net"],
-                "kind": "duplicate-terminal-contact",
+                "kind": contact["kind"],
                 "x": round((offset_x + float(contact["x"])) / canvas_width, 8),
                 "y": round((BOARD_Y + float(contact["y"])) / height, 8),
                 "status": "DOCUMENTED_PHYSICAL_CONTACT_VISUAL_LAYOUT_UNVERIFIED",
             }
-            for contact in spec["terminalContacts"]
+            for contact in additional_contacts
         ]
     return {
         "schema": "component-package/v1",
-        "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": "active"},
+        "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": spec.get("lifecycle", "active")},
         "electrical": {"status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED", "pins": [{key: row[key] for key in ("name", "number", "direction", "functions")} for row in spec["pins"]]},
         "visual": {"appearance": "top.svg", "appearanceSha256": hashlib.sha256(svg).hexdigest(), "style": STYLE["schema"], "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED", "anchors": [{"pin": row["name"], "x": round((offset_x + row["x"]) / canvas_width, 8), "y": round((BOARD_Y + row["y"]) / height, 8), "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED"} for row in spec["pins"]], "views": [{"name": "interactive-top", "view": "original-vector-top", "path": "top.svg"}]},
         "physical": physical,

@@ -49,12 +49,24 @@
       "ref": "adafruit.diffused-rgb-led-5mm-302@1.0.0"
     },
     {
+      "pins": 7,
+      "ref": "adafruit.dps310-4494@1.0.0"
+    },
+    {
+      "pins": 7,
+      "ref": "adafruit.drv2605l-2305-stemma-qt@1.0.0"
+    },
+    {
       "pins": 8,
       "ref": "adafruit.ds3231-3013@1.0.0"
     },
     {
       "pins": 28,
       "ref": "adafruit.feather-nrf52840-express-4062@1.1.0"
+    },
+    {
+      "pins": 11,
+      "ref": "adafruit.icm20948-4554@1.0.0"
     },
     {
       "pins": 8,
@@ -71,6 +83,10 @@
     {
       "pins": 9,
       "ref": "adafruit.lis3mdl-4479@1.1.0"
+    },
+    {
+      "pins": 13,
+      "ref": "adafruit.lsm6dsox-4438@1.0.0"
     },
     {
       "pins": 6,

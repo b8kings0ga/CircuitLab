@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 41)
+        self.assertEqual(len(CATALOG), 45)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -47,6 +47,15 @@ class BuiltinCatalogTests(unittest.TestCase):
         self.assertTrue(all(pin["side"] == "left" for pin in sensor["pins"]))
         self.assertEqual([contact["net"] for contact in package["physical"]["additionalContacts"]], ["VIN+", "VIN-"])
         self.assertEqual(len(package["electrical"]["pins"]), len(package["visual"]["anchors"]))
+
+        imu = specs["adafruit.icm20948-4554"]
+        package = package_for(imu, render(imu).encode("utf-8"))
+        self.assertEqual(len(package["electrical"]["pins"]), 11)
+        self.assertEqual(package["physical"]["additionalContacts"][0]["net"], "GND")
+
+        haptic = specs["adafruit.drv2605l-2305-stemma-qt"]
+        package = package_for(haptic, render(haptic).encode("utf-8"))
+        self.assertEqual([contact["net"] for contact in package["physical"]["additionalContacts"]], ["MOTOR-", "MOTOR+"])
 
 
 if __name__ == "__main__":
