@@ -1,0 +1,132 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCK",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "SDO",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDI",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CS",
+        "number": "7"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "5a238777314db850ffcece74ede81257dc8a2b259cc4934c30b9bd21e19ec19c",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.bme280-2652",
+    "level": "environmental-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "BME280 #2652",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28541667,
+        "y": 0.58152174
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35694444,
+        "y": 0.58152174
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42847222,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SCK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SDO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57152778,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SDI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.64305556,
+        "y": 0.58152174
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.71458333,
+        "y": 0.58152174
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "d50e3ee96830238e70027c6c73f671ee64d2ab5610e75153c8e1404aabd0d456",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

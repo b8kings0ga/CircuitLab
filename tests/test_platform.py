@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 CORE = Path(__file__).resolve().parents[1] / "assets" / "template" / "core"
@@ -45,8 +46,9 @@ class CircuitLabPlatformTests(unittest.TestCase):
         self.temporary.cleanup()
 
     def test_component_revision_is_immutable_and_searchable(self) -> None:
-        self.assertEqual(self.registry.install(component())["status"], "installed")
-        self.assertEqual(self.registry.install(component())["status"], "unchanged")
+        with mock.patch("circuitlab_platform.time.strftime", side_effect=["2026-09-03T00:00:00Z", "2026-09-03T00:00:01Z"]):
+            self.assertEqual(self.registry.install(component())["status"], "installed")
+            self.assertEqual(self.registry.install(component())["status"], "unchanged")
         self.assertEqual(self.registry.list("TEST-CHIP", scope="chips")[0]["ref"], "circuitlab.test-chip@1.0.0")
         changed = component(); changed["identity"]["mpn"] = "OTHER"
         with self.assertRaisesRegex(ValueError, "immutable component revision conflicts"):
@@ -92,6 +94,8 @@ class CircuitLabPlatformTests(unittest.TestCase):
         controller = component()
         self.assertEqual(component_family(controller), ("controller", "mcu-soc"))
         environment = component(); environment["identity"]["level"] = "environmental-sensor"
+        self.assertEqual(component_family(environment), ("sensor", "environment"))
+        environment["identity"]["level"] = "environmental-sensor-module"
         self.assertEqual(component_family(environment), ("sensor", "environment"))
         motion = component(); motion["identity"]["level"] = "six-axis-imu"
         self.assertEqual(component_family(motion), ("sensor", "motion-imu"))

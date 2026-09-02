@@ -1,8 +1,16 @@
 {
   "components": [
     {
+      "pins": 4,
+      "ref": "adafruit.aht20-4566@1.0.0"
+    },
+    {
       "pins": 6,
       "ref": "adafruit.apds9960-4060@1.0.0"
+    },
+    {
+      "pins": 7,
+      "ref": "adafruit.bme280-2652@1.0.0"
     },
     {
       "pins": 7,
@@ -13,12 +21,40 @@
       "ref": "adafruit.feather-nrf52840-express-4062@1.1.0"
     },
     {
+      "pins": 8,
+      "ref": "adafruit.ina219-904@1.0.0"
+    },
+    {
+      "pins": 12,
+      "ref": "adafruit.lis3dh-2809@1.0.1"
+    },
+    {
       "pins": 9,
       "ref": "adafruit.lis3mdl-4479@1.1.0"
     },
     {
+      "pins": 6,
+      "ref": "adafruit.ltr390-4831@1.0.0"
+    },
+    {
+      "pins": 5,
+      "ref": "adafruit.max9814-1713@1.0.0"
+    },
+    {
+      "pins": 11,
+      "ref": "adafruit.mpu6050-3886@1.0.1"
+    },
+    {
+      "pins": 3,
+      "ref": "adafruit.pir-motion-189@1.0.0"
+    },
+    {
       "pins": 5,
       "ref": "adafruit.scd40-5187@1.0.0"
+    },
+    {
+      "pins": 5,
+      "ref": "adafruit.sgp30-3709@1.0.0"
     },
     {
       "pins": 5,
@@ -29,8 +65,16 @@
       "ref": "adafruit.sph0645lm4h-3421@1.1.0"
     },
     {
+      "pins": 12,
+      "ref": "adafruit.st7789-4313@1.0.1"
+    },
+    {
       "pins": 6,
       "ref": "adafruit.veml7700-4162@1.0.0"
+    },
+    {
+      "pins": 7,
+      "ref": "adafruit.vl53l0x-3317@1.0.0"
     },
     {
       "pins": 6,

@@ -1,0 +1,180 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDA",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "INT",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "AD0",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "FS",
+        "number": "8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SCE",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDE",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CLKIN",
+        "number": "11"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "5d42c790135ca2c1146bddde0b25ba7c91127eccedbb7a8a63bb7b1fcee1c016",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.mpu6050-3886",
+    "level": "six-axis-imu-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "MPU-6050 #3886",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.30925926,
+        "y": 0.58152174
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.34740741,
+        "y": 0.58152174
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38555556,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4237037,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46185185,
+        "y": 0.58152174
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.58152174
+      },
+      {
+        "pin": "AD0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53814815,
+        "y": 0.58152174
+      },
+      {
+        "pin": "FS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5762963,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SCE",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61444444,
+        "y": 0.58152174
+      },
+      {
+        "pin": "SDE",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.65259259,
+        "y": 0.58152174
+      },
+      {
+        "pin": "CLKIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.69074074,
+        "y": 0.58152174
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "55ef4f0c1ba141d9d3cdd916d7eb4918e5a0b815c972dbc20c23e9f8a2e31250",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

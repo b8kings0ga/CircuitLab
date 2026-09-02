@@ -1,0 +1,84 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "5V",
+        "number": "1"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "OUT",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "ba1c653a05ba2d8d7ac39981c36d9f72bdb9dea93c66fe1cee3eca838f2ef28c",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/connecting-to-a-pir"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.pir-motion-189",
+    "level": "pir-motion-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "PIR Motion Sensor #189",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 24.0,
+    "package": "assembled-module",
+    "widthMm": 32.0
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "5V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.23846154,
+        "y": 0.64186047
+      },
+      {
+        "pin": "OUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.64186047
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.76153846,
+        "y": 0.64186047
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "369a91fa49564273410e9a9bf071a0327d03e6b256d52f7c0f82a5d882a2c708",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 304" role="img" aria-label="LIS3DH #2809 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="122.4" y="48" width="203.2" height="152" rx="9" fill="#151a18" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="224" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="132.4" y="63" fill="#eef4ef" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">Adafruit Industries</text>
+<text x="132.4" y="73" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">LIS3DH #2809</text>
+<text x="224" y="256" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">LIS3DH #2809</text>
+<text x="224" y="272.8" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">3-AXIS ACCEL · I²C / SPI / ADC</text>
+<circle cx="140.8" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="140.8" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="307.2" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="307.2" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="140.8" cy="181.6" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="140.8" cy="181.6" r="3.4" fill="#e9ece8"/>
+<circle cx="307.2" cy="181.6" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="307.2" cy="181.6" r="3.4" fill="#e9ece8"/>
+<rect x="120.4" y="113.36" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<rect x="308.6" y="113.36" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<path d="M224 114.4L141.6 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L156.582 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L171.564 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L186.545 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L201.527 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L216.509 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L231.491 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L246.473 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L261.455 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L276.436 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L291.418 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M224 114.4L306.4 180.8" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="194.4" y="84.8" width="59.2" height="59.2" rx="5" fill="#e6e6df" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="224" y="117.4" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">ACCEL</text>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="141.6" cy="180.8" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="141.6" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="141.6" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="141.6" y="217.6" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VIN</text>
+</g>
+<g id="pin-3VO" data-pin="3VO">
+<circle cx="156.582" cy="180.8" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="156.582" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="156.582" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="156.582" y="217.6" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">3VO</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="171.564" cy="180.8" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.564" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.564" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="171.564" y="217.6" text-anchor="middle" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="186.545" cy="180.8" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="186.545" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="186.545" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="186.545" y="217.6" text-anchor="middle" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SCL</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="201.527" cy="180.8" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="201.527" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="201.527" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="201.527" y="217.6" text-anchor="middle" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SDA</text>
+</g>
+<g id="pin-SDO" data-pin="SDO">
+<circle cx="216.509" cy="180.8" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="216.509" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="216.509" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="216.509" y="217.6" text-anchor="middle" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SDO</text>
+</g>
+<g id="pin-CS" data-pin="CS">
+<circle cx="231.491" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="231.491" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="231.491" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="231.491" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">CS</text>
+</g>
+<g id="pin-INT" data-pin="INT">
+<circle cx="246.473" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="246.473" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="246.473" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="246.473" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">INT</text>
+</g>
+<g id="pin-A1" data-pin="A1">
+<circle cx="261.455" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="261.455" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="261.455" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="261.455" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A1</text>
+</g>
+<g id="pin-A2" data-pin="A2">
+<circle cx="276.436" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="276.436" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="276.436" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="276.436" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A2</text>
+</g>
+<g id="pin-A3" data-pin="A3">
+<circle cx="291.418" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="291.418" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="291.418" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="291.418" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">A3</text>
+</g>
+<g id="pin-I2" data-pin="I2">
+<circle cx="306.4" cy="180.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="306.4" cy="180.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="306.4" cy="180.8" r="2.4" fill="#3e4641"/>
+<text x="306.4" y="217.6" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">I2</text>
+</g>
+</svg>

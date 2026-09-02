@@ -1,0 +1,108 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VDD",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "OUT",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "GAIN",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A/R",
+        "number": "5"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "d3b343940025d9045aca04886c8a737c68685ed17be2420f0248e62ad6417d4b",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814?view=all"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.max9814-1713",
+    "level": "analog-microphone-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "MAX9814 #1713",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 15.0,
+    "package": "assembled-module",
+    "widthMm": 26.0
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VDD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.27916667,
+        "y": 0.54705882
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38958333,
+        "y": 0.54705882
+      },
+      {
+        "pin": "OUT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.54705882
+      },
+      {
+        "pin": "GAIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61041667,
+        "y": 0.54705882
+      },
+      {
+        "pin": "A/R",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.72083333,
+        "y": 0.54705882
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "2a21aa9940c13a324ca701b1002785ebc96c6d98ed18f6b79633312f8e10e38b",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

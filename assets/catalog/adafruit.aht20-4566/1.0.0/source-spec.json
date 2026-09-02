@@ -1,0 +1,62 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.aht20-4566",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "temperature-humidity-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "AHT20 #4566",
+  "parts": [
+    [
+      9.1,
+      4.0,
+      7.2,
+      7.4,
+      "AHT20"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 9.266666666666666,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "3",
+      "side": "bottom",
+      "x": 16.133333333333333,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-aht20/pinouts",
+  "subtitle": "TEMP / HUMIDITY · I²C 0x38",
+  "width": 25.4
+}

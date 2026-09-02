@@ -1,0 +1,53 @@
+{
+  "accent": "#f0eee5",
+  "assetId": "adafruit.pir-motion-189",
+  "canvasWidth": 52,
+  "color": "#176c4b",
+  "height": 24.0,
+  "level": "pir-motion-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "PIR Motion Sensor #189",
+  "parts": [
+    [
+      8.0,
+      3.0,
+      16.0,
+      14.0,
+      "PIR"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "5V",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 21.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "OUT",
+      "number": "2",
+      "side": "bottom",
+      "x": 16.0,
+      "y": 21.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 29.599999999999998,
+      "y": 21.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/connecting-to-a-pir",
+  "subtitle": "MOTION · DIGITAL OUTPUT",
+  "width": 32.0
+}

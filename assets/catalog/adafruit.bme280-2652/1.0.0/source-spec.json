@@ -1,0 +1,89 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.bme280-2652",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "environmental-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "BME280 #2652",
+  "parts": [
+    [
+      9.0,
+      4.0,
+      7.4,
+      7.4,
+      "BME280"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.833333333333333,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 9.266666666666666,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCK",
+      "number": "4",
+      "side": "bottom",
+      "x": 12.7,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "SDO",
+      "number": "5",
+      "side": "bottom",
+      "x": 16.133333333333333,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDI",
+      "number": "6",
+      "side": "bottom",
+      "x": 19.566666666666663,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CS",
+      "number": "7",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/pinouts",
+  "subtitle": "TEMP / HUMIDITY / PRESSURE · I²C / SPI",
+  "width": 25.4
+}

@@ -1,0 +1,89 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.vl53l0x-3317",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "distance-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "VL53L0X #3317",
+  "parts": [
+    [
+      8.8,
+      4.0,
+      7.8,
+      7.4,
+      "TOF"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "2V8",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.833333333333333,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 9.266666666666666,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 12.7,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 16.133333333333333,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "GPIO",
+      "number": "6",
+      "side": "bottom",
+      "x": 19.566666666666663,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SHDN",
+      "number": "7",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/pinouts",
+  "subtitle": "DISTANCE · I²C 0x29",
+  "width": 25.4
+}

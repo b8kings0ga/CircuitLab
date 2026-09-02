@@ -1,7 +1,7 @@
 {
   "templateVersion": 2,
   "files": {
-    "circuitlab_platform.py": "9c67bc6fddad3f9b00b9d1539734136a2d37ddf6637c32368803611480d0c783",
+    "circuitlab_platform.py": "985945157454e595a6f3d927b24569d98d84cbb87ca326a1436d27ab17bbbe6b",
     "server.py": "95fad56529ce592cde8d75dbee5b99a53cae788d0e3316f4859a37abfa223c17",
     "web/app.js": "c7aca7d65550fb5021601fac5f57d6a04d568addd8b4905e3b7620c57ff60800",
     "web/assets/circuit-lab-icon.svg": "73389075a1358775348ac93808cb50ea428df163c1eb9ea2b13e4293dd9b64ab",

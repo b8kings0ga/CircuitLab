@@ -1,0 +1,98 @@
+{
+  "accent": "#e6e3d9",
+  "assetId": "adafruit.ina219-904",
+  "canvasWidth": 50,
+  "color": "#151a18",
+  "height": 22.9,
+  "level": "current-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "INA219 #904",
+  "parts": [
+    [
+      8.7,
+      5.5,
+      8.0,
+      8.0,
+      "CURRENT"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 20.5
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.3428571428571425,
+      "y": 20.5
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "3",
+      "side": "bottom",
+      "x": 8.285714285714285,
+      "y": 20.5
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 11.228571428571428,
+      "y": 20.5
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "VIN+",
+      "number": "5",
+      "side": "bottom",
+      "x": 14.17142857142857,
+      "y": 20.5
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "VIN-",
+      "number": "6",
+      "side": "bottom",
+      "x": 17.114285714285714,
+      "y": 20.5
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A0",
+      "number": "7",
+      "side": "bottom",
+      "x": 20.057142857142853,
+      "y": 20.5
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A1",
+      "number": "8",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 20.5
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts",
+  "subtitle": "CURRENT / BUS VOLTAGE · I²C 0x40",
+  "width": 25.4
+}

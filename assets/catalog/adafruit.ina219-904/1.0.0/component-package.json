@@ -1,0 +1,144 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCL",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDA",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "VIN+",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "VIN-",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A0",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A1",
+        "number": "8"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "befec6b31de289ee0df0f9f982bebfc6722cf1ccb64d76eae2ddd2db8e5114ab",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.ina219-904",
+    "level": "current-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "INA219 #904",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 22.9,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.294,
+        "y": 0.63245823
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35285714,
+        "y": 0.63245823
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.41171429,
+        "y": 0.63245823
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47057143,
+        "y": 0.63245823
+      },
+      {
+        "pin": "VIN+",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52942857,
+        "y": 0.63245823
+      },
+      {
+        "pin": "VIN-",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.58828571,
+        "y": 0.63245823
+      },
+      {
+        "pin": "A0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.64714286,
+        "y": 0.63245823
+      },
+      {
+        "pin": "A1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.706,
+        "y": 0.63245823
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "ac8212465faf86859091fd13a449b096a9e5575a651c835d7091093093bf97f3",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

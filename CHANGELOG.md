@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.0 — 2026-09-03
+
+- Expand the curated starter library from 17 to 28 exact hardware products using official manufacturer product and pinout documentation.
+- Add BME280, AHT20, MPU-6050, LIS3DH, LTR390, VL53L0X, SGP30, INA219, MAX9814, PIR motion, and 1.3-inch ST7789 TFT modules.
+- Generate every new appearance as an original CircuitLab technical top view with one explicit anchor for every documented header, control, address, interrupt, analog, or test point represented in the package.
+- Preserve an existing generated capture timestamp during idempotent reinstallation so the same immutable asset cannot spuriously conflict when an install crosses a clock second.
+- Keep physical coordinates and all real-hardware behavior unverified; official documentation establishes pin identity, not fixture readiness.
+
 ## 0.8.3 — 2026-09-03
 
 - Remove the remaining unsubstantiated Sindri Reference current-sensor and panel-pushbutton records from the live registry.

@@ -12,6 +12,7 @@ It is both a standalone application template and a Codex Skill. The repository h
 - Latest-revision search for exact chip MPNs and exact board/module products.
 - Fail-closed official image discovery plus deterministic original SVG top views derived from documented dimensions and pin tables.
 - A single generated orthographic Board view with every documented usable point overlaid; product-photo and multi-angle galleries are not used for latest Board revisions.
+- A curated common-module baseline spanning environment, motion/IMU, light/UV, distance, magnetic, gas/VOC/CO2, sound, current, PIR motion, OLED, and TFT display use cases.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.

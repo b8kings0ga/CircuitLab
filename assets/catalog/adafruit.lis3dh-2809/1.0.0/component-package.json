@@ -1,0 +1,192 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [],
+        "name": "SDA",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "SDO",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CS",
+        "number": "7"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "INT",
+        "number": "8"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A1",
+        "number": "9"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A2",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "A3",
+        "number": "11"
+      },
+      {
+        "direction": "output",
+        "functions": [],
+        "name": "I2",
+        "number": "12"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "a736a66c978880d93c752455997f159fee4b55379cb1a49ee25adf6c628fb2ae",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.lis3dh-2809",
+    "level": "accelerometer-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "LIS3DH #2809",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 19.0,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.31607143,
+        "y": 0.59473684
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.34951299,
+        "y": 0.59473684
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38295455,
+        "y": 0.59473684
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4163961,
+        "y": 0.59473684
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.44983766,
+        "y": 0.59473684
+      },
+      {
+        "pin": "SDO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.48327922,
+        "y": 0.59473684
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.51672078,
+        "y": 0.59473684
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.55016234,
+        "y": 0.59473684
+      },
+      {
+        "pin": "A1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5836039,
+        "y": 0.59473684
+      },
+      {
+        "pin": "A2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61704545,
+        "y": 0.59473684
+      },
+      {
+        "pin": "A3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.65048701,
+        "y": 0.59473684
+      },
+      {
+        "pin": "I2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.68392857,
+        "y": 0.59473684
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "343376248861c62025bc1f5de30466a56cb30dda840716f16f2f10eb81ed633a",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

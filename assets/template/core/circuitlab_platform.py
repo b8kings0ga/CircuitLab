@@ -116,13 +116,13 @@ def component_family(package: dict[str, Any]) -> tuple[str, str]:
         return "sensor", "sound"
     if any(marker in level for marker in ("light", "color", "gesture", "proximity")):
         return "sensor", "light"
-    if any(marker in level for marker in ("temperature-humidity", "humidity-temperature")):
+    if any(marker in level for marker in ("temperature-humidity", "humidity-temperature", "environmental")):
         return "sensor", "environment"
     if level in {"environmental-sensor"}:
         return "sensor", "environment"
-    if level in {"six-axis-imu", "mems-sensor", "imu"}:
+    if any(marker in level for marker in ("motion", "accelerometer", "gyroscope", "imu")) or level == "mems-sensor":
         return "sensor", "motion-imu"
-    if level in {"isolated-current-sensor", "current-sensor"}:
+    if "current-sensor" in level:
         return "sensor", "current"
     if level == "sensor-ic" or "sensor" in level:
         return "sensor", "general"
@@ -230,11 +230,16 @@ class ComponentRegistry:
         reference = package_ref(package)
         path = self.package_path(reference)
         normalized = json.loads(json.dumps(package))
-        normalized.setdefault("evidence", {}).setdefault("capturedAt", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-        normalized["packageSha256"] = sha256_json({key: value for key, value in normalized.items() if key != "packageSha256"})
         with self.lock:
+            evidence = normalized.setdefault("evidence", {})
+            current = load_json(path) if path.exists() else None
+            if not evidence.get("capturedAt"):
+                if current is not None:
+                    evidence["capturedAt"] = current.get("evidence", {}).get("capturedAt")
+                evidence.setdefault("capturedAt", time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+            normalized["packageSha256"] = sha256_json({key: value for key, value in normalized.items() if key != "packageSha256"})
             if path.exists():
-                current = load_json(path)
+                assert current is not None
                 if current.get("packageSha256") == normalized["packageSha256"]:
                     return {"status": "unchanged", "ref": reference, "packageSha256": normalized["packageSha256"]}
                 raise ValueError(f"immutable component revision conflicts with existing package: {reference}")

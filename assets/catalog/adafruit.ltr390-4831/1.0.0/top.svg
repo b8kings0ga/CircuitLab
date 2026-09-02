@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 294.4" role="img" aria-label="LTR390 #4831 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="90.4" y="48" width="203.2" height="142.4" rx="9" fill="#151a18" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="192" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="100.4" y="63" fill="#eef4ef" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">Adafruit Industries</text>
+<text x="100.4" y="73" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">LTR390 #4831</text>
+<text x="192" y="246.4" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">LTR390 #4831</text>
+<text x="192" y="263.2" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">UV / AMBIENT LIGHT · I²C 0x53</text>
+<circle cx="108.8" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="108.8" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="275.2" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="275.2" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="108.8" cy="172" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="108.8" cy="172" r="3.4" fill="#e9ece8"/>
+<circle cx="275.2" cy="172" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="275.2" cy="172" r="3.4" fill="#e9ece8"/>
+<rect x="88.4" y="109.232" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<rect x="276.6" y="109.232" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<path d="M192 109.6L109.6 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M192 109.6L142.56 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M192 109.6L175.52 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M192 109.6L208.48 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M192 109.6L241.44 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M192 109.6L274.4 171.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="162.4" y="80" width="59.2" height="59.2" rx="5" fill="#e8e7df" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="192" y="112.6" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">UV</text>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="109.6" cy="171.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="109.6" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="109.6" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="109.6" y="208" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VIN</text>
+</g>
+<g id="pin-3VO" data-pin="3VO">
+<circle cx="142.56" cy="171.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="142.56" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="142.56" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="142.56" y="208" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">3VO</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="175.52" cy="171.2" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="175.52" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="175.52" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="175.52" y="208" text-anchor="middle" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="208.48" cy="171.2" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="208.48" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="208.48" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="208.48" y="208" text-anchor="middle" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SCL</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="241.44" cy="171.2" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="241.44" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="241.44" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="241.44" y="208" text-anchor="middle" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">SDA</text>
+</g>
+<g id="pin-INT" data-pin="INT">
+<circle cx="274.4" cy="171.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="274.4" cy="171.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="274.4" cy="171.2" r="2.4" fill="#3e4641"/>
+<text x="274.4" y="208" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">INT</text>
+</g>
+</svg>

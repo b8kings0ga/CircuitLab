@@ -1,0 +1,71 @@
+{
+  "accent": "#deded7",
+  "assetId": "adafruit.sgp30-3709",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "voc-gas-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "SGP30 #3709",
+  "parts": [
+    [
+      8.5,
+      3.8,
+      8.4,
+      8.0,
+      "VOC"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "1V8",
+      "number": "2",
+      "side": "bottom",
+      "x": 7.549999999999999,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 12.7,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 17.849999999999998,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor/pinouts",
+  "subtitle": "TVOC / eCO₂ · I²C 0x58",
+  "width": 25.4
+}

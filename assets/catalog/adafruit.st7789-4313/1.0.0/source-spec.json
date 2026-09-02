@@ -1,0 +1,134 @@
+{
+  "accent": "#151c24",
+  "assetId": "adafruit.st7789-4313",
+  "canvasWidth": 64,
+  "color": "#151a18",
+  "height": 35.8,
+  "level": "tft-display-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "1.3in ST7789 TFT #4313",
+  "parts": [
+    [
+      4.9,
+      4.2,
+      26.0,
+      26.0,
+      "TFT 240×240"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 33.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3V3",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.5,
+      "y": 33.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 8.6,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCK",
+      "number": "4",
+      "side": "bottom",
+      "x": 11.7,
+      "y": 33.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "SO",
+      "number": "5",
+      "side": "bottom",
+      "x": 14.799999999999999,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SI",
+      "number": "6",
+      "side": "bottom",
+      "x": 17.9,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "TCS",
+      "number": "7",
+      "side": "bottom",
+      "x": 20.999999999999996,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "RST",
+      "number": "8",
+      "side": "bottom",
+      "x": 24.099999999999994,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "D/C",
+      "number": "9",
+      "side": "bottom",
+      "x": 27.199999999999996,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CCS",
+      "number": "10",
+      "side": "bottom",
+      "x": 30.299999999999997,
+      "y": 33.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "LITE",
+      "number": "11",
+      "side": "bottom",
+      "x": 33.4,
+      "y": 33.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "TE",
+      "number": "TP1",
+      "side": "top",
+      "x": 31.8,
+      "y": 5.0
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-1-3-and-1-54-240-x-240-wide-angle-tft-lcd-displays/pinouts",
+  "subtitle": "DISPLAY · 240×240 · SPI",
+  "width": 35.8
+}

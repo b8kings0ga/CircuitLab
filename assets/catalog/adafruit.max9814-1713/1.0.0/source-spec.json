@@ -1,0 +1,71 @@
+{
+  "accent": "#e3e4dc",
+  "assetId": "adafruit.max9814-1713",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 15.0,
+  "level": "analog-microphone-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "MAX9814 #1713",
+  "parts": [
+    [
+      9.6,
+      3.0,
+      6.8,
+      6.8,
+      "MIC"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VDD",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 12.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 7.699999999999999,
+      "y": 12.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "OUT",
+      "number": "3",
+      "side": "bottom",
+      "x": 13.0,
+      "y": 12.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "GAIN",
+      "number": "4",
+      "side": "bottom",
+      "x": 18.299999999999997,
+      "y": 12.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A/R",
+      "number": "5",
+      "side": "bottom",
+      "x": 23.599999999999998,
+      "y": 12.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814?view=all",
+  "subtitle": "SOUND · ANALOG OUT · AGC",
+  "width": 26.0
+}

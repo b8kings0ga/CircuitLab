@@ -1,0 +1,135 @@
+{
+  "accent": "#e6e6df",
+  "assetId": "adafruit.lis3dh-2809",
+  "canvasWidth": 56,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 19.0,
+  "level": "accelerometer-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "LIS3DH #2809",
+  "parts": [
+    [
+      9.0,
+      4.6,
+      7.4,
+      7.4,
+      "ACCEL"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 16.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.2727272727272725,
+      "y": 16.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 6.145454545454545,
+      "y": 16.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 8.018181818181818,
+      "y": 16.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 9.89090909090909,
+      "y": 16.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "SDO",
+      "number": "6",
+      "side": "bottom",
+      "x": 11.763636363636364,
+      "y": 16.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CS",
+      "number": "7",
+      "side": "bottom",
+      "x": 13.636363636363635,
+      "y": 16.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "8",
+      "side": "bottom",
+      "x": 15.509090909090908,
+      "y": 16.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A1",
+      "number": "9",
+      "side": "bottom",
+      "x": 17.38181818181818,
+      "y": 16.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A2",
+      "number": "10",
+      "side": "bottom",
+      "x": 19.25454545454545,
+      "y": 16.6
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "A3",
+      "number": "11",
+      "side": "bottom",
+      "x": 21.127272727272725,
+      "y": 16.6
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "I2",
+      "number": "12",
+      "side": "bottom",
+      "x": 22.999999999999996,
+      "y": 16.6
+    }
+  ],
+  "revision": "1.0.1",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/pinouts",
+  "subtitle": "3-AXIS ACCEL · I²C / SPI / ADC",
+  "width": 25.4
+}

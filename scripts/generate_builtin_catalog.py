@@ -22,11 +22,28 @@ SOURCES = {
     "apds9960": "https://learn.adafruit.com/adafruit-apds9960-breakout?view=all",
     "sht45": "https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor?view=all",
     "scd40": "https://learn.adafruit.com/adafruit-scd-40-and-scd-41/pinouts",
+    "bme280": "https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/pinouts",
+    "aht20": "https://learn.adafruit.com/adafruit-aht20/pinouts",
+    "mpu6050": "https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/pinouts",
+    "lis3dh": "https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/pinouts",
+    "ltr390": "https://learn.adafruit.com/adafruit-ltr390-uv-sensor/pinouts-2",
+    "vl53l0x": "https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/pinouts",
+    "sgp30": "https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor/pinouts",
+    "ina219": "https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts",
+    "max9814": "https://learn.adafruit.com/adafruit-agc-electret-microphone-amplifier-max9814?view=all",
+    "pir189": "https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/connecting-to-a-pir",
+    "st7789": "https://learn.adafruit.com/adafruit-1-3-and-1-54-240-x-240-wide-angle-tft-lcd-displays/pinouts",
 }
 
 
 def pin(name: str, number: str, x: float, y: float, side: str, direction: str = "bidirectional", functions: list[str] | None = None) -> dict[str, Any]:
     return {"name": name, "number": number, "x": x, "y": y, "side": side, "direction": direction, "functions": functions or []}
+
+
+def bottom_pins(width: float, height: float, rows: list[tuple[str, str]]) -> list[dict[str, Any]]:
+    """Lay out a documented pin table without claiming photo-derived coordinates."""
+    step = (width - 4.8) / max(1, len(rows) - 1)
+    return [pin(name, str(index + 1), 2.4 + index * step, height - 2.4, "bottom", direction) for index, (name, direction) in enumerate(rows)]
 
 
 def orange_pi_pins() -> list[dict[str, Any]]:
@@ -119,6 +136,83 @@ CATALOG: list[dict[str, Any]] = [
         "pins": [pin(n, str(i + 1), 4.25 + i * 4.25, 20.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional")])],
         "parts": [(7.6, 4.0, 10.1, 10.1, "CO₂")],
     },
+    {
+        "assetId": "adafruit.bme280-2652", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "BME280 #2652",
+        "level": "environmental-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e8e7df",
+        "subtitle": "TEMP / HUMIDITY / PRESSURE · I²C / SPI", "source": SOURCES["bme280"],
+        "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCK", "input"), ("SDO", "output"), ("SDI", "bidirectional"), ("CS", "input")]),
+        "parts": [(9.0, 4.0, 7.4, 7.4, "BME280")],
+    },
+    {
+        "assetId": "adafruit.aht20-4566", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "AHT20 #4566",
+        "level": "temperature-humidity-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e8e7df",
+        "subtitle": "TEMP / HUMIDITY · I²C 0x38", "source": SOURCES["aht20"],
+        "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional")]),
+        "parts": [(9.1, 4.0, 7.2, 7.4, "AHT20")],
+    },
+    {
+        "assetId": "adafruit.mpu6050-3886", "revision": "1.0.1", "manufacturer": "Adafruit Industries", "mpn": "MPU-6050 #3886",
+        "level": "six-axis-imu-module", "width": 25.4, "height": 17.8, "canvasWidth": 54, "color": "#151a18", "accent": "#e6e6df",
+        "subtitle": "6-DOF IMU · I²C 0x68 / 0x69", "source": SOURCES["mpu6050"],
+        "densePins": True, "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("INT", "output"), ("AD0", "input"), ("FS", "bidirectional"), ("SCE", "bidirectional"), ("SDE", "bidirectional"), ("CLKIN", "input")]),
+        "parts": [(8.9, 4.0, 7.6, 7.6, "IMU")],
+    },
+    {
+        "assetId": "adafruit.lis3dh-2809", "revision": "1.0.1", "manufacturer": "Adafruit Industries", "mpn": "LIS3DH #2809",
+        "level": "accelerometer-module", "width": 25.4, "height": 19.0, "canvasWidth": 56, "color": "#151a18", "accent": "#e6e6df",
+        "subtitle": "3-AXIS ACCEL · I²C / SPI / ADC", "source": SOURCES["lis3dh"],
+        "densePins": True, "pins": bottom_pins(25.4, 19.0, [("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("SDO", "output"), ("CS", "input"), ("INT", "output"), ("A1", "input"), ("A2", "input"), ("A3", "input"), ("I2", "output")]),
+        "parts": [(9.0, 4.6, 7.4, 7.4, "ACCEL")],
+    },
+    {
+        "assetId": "adafruit.ltr390-4831", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "LTR390 #4831",
+        "level": "uv-light-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e8e7df",
+        "subtitle": "UV / AMBIENT LIGHT · I²C 0x53", "source": SOURCES["ltr390"],
+        "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("INT", "output")]),
+        "parts": [(9.0, 4.0, 7.4, 7.4, "UV")],
+    },
+    {
+        "assetId": "adafruit.vl53l0x-3317", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "VL53L0X #3317",
+        "level": "distance-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e8e7df",
+        "subtitle": "DISTANCE · I²C 0x29", "source": SOURCES["vl53l0x"],
+        "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("2V8", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("GPIO", "output"), ("SHDN", "input")]),
+        "parts": [(8.8, 4.0, 7.8, 7.4, "TOF")],
+    },
+    {
+        "assetId": "adafruit.sgp30-3709", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "SGP30 #3709",
+        "level": "voc-gas-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#deded7",
+        "subtitle": "TVOC / eCO₂ · I²C 0x58", "source": SOURCES["sgp30"],
+        "pins": bottom_pins(25.4, 17.8, [("VIN", "power"), ("1V8", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional")]),
+        "parts": [(8.5, 3.8, 8.4, 8.0, "VOC")],
+    },
+    {
+        "assetId": "adafruit.ina219-904", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "INA219 #904",
+        "level": "current-sensor-module", "width": 25.4, "height": 22.9, "canvasWidth": 50, "color": "#151a18", "accent": "#e6e3d9",
+        "subtitle": "CURRENT / BUS VOLTAGE · I²C 0x40", "source": SOURCES["ina219"],
+        "pins": bottom_pins(25.4, 22.9, [("VIN", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("VIN+", "input"), ("VIN-", "input"), ("A0", "input"), ("A1", "input")]),
+        "parts": [(8.7, 5.5, 8.0, 8.0, "CURRENT")],
+    },
+    {
+        "assetId": "adafruit.max9814-1713", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "MAX9814 #1713",
+        "level": "analog-microphone-module", "width": 26.0, "height": 15.0, "canvasWidth": 48, "color": "#151a18", "accent": "#e3e4dc",
+        "subtitle": "SOUND · ANALOG OUT · AGC", "source": SOURCES["max9814"],
+        "pins": bottom_pins(26.0, 15.0, [("VDD", "power"), ("GND", "power"), ("OUT", "output"), ("GAIN", "input"), ("A/R", "input")]),
+        "parts": [(9.6, 3.0, 6.8, 6.8, "MIC")],
+    },
+    {
+        "assetId": "adafruit.pir-motion-189", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "PIR Motion Sensor #189",
+        "level": "pir-motion-sensor-module", "width": 32.0, "height": 24.0, "canvasWidth": 52, "color": "#176c4b", "accent": "#f0eee5",
+        "subtitle": "MOTION · DIGITAL OUTPUT", "source": SOURCES["pir189"],
+        "pins": bottom_pins(32.0, 24.0, [("5V", "power"), ("OUT", "output"), ("GND", "power")]),
+        "parts": [(8.0, 3.0, 16.0, 14.0, "PIR")],
+    },
+    {
+        "assetId": "adafruit.st7789-4313", "revision": "1.0.1", "manufacturer": "Adafruit Industries", "mpn": "1.3in ST7789 TFT #4313",
+        "level": "tft-display-module", "width": 35.8, "height": 35.8, "canvasWidth": 64, "color": "#151a18", "accent": "#151c24",
+        "subtitle": "DISPLAY · 240×240 · SPI", "source": SOURCES["st7789"],
+        "densePins": True, "pins": bottom_pins(35.8, 35.8, [("VIN", "power"), ("3V3", "power"), ("GND", "power"), ("SCK", "input"), ("SO", "output"), ("SI", "input"), ("TCS", "input"), ("RST", "input"), ("D/C", "input"), ("CCS", "input"), ("LITE", "input")]) + [pin("TE", "TP1", 31.8, 5.0, "top", "output")],
+        "parts": [(4.9, 4.2, 26.0, 26.0, "TFT 240×240")],
+    },
 ]
 
 
@@ -155,7 +249,8 @@ def render(spec: dict[str, Any]) -> str:
     scale = 8
     physical_width = spec["width"]
     canvas_width = spec["canvasWidth"]
-    height = spec["height"] + BOARD_Y + FOOTER
+    footer = 19.0 if spec.get("densePins") else FOOTER
+    height = spec["height"] + BOARD_Y + footer
     offset_x = (canvas_width - physical_width) / 2
     board_x = offset_x * scale; board_y = BOARD_Y * scale
     board_width = physical_width * scale; board_height = spec["height"] * scale
@@ -166,8 +261,8 @@ def render(spec: dict[str, Any]) -> str:
         f'<text x="{canvas_width * scale / 2:g}" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>',
         f'<text x="{board_x + 10:g}" y="{board_y + 15:g}" fill="{STYLE["silk"]}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(spec["manufacturer"])}</text>',
         f'<text x="{board_x + 10:g}" y="{board_y + 25:g}" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">{esc(spec["mpn"])}</text>',
-        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 7) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
-        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 9.1) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (13 if spec.get("densePins") else 7)) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (15.1 if spec.get("densePins") else 9.1)) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
     ]
     for hole_x, hole_y in ((2.3, 2.3), (physical_width - 2.3, 2.3), (2.3, spec["height"] - 2.3), (physical_width - 2.3, spec["height"] - 2.3)):
         hx = (offset_x + hole_x) * scale; hy = (BOARD_Y + hole_y) * scale
@@ -185,11 +280,11 @@ def render(spec: dict[str, Any]) -> str:
             tx = (offset_x + row["x"]) * scale; ty = (BOARD_Y + row["y"]) * scale
             lines.append(f'<path d="M{px + part_width / 2:g} {py + rendered_height / 2:g}L{tx:g} {ty:g}" stroke="{STYLE["trace"]}" stroke-width="1" opacity=".24" fill="none"/>')
         lines.append(f'<rect x="{px:g}" y="{py:g}" width="{part_width:g}" height="{rendered_height:g}" rx="5" fill="{spec["accent"]}" stroke="#9ca49f" stroke-width="1.5"/>')
-        if "OLED" in label:
+        if "OLED" in label or "TFT" in label:
             lines.append(f'<rect x="{px + 7:g}" y="{py + 7:g}" width="{part_width - 14:g}" height="{rendered_height - 14:g}" rx="3" fill="#07131d"/><path d="M{px + 12:g} {py + rendered_height * .38:g}H{px + part_width - 12:g}" stroke="#f5d34d" stroke-width="5"/><path d="M{px + 12:g} {py + rendered_height * .68:g}H{px + part_width - 12:g}" stroke="#4ea7ff" stroke-width="9"/>')
         elif any(marker in label for marker in ("TOF", "LIGHT", "RGB", "CO₂")):
             lines.append(f'<circle cx="{px + part_width / 2:g}" cy="{py + rendered_height / 2:g}" r="{min(part_width, rendered_height) * .22:g}" fill="#161c19" stroke="#6b7770" stroke-width="2"/>')
-        part_text = "#f3f6f2" if "OLED" in label else "#222925"
+        part_text = "#f3f6f2" if "OLED" in label or "TFT" in label else "#222925"
         lines.append(f'<text x="{px + width * scale / 2:g}" y="{py + part_height * scale / 2 + 3:g}" text-anchor="middle" fill="{part_text}" font-family="ui-monospace,monospace" font-size="8" font-weight="800">{esc(label)}</text>')
     for index, row in enumerate(spec["pins"]):
         x = (offset_x + row["x"]) * scale; y = (BOARD_Y + row["y"]) * scale
@@ -204,6 +299,11 @@ def render(spec: dict[str, Any]) -> str:
         if spec["assetId"].startswith("orange-pi"):
             tx = (offset_x + physical_width + 4 + (index % 2) * 15) * scale
             lines.append(f'<text x="{tx:g}" y="{y + 2.5:g}" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(row["number"])} {esc(label)}</text>')
+        elif row["side"] == "top":
+            lines.append(f'<text x="{x - 11:g}" y="{y + 3:g}" text-anchor="end" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(label)}</text>')
+        elif spec.get("densePins"):
+            label_y = (BOARD_Y + spec["height"] + 2.0) * scale
+            lines.append(f'<text x="{x:g}" y="{label_y:g}" transform="rotate(-62 {x:g} {label_y:g})" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
         else:
             lines.append(f'<text x="{x:g}" y="{(BOARD_Y + spec["height"] + 2.2) * scale:g}" text-anchor="middle" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(label)}</text>')
         lines.append('</g>')
@@ -212,7 +312,7 @@ def render(spec: dict[str, Any]) -> str:
 
 
 def package_for(spec: dict[str, Any], svg: bytes) -> dict[str, Any]:
-    canvas_width = float(spec["canvasWidth"]); height = float(spec["height"] + BOARD_Y + FOOTER); offset_x = (canvas_width - float(spec["width"])) / 2
+    canvas_width = float(spec["canvasWidth"]); height = float(spec["height"] + BOARD_Y + (19.0 if spec.get("densePins") else FOOTER)); offset_x = (canvas_width - float(spec["width"])) / 2
     return {
         "schema": "component-package/v1",
         "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": "active"},

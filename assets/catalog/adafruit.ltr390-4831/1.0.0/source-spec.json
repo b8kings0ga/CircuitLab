@@ -1,0 +1,80 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.ltr390-4831",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "uv-light-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "LTR390 #4831",
+  "parts": [
+    [
+      9.0,
+      4.0,
+      7.4,
+      7.4,
+      "UV"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.52,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.639999999999999,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.759999999999998,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 18.879999999999995,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "6",
+      "side": "bottom",
+      "x": 22.999999999999993,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-ltr390-uv-sensor/pinouts-2",
+  "subtitle": "UV / AMBIENT LIGHT · I²C 0x53",
+  "width": 25.4
+}

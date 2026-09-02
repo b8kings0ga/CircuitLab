@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 486.4" role="img" aria-label="1.3in ST7789 TFT #4313 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="112.8" y="48" width="286.4" height="286.4" rx="9" fill="#151a18" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="256" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="122.8" y="63" fill="#eef4ef" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">Adafruit Industries</text>
+<text x="122.8" y="73" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">1.3in ST7789 TFT #4313</text>
+<text x="256" y="438.4" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">1.3in ST7789 TFT #4313</text>
+<text x="256" y="455.2" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">DISPLAY · 240×240 · SPI</text>
+<circle cx="131.2" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="131.2" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="380.8" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="380.8" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="131.2" cy="316" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="131.2" cy="316" r="3.4" fill="#e9ece8"/>
+<circle cx="380.8" cy="316" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="380.8" cy="316" r="3.4" fill="#e9ece8"/>
+<rect x="110.8" y="171.152" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<rect x="382.2" y="171.152" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>
+<path d="M256 185.6L132 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L156.8 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L181.6 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L206.4 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L231.2 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L256 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L280.8 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L305.6 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L330.4 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L355.2 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L380 315.2" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M256 185.6L367.2 88" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="152" y="81.6" width="208" height="208" rx="5" fill="#151c24" stroke="#9ca49f" stroke-width="1.5"/>
+<rect x="159" y="88.6" width="194" height="194" rx="3" fill="#07131d"/><path d="M164 160.64H348" stroke="#f5d34d" stroke-width="5"/><path d="M164 223.04H348" stroke="#4ea7ff" stroke-width="9"/>
+<text x="256" y="188.6" text-anchor="middle" fill="#f3f6f2" font-family="ui-monospace,monospace" font-size="8" font-weight="800">TFT 240×240</text>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="132" cy="315.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="132" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="132" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="132" y="350.4" transform="rotate(-62 132 350.4)" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">VIN</text>
+</g>
+<g id="pin-3V3" data-pin="3V3">
+<circle cx="156.8" cy="315.2" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="156.8" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="156.8" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="156.8" y="350.4" transform="rotate(-62 156.8 350.4)" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">3V3</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="181.6" cy="315.2" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="181.6" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="181.6" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="181.6" y="350.4" transform="rotate(-62 181.6 350.4)" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">GND</text>
+</g>
+<g id="pin-SCK" data-pin="SCK">
+<circle cx="206.4" cy="315.2" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="206.4" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="206.4" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="206.4" y="350.4" transform="rotate(-62 206.4 350.4)" text-anchor="start" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SCK</text>
+</g>
+<g id="pin-SO" data-pin="SO">
+<circle cx="231.2" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="231.2" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="231.2" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="231.2" y="350.4" transform="rotate(-62 231.2 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SO</text>
+</g>
+<g id="pin-SI" data-pin="SI">
+<circle cx="256" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="256" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="256" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="256" y="350.4" transform="rotate(-62 256 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SI</text>
+</g>
+<g id="pin-TCS" data-pin="TCS">
+<circle cx="280.8" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="280.8" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="280.8" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="280.8" y="350.4" transform="rotate(-62 280.8 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">TCS</text>
+</g>
+<g id="pin-RST" data-pin="RST">
+<circle cx="305.6" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="305.6" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="305.6" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="305.6" y="350.4" transform="rotate(-62 305.6 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">RST</text>
+</g>
+<g id="pin-D/C" data-pin="D/C">
+<circle cx="330.4" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="330.4" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="330.4" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="330.4" y="350.4" transform="rotate(-62 330.4 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">D/C</text>
+</g>
+<g id="pin-CCS" data-pin="CCS">
+<circle cx="355.2" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="355.2" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="355.2" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="355.2" y="350.4" transform="rotate(-62 355.2 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">CCS</text>
+</g>
+<g id="pin-LITE" data-pin="LITE">
+<circle cx="380" cy="315.2" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="380" cy="315.2" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="380" cy="315.2" r="2.4" fill="#3e4641"/>
+<text x="380" y="350.4" transform="rotate(-62 380 350.4)" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">LITE</text>
+</g>
+<g id="pin-TE" data-pin="TE">
+<circle cx="367.2" cy="88" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="367.2" cy="88" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="367.2" cy="88" r="2.4" fill="#3e4641"/>
+<text x="356.2" y="91" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">TE</text>
+</g>
+</svg>
