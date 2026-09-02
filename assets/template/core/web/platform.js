@@ -90,6 +90,7 @@
   }
 
   async function loadComponents() {
+    loadPipelineStatus();
     const query = encodeURIComponent(document.getElementById("componentSearch").value.trim());
     const { components } = await request(`/api/components?scope=all&latest=1&q=${query}`);
     state.componentRows = components;
@@ -111,6 +112,21 @@
       list.appendChild(empty);
     } else if (!filtered.some(component => component.ref === state.selectedRef)) {
       await loadComponent(filtered[0].ref, list.querySelector("button"));
+    }
+  }
+
+  async function loadPipelineStatus() {
+    const element = document.getElementById("hardwarePipelineStatus");
+    try {
+      const report = await request("/api/hardware-pipeline/latest");
+      const captures = report.stages?.capture || [];
+      const captured = captures.filter(row => row.status === "CAPTURED" || row.status?.startsWith("CACHED")).length;
+      const validated = (report.stages?.validate || []).length;
+      element.textContent = `PIPELINE · ${report.status} · ${captured}/${captures.length} EVIDENCE · ${validated} VALIDATED · ${report.style || "STYLE PENDING"}`;
+      element.classList.toggle("warning", report.status !== "PASS");
+    } catch (error) {
+      element.textContent = `PIPELINE · UNAVAILABLE · ${error.message}`;
+      element.classList.add("warning");
     }
   }
 
@@ -155,6 +171,7 @@
       ["ELECTRICAL", component.electrical?.status || "UNVERIFIED"],
       ["TOUCHPOINTS", String(component.visual?.anchors?.length || 0)],
       ["COORDINATES", component.visual?.coordinateStatus || "UNVERIFIED"],
+      ["STYLE", component.visual?.style || "legacy"],
       ["PROCUREMENT", String(component.procurement?.length || 0)],
       ["HASH", component.packageSha256?.slice(0, 12) || "—"],
     ];

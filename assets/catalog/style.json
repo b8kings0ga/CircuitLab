@@ -1,0 +1,14 @@
+{
+  "boardStroke": "#738079",
+  "name": "CircuitLab Technical Top",
+  "pin": {
+    "clock": "#f3c94f",
+    "data": "#69a7ff",
+    "ground": "#707873",
+    "power": "#ff6b6b",
+    "signal": "#ae7bff"
+  },
+  "schema": "circuitlab-top-style/v1",
+  "silk": "#eef4ef",
+  "trace": "#7c8c82"
+}

@@ -114,6 +114,10 @@ def component_family(package: dict[str, Any]) -> tuple[str, str]:
         return "sensor", "gas"
     if any(marker in level for marker in ("sound", "microphone", "audio-sensor")):
         return "sensor", "sound"
+    if any(marker in level for marker in ("light", "color", "gesture", "proximity")):
+        return "sensor", "light"
+    if any(marker in level for marker in ("temperature-humidity", "humidity-temperature")):
+        return "sensor", "environment"
     if level in {"environmental-sensor"}:
         return "sensor", "environment"
     if level in {"six-axis-imu", "mems-sensor", "imu"}:
@@ -797,3 +801,9 @@ class CircuitLabPlatform:
             "configPath": str(self.config_path),
             "active": True,
         }]
+
+    def pipeline_latest(self) -> dict[str, Any]:
+        path = self.root / "pipeline-reports" / "latest.json"
+        if not path.is_file():
+            return {"schema": "hardware-pipeline-report/v1", "status": "NOT_RUN", "stages": {}}
+        return load_json(path)

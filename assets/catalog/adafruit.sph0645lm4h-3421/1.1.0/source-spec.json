@@ -1,0 +1,80 @@
+{
+  "accent": "#eceee9",
+  "assetId": "adafruit.sph0645lm4h-3421",
+  "canvasWidth": 46,
+  "color": "#171b19",
+  "height": 15.2,
+  "level": "digital-microphone-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "SPH0645LM4H #3421",
+  "parts": [
+    [
+      8.3,
+      3.3,
+      6.2,
+      6.2,
+      "MIC"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3V",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.2,
+      "y": 13.0
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 5.9,
+      "y": 13.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "BCLK",
+      "number": "3",
+      "side": "bottom",
+      "x": 9.600000000000001,
+      "y": 13.0
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "DOUT",
+      "number": "4",
+      "side": "bottom",
+      "x": 13.3,
+      "y": 13.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "LRCLK",
+      "number": "5",
+      "side": "bottom",
+      "x": 17.0,
+      "y": 13.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SEL",
+      "number": "6",
+      "side": "bottom",
+      "x": 20.7,
+      "y": 13.0
+    }
+  ],
+  "revision": "1.1.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/pinouts",
+  "subtitle": "SOUND · DIGITAL I²S",
+  "width": 22.9
+}

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181 234" role="img" aria-label="XIAO ESP32S3 interactive top view">
+<defs>
+<linearGradient id="usb" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f5f4"/><stop offset="1" stop-color="#aeb4b1"/></linearGradient>
+<linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eeeeec"/><stop offset=".55" stop-color="#b9bfbc"/><stop offset="1" stop-color="#8d9490"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".35"/></filter>
+</defs>
+<path d="M10.5 23.5H170.5Q179.5 23.5 179.5 32.5V224.5Q179.5 233.5 170.5 233.5H10.5Q1.5 233.5 1.5 224.5V32.5Q1.5 23.5 10.5 23.5Z" fill="#f7f8f5" stroke="#c7cdc8" stroke-width="2" filter="url(#shadow)"/>
+<rect x="48" y="0" width="85" height="38" rx="5" fill="url(#usb)" stroke="#777f7b" stroke-width="1.5"/>
+<rect x="58" y="8" width="65" height="20" rx="3" fill="#202523"/>
+<g fill="#c99019"><rect x="68" y="31" width="5" height="7"/><rect x="108" y="31" width="5" height="7"/></g>
+<rect x="52" y="75" width="77" height="85" rx="4" fill="url(#shield)" stroke="#929995" stroke-width="1.2"/>
+<text x="90.5" y="114.5" text-anchor="middle" fill="#39403c" font-family="ui-monospace,monospace" font-size="8" font-weight="700">ESP32-S3</text>
+<text x="90.5" y="125.5" text-anchor="middle" fill="#626a65" font-family="ui-monospace,monospace" font-size="5.5">8MB PSRAM · 8MB FLASH</text>
+<text x="90.5" y="62.5" text-anchor="middle" fill="#101512" font-family="ui-monospace,monospace" font-size="9" font-weight="700">XIAO ESP32-S3</text>
+<text x="90.5" y="174.5" text-anchor="middle" fill="#303732" font-family="ui-monospace,monospace" font-size="6">DESIGN-DOC DERIVED</text>
+<rect x="51.5" y="191" width="78" height="21" rx="2" fill="#161b19"/>
+<rect x="55.5" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="60.7" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="65.9" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="71.1" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="76.3" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="81.5" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="86.7" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="91.9" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="97.1" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="102.3" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="107.5" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="112.7" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="117.9" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<rect x="123.1" y="193.5" width="3.2" height="16" fill="#d8a91e"/>
+<g id="pin-D0" data-pin="D0">
+<circle cx="14.335" cy="49.305" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="49.305" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="49.305" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="51.805" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D0</text>
+</g>
+<g id="pin-D1" data-pin="D1">
+<circle cx="14.335" cy="74.705" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="74.705" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="74.705" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="77.205" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D1</text>
+</g>
+<g id="pin-D2" data-pin="D2">
+<circle cx="14.335" cy="100.105" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="100.105" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="100.105" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="102.605" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D2</text>
+</g>
+<g id="pin-D3" data-pin="D3">
+<circle cx="14.335" cy="125.505" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="125.505" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="125.505" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="128.005" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D3</text>
+</g>
+<g id="pin-D4" data-pin="D4">
+<circle cx="14.335" cy="150.905" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="150.905" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="150.905" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="153.405" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D4</text>
+</g>
+<g id="pin-D5" data-pin="D5">
+<circle cx="14.335" cy="176.305" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="176.305" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="176.305" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="178.805" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D5</text>
+</g>
+<g id="pin-D6" data-pin="D6">
+<circle cx="14.335" cy="201.705" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="14.335" cy="201.705" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="14.335" cy="201.705" r="2.25" fill="#4b5350"/>
+<text x="27.335" y="204.205" text-anchor="start" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D6</text>
+</g>
+<g id="pin-5V" data-pin="5V">
+<circle cx="165.1" cy="49.305" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="49.305" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="49.305" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="51.805" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">5V</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="165.1" cy="74.705" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="74.705" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="74.705" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="77.205" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">GND</text>
+</g>
+<g id="pin-3V3" data-pin="3V3">
+<circle cx="165.1" cy="100.105" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="100.105" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="100.105" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="102.605" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">3V3</text>
+</g>
+<g id="pin-D10" data-pin="D10">
+<circle cx="165.1" cy="125.505" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="125.505" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="125.505" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="128.005" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D10</text>
+</g>
+<g id="pin-D9" data-pin="D9">
+<circle cx="165.1" cy="150.905" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="150.905" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="150.905" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="153.405" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D9</text>
+</g>
+<g id="pin-D8" data-pin="D8">
+<circle cx="165.1" cy="176.305" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="176.305" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="176.305" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="178.805" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D8</text>
+</g>
+<g id="pin-D7" data-pin="D7">
+<circle cx="165.1" cy="201.705" r="8.4" fill="#d5a413" stroke="#ffe37a" stroke-width="1.4"/>
+<circle cx="165.1" cy="201.705" r="5.2" fill="#fafbf8" stroke="#c5cbc7" stroke-width="1"/>
+<circle cx="165.1" cy="201.705" r="2.25" fill="#4b5350"/>
+<text x="152.1" y="204.205" text-anchor="end" fill="#111613" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">D7</text>
+</g>
+</svg>

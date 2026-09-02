@@ -1,0 +1,71 @@
+{
+  "accent": "#e9e6dd",
+  "assetId": "adafruit.sht45-5665",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "temperature-humidity-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "SHT45 #5665",
+  "parts": [
+    [
+      9.2,
+      4.1,
+      7.0,
+      7.2,
+      "SHT45"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 4.2,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3V",
+      "number": "2",
+      "side": "bottom",
+      "x": 8.45,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 12.7,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 16.95,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 21.2,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor?view=all",
+  "subtitle": "TEMP / HUMIDITY · I²C 0x44",
+  "width": 25.4
+}

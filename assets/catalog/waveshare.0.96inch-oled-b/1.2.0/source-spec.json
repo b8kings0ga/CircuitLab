@@ -1,0 +1,98 @@
+{
+  "accent": "#09131e",
+  "assetId": "waveshare.0.96inch-oled-b",
+  "canvasWidth": 58,
+  "color": "#184a7d",
+  "height": 33.5,
+  "level": "oled-display-module",
+  "manufacturer": "Waveshare",
+  "mpn": "0.96inch OLED (B)",
+  "parts": [
+    [
+      5.6,
+      4.2,
+      21.7,
+      14.2,
+      "OLED 128×64"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VCC",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.5,
+      "y": 31.0
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.45,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "NC",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.4,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "DIN",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.350000000000001,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CLK",
+      "number": "5",
+      "side": "bottom",
+      "x": 18.3,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CS",
+      "number": "6",
+      "side": "bottom",
+      "x": 22.25,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "D/C",
+      "number": "7",
+      "side": "bottom",
+      "x": 26.200000000000003,
+      "y": 31.0
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "RES",
+      "number": "8",
+      "side": "bottom",
+      "x": 30.150000000000002,
+      "y": 31.0
+    }
+  ],
+  "revision": "1.2.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://www.waveshare.com/wiki/0.96inch_OLED_(B)",
+  "subtitle": "DISPLAY · 128×64 · SPI / I²C",
+  "width": 33.0
+}

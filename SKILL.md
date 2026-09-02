@@ -11,7 +11,7 @@ This repository is the canonical generic core and installable Codex Skill. Keep 
 
 - New lab: run `scripts/init_lab.py TARGET`, edit the generated config/diagram/adapter, then run `scripts/validate_instance.py TARGET`.
 - Existing instance: inspect live `/healthz`, `/api/lab-config`, `/api/diagram`, and `/api/state` before editing.
-- Component work: read [component assets](references/component-assets.md). The primary catalog covers exact packaged chips plus directly usable development boards, single-board computers, sensor modules, and displays. Search the latest local revision first and acquire only an exact confirmed product/version. Prefer an official top image and official pinout; when redistribution is unclear, generate an original SVG top view from documented dimensions and pin tables. Never infer electrical identity from pixels.
+- Component work: read [component assets](references/component-assets.md). The primary catalog covers exact packaged chips plus directly usable development boards, single-board computers, sensor modules, and displays. Search the latest local revision first and acquire only an exact confirmed product/version. Run `scripts/hardware_pipeline.py run --online` for the complete official-evidence-to-installed-asset workflow; omit `--online` for a cache-only run. Prefer an official top image and official pinout; when redistribution is unclear, generate an original SVG top view from documented dimensions and pin tables. Never infer electrical identity from pixels.
 - Touchpoint or fixture work is secondary while hardware acquisition is the active scope. When explicitly requested, read [fixtures](references/fixtures.md); never infer electrical identity from image coordinates.
 - HIL work: read [HIL safety](references/hil.md); software mock/replay is available, while real serial, flash, power, restore, purchase, and fabrication remain fail-closed until separately verified and authorized.
 - Generic rendering or routing change: edit `assets/template/core`, run `scripts/update_manifest.py`, run `sync_instance.py --apply`, and test both a fresh lab and the project instance.
@@ -27,6 +27,7 @@ This repository is the canonical generic core and installable Codex Skill. Keep 
 4. Verify DPR 1 and 2 in Playwright: nonblank canvas, visible endpoints, anchor error at most 1 CSS px, dragging, rotation, routing, selection, and persistence.
 5. Deploy only after local checks; then verify the installed copy, service health, logs, and checksum.
 6. For platform changes, run `scripts/verify_platform.py` and complete the Components → Touchpoints → Fixture → HIL → Reports software loop.
+7. For generated hardware, run `scripts/hardware_pipeline.py validate` and verify the PWA pipeline summary, original top view, complete pin table, and one-to-one visual anchors.
 
 ## Core Contract
 

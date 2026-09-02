@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 592" role="img" aria-label="Orange Pi Zero 3 v1.3 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="320" y="48" width="400" height="440" rx="9" fill="#e86b1f" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="520" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="330" y="63" fill="#eef4ef" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">Shenzhen Xunlong Software</text>
+<text x="330" y="73" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">Orange Pi Zero 3 v1.3</text>
+<text x="520" y="544" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">Orange Pi Zero 3 v1.3</text>
+<text x="520" y="560.8" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">H618 · 26-PIN GPIO</text>
+<circle cx="338.4" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="338.4" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="701.6" cy="66.4" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="701.6" cy="66.4" r="3.4" fill="#e9ece8"/>
+<circle cx="338.4" cy="469.6" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="338.4" cy="469.6" r="3.4" fill="#e9ece8"/>
+<circle cx="701.6" cy="469.6" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="701.6" cy="469.6" r="3.4" fill="#e9ece8"/>
+<path d="M492 228L656 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L656 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M492 228L688 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="384" y="120" width="216" height="216" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="492" y="231" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">H618</text>
+<path d="M464 400L656 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L656 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M464 400L688 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="384" y="360" width="160" height="80" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="464" y="403" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">LPDDR4</text>
+<path d="M648 152L656 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L656 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 152L688 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="600" y="88" width="96" height="128" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="648" y="155" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">RJ45</text>
+<path d="M648 288L656 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 144" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 168" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 192" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 216" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 240" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 264" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 288" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 312" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 336" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 360" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 384" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 408" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L656 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<path d="M648 288L688 432" stroke="#7c8c82" stroke-width="1" opacity=".24" fill="none"/>
+<rect x="600" y="256" width="96" height="64" rx="5" fill="#202421" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="648" y="291" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">USB-C</text>
+<g id="pin-P01_3V3" data-pin="P01_3V3">
+<circle cx="656" cy="144" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="144" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="144" r="2.4" fill="#3e4641"/>
+<text x="752" y="146.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">1 3V3</text>
+</g>
+<g id="pin-P02_5V" data-pin="P02_5V">
+<circle cx="688" cy="144" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="144" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="144" r="2.4" fill="#3e4641"/>
+<text x="872" y="146.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">2 5V</text>
+</g>
+<g id="pin-P03_SDA" data-pin="P03_SDA">
+<circle cx="656" cy="168" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="168" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="168" r="2.4" fill="#3e4641"/>
+<text x="752" y="170.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">3 PH5 / SDA</text>
+</g>
+<g id="pin-P04_5V" data-pin="P04_5V">
+<circle cx="688" cy="168" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="168" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="168" r="2.4" fill="#3e4641"/>
+<text x="872" y="170.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">4 5V</text>
+</g>
+<g id="pin-P05_SCL" data-pin="P05_SCL">
+<circle cx="656" cy="192" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="192" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="192" r="2.4" fill="#3e4641"/>
+<text x="752" y="194.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">5 PH4 / SCL</text>
+</g>
+<g id="pin-P06_GND" data-pin="P06_GND">
+<circle cx="688" cy="192" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="192" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="192" r="2.4" fill="#3e4641"/>
+<text x="872" y="194.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">6 GND</text>
+</g>
+<g id="pin-P07_PC9" data-pin="P07_PC9">
+<circle cx="656" cy="216" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="216" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="216" r="2.4" fill="#3e4641"/>
+<text x="752" y="218.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">7 PC9</text>
+</g>
+<g id="pin-P08_TX" data-pin="P08_TX">
+<circle cx="688" cy="216" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="216" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="216" r="2.4" fill="#3e4641"/>
+<text x="872" y="218.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">8 PH2 / TX</text>
+</g>
+<g id="pin-P09_GND" data-pin="P09_GND">
+<circle cx="656" cy="240" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="240" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="240" r="2.4" fill="#3e4641"/>
+<text x="752" y="242.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">9 GND</text>
+</g>
+<g id="pin-P10_RX" data-pin="P10_RX">
+<circle cx="688" cy="240" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="240" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="240" r="2.4" fill="#3e4641"/>
+<text x="872" y="242.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">10 PH3 / RX</text>
+</g>
+<g id="pin-P11_PC6" data-pin="P11_PC6">
+<circle cx="656" cy="264" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="264" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="264" r="2.4" fill="#3e4641"/>
+<text x="752" y="266.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">11 PC6</text>
+</g>
+<g id="pin-P12_PC11" data-pin="P12_PC11">
+<circle cx="688" cy="264" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="264" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="264" r="2.4" fill="#3e4641"/>
+<text x="872" y="266.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">12 PC11</text>
+</g>
+<g id="pin-P13_PC5" data-pin="P13_PC5">
+<circle cx="656" cy="288" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="288" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="288" r="2.4" fill="#3e4641"/>
+<text x="752" y="290.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">13 PC5</text>
+</g>
+<g id="pin-P14_GND" data-pin="P14_GND">
+<circle cx="688" cy="288" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="288" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="288" r="2.4" fill="#3e4641"/>
+<text x="872" y="290.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">14 GND</text>
+</g>
+<g id="pin-P15_PC8" data-pin="P15_PC8">
+<circle cx="656" cy="312" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="312" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="312" r="2.4" fill="#3e4641"/>
+<text x="752" y="314.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">15 PC8</text>
+</g>
+<g id="pin-P16_PC15" data-pin="P16_PC15">
+<circle cx="688" cy="312" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="312" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="312" r="2.4" fill="#3e4641"/>
+<text x="872" y="314.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">16 PC15</text>
+</g>
+<g id="pin-P17_3V3" data-pin="P17_3V3">
+<circle cx="656" cy="336" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="336" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="336" r="2.4" fill="#3e4641"/>
+<text x="752" y="338.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">17 3V3</text>
+</g>
+<g id="pin-P18_PC14" data-pin="P18_PC14">
+<circle cx="688" cy="336" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="336" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="336" r="2.4" fill="#3e4641"/>
+<text x="872" y="338.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">18 PC14</text>
+</g>
+<g id="pin-P19_MOSI" data-pin="P19_MOSI">
+<circle cx="656" cy="360" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="360" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="360" r="2.4" fill="#3e4641"/>
+<text x="752" y="362.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">19 PH7 / MOSI</text>
+</g>
+<g id="pin-P20_GND" data-pin="P20_GND">
+<circle cx="688" cy="360" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="360" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="360" r="2.4" fill="#3e4641"/>
+<text x="872" y="362.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">20 GND</text>
+</g>
+<g id="pin-P21_MISO" data-pin="P21_MISO">
+<circle cx="656" cy="384" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="384" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="384" r="2.4" fill="#3e4641"/>
+<text x="752" y="386.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">21 PH8 / MISO</text>
+</g>
+<g id="pin-P22_PC7" data-pin="P22_PC7">
+<circle cx="688" cy="384" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="384" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="384" r="2.4" fill="#3e4641"/>
+<text x="872" y="386.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">22 PC7</text>
+</g>
+<g id="pin-P23_CLK" data-pin="P23_CLK">
+<circle cx="656" cy="408" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="408" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="408" r="2.4" fill="#3e4641"/>
+<text x="752" y="410.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">23 PH6 / CLK</text>
+</g>
+<g id="pin-P24_CS" data-pin="P24_CS">
+<circle cx="688" cy="408" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="408" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="408" r="2.4" fill="#3e4641"/>
+<text x="872" y="410.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">24 PH9 / CS</text>
+</g>
+<g id="pin-P25_GND" data-pin="P25_GND">
+<circle cx="656" cy="432" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="656" cy="432" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="656" cy="432" r="2.4" fill="#3e4641"/>
+<text x="752" y="434.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">25 GND</text>
+</g>
+<g id="pin-P26_PC10" data-pin="P26_PC10">
+<circle cx="688" cy="432" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="688" cy="432" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="688" cy="432" r="2.4" fill="#3e4641"/>
+<text x="872" y="434.5" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">26 PC10</text>
+</g>
+</svg>

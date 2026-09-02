@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0 — 2026-09-02
+
+- Add a repeatable official-evidence → normalized specification → original top-view → touchpoint validation → immutable install workflow.
+- Retain fetched official source bytes and SHA-256 metadata in a local-only evidence cache, with offline reuse and fail-closed domain checks.
+- Introduce `circuitlab-top-style/v1` with common technical-board styling and semantic power, ground, clock, data, and signal touchpoint colors.
+- Add original top views and explicit pins for VEML7700 light, APDS9960 proximity/color/gesture, SHT45 temperature/humidity, and SCD-40 CO2 sensor modules.
+- Surface pipeline status, evidence capture totals, validation totals, and drawing style in the Hardware Library.
+
 ## 0.6.0 — 2026-09-02
 
 - Expand the primary Hardware Library to boards, single-board computers, sensor modules, displays, and packaged chips.

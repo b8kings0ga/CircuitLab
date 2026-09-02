@@ -1,0 +1,333 @@
+{
+  "accent": "#202421",
+  "assetId": "orange-pi.zero-3-v1.3",
+  "canvasWidth": 130,
+  "color": "#e86b1f",
+  "height": 55,
+  "level": "linux-single-board-computer",
+  "manufacturer": "Shenzhen Xunlong Software",
+  "mpn": "Orange Pi Zero 3 v1.3",
+  "parts": [
+    [
+      8,
+      9,
+      27,
+      27,
+      "H618"
+    ],
+    [
+      8,
+      39,
+      20,
+      10,
+      "LPDDR4"
+    ],
+    [
+      35,
+      5,
+      12,
+      16,
+      "RJ45"
+    ],
+    [
+      35,
+      26,
+      12,
+      8,
+      "USB-C"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "3V3"
+      ],
+      "name": "P01_3V3",
+      "number": "1",
+      "side": "right",
+      "x": 42,
+      "y": 12.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "5V"
+      ],
+      "name": "P02_5V",
+      "number": "2",
+      "side": "right",
+      "x": 46,
+      "y": 12.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH5 / SDA"
+      ],
+      "name": "P03_SDA",
+      "number": "3",
+      "side": "right",
+      "x": 42,
+      "y": 15.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "5V"
+      ],
+      "name": "P04_5V",
+      "number": "4",
+      "side": "right",
+      "x": 46,
+      "y": 15.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH4 / SCL"
+      ],
+      "name": "P05_SCL",
+      "number": "5",
+      "side": "right",
+      "x": 42,
+      "y": 18.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "GND"
+      ],
+      "name": "P06_GND",
+      "number": "6",
+      "side": "right",
+      "x": 46,
+      "y": 18.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC9"
+      ],
+      "name": "P07_PC9",
+      "number": "7",
+      "side": "right",
+      "x": 42,
+      "y": 21.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH2 / TX"
+      ],
+      "name": "P08_TX",
+      "number": "8",
+      "side": "right",
+      "x": 46,
+      "y": 21.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "GND"
+      ],
+      "name": "P09_GND",
+      "number": "9",
+      "side": "right",
+      "x": 42,
+      "y": 24.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH3 / RX"
+      ],
+      "name": "P10_RX",
+      "number": "10",
+      "side": "right",
+      "x": 46,
+      "y": 24.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC6"
+      ],
+      "name": "P11_PC6",
+      "number": "11",
+      "side": "right",
+      "x": 42,
+      "y": 27.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC11"
+      ],
+      "name": "P12_PC11",
+      "number": "12",
+      "side": "right",
+      "x": 46,
+      "y": 27.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC5"
+      ],
+      "name": "P13_PC5",
+      "number": "13",
+      "side": "right",
+      "x": 42,
+      "y": 30.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "GND"
+      ],
+      "name": "P14_GND",
+      "number": "14",
+      "side": "right",
+      "x": 46,
+      "y": 30.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC8"
+      ],
+      "name": "P15_PC8",
+      "number": "15",
+      "side": "right",
+      "x": 42,
+      "y": 33.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC15"
+      ],
+      "name": "P16_PC15",
+      "number": "16",
+      "side": "right",
+      "x": 46,
+      "y": 33.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "3V3"
+      ],
+      "name": "P17_3V3",
+      "number": "17",
+      "side": "right",
+      "x": 42,
+      "y": 36.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC14"
+      ],
+      "name": "P18_PC14",
+      "number": "18",
+      "side": "right",
+      "x": 46,
+      "y": 36.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH7 / MOSI"
+      ],
+      "name": "P19_MOSI",
+      "number": "19",
+      "side": "right",
+      "x": 42,
+      "y": 39.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "GND"
+      ],
+      "name": "P20_GND",
+      "number": "20",
+      "side": "right",
+      "x": 46,
+      "y": 39.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH8 / MISO"
+      ],
+      "name": "P21_MISO",
+      "number": "21",
+      "side": "right",
+      "x": 42,
+      "y": 42.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC7"
+      ],
+      "name": "P22_PC7",
+      "number": "22",
+      "side": "right",
+      "x": 46,
+      "y": 42.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH6 / CLK"
+      ],
+      "name": "P23_CLK",
+      "number": "23",
+      "side": "right",
+      "x": 42,
+      "y": 45.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PH9 / CS"
+      ],
+      "name": "P24_CS",
+      "number": "24",
+      "side": "right",
+      "x": 46,
+      "y": 45.0
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "GND"
+      ],
+      "name": "P25_GND",
+      "number": "25",
+      "side": "right",
+      "x": 42,
+      "y": 48.0
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "PC10"
+      ],
+      "name": "P26_PC10",
+      "number": "26",
+      "side": "right",
+      "x": 46,
+      "y": 48.0
+    }
+  ],
+  "revision": "1.1.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_3",
+  "subtitle": "H618 · 26-PIN GPIO",
+  "width": 50
+}

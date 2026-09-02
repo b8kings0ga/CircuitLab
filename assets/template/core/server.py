@@ -272,6 +272,9 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/api/projects":
             self._json({"projects": circuit_platform().projects()})
             return
+        if parsed.path == "/api/hardware-pipeline/latest":
+            self._json(circuit_platform().pipeline_latest())
+            return
         if parsed.path == "/api/components":
             params = parse_qs(parsed.query)
             query = params.get("q", [""])[0]

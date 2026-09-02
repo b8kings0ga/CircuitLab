@@ -1,0 +1,412 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "P01_3V3",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5V"
+        ],
+        "name": "P02_5V",
+        "number": "2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH5 / SDA"
+        ],
+        "name": "P03_SDA",
+        "number": "3"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5V"
+        ],
+        "name": "P04_5V",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH4 / SCL"
+        ],
+        "name": "P05_SCL",
+        "number": "5"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P06_GND",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC9"
+        ],
+        "name": "P07_PC9",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH2 / TX"
+        ],
+        "name": "P08_TX",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P09_GND",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH3 / RX"
+        ],
+        "name": "P10_RX",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC6"
+        ],
+        "name": "P11_PC6",
+        "number": "11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC11"
+        ],
+        "name": "P12_PC11",
+        "number": "12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC5"
+        ],
+        "name": "P13_PC5",
+        "number": "13"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P14_GND",
+        "number": "14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC8"
+        ],
+        "name": "P15_PC8",
+        "number": "15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC15"
+        ],
+        "name": "P16_PC15",
+        "number": "16"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "P17_3V3",
+        "number": "17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC14"
+        ],
+        "name": "P18_PC14",
+        "number": "18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH7 / MOSI"
+        ],
+        "name": "P19_MOSI",
+        "number": "19"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P20_GND",
+        "number": "20"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH8 / MISO"
+        ],
+        "name": "P21_MISO",
+        "number": "21"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC7"
+        ],
+        "name": "P22_PC7",
+        "number": "22"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH6 / CLK"
+        ],
+        "name": "P23_CLK",
+        "number": "23"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PH9 / CS"
+        ],
+        "name": "P24_CS",
+        "number": "24"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P25_GND",
+        "number": "25"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "PC10"
+        ],
+        "name": "P26_PC10",
+        "number": "26"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "bdfa7c86d0972e953543c96e038dff36aaafddeaff1aeed653cd2053e8d2aea1",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_3"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "orange-pi.zero-3-v1.3",
+    "level": "linux-single-board-computer",
+    "lifecycle": "active",
+    "manufacturer": "Shenzhen Xunlong Software",
+    "mpn": "Orange Pi Zero 3 v1.3",
+    "revision": "1.1.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 55,
+    "package": "assembled-module",
+    "widthMm": 50
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "P01_3V3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.24324324
+      },
+      {
+        "pin": "P02_5V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.24324324
+      },
+      {
+        "pin": "P03_SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.28378378
+      },
+      {
+        "pin": "P04_5V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.28378378
+      },
+      {
+        "pin": "P05_SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.32432432
+      },
+      {
+        "pin": "P06_GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.32432432
+      },
+      {
+        "pin": "P07_PC9",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.36486486
+      },
+      {
+        "pin": "P08_TX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.36486486
+      },
+      {
+        "pin": "P09_GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.40540541
+      },
+      {
+        "pin": "P10_RX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.40540541
+      },
+      {
+        "pin": "P11_PC6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.44594595
+      },
+      {
+        "pin": "P12_PC11",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.44594595
+      },
+      {
+        "pin": "P13_PC5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.48648649
+      },
+      {
+        "pin": "P14_GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.48648649
+      },
+      {
+        "pin": "P15_PC8",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.52702703
+      },
+      {
+        "pin": "P16_PC15",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.52702703
+      },
+      {
+        "pin": "P17_3V3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.56756757
+      },
+      {
+        "pin": "P18_PC14",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.56756757
+      },
+      {
+        "pin": "P19_MOSI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.60810811
+      },
+      {
+        "pin": "P20_GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.60810811
+      },
+      {
+        "pin": "P21_MISO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.64864865
+      },
+      {
+        "pin": "P22_PC7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.64864865
+      },
+      {
+        "pin": "P23_CLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.68918919
+      },
+      {
+        "pin": "P24_CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.68918919
+      },
+      {
+        "pin": "P25_GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63076923,
+        "y": 0.72972973
+      },
+      {
+        "pin": "P26_PC10",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66153846,
+        "y": 0.72972973
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "fff162aba69e7edc1c92b4984a862042fbb1031f3240b477469b0a12fc7590d5",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

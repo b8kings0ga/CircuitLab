@@ -1,0 +1,71 @@
+{
+  "accent": "#e7e8df",
+  "assetId": "adafruit.scd40-5187",
+  "canvasWidth": 50,
+  "color": "#151a18",
+  "height": 22.8,
+  "level": "co2-gas-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "SCD-40 #5187",
+  "parts": [
+    [
+      7.6,
+      4.0,
+      10.1,
+      10.1,
+      "CO₂"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 4.25,
+      "y": 20.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 8.5,
+      "y": 20.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 12.75,
+      "y": 20.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 17.0,
+      "y": 20.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 21.25,
+      "y": 20.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-scd-40-and-scd-41/pinouts",
+  "subtitle": "TRUE CO₂ · I²C 0x62",
+  "width": 25.5
+}

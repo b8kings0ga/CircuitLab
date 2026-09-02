@@ -1,0 +1,80 @@
+{
+  "accent": "#e8e8e1",
+  "assetId": "adafruit.apds9960-4060",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "proximity-light-color-gesture-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "APDS9960 #4060",
+  "parts": [
+    [
+      8.7,
+      4.0,
+      8.0,
+      7.6,
+      "RGB+IR"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.5,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.6,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.7,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 18.799999999999997,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "6",
+      "side": "bottom",
+      "x": 22.9,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-apds9960-breakout?view=all",
+  "subtitle": "LIGHT / COLOR / PROXIMITY · I²C 0x39",
+  "width": 25.4
+}

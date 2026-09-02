@@ -1,0 +1,80 @@
+{
+  "accent": "#f0eee8",
+  "assetId": "adafruit.veml7700-4162",
+  "canvasWidth": 48,
+  "color": "#151a18",
+  "height": 17.8,
+  "level": "ambient-light-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "VEML7700 #4162",
+  "parts": [
+    [
+      9.0,
+      4.3,
+      7.4,
+      7.0,
+      "LIGHT"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.4,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.5,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 10.6,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 14.7,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 18.799999999999997,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "6",
+      "side": "bottom",
+      "x": 22.9,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/adafruit-veml7700?view=all",
+  "subtitle": "AMBIENT LIGHT · I²C 0x10",
+  "width": 25.4
+}

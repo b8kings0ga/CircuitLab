@@ -12,6 +12,33 @@ Run `python3 scripts/component_assets.py audit-chips` to identify missing packag
 
 Do not start from a board photo. For every chip, collect the exact orderable MPN, package code, official package-top or package drawing, pin table, absolute-maximum ratings, datasheet revision, and a footprint from manufacturer material or a pinned KiCad release.
 
+## Repeatable board and sensor workflow
+
+Use `python3 scripts/hardware_pipeline.py run --online` to execute the complete
+pipeline. Network access is never implicit: omit `--online` to inspect only the
+local evidence cache.
+
+1. Capture bytes only from the official-domain allowlist. Retain the response
+   body locally with its final URL, timestamp, content type, HTTP validators,
+   byte count, and SHA-256. Captured bytes are local evidence and are not added
+   to the redistributable Skill.
+2. Normalize exact manufacturer, product ID or revision, dimensions, functions,
+   and the official pin table into `hardware-source-spec/v1`.
+3. Render an original vector top view with `circuitlab-top-style/v1`. Use common
+   board, silkscreen, trace, and touchpoint geometry. Pin colors are semantic:
+   power, ground, clock, data, and general signal.
+4. Validate that every electrical pin has exactly one named visual anchor, that
+   the SVG hash matches the package, and that every evidence URL remains on an
+   approved official domain.
+5. Install a new immutable component revision and publish the pipeline report to
+   the PWA. A capture warning remains visible; it is never silently converted to
+   fresh evidence.
+
+The product photo is composition evidence only. Never derive a pin name or
+electrical identity from pixel position, and never trace the photograph into a
+redistributable asset. Each original view must disclose that it was generated
+from the documented pin table and remains physically unverified.
+
 ## Acquisition order
 
 1. Search the local registry by exact manufacturer and MPN.

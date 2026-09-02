@@ -368,6 +368,8 @@ textarea:focus { outline: 1px solid #4ac7ff; border-color: #4ac7ff; }
 .component-gallery img { display: block; width: 100%; height: 190px; object-fit: contain; }
 .component-gallery figcaption { padding: 8px 10px; border-top: 1px solid #303531; background: #141715; color: #8f9991; font: 700 9px ui-monospace, monospace; text-transform: uppercase; }
 .scope-note { margin: 0 0 10px; color: #72d995; font: 700 9px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; }
+.pipeline-status { margin: 0 0 10px; padding: 8px 10px; border: 1px solid #2d4e39; background: #132019; color: #83e9a5; font: 700 8px ui-monospace, monospace; letter-spacing: .05em; }
+.pipeline-status.warning { border-color: #67552c; background: #211e14; color: #f0c65a; }
 .chip-filter-bar { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 10px; }
 .chip-filter-bar button { height: 30px; padding: 0 12px; border-color: #344039; background: #151a17; color: #aab4ac; font-size: 10px; }
 .chip-filter-bar button.active { border-color: #6dff9d; background: #20372a; color: #dfffea; }

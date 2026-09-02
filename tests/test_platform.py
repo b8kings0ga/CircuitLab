@@ -109,6 +109,8 @@ class CircuitLabPlatformTests(unittest.TestCase):
         self.assertEqual(family("magnetometer-module"), ("sensor", "magnetic"))
         self.assertEqual(family("voc-gas-sensor-module"), ("sensor", "gas"))
         self.assertEqual(family("digital-microphone-module"), ("sensor", "sound"))
+        self.assertEqual(family("ambient-light-sensor-module"), ("sensor", "light"))
+        self.assertEqual(family("temperature-humidity-sensor-module"), ("sensor", "environment"))
 
     def test_fixture_emits_complete_unverified_package(self) -> None:
         result = generate_fixture({

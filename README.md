@@ -41,6 +41,18 @@ python3 scripts/component_assets.py search ESP32-S3
 python3 scripts/generate_builtin_catalog.py --install
 ```
 
+Run the complete evidence-to-hardware workflow. Online capture is explicit; without
+`--online`, CircuitLab stays offline and only inspects its local evidence cache.
+
+```bash
+python3 scripts/hardware_pipeline.py run --online
+```
+
+The workflow captures official source bytes and hashes into a local-only cache,
+normalizes exact product metadata, renders the shared `circuitlab-top-style/v1`
+top view, checks every pin-to-anchor mapping, installs immutable revisions, and
+writes an auditable report for the PWA.
+
 Packaged-chip acquisition remains strict; board and module assets use the immutable general registry after their exact product and version are confirmed.
 
 ## Install as a Codex Skill

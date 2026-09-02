@@ -18,6 +18,10 @@ SOURCES = {
     "bme688": "https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/pinouts",
     "sph0645": "https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/pinouts",
     "oled": "https://www.waveshare.com/wiki/0.96inch_OLED_(B)",
+    "veml7700": "https://learn.adafruit.com/adafruit-veml7700?view=all",
+    "apds9960": "https://learn.adafruit.com/adafruit-apds9960-breakout?view=all",
+    "sht45": "https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor?view=all",
+    "scd40": "https://learn.adafruit.com/adafruit-scd-40-and-scd-41/pinouts",
 }
 
 
@@ -47,45 +51,73 @@ def orange_pi_pins() -> list[dict[str, Any]]:
 
 CATALOG: list[dict[str, Any]] = [
     {
-        "assetId": "orange-pi.zero-3-v1.3", "revision": "1.0.2", "manufacturer": "Shenzhen Xunlong Software", "mpn": "Orange Pi Zero 3 v1.3",
+        "assetId": "orange-pi.zero-3-v1.3", "revision": "1.1.0", "manufacturer": "Shenzhen Xunlong Software", "mpn": "Orange Pi Zero 3 v1.3",
         "level": "linux-single-board-computer", "width": 50, "height": 55, "canvasWidth": 130, "color": "#e86b1f", "accent": "#202421",
         "subtitle": "H618 · 26-PIN GPIO", "source": SOURCES["orange-pi-zero-3"], "pins": orange_pi_pins(),
         "parts": [(8, 9, 27, 27, "H618"), (8, 39, 20, 10, "LPDDR4"), (35, 5, 12, 16, "RJ45"), (35, 26, 12, 8, "USB-C")],
     },
     {
-        "assetId": "adafruit.vl53l1x-3967", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "VL53L1X ToF #3967",
+        "assetId": "adafruit.vl53l1x-3967", "revision": "1.1.0", "manufacturer": "Adafruit Industries", "mpn": "VL53L1X ToF #3967",
         "level": "distance-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#161b19", "accent": "#e9e9e4",
         "subtitle": "DISTANCE · I²C 0x29", "source": SOURCES["vl53l1x"],
         "pins": [pin(n, str(i + 1), 2.4 + i * 4.1, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("GPIO", "output"), ("XSHUT", "input")])],
         "parts": [(8.6, 4.0, 8.2, 7.2, "TOF")],
     },
     {
-        "assetId": "adafruit.lis3mdl-4479", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "LIS3MDL #4479",
+        "assetId": "adafruit.lis3mdl-4479", "revision": "1.1.0", "manufacturer": "Adafruit Industries", "mpn": "LIS3MDL #4479",
         "level": "magnetometer-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#171c1a", "accent": "#eeeeea",
         "subtitle": "MAGNETIC · I²C / SPI", "source": SOURCES["lis3mdl"],
         "pins": [pin(n, str(i + 1), 2.0 + i * 2.65, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("DO", "output"), ("CS", "input"), ("INT", "output"), ("DRDY", "output")])],
         "parts": [(9.1, 4.4, 7.2, 7.2, "MAG")],
     },
     {
-        "assetId": "adafruit.bme688-5046", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "BME688 #5046",
+        "assetId": "adafruit.bme688-5046", "revision": "1.1.0", "manufacturer": "Adafruit Industries", "mpn": "BME688 #5046",
         "level": "voc-gas-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#efefea",
         "subtitle": "GAS / VOC · I²C / SPI", "source": SOURCES["bme688"],
         "pins": [pin(n, str(i + 1), 2.6 + i * 3.35, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCK", "input"), ("SDO", "output"), ("SDI", "bidirectional"), ("CS", "input")])],
         "parts": [(9.4, 4.2, 6.6, 6.6, "VOC")],
     },
     {
-        "assetId": "adafruit.sph0645lm4h-3421", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "SPH0645LM4H #3421",
+        "assetId": "adafruit.sph0645lm4h-3421", "revision": "1.1.0", "manufacturer": "Adafruit Industries", "mpn": "SPH0645LM4H #3421",
         "level": "digital-microphone-module", "width": 22.9, "height": 15.2, "canvasWidth": 46, "color": "#171b19", "accent": "#eceee9",
         "subtitle": "SOUND · DIGITAL I²S", "source": SOURCES["sph0645"],
         "pins": [pin(n, str(i + 1), 2.2 + i * 3.7, 13.0, "bottom", d) for i, (n, d) in enumerate([("3V", "power"), ("GND", "power"), ("BCLK", "input"), ("DOUT", "output"), ("LRCLK", "input"), ("SEL", "input")])],
         "parts": [(8.3, 3.3, 6.2, 6.2, "MIC")],
     },
     {
-        "assetId": "waveshare.0.96inch-oled-b", "revision": "1.1.0", "manufacturer": "Waveshare", "mpn": "0.96inch OLED (B)",
+        "assetId": "waveshare.0.96inch-oled-b", "revision": "1.2.0", "manufacturer": "Waveshare", "mpn": "0.96inch OLED (B)",
         "level": "oled-display-module", "width": 33.0, "height": 33.5, "canvasWidth": 58, "color": "#184a7d", "accent": "#09131e",
         "subtitle": "DISPLAY · 128×64 · SPI / I²C", "source": SOURCES["oled"],
         "pins": [pin(n, str(i + 1), 2.5 + i * 3.95, 31.0, "bottom", d) for i, (n, d) in enumerate([("VCC", "power"), ("GND", "power"), ("NC", "input"), ("DIN", "input"), ("CLK", "input"), ("CS", "input"), ("D/C", "input"), ("RES", "input")])],
         "parts": [(5.6, 4.2, 21.7, 14.2, "OLED 128×64")],
+    },
+    {
+        "assetId": "adafruit.veml7700-4162", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "VEML7700 #4162",
+        "level": "ambient-light-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#f0eee8",
+        "subtitle": "AMBIENT LIGHT · I²C 0x10", "source": SOURCES["veml7700"],
+        "pins": [pin(n, str(i + 1), 2.4 + i * 4.1, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("INT", "output")])],
+        "parts": [(9.0, 4.3, 7.4, 7.0, "LIGHT")],
+    },
+    {
+        "assetId": "adafruit.apds9960-4060", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "APDS9960 #4060",
+        "level": "proximity-light-color-gesture-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e8e8e1",
+        "subtitle": "LIGHT / COLOR / PROXIMITY · I²C 0x39", "source": SOURCES["apds9960"],
+        "pins": [pin(n, str(i + 1), 2.4 + i * 4.1, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional"), ("INT", "output")])],
+        "parts": [(8.7, 4.0, 8.0, 7.6, "RGB+IR")],
+    },
+    {
+        "assetId": "adafruit.sht45-5665", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "SHT45 #5665",
+        "level": "temperature-humidity-sensor-module", "width": 25.4, "height": 17.8, "canvasWidth": 48, "color": "#151a18", "accent": "#e9e6dd",
+        "subtitle": "TEMP / HUMIDITY · I²C 0x44", "source": SOURCES["sht45"],
+        "pins": [pin(n, str(i + 1), 4.2 + i * 4.25, 15.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3V", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional")])],
+        "parts": [(9.2, 4.1, 7.0, 7.2, "SHT45")],
+    },
+    {
+        "assetId": "adafruit.scd40-5187", "revision": "1.0.0", "manufacturer": "Adafruit Industries", "mpn": "SCD-40 #5187",
+        "level": "co2-gas-sensor-module", "width": 25.5, "height": 22.8, "canvasWidth": 50, "color": "#151a18", "accent": "#e7e8df",
+        "subtitle": "TRUE CO₂ · I²C 0x62", "source": SOURCES["scd40"],
+        "pins": [pin(n, str(i + 1), 4.25 + i * 4.25, 20.4, "bottom", d) for i, (n, d) in enumerate([("VIN", "power"), ("3VO", "power"), ("GND", "power"), ("SCL", "input"), ("SDA", "bidirectional")])],
+        "parts": [(7.6, 4.0, 10.1, 10.1, "CO₂")],
     },
 ]
 
@@ -94,50 +126,100 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+STYLE = {
+    "schema": "circuitlab-top-style/v1",
+    "name": "CircuitLab Technical Top",
+    "boardStroke": "#738079",
+    "silk": "#eef4ef",
+    "trace": "#7c8c82",
+    "pin": {"power": "#ff6b6b", "ground": "#707873", "clock": "#f3c94f", "data": "#69a7ff", "signal": "#ae7bff"},
+}
+BOARD_Y = 6.0
+FOOTER = 13.0
+
+
+def pin_colour(row: dict[str, Any]) -> str:
+    name = str(row["name"]).upper()
+    if "GND" in name:
+        return STYLE["pin"]["ground"]
+    if row["direction"] == "power" or name in {"VIN", "VCC", "3V", "3VO", "3V3", "5V"}:
+        return STYLE["pin"]["power"]
+    if any(marker in name for marker in ("SCL", "CLK", "BCLK", "LRCLK", "SCK")):
+        return STYLE["pin"]["clock"]
+    if any(marker in name for marker in ("SDA", "DIN", "DOUT", "SDI", "SDO", "MOSI", "MISO")):
+        return STYLE["pin"]["data"]
+    return STYLE["pin"]["signal"]
+
+
 def render(spec: dict[str, Any]) -> str:
     scale = 8
     physical_width = spec["width"]
     canvas_width = spec["canvasWidth"]
-    height = spec["height"] + 11
+    height = spec["height"] + BOARD_Y + FOOTER
     offset_x = (canvas_width - physical_width) / 2
+    board_x = offset_x * scale; board_y = BOARD_Y * scale
+    board_width = physical_width * scale; board_height = spec["height"] * scale
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {canvas_width * scale:g} {height * scale:g}" role="img" aria-label="{esc(spec["mpn"])} interactive top view">',
-        '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter></defs>',
-        f'<rect x="{offset_x * scale:g}" y="{3 * scale:g}" width="{physical_width * scale:g}" height="{spec["height"] * scale:g}" rx="9" fill="{spec["color"]}" stroke="#7d867f" stroke-width="2" filter="url(#s)"/>',
-        f'<text x="{canvas_width * scale / 2:g}" y="{(spec["height"] + 8) * scale:g}" text-anchor="middle" fill="#dce4de" font-family="ui-monospace,monospace" font-size="11" font-weight="700">{esc(spec["mpn"])}</text>',
-        f'<text x="{canvas_width * scale / 2:g}" y="{(spec["height"] + 10) * scale:g}" text-anchor="middle" fill="#77e39d" font-family="ui-monospace,monospace" font-size="7">{esc(spec["subtitle"])}</text>',
+        '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>',
+        f'<rect x="{board_x:g}" y="{board_y:g}" width="{board_width:g}" height="{board_height:g}" rx="9" fill="{spec["color"]}" stroke="{STYLE["boardStroke"]}" stroke-width="2" filter="url(#s)"/>',
+        f'<text x="{canvas_width * scale / 2:g}" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>',
+        f'<text x="{board_x + 10:g}" y="{board_y + 15:g}" fill="{STYLE["silk"]}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(spec["manufacturer"])}</text>',
+        f'<text x="{board_x + 10:g}" y="{board_y + 25:g}" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">{esc(spec["mpn"])}</text>',
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 7) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
+        f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + 9.1) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
     ]
+    for hole_x, hole_y in ((2.3, 2.3), (physical_width - 2.3, 2.3), (2.3, spec["height"] - 2.3), (physical_width - 2.3, spec["height"] - 2.3)):
+        hx = (offset_x + hole_x) * scale; hy = (BOARD_Y + hole_y) * scale
+        lines.append(f'<circle cx="{hx:g}" cy="{hy:g}" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="{hx:g}" cy="{hy:g}" r="3.4" fill="#e9ece8"/>')
+    if spec["manufacturer"] == "Adafruit Industries":
+        connector_y = (BOARD_Y + spec["height"] * .43) * scale
+        lines.extend([
+            f'<rect x="{board_x - 2:g}" y="{connector_y:g}" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>',
+            f'<rect x="{board_x + board_width - 17:g}" y="{connector_y:g}" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>',
+        ])
     for x, y, width, part_height, label in spec["parts"]:
-        px = (offset_x + x) * scale; py = (3 + y) * scale
-        lines.append(f'<rect x="{px:g}" y="{py:g}" width="{width * scale:g}" height="{part_height * scale:g}" rx="5" fill="{spec["accent"]}" stroke="#9ca49f" stroke-width="1.5"/>')
-        lines.append(f'<text x="{px + width * scale / 2:g}" y="{py + part_height * scale / 2 + 3:g}" text-anchor="middle" fill="#222925" font-family="ui-monospace,monospace" font-size="8" font-weight="800">{esc(label)}</text>')
+        px = (offset_x + x) * scale; py = (BOARD_Y + y) * scale
+        part_width = width * scale; rendered_height = part_height * scale
+        for row in spec["pins"]:
+            tx = (offset_x + row["x"]) * scale; ty = (BOARD_Y + row["y"]) * scale
+            lines.append(f'<path d="M{px + part_width / 2:g} {py + rendered_height / 2:g}L{tx:g} {ty:g}" stroke="{STYLE["trace"]}" stroke-width="1" opacity=".24" fill="none"/>')
+        lines.append(f'<rect x="{px:g}" y="{py:g}" width="{part_width:g}" height="{rendered_height:g}" rx="5" fill="{spec["accent"]}" stroke="#9ca49f" stroke-width="1.5"/>')
+        if "OLED" in label:
+            lines.append(f'<rect x="{px + 7:g}" y="{py + 7:g}" width="{part_width - 14:g}" height="{rendered_height - 14:g}" rx="3" fill="#07131d"/><path d="M{px + 12:g} {py + rendered_height * .38:g}H{px + part_width - 12:g}" stroke="#f5d34d" stroke-width="5"/><path d="M{px + 12:g} {py + rendered_height * .68:g}H{px + part_width - 12:g}" stroke="#4ea7ff" stroke-width="9"/>')
+        elif any(marker in label for marker in ("TOF", "LIGHT", "RGB", "CO₂")):
+            lines.append(f'<circle cx="{px + part_width / 2:g}" cy="{py + rendered_height / 2:g}" r="{min(part_width, rendered_height) * .22:g}" fill="#161c19" stroke="#6b7770" stroke-width="2"/>')
+        part_text = "#f3f6f2" if "OLED" in label else "#222925"
+        lines.append(f'<text x="{px + width * scale / 2:g}" y="{py + part_height * scale / 2 + 3:g}" text-anchor="middle" fill="{part_text}" font-family="ui-monospace,monospace" font-size="8" font-weight="800">{esc(label)}</text>')
     for index, row in enumerate(spec["pins"]):
-        x = (offset_x + row["x"]) * scale; y = (3 + row["y"]) * scale
+        x = (offset_x + row["x"]) * scale; y = (BOARD_Y + row["y"]) * scale
         label = row["functions"][0] if spec["assetId"].startswith("orange-pi") else row["name"]
+        colour = pin_colour(row)
         lines.extend([
             f'<g id="pin-{esc(row["name"])}" data-pin="{esc(row["name"])}">',
-            f'<circle cx="{x:g}" cy="{y:g}" r="7.2" fill="#d3a321" stroke="#ffe580" stroke-width="1.3"/>',
-            f'<circle cx="{x:g}" cy="{y:g}" r="3.2" fill="#3e4641"/>',
+            f'<circle cx="{x:g}" cy="{y:g}" r="8.4" fill="{colour}" stroke="#16201a" stroke-width="1.5"/>',
+            f'<circle cx="{x:g}" cy="{y:g}" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>',
+            f'<circle cx="{x:g}" cy="{y:g}" r="2.4" fill="#3e4641"/>',
         ])
         if spec["assetId"].startswith("orange-pi"):
             tx = (offset_x + physical_width + 4 + (index % 2) * 15) * scale
-            lines.append(f'<text x="{tx:g}" y="{y + 2.5:g}" fill="#dce4de" font-family="ui-monospace,monospace" font-size="6.5">{esc(row["number"])} {esc(label)}</text>')
+            lines.append(f'<text x="{tx:g}" y="{y + 2.5:g}" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(row["number"])} {esc(label)}</text>')
         else:
-            lines.append(f'<text x="{x:g}" y="{(3 + spec["height"] + 2.2) * scale:g}" text-anchor="middle" fill="#f5d66e" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(label)}</text>')
+            lines.append(f'<text x="{x:g}" y="{(BOARD_Y + spec["height"] + 2.2) * scale:g}" text-anchor="middle" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(label)}</text>')
         lines.append('</g>')
     lines.append('</svg>')
     return "\n".join(lines) + "\n"
 
 
 def package_for(spec: dict[str, Any], svg: bytes) -> dict[str, Any]:
-    canvas_width = float(spec["canvasWidth"]); height = float(spec["height"] + 11); offset_x = (canvas_width - float(spec["width"])) / 2
+    canvas_width = float(spec["canvasWidth"]); height = float(spec["height"] + BOARD_Y + FOOTER); offset_x = (canvas_width - float(spec["width"])) / 2
     return {
         "schema": "component-package/v1",
         "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": "active"},
         "electrical": {"status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED", "pins": [{key: row[key] for key in ("name", "number", "direction", "functions")} for row in spec["pins"]]},
-        "visual": {"appearance": "top.svg", "appearanceSha256": hashlib.sha256(svg).hexdigest(), "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED", "anchors": [{"pin": row["name"], "x": round((offset_x + row["x"]) / canvas_width, 8), "y": round((3 + row["y"]) / height, 8), "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED"} for row in spec["pins"]], "views": [{"name": "interactive-top", "view": "original-vector-top", "path": "top.svg"}]},
+        "visual": {"appearance": "top.svg", "appearanceSha256": hashlib.sha256(svg).hexdigest(), "style": STYLE["schema"], "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED", "anchors": [{"pin": row["name"], "x": round((offset_x + row["x"]) / canvas_width, 8), "y": round((BOARD_Y + row["y"]) / height, 8), "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED"} for row in spec["pins"]], "views": [{"name": "interactive-top", "view": "original-vector-top", "path": "top.svg"}]},
         "physical": {"widthMm": spec["width"], "heightMm": spec["height"], "package": "assembled-module"},
-        "evidence": {"capturedAt": "2026-09-02T00:00:00Z", "sources": [{"type": "manufacturer-pinout-documentation", "url": spec["source"]}], "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE"},
+        "evidence": {"capturedAt": "2026-09-02T00:00:00Z", "sources": [{"type": "manufacturer-pinout-documentation", "url": spec["source"]}], "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE", "sourceSpecSha256": hashlib.sha256(json.dumps(spec, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()},
     }
 
 
@@ -148,6 +230,7 @@ def main() -> None:
     parser.add_argument("--data", type=Path, default=default_data_root())
     args = parser.parse_args()
     output = args.output.expanduser().resolve(); output.mkdir(parents=True, exist_ok=True)
+    (output / "style.json").write_text(json.dumps(STYLE, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     registry = ComponentRegistry(args.data.expanduser().resolve() / "registry") if args.install else None
     results = []
     for spec in CATALOG:
@@ -156,6 +239,7 @@ def main() -> None:
         svg = render(spec).encode("utf-8")
         package = package_for(spec, svg)
         (directory / "top.svg").write_bytes(svg)
+        (directory / "source-spec.json").write_text(json.dumps({"schema": "hardware-source-spec/v1", **spec}, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         (directory / "component-package.json").write_text(json.dumps(package, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         result = {"ref": f'{spec["assetId"]}@{spec["revision"]}', "pins": len(spec["pins"])}
         if registry is not None:
@@ -163,15 +247,16 @@ def main() -> None:
         results.append(result)
     xiao_source = Path(__file__).resolve().parents[1] / "docs" / "generated" / "xiao-esp32s3"
     xiao_package = json.loads((xiao_source / "component-package.json").read_text(encoding="utf-8"))
-    xiao_package["identity"]["revision"] = "1.2.0"
+    xiao_package["identity"]["revision"] = "1.3.0"
     xiao_package["evidence"]["capturedAt"] = "2026-09-02T00:00:00Z"
+    xiao_package["visual"]["style"] = STYLE["schema"]
     xiao_files = {name: (xiao_source / name).read_bytes() for name in ("board.svg", "board.json")}
     xiao_directory = output / xiao_package["identity"]["assetId"] / xiao_package["identity"]["revision"]
     xiao_directory.mkdir(parents=True, exist_ok=True)
     for name, body in xiao_files.items():
         (xiao_directory / name).write_bytes(body)
     (xiao_directory / "component-package.json").write_text(json.dumps(xiao_package, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    xiao_result = {"ref": "seeed.xiao-esp32s3@1.2.0", "pins": len(xiao_package["electrical"]["pins"])}
+    xiao_result = {"ref": "seeed.xiao-esp32s3@1.3.0", "pins": len(xiao_package["electrical"]["pins"])}
     if registry is not None:
         xiao_result["install"] = registry.install(xiao_package, xiao_files)["status"]
     results.append(xiao_result)

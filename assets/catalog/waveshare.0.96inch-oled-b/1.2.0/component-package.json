@@ -1,0 +1,144 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VCC",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "NC",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "DIN",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CLK",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "CS",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "D/C",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [],
+        "name": "RES",
+        "number": "8"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "ec3ec9f192fb2d5cfee7b2043c15a833eb816a954065d4accd6fd3bf520245f6",
+    "sources": [
+      {
+        "type": "manufacturer-pinout-documentation",
+        "url": "https://www.waveshare.com/wiki/0.96inch_OLED_(B)"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "waveshare.0.96inch-oled-b",
+    "level": "oled-display-module",
+    "lifecycle": "active",
+    "manufacturer": "Waveshare",
+    "mpn": "0.96inch OLED (B)",
+    "revision": "1.2.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "heightMm": 33.5,
+    "package": "assembled-module",
+    "widthMm": 33.0
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VCC",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.25862069,
+        "y": 0.7047619
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.32672414,
+        "y": 0.7047619
+      },
+      {
+        "pin": "NC",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39482759,
+        "y": 0.7047619
+      },
+      {
+        "pin": "DIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46293103,
+        "y": 0.7047619
+      },
+      {
+        "pin": "CLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53103448,
+        "y": 0.7047619
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.59913793,
+        "y": 0.7047619
+      },
+      {
+        "pin": "D/C",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.66724138,
+        "y": 0.7047619
+      },
+      {
+        "pin": "RES",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73534483,
+        "y": 0.7047619
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "940123dc3f15946a39df8d4edf44b68a7a2fe59aabad9b3c6074765c82366882",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

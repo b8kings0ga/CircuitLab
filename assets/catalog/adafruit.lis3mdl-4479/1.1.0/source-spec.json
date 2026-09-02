@@ -1,0 +1,107 @@
+{
+  "accent": "#eeeeea",
+  "assetId": "adafruit.lis3mdl-4479",
+  "canvasWidth": 48,
+  "color": "#171c1a",
+  "height": 17.8,
+  "level": "magnetometer-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "LIS3MDL #4479",
+  "parts": [
+    [
+      9.1,
+      4.4,
+      7.2,
+      7.2,
+      "MAG"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 2.0,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.65,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 7.3,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 9.95,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 12.6,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "DO",
+      "number": "6",
+      "side": "bottom",
+      "x": 15.25,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [],
+      "name": "CS",
+      "number": "7",
+      "side": "bottom",
+      "x": 17.9,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "INT",
+      "number": "8",
+      "side": "bottom",
+      "x": 20.55,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [],
+      "name": "DRDY",
+      "number": "9",
+      "side": "bottom",
+      "x": 23.2,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.1.0",
+  "schema": "hardware-source-spec/v1",
+  "source": "https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/pinouts",
+  "subtitle": "MAGNETIC · I²C / SPI",
+  "width": 25.4
+}
