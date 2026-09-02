@@ -1,0 +1,167 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "thermocouple-negative"
+        ],
+        "name": "TC-",
+        "number": "J1-2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "thermocouple-positive"
+        ],
+        "name": "TC+",
+        "number": "J1-1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V-to-5V-input"
+        ],
+        "name": "VIN",
+        "number": "JP1-1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "3VO",
+        "number": "JP1-2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "JP1-3"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "SPI-MISO"
+        ],
+        "name": "DO",
+        "number": "JP1-4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "JP1-5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-SCK"
+        ],
+        "name": "CLK",
+        "number": "JP1-6"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "c8a0ebf5e6006d5ed1bccf4d503e867d8c5edcb098ad66b6b0234b91b33efc20",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/269"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/thermocouple/arduino-code"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-MAX31855-breakout-board/5b12736f17d53d22d9dc4287e4f2129bc876d180/Adafruit_MAX31855%20v2.brd"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.max31855k-269-v2",
+    "level": "thermocouple-temperature-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "MAX31855K Thermocouple Amplifier #269 v2",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+    "heightMm": 22.86,
+    "package": "assembled-module",
+    "widthMm": 20.33
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "TC-",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47060345,
+        "y": 0.20518178
+      },
+      {
+        "pin": "TC+",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53094828,
+        "y": 0.20518178
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39043103,
+        "y": 0.56080234
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.43422414,
+        "y": 0.56080234
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47801724,
+        "y": 0.56080234
+      },
+      {
+        "pin": "DO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52181034,
+        "y": 0.56080234
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.56560345,
+        "y": 0.56080234
+      },
+      {
+        "pin": "CLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60939655,
+        "y": 0.56080234
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "422e1ce1516103b974ba78ef6b2e77431e697048ad49f908933f5af24dbf75e3",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

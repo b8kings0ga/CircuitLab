@@ -28,6 +28,7 @@ APPROVED_DOMAINS = {
     "wiki.seeedstudio.com", "files.seeedstudio.com", "docs.espressif.com",
     "docs.arduino.cc", "www.raspberrypi.com", "raspberrypi.com", "datasheets.raspberrypi.com",
 }
+APPROVED_GITHUB_ORGS = {"adafruit"}
 MAX_CAPTURE_BYTES = 4 * 1024 * 1024
 
 
@@ -68,7 +69,12 @@ def latest_catalog_packages() -> list[tuple[Path, dict[str, Any]]]:
 def official_url(url: str) -> bool:
     parsed = urllib.parse.urlparse(url)
     host = (parsed.hostname or "").casefold()
-    return parsed.scheme == "https" and any(host == domain or host.endswith(f".{domain}") for domain in APPROVED_DOMAINS)
+    if parsed.scheme != "https":
+        return False
+    if any(host == domain or host.endswith(f".{domain}") for domain in APPROVED_DOMAINS):
+        return True
+    parts = [part.casefold() for part in parsed.path.split("/") if part]
+    return host in {"github.com", "raw.githubusercontent.com"} and bool(parts) and parts[0] in APPROVED_GITHUB_ORGS
 
 
 def capture_sources(data_root: Path, *, online: bool) -> list[dict[str, Any]]:

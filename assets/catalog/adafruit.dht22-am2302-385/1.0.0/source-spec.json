@@ -1,0 +1,64 @@
+{
+  "assetId": "adafruit.dht22-am2302-385",
+  "canvasWidth": 34,
+  "dimensionStatus": "OFFICIAL_GUIDE_BODY_DIMENSIONS",
+  "height": 25.0,
+  "level": "temperature-humidity-sensor",
+  "lifecycle": "not-stocked",
+  "manufacturer": "Aosong / Adafruit Industries",
+  "mpn": "DHT22 / AM2302 #385",
+  "package": "4-pin-0.1-inch-pitch-sensor",
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "3V-to-5V-input"
+      ],
+      "name": "VCC",
+      "number": "1",
+      "side": "bottom",
+      "x": 3.74,
+      "y": 24.2
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "proprietary-single-wire-data"
+      ],
+      "name": "DATA",
+      "number": "2",
+      "side": "bottom",
+      "x": 6.28,
+      "y": 24.2
+    },
+    {
+      "direction": "passive",
+      "functions": [
+        "not-connected"
+      ],
+      "name": "NC",
+      "number": "3",
+      "side": "bottom",
+      "x": 8.82,
+      "y": 24.2
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "4",
+      "side": "bottom",
+      "x": 11.36,
+      "y": 24.2
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "vented-sensor",
+  "sources": [
+    "https://www.adafruit.com/product/385",
+    "https://learn.adafruit.com/dht/connecting-to-a-dhtxx-sensor"
+  ],
+  "subtitle": "TEMP / HUMIDITY · SINGLE-WIRE DATA · 0.5Hz",
+  "width": 15.1
+}

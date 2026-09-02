@@ -14,7 +14,7 @@ from generate_builtin_catalog import CATALOG, STYLE, package_for, render  # noqa
 
 class BuiltinCatalogTests(unittest.TestCase):
     def test_catalog_vectors_have_pins_evidence_and_valid_packages(self) -> None:
-        self.assertEqual(len(CATALOG), 45)
+        self.assertEqual(len(CATALOG), 51)
         for spec in CATALOG:
             svg = render(spec).encode("utf-8")
             package = validate_component(package_for(spec, svg))
@@ -56,6 +56,31 @@ class BuiltinCatalogTests(unittest.TestCase):
         haptic = specs["adafruit.drv2605l-2305-stemma-qt"]
         package = package_for(haptic, render(haptic).encode("utf-8"))
         self.assertEqual([contact["net"] for contact in package["physical"]["additionalContacts"]], ["MOTOR-", "MOTOR+"])
+
+        touch = specs["adafruit.mpr121-1982-stemma-qt"]
+        package = package_for(touch, render(touch).encode("utf-8"))
+        self.assertEqual([pin["name"] for pin in touch["pins"][:12]], [f"ELEC{index}" for index in range(11, -1, -1)])
+        self.assertEqual(len(touch["pins"]), 19)
+        self.assertEqual(package["physical"]["additionalContacts"][0]["net"], "GND")
+
+        mux = specs["adafruit.tca9548a-2717"]
+        self.assertEqual(len(mux["pins"]), 24)
+        self.assertEqual({pin["name"] for pin in mux["pins"] if pin["name"].startswith("SD")}, {f"SD{index}" for index in range(8)} | {"SDA"})
+        self.assertEqual({pin["name"] for pin in mux["pins"] if pin["name"].startswith("SC")}, {f"SC{index}" for index in range(8)} | {"SCL"})
+
+        microsd = specs["adafruit.microsd-254"]
+        self.assertEqual([pin["name"] for pin in microsd["pins"]], ["5V", "3V", "GND", "CLK", "DO", "DI", "CS", "CD"])
+
+        gps = specs["adafruit.ultimate-gps-pa1616s-746"]
+        self.assertEqual([pin["name"] for pin in gps["pins"]], ["PPS", "VIN", "GND", "RX", "TX", "FIX", "VBAT", "EN", "3.3V"])
+
+        thermocouple = specs["adafruit.max31855k-269-v2"]
+        self.assertEqual([pin["name"] for pin in thermocouple["pins"][:2]], ["TC-", "TC+"])
+        self.assertEqual(len(thermocouple["terminalBlocks"]), 1)
+
+        dht = specs["adafruit.dht22-am2302-385"]
+        self.assertEqual([pin["name"] for pin in dht["pins"]], ["VCC", "DATA", "NC", "GND"])
+        self.assertEqual(dht["lifecycle"], "not-stocked")
 
 
 if __name__ == "__main__":

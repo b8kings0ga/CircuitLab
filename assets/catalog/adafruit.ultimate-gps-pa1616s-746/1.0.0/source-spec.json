@@ -1,0 +1,143 @@
+{
+  "accent": "#d8bd82",
+  "assetId": "adafruit.ultimate-gps-pa1616s-746",
+  "canvasWidth": 68,
+  "color": "#0f78ad",
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+  "height": 34.29,
+  "level": "gnss-gps-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 2.54,
+      "y": 2.54
+    },
+    {
+      "x": 22.86,
+      "y": 2.54
+    }
+  ],
+  "mpn": "PA1616S Ultimate GPS #746",
+  "parts": [
+    [
+      5.25,
+      6.0,
+      15.0,
+      15.0,
+      "GPS PATCH"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "output",
+      "functions": [
+        "pulse-per-second"
+      ],
+      "name": "PPS",
+      "number": "1",
+      "side": "bottom",
+      "x": 22.86,
+      "y": 32.26
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "3V-to-5V-input"
+      ],
+      "name": "VIN",
+      "number": "2",
+      "side": "bottom",
+      "x": 20.32,
+      "y": 32.26
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 17.78,
+      "y": 32.26
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "UART-RX"
+      ],
+      "name": "RX",
+      "number": "4",
+      "side": "bottom",
+      "x": 15.24,
+      "y": 32.26
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "UART-TX"
+      ],
+      "name": "TX",
+      "number": "5",
+      "side": "bottom",
+      "x": 12.7,
+      "y": 32.26
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "fix-status"
+      ],
+      "name": "FIX",
+      "number": "6",
+      "side": "bottom",
+      "x": 10.16,
+      "y": 32.26
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "rtc-backup-input"
+      ],
+      "name": "VBAT",
+      "number": "7",
+      "side": "bottom",
+      "x": 7.62,
+      "y": 32.26
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "active-high-enable"
+      ],
+      "name": "EN",
+      "number": "8",
+      "side": "bottom",
+      "x": 5.08,
+      "y": 32.26
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "3.3V",
+      "number": "9",
+      "side": "bottom",
+      "x": 2.54,
+      "y": 32.26
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/746",
+    "https://learn.adafruit.com/adafruit-ultimate-gps/pinouts",
+    "https://raw.githubusercontent.com/adafruit/Adafruit-Ultimate-GPS/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "66-CHANNEL GPS · UART · PPS · VERSION 3",
+  "suppressBoardIdentity": true,
+  "traces": false,
+  "width": 25.4
+}

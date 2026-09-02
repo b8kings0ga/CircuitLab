@@ -1,0 +1,261 @@
+{
+  "accent": "#d8ddd9",
+  "assetId": "adafruit.mpr121-1982-stemma-qt",
+  "canvasWidth": 72,
+  "color": "#151a18",
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+  "duplicateContacts": [
+    {
+      "direction": "power",
+      "label": "GND",
+      "net": "GND",
+      "side": "top",
+      "x": 31.75,
+      "y": 1.27
+    }
+  ],
+  "height": 19.18,
+  "level": "capacitive-touch-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 2.54,
+      "y": 16.51
+    },
+    {
+      "x": 30.48,
+      "y": 16.51
+    }
+  ],
+  "mpn": "MPR121 12-Key Touch #1982 (STEMMA QT)",
+  "parts": [
+    [
+      14.0,
+      6.1,
+      5.0,
+      5.0,
+      "MPR121"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-11"
+      ],
+      "name": "ELEC11",
+      "number": "1",
+      "side": "top",
+      "x": 1.27,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-10"
+      ],
+      "name": "ELEC10",
+      "number": "2",
+      "side": "top",
+      "x": 3.81,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-9"
+      ],
+      "name": "ELEC9",
+      "number": "3",
+      "side": "top",
+      "x": 6.35,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-8"
+      ],
+      "name": "ELEC8",
+      "number": "4",
+      "side": "top",
+      "x": 8.89,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-7"
+      ],
+      "name": "ELEC7",
+      "number": "5",
+      "side": "top",
+      "x": 11.43,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-6"
+      ],
+      "name": "ELEC6",
+      "number": "6",
+      "side": "top",
+      "x": 13.97,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-5"
+      ],
+      "name": "ELEC5",
+      "number": "7",
+      "side": "top",
+      "x": 16.51,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-4"
+      ],
+      "name": "ELEC4",
+      "number": "8",
+      "side": "top",
+      "x": 19.05,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-3"
+      ],
+      "name": "ELEC3",
+      "number": "9",
+      "side": "top",
+      "x": 21.59,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-2"
+      ],
+      "name": "ELEC2",
+      "number": "10",
+      "side": "top",
+      "x": 24.13,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-1"
+      ],
+      "name": "ELEC1",
+      "number": "11",
+      "side": "top",
+      "x": 26.67,
+      "y": 1.27
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "capacitive-electrode-0"
+      ],
+      "name": "ELEC0",
+      "number": "12",
+      "side": "top",
+      "x": 29.21,
+      "y": 1.27
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "14",
+      "side": "bottom",
+      "x": 8.89,
+      "y": 16.51
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "3VO",
+      "number": "15",
+      "side": "bottom",
+      "x": 11.43,
+      "y": 16.51
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "16",
+      "side": "bottom",
+      "x": 13.97,
+      "y": 16.51
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "17",
+      "side": "bottom",
+      "x": 16.51,
+      "y": 16.51
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "18",
+      "side": "bottom",
+      "x": 19.05,
+      "y": 16.51
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "active-low-interrupt"
+      ],
+      "name": "INT",
+      "number": "19",
+      "side": "bottom",
+      "x": 21.59,
+      "y": 16.51
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-address-select"
+      ],
+      "name": "ADDR",
+      "number": "20",
+      "side": "bottom",
+      "x": 24.13,
+      "y": 16.51
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/1982",
+    "https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts",
+    "https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd"
+  ],
+  "subtitle": "12-CHANNEL CAPACITIVE TOUCH · I²C 0x5A–0x5D",
+  "suppressBoardIdentity": true,
+  "topPinLabelMode": "above-rotated",
+  "traces": false,
+  "width": 33.02
+}

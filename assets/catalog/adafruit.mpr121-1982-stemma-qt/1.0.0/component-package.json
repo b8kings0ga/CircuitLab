@@ -1,0 +1,328 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-11"
+        ],
+        "name": "ELEC11",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-10"
+        ],
+        "name": "ELEC10",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-9"
+        ],
+        "name": "ELEC9",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-8"
+        ],
+        "name": "ELEC8",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-7"
+        ],
+        "name": "ELEC7",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-6"
+        ],
+        "name": "ELEC6",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-5"
+        ],
+        "name": "ELEC5",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-4"
+        ],
+        "name": "ELEC4",
+        "number": "8"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-3"
+        ],
+        "name": "ELEC3",
+        "number": "9"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-2"
+        ],
+        "name": "ELEC2",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-1"
+        ],
+        "name": "ELEC1",
+        "number": "11"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "capacitive-electrode-0"
+        ],
+        "name": "ELEC0",
+        "number": "12"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "14"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "3VO",
+        "number": "15"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "16"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "18"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "active-low-interrupt"
+        ],
+        "name": "INT",
+        "number": "19"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-address-select"
+        ],
+        "name": "ADDR",
+        "number": "20"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "a89c80a4688402e80b44b40abe7b258dc85a193fe121c4608f20b7065e00de6c",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/1982"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.mpr121-1982-stemma-qt",
+    "level": "capacitive-touch-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "MPR121 12-Key Touch #1982 (STEMMA QT)",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "additionalContacts": [
+      {
+        "kind": "duplicate-plated-contact",
+        "net": "GND",
+        "status": "DOCUMENTED_PHYSICAL_CONTACT_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.71166667,
+        "y": 0.1645541
+      }
+    ],
+    "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+    "heightMm": 19.18,
+    "package": "assembled-module",
+    "widthMm": 33.02
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "ELEC11",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.28833333,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC10",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.32361111,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC9",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35888889,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC8",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39416667,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42944444,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46472222,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53527778,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57055556,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60583333,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.64111111,
+        "y": 0.1645541
+      },
+      {
+        "pin": "ELEC0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.67638889,
+        "y": 0.1645541
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.39416667,
+        "y": 0.50950656
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42944444,
+        "y": 0.50950656
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46472222,
+        "y": 0.50950656
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.50950656
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53527778,
+        "y": 0.50950656
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57055556,
+        "y": 0.50950656
+      },
+      {
+        "pin": "ADDR",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.60583333,
+        "y": 0.50950656
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "bfe1d03bf5cff8dfbc63333b352f23509b2b213403edc560feb3372ba61eb64c",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

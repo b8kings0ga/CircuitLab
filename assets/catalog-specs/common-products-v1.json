@@ -685,6 +685,264 @@
         "https://www.adafruit.com/product/2305",
         "https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/pinouts"
       ]
+    },
+    {
+      "assetId": "adafruit.mpr121-1982-stemma-qt",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "MPR121 12-Key Touch #1982 (STEMMA QT)",
+      "level": "capacitive-touch-sensor-module",
+      "shape": "module",
+      "width": 33.02,
+      "height": 19.18,
+      "canvasWidth": 72,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "12-CHANNEL CAPACITIVE TOUCH · I²C 0x5A–0x5D",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "traces": false,
+      "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+      "mountingHoles": [
+        {"x": 2.54, "y": 16.51},
+        {"x": 30.48, "y": 16.51}
+      ],
+      "duplicateContacts": [
+        {"net": "GND", "label": "GND", "x": 31.75, "y": 1.27, "side": "top", "direction": "power"}
+      ],
+      "pins": [
+        {"name": "ELEC11", "number": "1", "x": 1.27, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-11"]},
+        {"name": "ELEC10", "number": "2", "x": 3.81, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-10"]},
+        {"name": "ELEC9", "number": "3", "x": 6.35, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-9"]},
+        {"name": "ELEC8", "number": "4", "x": 8.89, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-8"]},
+        {"name": "ELEC7", "number": "5", "x": 11.43, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-7"]},
+        {"name": "ELEC6", "number": "6", "x": 13.97, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-6"]},
+        {"name": "ELEC5", "number": "7", "x": 16.51, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-5"]},
+        {"name": "ELEC4", "number": "8", "x": 19.05, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-4"]},
+        {"name": "ELEC3", "number": "9", "x": 21.59, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-3"]},
+        {"name": "ELEC2", "number": "10", "x": 24.13, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-2"]},
+        {"name": "ELEC1", "number": "11", "x": 26.67, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-1"]},
+        {"name": "ELEC0", "number": "12", "x": 29.21, "y": 1.27, "side": "top", "direction": "input", "functions": ["capacitive-electrode-0"]},
+        {"name": "VIN", "number": "14", "x": 8.89, "y": 16.51, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "15", "x": 11.43, "y": 16.51, "side": "bottom", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "16", "x": 13.97, "y": 16.51, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "17", "x": 16.51, "y": 16.51, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "18", "x": 19.05, "y": 16.51, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "INT", "number": "19", "x": 21.59, "y": 16.51, "side": "bottom", "direction": "output", "functions": ["active-low-interrupt"]},
+        {"name": "ADDR", "number": "20", "x": 24.13, "y": 16.51, "side": "bottom", "direction": "input", "functions": ["I2C-address-select"]}
+      ],
+      "parts": [[14.0, 6.1, 5.0, 5.0, "MPR121"]],
+      "sources": [
+        "https://www.adafruit.com/product/1982",
+        "https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts",
+        "https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd"
+      ]
+    },
+    {
+      "assetId": "adafruit.tca9548a-2717",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "TCA9548A I2C Multiplexer #2717",
+      "level": "i2c-multiplexer-module",
+      "shape": "module",
+      "width": 17.78,
+      "height": 30.48,
+      "canvasWidth": 58,
+      "color": "#0f78ad",
+      "accent": "#202723",
+      "partTextColor": "#f3f6f2",
+      "subtitle": "1-TO-8 I²C MULTIPLEXER · 0x70–0x77",
+      "suppressBoardIdentity": true,
+      "stemmaConnectors": false,
+      "traces": false,
+      "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+      "mountingHoles": [
+        {"x": 8.89, "y": 2.54},
+        {"x": 8.89, "y": 27.94}
+      ],
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 1.27, "y": 1.27, "side": "left", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 1.27, "y": 3.81, "side": "left", "direction": "power", "functions": []},
+        {"name": "SDA", "number": "3", "x": 1.27, "y": 6.35, "side": "left", "direction": "bidirectional", "functions": ["I2C-control-SDA"]},
+        {"name": "SCL", "number": "4", "x": 1.27, "y": 8.89, "side": "left", "direction": "bidirectional", "functions": ["I2C-control-SCL"]},
+        {"name": "RST", "number": "5", "x": 1.27, "y": 11.43, "side": "left", "direction": "input", "functions": ["active-low-reset"]},
+        {"name": "A0", "number": "6", "x": 1.27, "y": 13.97, "side": "left", "direction": "input", "functions": ["I2C-address-bit-0"]},
+        {"name": "A1", "number": "7", "x": 1.27, "y": 16.51, "side": "left", "direction": "input", "functions": ["I2C-address-bit-1"]},
+        {"name": "A2", "number": "8", "x": 1.27, "y": 19.05, "side": "left", "direction": "input", "functions": ["I2C-address-bit-2"]},
+        {"name": "SD0", "number": "9", "x": 1.27, "y": 21.59, "side": "left", "direction": "bidirectional", "functions": ["I2C-channel-0-data"]},
+        {"name": "SC0", "number": "10", "x": 1.27, "y": 24.13, "side": "left", "direction": "bidirectional", "functions": ["I2C-channel-0-clock"]},
+        {"name": "SD1", "number": "11", "x": 1.27, "y": 26.67, "side": "left", "direction": "bidirectional", "functions": ["I2C-channel-1-data"]},
+        {"name": "SC1", "number": "12", "x": 1.27, "y": 29.21, "side": "left", "direction": "bidirectional", "functions": ["I2C-channel-1-clock"]},
+        {"name": "SD2", "number": "13", "x": 16.51, "y": 29.21, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-2-data"]},
+        {"name": "SC2", "number": "14", "x": 16.51, "y": 26.67, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-2-clock"]},
+        {"name": "SD3", "number": "15", "x": 16.51, "y": 24.13, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-3-data"]},
+        {"name": "SC3", "number": "16", "x": 16.51, "y": 21.59, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-3-clock"]},
+        {"name": "SD4", "number": "17", "x": 16.51, "y": 19.05, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-4-data"]},
+        {"name": "SC4", "number": "18", "x": 16.51, "y": 16.51, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-4-clock"]},
+        {"name": "SD5", "number": "19", "x": 16.51, "y": 13.97, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-5-data"]},
+        {"name": "SC5", "number": "20", "x": 16.51, "y": 11.43, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-5-clock"]},
+        {"name": "SD6", "number": "21", "x": 16.51, "y": 8.89, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-6-data"]},
+        {"name": "SC6", "number": "22", "x": 16.51, "y": 6.35, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-6-clock"]},
+        {"name": "SD7", "number": "23", "x": 16.51, "y": 3.81, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-7-data"]},
+        {"name": "SC7", "number": "24", "x": 16.51, "y": 1.27, "side": "right", "direction": "bidirectional", "functions": ["I2C-channel-7-clock"]}
+      ],
+      "parts": [[5.2, 10.4, 7.4, 9.6, "TCA9548A"]],
+      "sources": [
+        "https://www.adafruit.com/product/2717",
+        "https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts",
+        "https://raw.githubusercontent.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd"
+      ]
+    },
+    {
+      "assetId": "adafruit.microsd-254",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "MicroSD Card Breakout+ #254",
+      "level": "microsd-storage-module",
+      "shape": "module",
+      "width": 31.85,
+      "height": 25.4,
+      "canvasWidth": 62,
+      "color": "#0f78ad",
+      "accent": "#c7ceca",
+      "subtitle": "MICROSD · 3.3V / 5V SPI · CARD DETECT",
+      "suppressBoardIdentity": true,
+      "stemmaConnectors": false,
+      "traces": false,
+      "mountingHoles": [
+        {"x": 2.54, "y": 2.54},
+        {"x": 22.86, "y": 2.54},
+        {"x": 2.54, "y": 22.86},
+        {"x": 22.86, "y": 22.86}
+      ],
+      "pins": [
+        {"name": "5V", "number": "1", "x": 30.48, "y": 21.72, "side": "right", "direction": "power", "functions": ["regulated-input"]},
+        {"name": "3V", "number": "2", "x": 30.48, "y": 19.18, "side": "right", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "3", "x": 30.48, "y": 16.64, "side": "right", "direction": "power", "functions": []},
+        {"name": "CLK", "number": "4", "x": 30.48, "y": 14.10, "side": "right", "direction": "input", "functions": ["SPI-SCK"]},
+        {"name": "DO", "number": "5", "x": 30.48, "y": 11.56, "side": "right", "direction": "output", "functions": ["SPI-MISO"]},
+        {"name": "DI", "number": "6", "x": 30.48, "y": 9.02, "side": "right", "direction": "input", "functions": ["SPI-MOSI"]},
+        {"name": "CS", "number": "7", "x": 30.48, "y": 6.48, "side": "right", "direction": "input", "functions": ["SPI-CS"]},
+        {"name": "CD", "number": "8", "x": 30.48, "y": 3.94, "side": "right", "direction": "output", "functions": ["card-detect"]}
+      ],
+      "parts": [
+        [2.2, 5.0, 17.2, 15.3, "MICROSD SOCKET"],
+        [20.2, 8.7, 6.0, 8.4, "4050"]
+      ],
+      "sources": [
+        "https://www.adafruit.com/product/254",
+        "https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial/arduino-wiring",
+        "https://raw.githubusercontent.com/adafruit/microsd-breakout-board/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd"
+      ]
+    },
+    {
+      "assetId": "adafruit.ultimate-gps-pa1616s-746",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "PA1616S Ultimate GPS #746",
+      "level": "gnss-gps-sensor-module",
+      "shape": "module",
+      "width": 25.4,
+      "height": 34.29,
+      "canvasWidth": 68,
+      "color": "#0f78ad",
+      "accent": "#d8bd82",
+      "subtitle": "66-CHANNEL GPS · UART · PPS · VERSION 3",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "stemmaConnectors": false,
+      "traces": false,
+      "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+      "mountingHoles": [
+        {"x": 2.54, "y": 2.54},
+        {"x": 22.86, "y": 2.54}
+      ],
+      "pins": [
+        {"name": "PPS", "number": "1", "x": 22.86, "y": 32.26, "side": "bottom", "direction": "output", "functions": ["pulse-per-second"]},
+        {"name": "VIN", "number": "2", "x": 20.32, "y": 32.26, "side": "bottom", "direction": "power", "functions": ["3V-to-5V-input"]},
+        {"name": "GND", "number": "3", "x": 17.78, "y": 32.26, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "RX", "number": "4", "x": 15.24, "y": 32.26, "side": "bottom", "direction": "input", "functions": ["UART-RX"]},
+        {"name": "TX", "number": "5", "x": 12.70, "y": 32.26, "side": "bottom", "direction": "output", "functions": ["UART-TX"]},
+        {"name": "FIX", "number": "6", "x": 10.16, "y": 32.26, "side": "bottom", "direction": "output", "functions": ["fix-status"]},
+        {"name": "VBAT", "number": "7", "x": 7.62, "y": 32.26, "side": "bottom", "direction": "power", "functions": ["rtc-backup-input"]},
+        {"name": "EN", "number": "8", "x": 5.08, "y": 32.26, "side": "bottom", "direction": "input", "functions": ["active-high-enable"]},
+        {"name": "3.3V", "number": "9", "x": 2.54, "y": 32.26, "side": "bottom", "direction": "power", "functions": ["regulated-output"]}
+      ],
+      "parts": [[5.25, 6.0, 15.0, 15.0, "GPS PATCH"]],
+      "sources": [
+        "https://www.adafruit.com/product/746",
+        "https://learn.adafruit.com/adafruit-ultimate-gps/pinouts",
+        "https://raw.githubusercontent.com/adafruit/Adafruit-Ultimate-GPS/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+      ]
+    },
+    {
+      "assetId": "adafruit.max31855k-269-v2",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "MAX31855K Thermocouple Amplifier #269 v2",
+      "level": "thermocouple-temperature-sensor-module",
+      "shape": "module",
+      "width": 20.33,
+      "height": 22.86,
+      "canvasWidth": 58,
+      "color": "#151a18",
+      "accent": "#d8ddd9",
+      "subtitle": "K-TYPE THERMOCOUPLE · SPI READ-ONLY · REV 2",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "stemmaConnectors": false,
+      "traces": false,
+      "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+      "topPinLabelMode": "above-rotated",
+      "mountingHoles": [
+        {"x": 2.54, "y": 2.55},
+        {"x": 17.78, "y": 2.55}
+      ],
+      "terminalBlocks": [
+        {"x": 6.4, "y": 1.3, "width": 7.7, "height": 5.6}
+      ],
+      "pins": [
+        {"name": "TC-", "number": "J1-2", "x": 8.46, "y": 3.82, "side": "top", "direction": "input", "functions": ["thermocouple-negative"]},
+        {"name": "TC+", "number": "J1-1", "x": 11.96, "y": 3.82, "side": "top", "direction": "input", "functions": ["thermocouple-positive"]},
+        {"name": "VIN", "number": "JP1-1", "x": 3.81, "y": 20.84, "side": "bottom", "direction": "power", "functions": ["3V-to-5V-input"]},
+        {"name": "3VO", "number": "JP1-2", "x": 6.35, "y": 20.84, "side": "bottom", "direction": "power", "functions": ["regulated-output"]},
+        {"name": "GND", "number": "JP1-3", "x": 8.89, "y": 20.84, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "DO", "number": "JP1-4", "x": 11.43, "y": 20.84, "side": "bottom", "direction": "output", "functions": ["SPI-MISO"]},
+        {"name": "CS", "number": "JP1-5", "x": 13.97, "y": 20.84, "side": "bottom", "direction": "input", "functions": ["SPI-CS"]},
+        {"name": "CLK", "number": "JP1-6", "x": 16.51, "y": 20.84, "side": "bottom", "direction": "input", "functions": ["SPI-SCK"]}
+      ],
+      "parts": [[6.2, 8.2, 7.9, 7.1, "MAX31855K"]],
+      "sources": [
+        "https://www.adafruit.com/product/269",
+        "https://learn.adafruit.com/thermocouple/arduino-code",
+        "https://raw.githubusercontent.com/adafruit/Adafruit-MAX31855-breakout-board/5b12736f17d53d22d9dc4287e4f2129bc876d180/Adafruit_MAX31855%20v2.brd"
+      ]
+    },
+    {
+      "assetId": "adafruit.dht22-am2302-385",
+      "revision": "1.0.0",
+      "manufacturer": "Aosong / Adafruit Industries",
+      "mpn": "DHT22 / AM2302 #385",
+      "level": "temperature-humidity-sensor",
+      "lifecycle": "not-stocked",
+      "shape": "vented-sensor",
+      "package": "4-pin-0.1-inch-pitch-sensor",
+      "dimensionStatus": "OFFICIAL_GUIDE_BODY_DIMENSIONS",
+      "width": 15.1,
+      "height": 25.0,
+      "canvasWidth": 34,
+      "subtitle": "TEMP / HUMIDITY · SINGLE-WIRE DATA · 0.5Hz",
+      "pins": [
+        {"name": "VCC", "number": "1", "x": 3.74, "y": 24.2, "side": "bottom", "direction": "power", "functions": ["3V-to-5V-input"]},
+        {"name": "DATA", "number": "2", "x": 6.28, "y": 24.2, "side": "bottom", "direction": "bidirectional", "functions": ["proprietary-single-wire-data"]},
+        {"name": "NC", "number": "3", "x": 8.82, "y": 24.2, "side": "bottom", "direction": "passive", "functions": ["not-connected"]},
+        {"name": "GND", "number": "4", "x": 11.36, "y": 24.2, "side": "bottom", "direction": "power", "functions": []}
+      ],
+      "sources": [
+        "https://www.adafruit.com/product/385",
+        "https://learn.adafruit.com/dht/connecting-to-a-dhtxx-sensor"
+      ]
     }
   ]
 }

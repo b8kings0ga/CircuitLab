@@ -1,0 +1,181 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "output",
+        "functions": [
+          "pulse-per-second"
+        ],
+        "name": "PPS",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V-to-5V-input"
+        ],
+        "name": "VIN",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "UART-RX"
+        ],
+        "name": "RX",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "UART-TX"
+        ],
+        "name": "TX",
+        "number": "5"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "fix-status"
+        ],
+        "name": "FIX",
+        "number": "6"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "rtc-backup-input"
+        ],
+        "name": "VBAT",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "active-high-enable"
+        ],
+        "name": "EN",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "3.3V",
+        "number": "9"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "0f51d69c058df1de5692d4ff3d143fa6911ba07f9c8607bb2edf4999abd6de55",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/746"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-ultimate-gps/pinouts"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Ultimate-GPS/70430c1240b49c1e054f1edee84ad0b5ec8ebe56/Adafruit%20Ultimate%20GPS.brd"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.ultimate-gps-pa1616s-746",
+    "level": "gnss-gps-sensor-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "PA1616S Ultimate GPS #746",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+    "heightMm": 34.29,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "PPS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.64941176,
+        "y": 0.64530275
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61205882,
+        "y": 0.64530275
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.57470588,
+        "y": 0.64530275
+      },
+      {
+        "pin": "RX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53735294,
+        "y": 0.64530275
+      },
+      {
+        "pin": "TX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.64530275
+      },
+      {
+        "pin": "FIX",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46264706,
+        "y": 0.64530275
+      },
+      {
+        "pin": "VBAT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.42529412,
+        "y": 0.64530275
+      },
+      {
+        "pin": "EN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38794118,
+        "y": 0.64530275
+      },
+      {
+        "pin": "3.3V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.35058824,
+        "y": 0.64530275
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "9dab82fcfaa5f96d56c53b5103f31d0a97c48404928d5a666d734c4ea252102c",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

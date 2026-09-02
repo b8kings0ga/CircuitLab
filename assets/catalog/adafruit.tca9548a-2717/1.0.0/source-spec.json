@@ -1,0 +1,306 @@
+{
+  "accent": "#202723",
+  "assetId": "adafruit.tca9548a-2717",
+  "canvasWidth": 58,
+  "color": "#0f78ad",
+  "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+  "height": 30.48,
+  "level": "i2c-multiplexer-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 8.89,
+      "y": 2.54
+    },
+    {
+      "x": 8.89,
+      "y": 27.94
+    }
+  ],
+  "mpn": "TCA9548A I2C Multiplexer #2717",
+  "partTextColor": "#f3f6f2",
+  "parts": [
+    [
+      5.2,
+      10.4,
+      7.4,
+      9.6,
+      "TCA9548A"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "left",
+      "x": 1.27,
+      "y": 1.27
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "left",
+      "x": 1.27,
+      "y": 3.81
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-control-SDA"
+      ],
+      "name": "SDA",
+      "number": "3",
+      "side": "left",
+      "x": 1.27,
+      "y": 6.35
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-control-SCL"
+      ],
+      "name": "SCL",
+      "number": "4",
+      "side": "left",
+      "x": 1.27,
+      "y": 8.89
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "active-low-reset"
+      ],
+      "name": "RST",
+      "number": "5",
+      "side": "left",
+      "x": 1.27,
+      "y": 11.43
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-address-bit-0"
+      ],
+      "name": "A0",
+      "number": "6",
+      "side": "left",
+      "x": 1.27,
+      "y": 13.97
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-address-bit-1"
+      ],
+      "name": "A1",
+      "number": "7",
+      "side": "left",
+      "x": 1.27,
+      "y": 16.51
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-address-bit-2"
+      ],
+      "name": "A2",
+      "number": "8",
+      "side": "left",
+      "x": 1.27,
+      "y": 19.05
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-0-data"
+      ],
+      "name": "SD0",
+      "number": "9",
+      "side": "left",
+      "x": 1.27,
+      "y": 21.59
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-0-clock"
+      ],
+      "name": "SC0",
+      "number": "10",
+      "side": "left",
+      "x": 1.27,
+      "y": 24.13
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-1-data"
+      ],
+      "name": "SD1",
+      "number": "11",
+      "side": "left",
+      "x": 1.27,
+      "y": 26.67
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-1-clock"
+      ],
+      "name": "SC1",
+      "number": "12",
+      "side": "left",
+      "x": 1.27,
+      "y": 29.21
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-2-data"
+      ],
+      "name": "SD2",
+      "number": "13",
+      "side": "right",
+      "x": 16.51,
+      "y": 29.21
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-2-clock"
+      ],
+      "name": "SC2",
+      "number": "14",
+      "side": "right",
+      "x": 16.51,
+      "y": 26.67
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-3-data"
+      ],
+      "name": "SD3",
+      "number": "15",
+      "side": "right",
+      "x": 16.51,
+      "y": 24.13
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-3-clock"
+      ],
+      "name": "SC3",
+      "number": "16",
+      "side": "right",
+      "x": 16.51,
+      "y": 21.59
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-4-data"
+      ],
+      "name": "SD4",
+      "number": "17",
+      "side": "right",
+      "x": 16.51,
+      "y": 19.05
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-4-clock"
+      ],
+      "name": "SC4",
+      "number": "18",
+      "side": "right",
+      "x": 16.51,
+      "y": 16.51
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-5-data"
+      ],
+      "name": "SD5",
+      "number": "19",
+      "side": "right",
+      "x": 16.51,
+      "y": 13.97
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-5-clock"
+      ],
+      "name": "SC5",
+      "number": "20",
+      "side": "right",
+      "x": 16.51,
+      "y": 11.43
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-6-data"
+      ],
+      "name": "SD6",
+      "number": "21",
+      "side": "right",
+      "x": 16.51,
+      "y": 8.89
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-6-clock"
+      ],
+      "name": "SC6",
+      "number": "22",
+      "side": "right",
+      "x": 16.51,
+      "y": 6.35
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-7-data"
+      ],
+      "name": "SD7",
+      "number": "23",
+      "side": "right",
+      "x": 16.51,
+      "y": 3.81
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-channel-7-clock"
+      ],
+      "name": "SC7",
+      "number": "24",
+      "side": "right",
+      "x": 16.51,
+      "y": 1.27
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/2717",
+    "https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts",
+    "https://raw.githubusercontent.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "1-TO-8 I²C MULTIPLEXER · 0x70–0x77",
+  "suppressBoardIdentity": true,
+  "traces": false,
+  "width": 17.78
+}

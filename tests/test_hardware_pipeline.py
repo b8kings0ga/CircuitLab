@@ -17,12 +17,15 @@ class HardwarePipelineTests(unittest.TestCase):
     def test_official_source_allowlist_is_fail_closed(self) -> None:
         self.assertTrue(official_url("https://learn.adafruit.com/example"))
         self.assertTrue(official_url("https://sub.files.seeedstudio.com/example"))
+        self.assertTrue(official_url("https://github.com/adafruit/example"))
+        self.assertTrue(official_url("https://raw.githubusercontent.com/adafruit/example/main/board.brd"))
         self.assertFalse(official_url("http://learn.adafruit.com/example"))
         self.assertFalse(official_url("https://learn.adafruit.com.example.net/example"))
+        self.assertFalse(official_url("https://github.com/unverified-vendor/example"))
 
     def test_latest_catalog_has_complete_pin_anchor_coverage(self) -> None:
         rows = validate_catalog()
-        self.assertEqual(len(rows), 52)
+        self.assertEqual(len(rows), 58)
         self.assertTrue(all(row["status"] == "VALID" for row in rows))
         self.assertTrue(all(row["pins"] > 0 for row in rows))
         drawn = [row for row in rows if row["style"] == "circuitlab-ai-top-style/v1"]

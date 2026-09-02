@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 395.84" role="img" aria-label="TCA9548A I2C Multiplexer #2717 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>
+<rect x="160.88" y="48" width="142.24" height="243.84" rx="9" fill="#0f78ad" stroke="#738079" stroke-width="2" filter="url(#s)"/>
+<text x="232" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<text x="232" y="347.84" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">TCA9548A I2C Multiplexer #2717</text>
+<text x="232" y="364.64" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">1-TO-8 I²C MULTIPLEXER · 0x70–0x77</text>
+<circle cx="232" cy="68.32" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="232" cy="68.32" r="3.4" fill="#e9ece8"/>
+<circle cx="232" cy="271.52" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="232" cy="271.52" r="3.4" fill="#e9ece8"/>
+<rect x="202.48" y="131.2" width="59.2" height="76.8" rx="5" fill="#202723" stroke="#9ca49f" stroke-width="1.5"/>
+<text x="232.08" y="172.6" text-anchor="middle" fill="#f3f6f2" font-family="ui-monospace,monospace" font-size="8" font-weight="800">TCA9548A</text>
+<g id="pin-VIN" data-pin="VIN">
+<circle cx="171.04" cy="58.16" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="58.16" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="58.16" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="60.66" text-anchor="start" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">VIN</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="171.04" cy="78.48" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="78.48" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="78.48" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="80.98" text-anchor="start" fill="#707873" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">GND</text>
+</g>
+<g id="pin-SDA" data-pin="SDA">
+<circle cx="171.04" cy="98.8" r="8.4" fill="#69a7ff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="98.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="98.8" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="101.3" text-anchor="start" fill="#69a7ff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SDA</text>
+</g>
+<g id="pin-SCL" data-pin="SCL">
+<circle cx="171.04" cy="119.12" r="8.4" fill="#f3c94f" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="119.12" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="119.12" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="121.62" text-anchor="start" fill="#f3c94f" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SCL</text>
+</g>
+<g id="pin-RST" data-pin="RST">
+<circle cx="171.04" cy="139.44" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="139.44" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="139.44" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="141.94" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">RST</text>
+</g>
+<g id="pin-A0" data-pin="A0">
+<circle cx="171.04" cy="159.76" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="159.76" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="159.76" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="162.26" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">A0</text>
+</g>
+<g id="pin-A1" data-pin="A1">
+<circle cx="171.04" cy="180.08" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="180.08" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="180.08" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="182.58" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">A1</text>
+</g>
+<g id="pin-A2" data-pin="A2">
+<circle cx="171.04" cy="200.4" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="200.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="200.4" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="202.9" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">A2</text>
+</g>
+<g id="pin-SD0" data-pin="SD0">
+<circle cx="171.04" cy="220.72" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="220.72" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="220.72" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="223.22" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD0</text>
+</g>
+<g id="pin-SC0" data-pin="SC0">
+<circle cx="171.04" cy="241.04" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="241.04" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="241.04" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="243.54" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC0</text>
+</g>
+<g id="pin-SD1" data-pin="SD1">
+<circle cx="171.04" cy="261.36" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="261.36" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="261.36" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="263.86" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD1</text>
+</g>
+<g id="pin-SC1" data-pin="SC1">
+<circle cx="171.04" cy="281.68" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="171.04" cy="281.68" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="171.04" cy="281.68" r="2.4" fill="#3e4641"/>
+<text x="183.04" y="284.18" text-anchor="start" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC1</text>
+</g>
+<g id="pin-SD2" data-pin="SD2">
+<circle cx="292.96" cy="281.68" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="281.68" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="281.68" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="284.18" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD2</text>
+</g>
+<g id="pin-SC2" data-pin="SC2">
+<circle cx="292.96" cy="261.36" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="261.36" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="261.36" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="263.86" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC2</text>
+</g>
+<g id="pin-SD3" data-pin="SD3">
+<circle cx="292.96" cy="241.04" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="241.04" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="241.04" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="243.54" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD3</text>
+</g>
+<g id="pin-SC3" data-pin="SC3">
+<circle cx="292.96" cy="220.72" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="220.72" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="220.72" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="223.22" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC3</text>
+</g>
+<g id="pin-SD4" data-pin="SD4">
+<circle cx="292.96" cy="200.4" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="200.4" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="200.4" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="202.9" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD4</text>
+</g>
+<g id="pin-SC4" data-pin="SC4">
+<circle cx="292.96" cy="180.08" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="180.08" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="180.08" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="182.58" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC4</text>
+</g>
+<g id="pin-SD5" data-pin="SD5">
+<circle cx="292.96" cy="159.76" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="159.76" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="159.76" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="162.26" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD5</text>
+</g>
+<g id="pin-SC5" data-pin="SC5">
+<circle cx="292.96" cy="139.44" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="139.44" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="139.44" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="141.94" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC5</text>
+</g>
+<g id="pin-SD6" data-pin="SD6">
+<circle cx="292.96" cy="119.12" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="119.12" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="119.12" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="121.62" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD6</text>
+</g>
+<g id="pin-SC6" data-pin="SC6">
+<circle cx="292.96" cy="98.8" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="98.8" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="98.8" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="101.3" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC6</text>
+</g>
+<g id="pin-SD7" data-pin="SD7">
+<circle cx="292.96" cy="78.48" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="78.48" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="78.48" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="80.98" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SD7</text>
+</g>
+<g id="pin-SC7" data-pin="SC7">
+<circle cx="292.96" cy="58.16" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="292.96" cy="58.16" r="5.5" fill="#f5f7f4" stroke="#c8d0cb" stroke-width="1"/>
+<circle cx="292.96" cy="58.16" r="2.4" fill="#3e4641"/>
+<text x="280.96" y="60.66" text-anchor="end" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">SC7</text>
+</g>
+</svg>

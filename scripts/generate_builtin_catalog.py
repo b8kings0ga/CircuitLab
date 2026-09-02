@@ -311,6 +311,10 @@ def render(spec: dict[str, Any]) -> str:
     for pad in spec.get("mechanicalPads", []):
         px = (offset_x + float(pad["x"])) * scale; py = (BOARD_Y + float(pad["y"])) * scale
         lines.append(f'<g data-mechanical-pad="unconnected"><circle cx="{px:g}" cy="{py:g}" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="{px:g}" cy="{py:g}" r="5.5" fill="#f5f7f4"/><circle cx="{px:g}" cy="{py:g}" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>')
+    for block in spec.get("terminalBlocks", []):
+        bx = (offset_x + float(block["x"])) * scale; by = (BOARD_Y + float(block["y"])) * scale
+        bw = float(block["width"]) * scale; bh = float(block["height"]) * scale
+        lines.append(f'<rect x="{bx:g}" y="{by:g}" width="{bw:g}" height="{bh:g}" rx="5" fill="#2f7f50" stroke="#183e29" stroke-width="2"/>')
     if spec["manufacturer"] == "Adafruit Industries" and spec.get("stemmaConnectors", True):
         connector_y = (BOARD_Y + spec["height"] * .43) * scale
         lines.extend([
@@ -350,15 +354,26 @@ def render(spec: dict[str, Any]) -> str:
     for x, y, width, part_height, label in spec["parts"]:
         px = (offset_x + x) * scale; py = (BOARD_Y + y) * scale
         part_width = width * scale; rendered_height = part_height * scale
-        for row in spec["pins"]:
-            tx = (offset_x + row["x"]) * scale; ty = (BOARD_Y + row["y"]) * scale
-            lines.append(f'<path d="M{px + part_width / 2:g} {py + rendered_height / 2:g}L{tx:g} {ty:g}" stroke="{STYLE["trace"]}" stroke-width="1" opacity=".24" fill="none"/>')
+        if spec.get("traces", True):
+            for row in spec["pins"]:
+                tx = (offset_x + row["x"]) * scale; ty = (BOARD_Y + row["y"]) * scale
+                lines.append(f'<path d="M{px + part_width / 2:g} {py + rendered_height / 2:g}L{tx:g} {ty:g}" stroke="{STYLE["trace"]}" stroke-width="1" opacity=".24" fill="none"/>')
         lines.append(f'<rect x="{px:g}" y="{py:g}" width="{part_width:g}" height="{rendered_height:g}" rx="5" fill="{spec["accent"]}" stroke="#9ca49f" stroke-width="1.5"/>')
         if "OLED" in label or "TFT" in label:
             lines.append(f'<rect x="{px + 7:g}" y="{py + 7:g}" width="{part_width - 14:g}" height="{rendered_height - 14:g}" rx="3" fill="#07131d"/><path d="M{px + 12:g} {py + rendered_height * .38:g}H{px + part_width - 12:g}" stroke="#f5d34d" stroke-width="5"/><path d="M{px + 12:g} {py + rendered_height * .68:g}H{px + part_width - 12:g}" stroke="#4ea7ff" stroke-width="9"/>')
         elif any(marker in label for marker in ("TOF", "LIGHT", "RGB", "CO₂")):
             lines.append(f'<circle cx="{px + part_width / 2:g}" cy="{py + rendered_height / 2:g}" r="{min(part_width, rendered_height) * .22:g}" fill="#161c19" stroke="#6b7770" stroke-width="2"/>')
-        part_text = "#f3f6f2" if "OLED" in label or "TFT" in label else "#222925"
+        elif "MICROSD" in label:
+            lines.extend([
+                f'<rect x="{px + 5:g}" y="{py + 5:g}" width="{part_width - 10:g}" height="{rendered_height - 10:g}" rx="4" fill="url(#metal)" stroke="#636d68" stroke-width="2"/>',
+                f'<path d="M{px + 12:g} {py + 15:g}H{px + part_width - 12:g}M{px + 12:g} {py + rendered_height - 15:g}H{px + part_width - 12:g}" stroke="#6c7570" stroke-width="2"/>',
+            ])
+        elif "GPS PATCH" in label:
+            lines.extend([
+                f'<rect x="{px + 5:g}" y="{py + 5:g}" width="{part_width - 10:g}" height="{rendered_height - 10:g}" rx="6" fill="#d8bd82" stroke="#f0deb6" stroke-width="2"/>',
+                f'<circle cx="{px + part_width / 2:g}" cy="{py + rendered_height / 2:g}" r="4" fill="#313a35"/>',
+            ])
+        part_text = spec.get("partTextColor", "#f3f6f2" if "OLED" in label or "TFT" in label else "#222925")
         lines.append(f'<text x="{px + width * scale / 2:g}" y="{py + part_height * scale / 2 + 3:g}" text-anchor="middle" fill="{part_text}" font-family="ui-monospace,monospace" font-size="8" font-weight="800">{esc(label)}</text>')
     for index, row in enumerate(spec["pins"]):
         x = (offset_x + row["x"]) * scale; y = (BOARD_Y + row["y"]) * scale
@@ -430,6 +445,14 @@ def render_primitive(spec: dict[str, Any]) -> str:
             f'<circle cx="{cx:g}" cy="{cy:g}" r="{min(width, body_height) * .37:g}" fill="{esc(fill)}" fill-opacity=".76" stroke="#f5f7f4" stroke-width="2" filter="url(#s)"/>',
             f'<circle cx="{cx - width * .1:g}" cy="{cy - body_height * .12:g}" r="{min(width, body_height) * .08:g}" fill="#fff" opacity=".55"/>',
         ]
+    elif shape == "vented-sensor":
+        lines += [
+            f'<rect x="{x0:g}" y="{y0:g}" width="{width:g}" height="{body_height:g}" rx="7" fill="#eef1eb" stroke="#aeb7b1" stroke-width="2" filter="url(#s)"/>',
+            f'<rect x="{x0 + 8:g}" y="{y0 + 8:g}" width="{width - 16:g}" height="{body_height * .58:g}" rx="4" fill="#dfe5df" stroke="#b8c1bb"/>',
+        ]
+        for index in range(6):
+            vent_y = y0 + 18 + index * max(8, body_height * .07)
+            lines.append(f'<path d="M{x0 + 18:g} {vent_y:g}H{x0 + width - 18:g}" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>')
     for row in spec["pins"]:
         x = (offset_x + float(row["x"])) * scale
         y = (BOARD_Y + float(row["y"])) * scale

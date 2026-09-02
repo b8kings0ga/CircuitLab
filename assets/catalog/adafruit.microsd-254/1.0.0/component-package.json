@@ -1,0 +1,167 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-input"
+        ],
+        "name": "5V",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "regulated-output"
+        ],
+        "name": "3V",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-SCK"
+        ],
+        "name": "CLK",
+        "number": "4"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "SPI-MISO"
+        ],
+        "name": "DO",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-MOSI"
+        ],
+        "name": "DI",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "7"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "card-detect"
+        ],
+        "name": "CD",
+        "number": "8"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "a02436fe411f0de8a51d6e7c511d60938beb4fbce082a0d96842bfa53bb964d0",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/254"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial/arduino-wiring"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://raw.githubusercontent.com/adafruit/microsd-breakout-board/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.microsd-254",
+    "level": "microsd-storage-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "MicroSD Card Breakout+ #254",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 25.4,
+    "package": "assembled-module",
+    "widthMm": 31.85
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "5V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.62432432
+      },
+      {
+        "pin": "3V",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.56711712
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.50990991
+      },
+      {
+        "pin": "CLK",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.4527027
+      },
+      {
+        "pin": "DO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.3954955
+      },
+      {
+        "pin": "DI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.33828829
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.28108108
+      },
+      {
+        "pin": "CD",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.73475806,
+        "y": 0.22387387
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "125af37531ed68575b459017b4bd97a382e56b8cfe2a66d40126d0ecee5c1625",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

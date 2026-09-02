@@ -1,0 +1,141 @@
+{
+  "accent": "#d8ddd9",
+  "assetId": "adafruit.max31855k-269-v2",
+  "canvasWidth": 58,
+  "color": "#151a18",
+  "densePins": true,
+  "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+  "height": 22.86,
+  "level": "thermocouple-temperature-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 2.54,
+      "y": 2.55
+    },
+    {
+      "x": 17.78,
+      "y": 2.55
+    }
+  ],
+  "mpn": "MAX31855K Thermocouple Amplifier #269 v2",
+  "parts": [
+    [
+      6.2,
+      8.2,
+      7.9,
+      7.1,
+      "MAX31855K"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "input",
+      "functions": [
+        "thermocouple-negative"
+      ],
+      "name": "TC-",
+      "number": "J1-2",
+      "side": "top",
+      "x": 8.46,
+      "y": 3.82
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "thermocouple-positive"
+      ],
+      "name": "TC+",
+      "number": "J1-1",
+      "side": "top",
+      "x": 11.96,
+      "y": 3.82
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "3V-to-5V-input"
+      ],
+      "name": "VIN",
+      "number": "JP1-1",
+      "side": "bottom",
+      "x": 3.81,
+      "y": 20.84
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "3VO",
+      "number": "JP1-2",
+      "side": "bottom",
+      "x": 6.35,
+      "y": 20.84
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "JP1-3",
+      "side": "bottom",
+      "x": 8.89,
+      "y": 20.84
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "SPI-MISO"
+      ],
+      "name": "DO",
+      "number": "JP1-4",
+      "side": "bottom",
+      "x": 11.43,
+      "y": 20.84
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-CS"
+      ],
+      "name": "CS",
+      "number": "JP1-5",
+      "side": "bottom",
+      "x": 13.97,
+      "y": 20.84
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-SCK"
+      ],
+      "name": "CLK",
+      "number": "JP1-6",
+      "side": "bottom",
+      "x": 16.51,
+      "y": 20.84
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/269",
+    "https://learn.adafruit.com/thermocouple/arduino-code",
+    "https://raw.githubusercontent.com/adafruit/Adafruit-MAX31855-breakout-board/5b12736f17d53d22d9dc4287e4f2129bc876d180/Adafruit_MAX31855%20v2.brd"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "K-TYPE THERMOCOUPLE · SPI READ-ONLY · REV 2",
+  "suppressBoardIdentity": true,
+  "terminalBlocks": [
+    {
+      "height": 5.6,
+      "width": 7.7,
+      "x": 6.4,
+      "y": 1.3
+    }
+  ],
+  "topPinLabelMode": "above-rotated",
+  "traces": false,
+  "width": 20.33
+}

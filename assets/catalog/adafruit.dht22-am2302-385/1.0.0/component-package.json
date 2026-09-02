@@ -1,0 +1,107 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "3V-to-5V-input"
+        ],
+        "name": "VCC",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "proprietary-single-wire-data"
+        ],
+        "name": "DATA",
+        "number": "2"
+      },
+      {
+        "direction": "passive",
+        "functions": [
+          "not-connected"
+        ],
+        "name": "NC",
+        "number": "3"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "4"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "272e43eddb88c06d0c8fa053f4b7d8d661fafd564ea13e19d11985ff2014b4ed",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/385"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/dht/connecting-to-a-dhtxx-sensor"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.dht22-am2302-385",
+    "level": "temperature-humidity-sensor",
+    "lifecycle": "not-stocked",
+    "manufacturer": "Aosong / Adafruit Industries",
+    "mpn": "DHT22 / AM2302 #385",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_GUIDE_BODY_DIMENSIONS",
+    "heightMm": 25.0,
+    "package": "4-pin-0.1-inch-pitch-sensor",
+    "widthMm": 15.1
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VCC",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.38794118,
+        "y": 0.68636364
+      },
+      {
+        "pin": "DATA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.46264706,
+        "y": 0.68636364
+      },
+      {
+        "pin": "NC",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.53735294,
+        "y": 0.68636364
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.61205882,
+        "y": 0.68636364
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "257ad58461c7aaf4d2847a557cb50516d8dd93692dec30653a0792d81a65067d",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

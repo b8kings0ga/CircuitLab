@@ -14,12 +14,15 @@ from catalog_coverage import coverage  # noqa: E402
 class CatalogCoverageTests(unittest.TestCase):
     def test_reports_truthful_progress_to_one_hundred(self) -> None:
         report = coverage(ROOT / "assets" / "catalog", 100)
-        self.assertEqual(report["verified"], 52)
-        self.assertEqual(report["remaining"], 48)
+        self.assertEqual(report["verified"], 58)
+        self.assertEqual(report["remaining"], 42)
         self.assertFalse(report["complete"])
         self.assertEqual(report["families"]["passive/resistor"], 4)
         self.assertEqual(report["families"]["control/button-switch"], 1)
         self.assertEqual(report["families"]["indicator/led"], 2)
+        self.assertEqual(report["families"]["sensor/environment"], 5)
+        self.assertEqual(report["families"]["sensor/general"], 9)
+        self.assertEqual(report["families"]["support/support-ic"], 6)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" role="img" aria-label="DHT22 / AM2302 #385 interactive top view">
+<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".3"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f6f5"/><stop offset=".55" stop-color="#aab3ae"/><stop offset="1" stop-color="#707a75"/></linearGradient></defs>
+<text x="170" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>
+<rect x="94.5" y="60" width="151" height="250" rx="7" fill="#eef1eb" stroke="#aeb7b1" stroke-width="2" filter="url(#s)"/>
+<rect x="102.5" y="68" width="135" height="145" rx="4" fill="#dfe5df" stroke="#b8c1bb"/>
+<path d="M112.5 78H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<path d="M112.5 95.5H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<path d="M112.5 113H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<path d="M112.5 130.5H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<path d="M112.5 148H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<path d="M112.5 165.5H227.5" stroke="#aab4ae" stroke-width="4" stroke-linecap="round"/>
+<g id="pin-VCC" data-pin="VCC">
+<circle cx="131.9" cy="302" r="8.4" fill="#ff6b6b" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="131.9" cy="302" r="4.8" fill="#f5f7f4"/>
+<text x="131.9" y="335" text-anchor="middle" fill="#ff6b6b" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">VCC</text>
+</g>
+<g id="pin-DATA" data-pin="DATA">
+<circle cx="157.3" cy="302" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="157.3" cy="302" r="4.8" fill="#f5f7f4"/>
+<text x="157.3" y="335" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">DATA</text>
+</g>
+<g id="pin-NC" data-pin="NC">
+<circle cx="182.7" cy="302" r="8.4" fill="#ae7bff" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="182.7" cy="302" r="4.8" fill="#f5f7f4"/>
+<text x="182.7" y="335" text-anchor="middle" fill="#ae7bff" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">NC</text>
+</g>
+<g id="pin-GND" data-pin="GND">
+<circle cx="208.1" cy="302" r="8.4" fill="#707873" stroke="#16201a" stroke-width="1.5"/>
+<circle cx="208.1" cy="302" r="4.8" fill="#f5f7f4"/>
+<text x="208.1" y="335" text-anchor="middle" fill="#707873" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">GND</text>
+</g>
+<text x="170" y="380" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">DHT22 / AM2302 #385</text>
+<text x="170" y="401" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">TEMP / HUMIDITY · SINGLE-WIRE DATA · 0.5Hz</text>
+</svg>

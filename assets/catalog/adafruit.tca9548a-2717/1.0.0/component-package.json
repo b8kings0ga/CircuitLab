@@ -1,0 +1,389 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-control-SDA"
+        ],
+        "name": "SDA",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-control-SCL"
+        ],
+        "name": "SCL",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "active-low-reset"
+        ],
+        "name": "RST",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-address-bit-0"
+        ],
+        "name": "A0",
+        "number": "6"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-address-bit-1"
+        ],
+        "name": "A1",
+        "number": "7"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-address-bit-2"
+        ],
+        "name": "A2",
+        "number": "8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-0-data"
+        ],
+        "name": "SD0",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-0-clock"
+        ],
+        "name": "SC0",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-1-data"
+        ],
+        "name": "SD1",
+        "number": "11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-1-clock"
+        ],
+        "name": "SC1",
+        "number": "12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-2-data"
+        ],
+        "name": "SD2",
+        "number": "13"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-2-clock"
+        ],
+        "name": "SC2",
+        "number": "14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-3-data"
+        ],
+        "name": "SD3",
+        "number": "15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-3-clock"
+        ],
+        "name": "SC3",
+        "number": "16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-4-data"
+        ],
+        "name": "SD4",
+        "number": "17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-4-clock"
+        ],
+        "name": "SC4",
+        "number": "18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-5-data"
+        ],
+        "name": "SD5",
+        "number": "19"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-5-clock"
+        ],
+        "name": "SC5",
+        "number": "20"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-6-data"
+        ],
+        "name": "SD6",
+        "number": "21"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-6-clock"
+        ],
+        "name": "SC6",
+        "number": "22"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-7-data"
+        ],
+        "name": "SD7",
+        "number": "23"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-channel-7-clock"
+        ],
+        "name": "SC7",
+        "number": "24"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "456f3fbab845030f55a6ccf8da7c739751ef4cbd8ce356eba43edc7940761cac",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/2717"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.tca9548a-2717",
+    "level": "i2c-multiplexer-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "TCA9548A I2C Multiplexer #2717",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_MANUFACTURER_PCB_FILE_DIMENSIONS",
+    "heightMm": 30.48,
+    "package": "assembled-module",
+    "widthMm": 17.78
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.14692805
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.19826192
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.2495958
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.30092967
+      },
+      {
+        "pin": "RST",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.35226354
+      },
+      {
+        "pin": "A0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.40359741
+      },
+      {
+        "pin": "A1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.45493129
+      },
+      {
+        "pin": "A2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.50626516
+      },
+      {
+        "pin": "SD0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.55759903
+      },
+      {
+        "pin": "SC0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.6089329
+      },
+      {
+        "pin": "SD1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.66026677
+      },
+      {
+        "pin": "SC1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.36862069,
+        "y": 0.71160065
+      },
+      {
+        "pin": "SD2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.71160065
+      },
+      {
+        "pin": "SC2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.66026677
+      },
+      {
+        "pin": "SD3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.6089329
+      },
+      {
+        "pin": "SC3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.55759903
+      },
+      {
+        "pin": "SD4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.50626516
+      },
+      {
+        "pin": "SC4",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.45493129
+      },
+      {
+        "pin": "SD5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.40359741
+      },
+      {
+        "pin": "SC5",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.35226354
+      },
+      {
+        "pin": "SD6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.30092967
+      },
+      {
+        "pin": "SC6",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.2495958
+      },
+      {
+        "pin": "SD7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.19826192
+      },
+      {
+        "pin": "SC7",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.63137931,
+        "y": 0.14692805
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "bc8fad9e58840fb9bb509e77317a8d2d0a2dfeaa4d174a693984ceecfb260df8",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

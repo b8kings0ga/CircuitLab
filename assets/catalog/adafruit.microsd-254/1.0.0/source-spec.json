@@ -1,0 +1,145 @@
+{
+  "accent": "#c7ceca",
+  "assetId": "adafruit.microsd-254",
+  "canvasWidth": 62,
+  "color": "#0f78ad",
+  "height": 25.4,
+  "level": "microsd-storage-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 2.54,
+      "y": 2.54
+    },
+    {
+      "x": 22.86,
+      "y": 2.54
+    },
+    {
+      "x": 2.54,
+      "y": 22.86
+    },
+    {
+      "x": 22.86,
+      "y": 22.86
+    }
+  ],
+  "mpn": "MicroSD Card Breakout+ #254",
+  "parts": [
+    [
+      2.2,
+      5.0,
+      17.2,
+      15.3,
+      "MICROSD SOCKET"
+    ],
+    [
+      20.2,
+      8.7,
+      6.0,
+      8.4,
+      "4050"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-input"
+      ],
+      "name": "5V",
+      "number": "1",
+      "side": "right",
+      "x": 30.48,
+      "y": 21.72
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "regulated-output"
+      ],
+      "name": "3V",
+      "number": "2",
+      "side": "right",
+      "x": 30.48,
+      "y": 19.18
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "right",
+      "x": 30.48,
+      "y": 16.64
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-SCK"
+      ],
+      "name": "CLK",
+      "number": "4",
+      "side": "right",
+      "x": 30.48,
+      "y": 14.1
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "SPI-MISO"
+      ],
+      "name": "DO",
+      "number": "5",
+      "side": "right",
+      "x": 30.48,
+      "y": 11.56
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-MOSI"
+      ],
+      "name": "DI",
+      "number": "6",
+      "side": "right",
+      "x": 30.48,
+      "y": 9.02
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "SPI-CS"
+      ],
+      "name": "CS",
+      "number": "7",
+      "side": "right",
+      "x": 30.48,
+      "y": 6.48
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "card-detect"
+      ],
+      "name": "CD",
+      "number": "8",
+      "side": "right",
+      "x": 30.48,
+      "y": 3.94
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/254",
+    "https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial/arduino-wiring",
+    "https://raw.githubusercontent.com/adafruit/microsd-breakout-board/ef4cb5171b78b6e17f12aa1fd1df41dc3f50418c/microsd.brd"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "MICROSD · 3.3V / 5V SPI · CARD DETECT",
+  "suppressBoardIdentity": true,
+  "traces": false,
+  "width": 31.85
+}
