@@ -49,7 +49,7 @@ from the documented pin table and remains physically unverified.
 
 Acquisition requires an exact packaged-chip MPN or exact board/module product and revision. Store source URL, capture time, SHA-256, license status, and transformation details. Chip acquisition remains fail-closed through `install_chip`; board/module imports use the general immutable registry after explicit type validation.
 
-Use `scripts/import_sindri_assets.py` for a read-only migration. CircuitLab copies bytes and records the Sindri directory hash; it never edits Sindri.
+Use `scripts/import_sindri_assets.py` for a read-only migration. CircuitLab copies bytes and records the Sindri directory hash; it never edits Sindri. Do not promote placeholder, reference, or custom-concept records into the primary catalog. A Sindri import needs an exact real product identity plus authoritative evidence before it can become a normal hardware asset.
 
 Use `scripts/discover_components.py wokwi-search QUERY` for the pinned offline catalog and `step-search QUERY` for online mechanical candidates. Search never installs a fuzzy result. `step-acquire PART_ID --asset-id ID --revision REV --confirm-exact-part` installs only the exact selected record after verifying its published SHA-256; the resulting geometry remains `PHYSICAL_UNVERIFIED` and redistribution licensing remains review-required.
 

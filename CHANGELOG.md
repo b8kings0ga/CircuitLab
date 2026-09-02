@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.3 — 2026-09-03
+
+- Remove the remaining unsubstantiated Sindri Reference current-sensor and panel-pushbutton records from the live registry.
+- Confirm that a full local search for `Sindri` returns zero assets.
+- Require Sindri imports to have an exact real product identity and evidence before entering the primary catalog.
+
 ## 0.8.2 — 2026-09-03
 
 - Remove the unsubstantiated Sindri Custom standing-desk controller, driver, and handset entries from the distributable catalog and live local registry.
