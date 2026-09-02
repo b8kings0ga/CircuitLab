@@ -22,12 +22,12 @@ class HardwarePipelineTests(unittest.TestCase):
 
     def test_latest_catalog_has_complete_pin_anchor_coverage(self) -> None:
         rows = validate_catalog()
-        self.assertEqual(len(rows), 19)
+        self.assertEqual(len(rows), 17)
         self.assertTrue(all(row["status"] == "VALID" for row in rows))
         self.assertTrue(all(row["pins"] > 0 for row in rows))
         drawn = [row for row in rows if row["style"] == "circuitlab-ai-top-style/v1"]
-        self.assertEqual(len(drawn), 8)
-        self.assertEqual(sorted(row["pins"] for row in drawn), [10, 24, 28, 30, 40, 43, 44, 44])
+        self.assertEqual(len(drawn), 6)
+        self.assertEqual(sorted(row["pins"] for row in drawn), [28, 30, 40, 43, 44, 44])
 
     def test_offline_capture_never_opens_the_network(self) -> None:
         with tempfile.TemporaryDirectory() as directory, mock.patch("urllib.request.urlopen") as urlopen:

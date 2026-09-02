@@ -2,8 +2,8 @@
 
 The PNG files stored in each immutable catalog revision are ImageGen redraws used
 only as orthographic board-body layers. They were generated from the corresponding
-reviewed source image (except the two Sindri concept boards, which use project
-pin-map descriptions). Prompts required:
+reviewed product or manufacturer design image. Assets without a substantiated real
+product identity or authoritative design source are excluded. Prompts required:
 
 - a true top-down, zero-perspective board-only rendering;
 - preservation of the board silhouette, connectors, mounting holes, and major

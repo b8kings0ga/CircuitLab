@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.2 — 2026-09-03
+
+- Remove the unsubstantiated Sindri Custom standing-desk controller, driver, and handset entries from the distributable catalog and live local registry.
+- Stop generating concept artwork for assets without a real product identity or authoritative design source.
+- Keep the generic read-only Sindri importer available for future evidence-backed imports.
+
 ## 0.8.1 — 2026-09-03
 
 - Correct the Pico W board body so its twenty main pads per side run from the first top pad to the final bottom pad without AI-invented extra corner contacts.

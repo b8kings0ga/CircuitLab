@@ -49,8 +49,6 @@ SPECS = [
     {"asset": "espressif.esp32-s3-devkitc-1-n8r8-rev1.0", "from": "1.0.1", "revision": "1.1.0", "art": "esp32-s3-devkitc-1-n8r8-v1.0.png", "source": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html", "copyPins": "espressif.esp32-s3-devkitc-1-v1.1@1.1.0", "layout": "esp"},
     {"asset": "raspberry-pi.zero-2-wh", "from": "1.0.2", "revision": "1.1.0", "art": "raspberry-pi-zero-2-wh.png", "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio-and-the-40-pin-header", "points": edge(PI40[0::2], y=.115, left=.12, right=.82) + edge(PI40[1::2], y=.205, left=.12, right=.82)},
     {"asset": "raspberry-pi.pico-w-sc0918", "from": "1.1.0", "revision": "1.2.0", "art": "raspberry-pi-pico-w-v2.png", "source": "https://datasheets.raspberrypi.com/picow/PicoW-A4-Pinout.pdf", "points": column(PICO_LEFT, x=.26, top=.065, bottom=.935) + column(PICO_RIGHT, x=.74, top=.065, bottom=.935) + PICO_DEBUG},
-    {"asset": "sindri-custom.standing-desk-controller", "from": "1.0.0", "revision": "1.1.0", "art": "sindri-standing-desk-controller.png", "source": None, "reusePins": True, "layout": "edge-existing", "status": "AI_CONCEPT_TOP_PROJECT_PIN_MAP_UNVERIFIED"},
-    {"asset": "sindri-custom.standing-desk-driver", "from": "1.0.0", "revision": "1.1.0", "art": "sindri-standing-desk-driver.png", "source": None, "reusePins": True, "layout": "edge-existing", "status": "AI_CONCEPT_TOP_PROJECT_PIN_MAP_UNVERIFIED"},
 ]
 
 
@@ -84,12 +82,6 @@ def esp_points(pins: list[dict]) -> list[tuple[str, float, float]]:
     return edge(j1, y=.105, left=.14, right=.87) + edge(j3, y=.895, left=.14, right=.87)
 
 
-def existing_edge_points(pins: list[dict]) -> list[tuple[str, float, float]]:
-    names = [pin["name"] for pin in pins]
-    split = (len(names) + 1) // 2
-    return edge(names[:split], y=.10, left=.12, right=.88) + edge(names[split:], y=.90, left=.12, right=.88)
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Create one generated orthographic top view with complete deterministic touchpoints for each photo-backed board.")
     parser.add_argument("--registry", type=Path, default=default_data_root() / "registry" / "components")
@@ -105,7 +97,7 @@ def main() -> None:
             package["electrical"]["pins"] = load_package(source_root, spec["copyPins"])["electrical"]["pins"]
         points = spec.get("points")
         if points is None:
-            points = existing_edge_points(package["electrical"]["pins"]) if spec.get("layout") == "edge-existing" else esp_points(package["electrical"]["pins"])
+            points = esp_points(package["electrical"]["pins"])
         if not spec.get("reusePins") and not spec.get("copyPins"):
             package["electrical"] = {
                 "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED",
