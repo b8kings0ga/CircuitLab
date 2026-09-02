@@ -347,6 +347,200 @@
         "https://www.adafruit.com/product/3538",
         "https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/pinouts"
       ]
+    },
+    {
+      "assetId": "adafruit.ads1115-1085",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "ADS1115 16-Bit ADC #1085 (STEMMA QT revision)",
+      "level": "analog-to-digital-converter-module",
+      "shape": "module",
+      "width": 25.4,
+      "height": 17.8,
+      "canvasWidth": 62,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "16-BIT ADC · 4 CHANNEL · I²C 0x48–0x4B",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "pins": [
+        {"name": "A+", "number": "1", "x": 3.5, "y": 2.4, "side": "top", "direction": "power", "functions": ["filtered-analog-supply-output"]},
+        {"name": "A3", "number": "2", "x": 7.18, "y": 2.4, "side": "top", "direction": "input", "functions": ["analog-input-3"]},
+        {"name": "A2", "number": "3", "x": 10.86, "y": 2.4, "side": "top", "direction": "input", "functions": ["analog-input-2"]},
+        {"name": "A1", "number": "4", "x": 14.54, "y": 2.4, "side": "top", "direction": "input", "functions": ["analog-input-1"]},
+        {"name": "A0", "number": "5", "x": 18.22, "y": 2.4, "side": "top", "direction": "input", "functions": ["analog-input-0"]},
+        {"name": "A-", "number": "6", "x": 21.9, "y": 2.4, "side": "top", "direction": "power", "functions": ["filtered-analog-ground-output"]},
+        {"name": "VIN", "number": "7", "x": 3.5, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "8", "x": 7.18, "y": 15.4, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "9", "x": 10.86, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "10", "x": 14.54, "y": 15.4, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "ADDR", "number": "11", "x": 18.22, "y": 15.4, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS"]},
+        {"name": "ALRT", "number": "12", "x": 21.9, "y": 15.4, "side": "bottom", "direction": "output", "functions": ["comparator", "conversion-ready"]}
+      ],
+      "parts": [[8.5, 4.0, 8.4, 7.4, "ADS1115"]],
+      "sources": [
+        "https://www.adafruit.com/product/1085",
+        "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.pcf8523-3295",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "PCF8523 RTC #3295",
+      "level": "real-time-clock-module",
+      "shape": "module",
+      "width": 25.5,
+      "height": 21.7,
+      "canvasWidth": 50,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "BATTERY-BACKED RTC · I²C 0x68",
+      "stemmaConnectors": false,
+      "suppressBoardIdentity": true,
+      "mountingHoles": [{"x": 23.1, "y": 2.4}, {"x": 2.4, "y": 19.3}],
+      "pins": [
+        {"name": "VCC", "number": "1", "x": 2.4, "y": 4.1, "side": "left", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 2.4, "y": 7.25, "side": "left", "direction": "power", "functions": []},
+        {"name": "SDA", "number": "3", "x": 2.4, "y": 10.4, "side": "left", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "SCL", "number": "4", "x": 2.4, "y": 13.55, "side": "left", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SQW", "number": "5", "x": 2.4, "y": 16.7, "side": "left", "direction": "output", "functions": ["square-wave"]}
+      ],
+      "parts": [[7.0, 4.2, 11.5, 9.0, "PCF8523"]],
+      "sources": [
+        "https://www.adafruit.com/product/3295",
+        "https://learn.adafruit.com/adafruit-pcf8523-real-time-clock/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.ina260-4226",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "INA260 Current Voltage Power Sensor #4226",
+      "level": "current-voltage-power-sensor-module",
+      "shape": "module",
+      "width": 22.9,
+      "height": 22.8,
+      "canvasWidth": 58,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "CURRENT / VOLTAGE / POWER · I²C",
+      "densePins": true,
+      "stemmaConnectors": false,
+      "suppressBoardIdentity": true,
+      "mountingHoles": [{"x": 20.5, "y": 2.4}, {"x": 20.5, "y": 20.4}],
+      "terminalContacts": [{"net": "VIN+", "x": 16.9, "y": 8.2}, {"net": "VIN-", "x": 16.9, "y": 14.6}],
+      "pins": [
+        {"name": "VCC", "number": "1", "x": 2.4, "y": 2.6, "side": "left", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 2.4, "y": 5.1, "side": "left", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "3", "x": 2.4, "y": 7.6, "side": "left", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "4", "x": 2.4, "y": 10.1, "side": "left", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "ALERT", "number": "5", "x": 2.4, "y": 12.6, "side": "left", "direction": "output", "functions": ["interrupt", "conversion-ready"]},
+        {"name": "VBUS", "number": "6", "x": 2.4, "y": 15.1, "side": "left", "direction": "input", "functions": ["bus-voltage-input"]},
+        {"name": "VIN+", "number": "7", "x": 2.4, "y": 17.6, "side": "left", "direction": "input", "functions": ["current-input-positive"]},
+        {"name": "VIN-", "number": "8", "x": 2.4, "y": 20.1, "side": "left", "direction": "input", "functions": ["current-input-negative"]}
+      ],
+      "parts": [[6.6, 4.3, 9.7, 9.0, "INA260"]],
+      "sources": [
+        "https://www.adafruit.com/product/4226",
+        "https://learn.adafruit.com/adafruit-ina260-current-voltage-power-sensor-breakout/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.bno085-4754",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "BNO085 9-DOF Fusion IMU #4754",
+      "level": "nine-axis-imu-module",
+      "shape": "module",
+      "width": 25.6,
+      "height": 22.7,
+      "canvasWidth": 64,
+      "color": "#151a18",
+      "accent": "#e8e7df",
+      "subtitle": "9-DOF FUSION · I²C / UART / SPI",
+      "densePins": true,
+      "suppressBoardIdentity": true,
+      "topPinLabelMode": "above-rotated",
+      "pins": [
+        {"name": "BT", "number": "1", "x": 2.4, "y": 2.4, "side": "top", "direction": "input", "functions": ["bootloader"]},
+        {"name": "P0", "number": "2", "x": 6.56, "y": 2.4, "side": "top", "direction": "input", "functions": ["mode-select-0"]},
+        {"name": "P1", "number": "3", "x": 10.72, "y": 2.4, "side": "top", "direction": "input", "functions": ["mode-select-1"]},
+        {"name": "RST", "number": "4", "x": 14.88, "y": 2.4, "side": "top", "direction": "input", "functions": ["reset-active-low"]},
+        {"name": "DI", "number": "5", "x": 19.04, "y": 2.4, "side": "top", "direction": "input", "functions": ["SPI-MOSI", "I2C-ADDRESS"]},
+        {"name": "CS", "number": "6", "x": 23.2, "y": 2.4, "side": "top", "direction": "input", "functions": ["SPI-CS"]},
+        {"name": "VIN", "number": "7", "x": 2.4, "y": 20.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "8", "x": 6.56, "y": 20.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "9", "x": 10.72, "y": 20.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "10", "x": 14.88, "y": 20.3, "side": "bottom", "direction": "input", "functions": ["I2C-SCL", "UART-RX", "SPI-SCK"]},
+        {"name": "SDA", "number": "11", "x": 19.04, "y": 20.3, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA", "UART-TX", "SPI-MISO"]},
+        {"name": "INT", "number": "12", "x": 23.2, "y": 20.3, "side": "bottom", "direction": "output", "functions": ["interrupt-active-low"]}
+      ],
+      "parts": [[8.5, 7.0, 8.6, 8.4, "BNO085"]],
+      "sources": [
+        "https://www.adafruit.com/product/4754",
+        "https://learn.adafruit.com/adafruit-9-dof-orientation-imu-fusion-breakout-bno085/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.mcp9808-1782-original",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "MCP9808 #1782 (original header-only revision)",
+      "level": "precision-temperature-sensor-module",
+      "shape": "module",
+      "width": 21.0,
+      "height": 13.0,
+      "canvasWidth": 54,
+      "color": "#176a9d",
+      "accent": "#e8e7df",
+      "subtitle": "PRECISION TEMP · I²C 0x18–0x1F",
+      "densePins": true,
+      "stemmaConnectors": false,
+      "suppressBoardIdentity": true,
+      "mountingHoles": [{"x": 2.3, "y": 2.3}, {"x": 18.7, "y": 2.3}],
+      "pins": [
+        {"name": "VDD", "number": "1", "x": 1.9, "y": 10.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "2", "x": 4.36, "y": 10.6, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "3", "x": 6.81, "y": 10.6, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "4", "x": 9.27, "y": 10.6, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]},
+        {"name": "ALERT", "number": "5", "x": 11.73, "y": 10.6, "side": "bottom", "direction": "output", "functions": ["open-collector-alert"]},
+        {"name": "A0", "number": "6", "x": 14.19, "y": 10.6, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS-0"]},
+        {"name": "A1", "number": "7", "x": 16.64, "y": 10.6, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS-1"]},
+        {"name": "A2", "number": "8", "x": 19.1, "y": 10.6, "side": "bottom", "direction": "input", "functions": ["I2C-ADDRESS-2"]}
+      ],
+      "parts": [[7.0, 3.0, 7.0, 5.1, "MCP9808"]],
+      "sources": [
+        "https://www.adafruit.com/product/1782",
+        "https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide/pinouts"
+      ]
+    },
+    {
+      "assetId": "adafruit.mlx90640-4407-55deg",
+      "revision": "1.0.0",
+      "manufacturer": "Adafruit Industries",
+      "mpn": "MLX90640 24×32 Thermal Camera #4407 (55° FoV)",
+      "level": "thermal-array-sensor-module",
+      "shape": "module",
+      "width": 25.7,
+      "height": 17.7,
+      "canvasWidth": 56,
+      "color": "#151a18",
+      "accent": "#c6cec9",
+      "subtitle": "24×32 THERMAL ARRAY · 55°×35° · I²C",
+      "pins": [
+        {"name": "VIN", "number": "1", "x": 4.2, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "3VO", "number": "2", "x": 8.53, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "GND", "number": "3", "x": 12.85, "y": 15.3, "side": "bottom", "direction": "power", "functions": []},
+        {"name": "SCL", "number": "4", "x": 17.18, "y": 15.3, "side": "bottom", "direction": "input", "functions": ["I2C-SCL"]},
+        {"name": "SDA", "number": "5", "x": 21.5, "y": 15.3, "side": "bottom", "direction": "bidirectional", "functions": ["I2C-SDA"]}
+      ],
+      "parts": [[8.6, 3.2, 8.5, 8.8, "24×32 IR"]],
+      "sources": [
+        "https://www.adafruit.com/product/4407",
+        "https://learn.adafruit.com/adafruit-mlx90640-ir-thermal-camera/pinouts"
+      ]
     }
   ]
 }

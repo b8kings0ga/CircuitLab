@@ -1,0 +1,79 @@
+{
+  "accent": "#c6cec9",
+  "assetId": "adafruit.mlx90640-4407-55deg",
+  "canvasWidth": 56,
+  "color": "#151a18",
+  "height": 17.7,
+  "level": "thermal-array-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "MLX90640 24×32 Thermal Camera #4407 (55° FoV)",
+  "parts": [
+    [
+      8.6,
+      3.2,
+      8.5,
+      8.8,
+      "24×32 IR"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "1",
+      "side": "bottom",
+      "x": 4.2,
+      "y": 15.3
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "3VO",
+      "number": "2",
+      "side": "bottom",
+      "x": 8.53,
+      "y": 15.3
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "3",
+      "side": "bottom",
+      "x": 12.85,
+      "y": 15.3
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "4",
+      "side": "bottom",
+      "x": 17.18,
+      "y": 15.3
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "5",
+      "side": "bottom",
+      "x": 21.5,
+      "y": 15.3
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/4407",
+    "https://learn.adafruit.com/adafruit-mlx90640-ir-thermal-camera/pinouts"
+  ],
+  "subtitle": "24×32 THERMAL ARRAY · 55°×35° · I²C",
+  "width": 25.7
+}

@@ -1,0 +1,218 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "filtered-analog-supply-output"
+        ],
+        "name": "A+",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-3"
+        ],
+        "name": "A3",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-2"
+        ],
+        "name": "A2",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-1"
+        ],
+        "name": "A1",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "analog-input-0"
+        ],
+        "name": "A0",
+        "number": "5"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "filtered-analog-ground-output"
+        ],
+        "name": "A-",
+        "number": "6"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "8"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL"
+        ],
+        "name": "SCL",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA"
+        ],
+        "name": "SDA",
+        "number": "10"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-ADDRESS"
+        ],
+        "name": "ADDR",
+        "number": "11"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "comparator",
+          "conversion-ready"
+        ],
+        "name": "ALRT",
+        "number": "12"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "137bc4d2b05038fb2f6a570ba5918883474bce277394c845849010692110c542",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/1085"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.ads1115-1085",
+    "level": "analog-to-digital-converter-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "ADS1115 16-Bit ADC #1085 (STEMMA QT revision)",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 17.8,
+    "package": "assembled-module",
+    "widthMm": 25.4
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "A+",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.3516129,
+        "y": 0.19626168
+      },
+      {
+        "pin": "A3",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.41096774,
+        "y": 0.19626168
+      },
+      {
+        "pin": "A2",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47032258,
+        "y": 0.19626168
+      },
+      {
+        "pin": "A1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52967742,
+        "y": 0.19626168
+      },
+      {
+        "pin": "A0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.58903226,
+        "y": 0.19626168
+      },
+      {
+        "pin": "A-",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6483871,
+        "y": 0.19626168
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.3516129,
+        "y": 0.5
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.41096774,
+        "y": 0.5
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.47032258,
+        "y": 0.5
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.52967742,
+        "y": 0.5
+      },
+      {
+        "pin": "ADDR",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.58903226,
+        "y": 0.5
+      },
+      {
+        "pin": "ALRT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6483871,
+        "y": 0.5
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "13855230e9b867ab70c0445410668df62547be935e7c5c57da55590de35f2fa6",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.mcp9808-1782-original",
+  "canvasWidth": 54,
+  "color": "#176a9d",
+  "densePins": true,
+  "height": 13.0,
+  "level": "precision-temperature-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 2.3,
+      "y": 2.3
+    },
+    {
+      "x": 18.7,
+      "y": 2.3
+    }
+  ],
+  "mpn": "MCP9808 #1782 (original header-only revision)",
+  "parts": [
+    [
+      7.0,
+      3.0,
+      7.0,
+      5.1,
+      "MCP9808"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VDD",
+      "number": "1",
+      "side": "bottom",
+      "x": 1.9,
+      "y": 10.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "bottom",
+      "x": 4.36,
+      "y": 10.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "3",
+      "side": "bottom",
+      "x": 6.81,
+      "y": 10.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "4",
+      "side": "bottom",
+      "x": 9.27,
+      "y": 10.6
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "open-collector-alert"
+      ],
+      "name": "ALERT",
+      "number": "5",
+      "side": "bottom",
+      "x": 11.73,
+      "y": 10.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS-0"
+      ],
+      "name": "A0",
+      "number": "6",
+      "side": "bottom",
+      "x": 14.19,
+      "y": 10.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS-1"
+      ],
+      "name": "A1",
+      "number": "7",
+      "side": "bottom",
+      "x": 16.64,
+      "y": 10.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS-2"
+      ],
+      "name": "A2",
+      "number": "8",
+      "side": "bottom",
+      "x": 19.1,
+      "y": 10.6
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/1782",
+    "https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide/pinouts"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "PRECISION TEMP · I²C 0x18–0x1F",
+  "suppressBoardIdentity": true,
+  "width": 21.0
+}

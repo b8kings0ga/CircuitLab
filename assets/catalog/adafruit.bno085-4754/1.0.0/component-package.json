@@ -1,0 +1,220 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "input",
+        "functions": [
+          "bootloader"
+        ],
+        "name": "BT",
+        "number": "1"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "mode-select-0"
+        ],
+        "name": "P0",
+        "number": "2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "mode-select-1"
+        ],
+        "name": "P1",
+        "number": "3"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "reset-active-low"
+        ],
+        "name": "RST",
+        "number": "4"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-MOSI",
+          "I2C-ADDRESS"
+        ],
+        "name": "DI",
+        "number": "5"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "SPI-CS"
+        ],
+        "name": "CS",
+        "number": "6"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "VIN",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "3VO",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [],
+        "name": "GND",
+        "number": "9"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "I2C-SCL",
+          "UART-RX",
+          "SPI-SCK"
+        ],
+        "name": "SCL",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "I2C-SDA",
+          "UART-TX",
+          "SPI-MISO"
+        ],
+        "name": "SDA",
+        "number": "11"
+      },
+      {
+        "direction": "output",
+        "functions": [
+          "interrupt-active-low"
+        ],
+        "name": "INT",
+        "number": "12"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "rendering": "ORIGINAL_CIRCUITLAB_VECTOR_FROM_OFFICIAL_PIN_TABLE_NOT_PHOTO_TRACE",
+    "sourceSpecSha256": "ee7309d926c4182aaa071142f51ede2c6492e5c340a959288aa556c7c998e571",
+    "sources": [
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://www.adafruit.com/product/4754"
+      },
+      {
+        "type": "official-product-or-pinout",
+        "url": "https://learn.adafruit.com/adafruit-9-dof-orientation-imu-fusion-breakout-bno085/pinouts"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "adafruit.bno085-4754",
+    "level": "nine-axis-imu-module",
+    "lifecycle": "active",
+    "manufacturer": "Adafruit Industries",
+    "mpn": "BNO085 9-DOF Fusion IMU #4754",
+    "revision": "1.0.0",
+    "status": "DESIGN_DOC_DERIVED_UNVERIFIED"
+  },
+  "physical": {
+    "dimensionStatus": "OFFICIAL_PRODUCT_DIMENSIONS",
+    "heightMm": 22.7,
+    "package": "assembled-module",
+    "widthMm": 25.6
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "BT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.3375,
+        "y": 0.17610063
+      },
+      {
+        "pin": "P0",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4025,
+        "y": 0.17610063
+      },
+      {
+        "pin": "P1",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4675,
+        "y": 0.17610063
+      },
+      {
+        "pin": "RST",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5325,
+        "y": 0.17610063
+      },
+      {
+        "pin": "DI",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5975,
+        "y": 0.17610063
+      },
+      {
+        "pin": "CS",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6625,
+        "y": 0.17610063
+      },
+      {
+        "pin": "VIN",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.3375,
+        "y": 0.55136268
+      },
+      {
+        "pin": "3VO",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4025,
+        "y": 0.55136268
+      },
+      {
+        "pin": "GND",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.4675,
+        "y": 0.55136268
+      },
+      {
+        "pin": "SCL",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5325,
+        "y": 0.55136268
+      },
+      {
+        "pin": "SDA",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.5975,
+        "y": 0.55136268
+      },
+      {
+        "pin": "INT",
+        "status": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+        "x": 0.6625,
+        "y": 0.55136268
+      }
+    ],
+    "appearance": "top.svg",
+    "appearanceSha256": "9c3d1816266eb2d3a9f5f3061af21b7a5c45b343807a95d24aba317a04c8e488",
+    "coordinateStatus": "DOCUMENTED_PIN_TABLE_VISUAL_LAYOUT_UNVERIFIED",
+    "style": "circuitlab-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top.svg",
+        "view": "original-vector-top"
+      }
+    ]
+  }
+}

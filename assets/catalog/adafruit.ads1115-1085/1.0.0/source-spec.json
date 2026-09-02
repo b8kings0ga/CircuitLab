@@ -1,0 +1,162 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.ads1115-1085",
+  "canvasWidth": 62,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 17.8,
+  "level": "analog-to-digital-converter-module",
+  "manufacturer": "Adafruit Industries",
+  "mpn": "ADS1115 16-Bit ADC #1085 (STEMMA QT revision)",
+  "parts": [
+    [
+      8.5,
+      4.0,
+      8.4,
+      7.4,
+      "ADS1115"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [
+        "filtered-analog-supply-output"
+      ],
+      "name": "A+",
+      "number": "1",
+      "side": "top",
+      "x": 3.5,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-3"
+      ],
+      "name": "A3",
+      "number": "2",
+      "side": "top",
+      "x": 7.18,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-2"
+      ],
+      "name": "A2",
+      "number": "3",
+      "side": "top",
+      "x": 10.86,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-1"
+      ],
+      "name": "A1",
+      "number": "4",
+      "side": "top",
+      "x": 14.54,
+      "y": 2.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "analog-input-0"
+      ],
+      "name": "A0",
+      "number": "5",
+      "side": "top",
+      "x": 18.22,
+      "y": 2.4
+    },
+    {
+      "direction": "power",
+      "functions": [
+        "filtered-analog-ground-output"
+      ],
+      "name": "A-",
+      "number": "6",
+      "side": "top",
+      "x": 21.9,
+      "y": 2.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VIN",
+      "number": "7",
+      "side": "bottom",
+      "x": 3.5,
+      "y": 15.4
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "8",
+      "side": "bottom",
+      "x": 7.18,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "9",
+      "side": "bottom",
+      "x": 10.86,
+      "y": 15.4
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "10",
+      "side": "bottom",
+      "x": 14.54,
+      "y": 15.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-ADDRESS"
+      ],
+      "name": "ADDR",
+      "number": "11",
+      "side": "bottom",
+      "x": 18.22,
+      "y": 15.4
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "comparator",
+        "conversion-ready"
+      ],
+      "name": "ALRT",
+      "number": "12",
+      "side": "bottom",
+      "x": 21.9,
+      "y": 15.4
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/1085",
+    "https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts"
+  ],
+  "subtitle": "16-BIT ADC · 4 CHANNEL · I²C 0x48–0x4B",
+  "suppressBoardIdentity": true,
+  "topPinLabelMode": "above-rotated",
+  "width": 25.4
+}

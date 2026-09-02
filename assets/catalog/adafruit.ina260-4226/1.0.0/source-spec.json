@@ -1,0 +1,140 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.ina260-4226",
+  "canvasWidth": 58,
+  "color": "#151a18",
+  "densePins": true,
+  "height": 22.8,
+  "level": "current-voltage-power-sensor-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 20.5,
+      "y": 2.4
+    },
+    {
+      "x": 20.5,
+      "y": 20.4
+    }
+  ],
+  "mpn": "INA260 Current Voltage Power Sensor #4226",
+  "parts": [
+    [
+      6.6,
+      4.3,
+      9.7,
+      9.0,
+      "INA260"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VCC",
+      "number": "1",
+      "side": "left",
+      "x": 2.4,
+      "y": 2.6
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "left",
+      "x": 2.4,
+      "y": 5.1
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "3",
+      "side": "left",
+      "x": 2.4,
+      "y": 7.6
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "4",
+      "side": "left",
+      "x": 2.4,
+      "y": 10.1
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "interrupt",
+        "conversion-ready"
+      ],
+      "name": "ALERT",
+      "number": "5",
+      "side": "left",
+      "x": 2.4,
+      "y": 12.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "bus-voltage-input"
+      ],
+      "name": "VBUS",
+      "number": "6",
+      "side": "left",
+      "x": 2.4,
+      "y": 15.1
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "current-input-positive"
+      ],
+      "name": "VIN+",
+      "number": "7",
+      "side": "left",
+      "x": 2.4,
+      "y": 17.6
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "current-input-negative"
+      ],
+      "name": "VIN-",
+      "number": "8",
+      "side": "left",
+      "x": 2.4,
+      "y": 20.1
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/4226",
+    "https://learn.adafruit.com/adafruit-ina260-current-voltage-power-sensor-breakout/pinouts"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "CURRENT / VOLTAGE / POWER · I²C",
+  "suppressBoardIdentity": true,
+  "terminalContacts": [
+    {
+      "net": "VIN+",
+      "x": 16.9,
+      "y": 8.2
+    },
+    {
+      "net": "VIN-",
+      "x": 16.9,
+      "y": 14.6
+    }
+  ],
+  "width": 22.9
+}

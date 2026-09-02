@@ -1,0 +1,93 @@
+{
+  "accent": "#e8e7df",
+  "assetId": "adafruit.pcf8523-3295",
+  "canvasWidth": 50,
+  "color": "#151a18",
+  "height": 21.7,
+  "level": "real-time-clock-module",
+  "manufacturer": "Adafruit Industries",
+  "mountingHoles": [
+    {
+      "x": 23.1,
+      "y": 2.4
+    },
+    {
+      "x": 2.4,
+      "y": 19.3
+    }
+  ],
+  "mpn": "PCF8523 RTC #3295",
+  "parts": [
+    [
+      7.0,
+      4.2,
+      11.5,
+      9.0,
+      "PCF8523"
+    ]
+  ],
+  "pins": [
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "VCC",
+      "number": "1",
+      "side": "left",
+      "x": 2.4,
+      "y": 4.1
+    },
+    {
+      "direction": "power",
+      "functions": [],
+      "name": "GND",
+      "number": "2",
+      "side": "left",
+      "x": 2.4,
+      "y": 7.25
+    },
+    {
+      "direction": "bidirectional",
+      "functions": [
+        "I2C-SDA"
+      ],
+      "name": "SDA",
+      "number": "3",
+      "side": "left",
+      "x": 2.4,
+      "y": 10.4
+    },
+    {
+      "direction": "input",
+      "functions": [
+        "I2C-SCL"
+      ],
+      "name": "SCL",
+      "number": "4",
+      "side": "left",
+      "x": 2.4,
+      "y": 13.55
+    },
+    {
+      "direction": "output",
+      "functions": [
+        "square-wave"
+      ],
+      "name": "SQW",
+      "number": "5",
+      "side": "left",
+      "x": 2.4,
+      "y": 16.7
+    }
+  ],
+  "revision": "1.0.0",
+  "schema": "hardware-source-spec/v1",
+  "shape": "module",
+  "sources": [
+    "https://www.adafruit.com/product/3295",
+    "https://learn.adafruit.com/adafruit-pcf8523-real-time-clock/pinouts"
+  ],
+  "stemmaConnectors": false,
+  "subtitle": "BATTERY-BACKED RTC · I²C 0x68",
+  "suppressBoardIdentity": true,
+  "width": 25.5
+}

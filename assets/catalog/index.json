@@ -1,6 +1,10 @@
 {
   "components": [
     {
+      "pins": 12,
+      "ref": "adafruit.ads1115-1085@1.0.0"
+    },
+    {
       "pins": 4,
       "ref": "adafruit.aht20-4566@1.0.0"
     },
@@ -33,6 +37,10 @@
       "ref": "adafruit.bno055-2472@1.0.0"
     },
     {
+      "pins": 12,
+      "ref": "adafruit.bno085-4754@1.0.0"
+    },
+    {
       "pins": 2,
       "ref": "adafruit.diffused-red-led-5mm-299@1.0.0"
     },
@@ -53,6 +61,10 @@
       "ref": "adafruit.ina219-904@1.0.0"
     },
     {
+      "pins": 8,
+      "ref": "adafruit.ina260-4226@1.0.0"
+    },
+    {
       "pins": 12,
       "ref": "adafruit.lis3dh-2809@1.0.1"
     },
@@ -69,8 +81,20 @@
       "ref": "adafruit.max9814-1713@1.0.0"
     },
     {
+      "pins": 8,
+      "ref": "adafruit.mcp9808-1782-original@1.0.0"
+    },
+    {
+      "pins": 5,
+      "ref": "adafruit.mlx90640-4407-55deg@1.0.0"
+    },
+    {
       "pins": 11,
       "ref": "adafruit.mpu6050-3886@1.0.1"
+    },
+    {
+      "pins": 5,
+      "ref": "adafruit.pcf8523-3295@1.0.0"
     },
     {
       "pins": 3,

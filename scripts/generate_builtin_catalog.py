@@ -291,24 +291,42 @@ def render(spec: dict[str, Any]) -> str:
         '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35"/></filter><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fafafa"/><stop offset=".55" stop-color="#b8c0bc"/><stop offset="1" stop-color="#7b8580"/></linearGradient></defs>',
         f'<rect x="{board_x:g}" y="{board_y:g}" width="{board_width:g}" height="{board_height:g}" rx="9" fill="{spec["color"]}" stroke="{STYLE["boardStroke"]}" stroke-width="2" filter="url(#s)"/>',
         f'<text x="{canvas_width * scale / 2:g}" y="17" text-anchor="middle" fill="#53615a" font-family="ui-monospace,monospace" font-size="8" font-weight="800" letter-spacing="1.2">↑ FRONT · TOP · CIRCUITLAB STYLE V1</text>',
-    ] + ([] if spec.get("mechanicalPads") else [
+    ] + ([] if spec.get("mechanicalPads") or spec.get("suppressBoardIdentity") else [
         f'<text x="{board_x + 10:g}" y="{board_y + 15:g}" fill="{STYLE["silk"]}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(spec["manufacturer"])}</text>',
         f'<text x="{board_x + 10:g}" y="{board_y + 25:g}" fill="#9eb0a6" font-family="ui-monospace,monospace" font-size="5.5">{esc(spec["mpn"])}</text>',
     ]) + [
         f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (13 if spec.get("densePins") else 7)) * scale:g}" text-anchor="middle" fill="#26332c" font-family="ui-monospace,monospace" font-size="11" font-weight="800">{esc(spec["mpn"])}</text>',
         f'<text x="{canvas_width * scale / 2:g}" y="{(BOARD_Y + spec["height"] + (15.1 if spec.get("densePins") else 9.1)) * scale:g}" text-anchor="middle" fill="#278b50" font-family="ui-monospace,monospace" font-size="7" font-weight="700">{esc(spec["subtitle"])}</text>',
     ]
-    for hole_x, hole_y in ((2.3, 2.3), (physical_width - 2.3, 2.3), (2.3, spec["height"] - 2.3), (physical_width - 2.3, spec["height"] - 2.3)):
+    mounting_holes = spec.get("mountingHoles", [
+        {"x": 2.3, "y": 2.3},
+        {"x": physical_width - 2.3, "y": 2.3},
+        {"x": 2.3, "y": spec["height"] - 2.3},
+        {"x": physical_width - 2.3, "y": spec["height"] - 2.3},
+    ])
+    for hole in mounting_holes:
+        hole_x = float(hole["x"]); hole_y = float(hole["y"])
         hx = (offset_x + hole_x) * scale; hy = (BOARD_Y + hole_y) * scale
         lines.append(f'<circle cx="{hx:g}" cy="{hy:g}" r="6.5" fill="#d7aa26" stroke="#f5dc75" stroke-width="1"/><circle cx="{hx:g}" cy="{hy:g}" r="3.4" fill="#e9ece8"/>')
     for pad in spec.get("mechanicalPads", []):
         px = (offset_x + float(pad["x"])) * scale; py = (BOARD_Y + float(pad["y"])) * scale
         lines.append(f'<g data-mechanical-pad="unconnected"><circle cx="{px:g}" cy="{py:g}" r="8.4" fill="#858d88" stroke="#16201a" stroke-width="1.5"/><circle cx="{px:g}" cy="{py:g}" r="5.5" fill="#f5f7f4"/><circle cx="{px:g}" cy="{py:g}" r="2.4" fill="#3e4641"/><title>Mechanical stability hole — no electrical connection</title></g>')
-    if spec["manufacturer"] == "Adafruit Industries":
+    if spec["manufacturer"] == "Adafruit Industries" and spec.get("stemmaConnectors", True):
         connector_y = (BOARD_Y + spec["height"] * .43) * scale
         lines.extend([
             f'<rect x="{board_x - 2:g}" y="{connector_y:g}" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>',
             f'<rect x="{board_x + board_width - 17:g}" y="{connector_y:g}" width="19" height="28" rx="3" fill="#e8dfcd" stroke="#9f9685"/>',
+        ])
+    for contact in spec.get("terminalContacts", []):
+        cx = (offset_x + float(contact["x"])) * scale; cy = (BOARD_Y + float(contact["y"])) * scale
+        net = esc(contact["net"])
+        lines.extend([
+            f'<g data-terminal-contact="{net}">',
+            f'<rect x="{cx - 13:g}" y="{cy - 13:g}" width="26" height="26" rx="4" fill="#2f7f50" stroke="#183e29" stroke-width="2"/>',
+            f'<circle cx="{cx:g}" cy="{cy:g}" r="8" fill="url(#metal)" stroke="#57615c" stroke-width="1.5"/>',
+            f'<path d="M{cx - 5:g} {cy:g}H{cx + 5:g}" stroke="#606a65" stroke-width="2"/>',
+            f'<title>Additional physical contact for {net}; canonical electrical pin remains the header anchor</title>',
+            '</g>',
         ])
     for x, y, width, part_height, label in spec["parts"]:
         px = (offset_x + x) * scale; py = (BOARD_Y + y) * scale
@@ -336,8 +354,15 @@ def render(spec: dict[str, Any]) -> str:
         if spec["assetId"].startswith("orange-pi"):
             tx = (offset_x + physical_width + 4 + (index % 2) * 15) * scale
             lines.append(f'<text x="{tx:g}" y="{y + 2.5:g}" fill="#29352f" font-family="ui-monospace,monospace" font-size="6.5" font-weight="700">{esc(row["number"])} {esc(label)}</text>')
+        elif row["side"] == "top" and spec.get("topPinLabelMode") == "above-rotated":
+            label_y = (BOARD_Y - .4) * scale
+            lines.append(f'<text x="{x:g}" y="{label_y:g}" transform="rotate(-62 {x:g} {label_y:g})" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
         elif row["side"] == "top":
             lines.append(f'<text x="{x - 11:g}" y="{y + 3:g}" text-anchor="end" fill="{colour}" font-family="ui-monospace,monospace" font-size="6.5" font-weight="800">{esc(label)}</text>')
+        elif row["side"] == "left":
+            lines.append(f'<text x="{x + 12:g}" y="{y + 2.5:g}" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
+        elif row["side"] == "right":
+            lines.append(f'<text x="{x - 12:g}" y="{y + 2.5:g}" text-anchor="end" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
         elif spec.get("densePins"):
             label_y = (BOARD_Y + spec["height"] + 2.0) * scale
             lines.append(f'<text x="{x:g}" y="{label_y:g}" transform="rotate(-62 {x:g} {label_y:g})" text-anchor="start" fill="{colour}" font-family="ui-monospace,monospace" font-size="5.7" font-weight="800">{esc(label)}</text>')
@@ -418,6 +443,17 @@ def package_for(spec: dict[str, Any], svg: bytes) -> dict[str, Any]:
     physical = {"widthMm": spec["width"], "heightMm": spec["height"], "package": spec.get("package", "assembled-module")}
     if is_declarative:
         physical["dimensionStatus"] = spec.get("dimensionStatus", "OFFICIAL_PRODUCT_DIMENSIONS")
+    if spec.get("terminalContacts"):
+        physical["additionalContacts"] = [
+            {
+                "net": contact["net"],
+                "kind": "duplicate-terminal-contact",
+                "x": round((offset_x + float(contact["x"])) / canvas_width, 8),
+                "y": round((BOARD_Y + float(contact["y"])) / height, 8),
+                "status": "DOCUMENTED_PHYSICAL_CONTACT_VISUAL_LAYOUT_UNVERIFIED",
+            }
+            for contact in spec["terminalContacts"]
+        ]
     return {
         "schema": "component-package/v1",
         "identity": {"assetId": spec["assetId"], "revision": spec["revision"], "manufacturer": spec["manufacturer"], "mpn": spec["mpn"], "level": spec["level"], "status": "DESIGN_DOC_DERIVED_UNVERIFIED", "lifecycle": "active"},
