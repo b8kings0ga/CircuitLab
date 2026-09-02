@@ -1,0 +1,524 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D13"
+        ],
+        "name": "D13",
+        "number": "1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "3V3",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "AREF"
+        ],
+        "name": "AREF",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A0"
+        ],
+        "name": "A0",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A1"
+        ],
+        "name": "A1",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A2"
+        ],
+        "name": "A2",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A3"
+        ],
+        "name": "A3",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A4/SDA"
+        ],
+        "name": "A4/SDA",
+        "number": "8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A5/SCL"
+        ],
+        "name": "A5/SCL",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A6"
+        ],
+        "name": "A6",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "A7"
+        ],
+        "name": "A7",
+        "number": "11"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5V"
+        ],
+        "name": "5V",
+        "number": "12"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "RESET-A"
+        ],
+        "name": "RESET-A",
+        "number": "13"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND-A"
+        ],
+        "name": "GND-A",
+        "number": "14"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "VIN"
+        ],
+        "name": "VIN",
+        "number": "15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D12"
+        ],
+        "name": "D12",
+        "number": "16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D11"
+        ],
+        "name": "D11",
+        "number": "17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D10"
+        ],
+        "name": "D10",
+        "number": "18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D9"
+        ],
+        "name": "D9",
+        "number": "19"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D8"
+        ],
+        "name": "D8",
+        "number": "20"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D7"
+        ],
+        "name": "D7",
+        "number": "21"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D6"
+        ],
+        "name": "D6",
+        "number": "22"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D5"
+        ],
+        "name": "D5",
+        "number": "23"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D4"
+        ],
+        "name": "D4",
+        "number": "24"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D3"
+        ],
+        "name": "D3",
+        "number": "25"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "D2"
+        ],
+        "name": "D2",
+        "number": "26"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND-B"
+        ],
+        "name": "GND-B",
+        "number": "27"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "RESET-B"
+        ],
+        "name": "RESET-B",
+        "number": "28"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "RX/D0"
+        ],
+        "name": "RX/D0",
+        "number": "29"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "TX/D1"
+        ],
+        "name": "TX/D1",
+        "number": "30"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T12:45:45Z",
+    "generatedBodySha256": "711b871d2dc3636bc2ddf479f0dba3eb7d1b2f75daa6b82e4c66a6ea849d4e6d",
+    "importedFrom": "Sindri",
+    "physicalStatus": "PHYSICAL_UNVERIFIED",
+    "rendering": "IMAGEGEN_BOARD_BODY_WITH_DETERMINISTIC_OFFICIAL_PIN_OVERLAY",
+    "sourceDirectorySha256": "8ec87ee063f5fbdbca2bd3b5f3dff98c6bdcaf21d44ac5501b4664c6185b5c48",
+    "sources": [
+      {
+        "media_type": "image/webp",
+        "original_sha256": "4c49364a4a388503c63eb28e72be39b6eee71e3b848f5e30c7151c9afac51a65",
+        "page_url": "https://store.arduino.cc/products/arduino-nano-33-iot",
+        "redistribution": "local-only",
+        "resource_url": "https://store.arduino.cc/cdn/shop/files/ABX00027_03.front_1200x900.jpg?v=1727098292",
+        "retrieved_at": "2026-07-22T09:05:31.222120+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "orthographic-top"
+        },
+        "type": "manufacturer-product-image",
+        "view_name": "primary"
+      },
+      {
+        "media_type": "image/webp",
+        "original_sha256": "12d3a2cc6675459875e9fc581cc19c040d719a49694c03449455e4c6142213d8",
+        "page_url": "https://store.arduino.cc/products/arduino-nano-33-iot",
+        "redistribution": "local-only",
+        "resource_url": "https://store.arduino.cc/cdn/shop/files/ABX00027_01.iso_934x700.jpg?v=1727098291",
+        "retrieved_at": "2026-07-22T09:05:32.769666+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "isometric-front"
+        },
+        "type": "manufacturer-product-image",
+        "view_name": "isometric"
+      },
+      {
+        "media_type": "image/webp",
+        "original_sha256": "5dccf7856b94032edd9c041b228b31bee163b85b5ea75e0d0ff596b7c4b59a11",
+        "page_url": "https://store.arduino.cc/products/arduino-nano-33-iot",
+        "redistribution": "local-only",
+        "resource_url": "https://store.arduino.cc/cdn/shop/files/ABX00027_04.back.jpg?crop=center&height=1024&v=1727098291&width=1024",
+        "retrieved_at": "2026-07-22T09:05:34.319777+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "orthographic-bottom"
+        },
+        "type": "manufacturer-product-image",
+        "view_name": "bottom"
+      },
+      {
+        "type": "manufacturer-pin-table",
+        "url": "https://docs.arduino.cc/resources/pinouts/ABX00027-full-pinout.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "arduino.nano-33-iot-abx00027",
+    "level": "development-board",
+    "lifecycle": "active",
+    "manufacturer": "Arduino",
+    "mpn": "ABX00027",
+    "revision": "1.1.0",
+    "status": "AI_DRAWN_TOP_OFFICIAL_PINS_UNVERIFIED"
+  },
+  "packageSha256": "36bad48df0db1412f37ff04e6fe8de1e3688292790e5f9da714b9e70c1690325",
+  "physical": {
+    "footprint": null,
+    "geometry": null,
+    "model": null,
+    "package": "arduino-nano"
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "D13",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.1,
+        "y": 0.085
+      },
+      {
+        "pin": "3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.15714286,
+        "y": 0.085
+      },
+      {
+        "pin": "AREF",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.21428571,
+        "y": 0.085
+      },
+      {
+        "pin": "A0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.27142857,
+        "y": 0.085
+      },
+      {
+        "pin": "A1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.32857143,
+        "y": 0.085
+      },
+      {
+        "pin": "A2",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.38571429,
+        "y": 0.085
+      },
+      {
+        "pin": "A3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.44285714,
+        "y": 0.085
+      },
+      {
+        "pin": "A4/SDA",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.085
+      },
+      {
+        "pin": "A5/SCL",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.55714286,
+        "y": 0.085
+      },
+      {
+        "pin": "A6",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.61428571,
+        "y": 0.085
+      },
+      {
+        "pin": "A7",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.67142857,
+        "y": 0.085
+      },
+      {
+        "pin": "5V",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.72857143,
+        "y": 0.085
+      },
+      {
+        "pin": "RESET-A",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.78571429,
+        "y": 0.085
+      },
+      {
+        "pin": "GND-A",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.84285714,
+        "y": 0.085
+      },
+      {
+        "pin": "VIN",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.9,
+        "y": 0.085
+      },
+      {
+        "pin": "D12",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.1,
+        "y": 0.915
+      },
+      {
+        "pin": "D11",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.15714286,
+        "y": 0.915
+      },
+      {
+        "pin": "D10",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.21428571,
+        "y": 0.915
+      },
+      {
+        "pin": "D9",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.27142857,
+        "y": 0.915
+      },
+      {
+        "pin": "D8",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.32857143,
+        "y": 0.915
+      },
+      {
+        "pin": "D7",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.38571429,
+        "y": 0.915
+      },
+      {
+        "pin": "D6",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.44285714,
+        "y": 0.915
+      },
+      {
+        "pin": "D5",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.5,
+        "y": 0.915
+      },
+      {
+        "pin": "D4",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.55714286,
+        "y": 0.915
+      },
+      {
+        "pin": "D3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.61428571,
+        "y": 0.915
+      },
+      {
+        "pin": "D2",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.67142857,
+        "y": 0.915
+      },
+      {
+        "pin": "GND-B",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.72857143,
+        "y": 0.915
+      },
+      {
+        "pin": "RESET-B",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.78571429,
+        "y": 0.915
+      },
+      {
+        "pin": "RX/D0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.84285714,
+        "y": 0.915
+      },
+      {
+        "pin": "TX/D1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.9,
+        "y": 0.915
+      }
+    ],
+    "appearance": "top-view.png",
+    "appearanceSha256": "711b871d2dc3636bc2ddf479f0dba3eb7d1b2f75daa6b82e4c66a6ea849d4e6d",
+    "coordinateStatus": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+    "style": "circuitlab-ai-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top-view.png",
+        "view": "ai-drawn-orthographic-top"
+      }
+    ]
+  }
+}

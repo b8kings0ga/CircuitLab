@@ -1,0 +1,622 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "P1:3V3",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO2/SDA"
+        ],
+        "name": "P3:GPIO2/SDA",
+        "number": "2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO3/SCL"
+        ],
+        "name": "P5:GPIO3/SCL",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO4"
+        ],
+        "name": "P7:GPIO4",
+        "number": "4"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P9:GND",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO17"
+        ],
+        "name": "P11:GPIO17",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO27"
+        ],
+        "name": "P13:GPIO27",
+        "number": "7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO22"
+        ],
+        "name": "P15:GPIO22",
+        "number": "8"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "P17:3V3",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO10/MOSI"
+        ],
+        "name": "P19:GPIO10/MOSI",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO9/MISO"
+        ],
+        "name": "P21:GPIO9/MISO",
+        "number": "11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO11/SCLK"
+        ],
+        "name": "P23:GPIO11/SCLK",
+        "number": "12"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P25:GND",
+        "number": "13"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO0/ID_SD"
+        ],
+        "name": "P27:GPIO0/ID_SD",
+        "number": "14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO5"
+        ],
+        "name": "P29:GPIO5",
+        "number": "15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO6"
+        ],
+        "name": "P31:GPIO6",
+        "number": "16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO13"
+        ],
+        "name": "P33:GPIO13",
+        "number": "17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO19"
+        ],
+        "name": "P35:GPIO19",
+        "number": "18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO26"
+        ],
+        "name": "P37:GPIO26",
+        "number": "19"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P39:GND",
+        "number": "20"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5V"
+        ],
+        "name": "P2:5V",
+        "number": "21"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5V"
+        ],
+        "name": "P4:5V",
+        "number": "22"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P6:GND",
+        "number": "23"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO14/TX"
+        ],
+        "name": "P8:GPIO14/TX",
+        "number": "24"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO15/RX"
+        ],
+        "name": "P10:GPIO15/RX",
+        "number": "25"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO18"
+        ],
+        "name": "P12:GPIO18",
+        "number": "26"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P14:GND",
+        "number": "27"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO23"
+        ],
+        "name": "P16:GPIO23",
+        "number": "28"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO24"
+        ],
+        "name": "P18:GPIO24",
+        "number": "29"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P20:GND",
+        "number": "30"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO25"
+        ],
+        "name": "P22:GPIO25",
+        "number": "31"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO8/CE0"
+        ],
+        "name": "P24:GPIO8/CE0",
+        "number": "32"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO7/CE1"
+        ],
+        "name": "P26:GPIO7/CE1",
+        "number": "33"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO1/ID_SC"
+        ],
+        "name": "P28:GPIO1/ID_SC",
+        "number": "34"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P30:GND",
+        "number": "35"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO12"
+        ],
+        "name": "P32:GPIO12",
+        "number": "36"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P34:GND",
+        "number": "37"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO16"
+        ],
+        "name": "P36:GPIO16",
+        "number": "38"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO20"
+        ],
+        "name": "P38:GPIO20",
+        "number": "39"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO21"
+        ],
+        "name": "P40:GPIO21",
+        "number": "40"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T12:45:45Z",
+    "generatedBodySha256": "0bf64889f4f537e17ff78c077d335e742d7889f4e0feee43a32fa3337bcd3774",
+    "importedFrom": "Sindri",
+    "physicalStatus": "PHYSICAL_UNVERIFIED",
+    "rendering": "IMAGEGEN_BOARD_BODY_WITH_DETERMINISTIC_OFFICIAL_PIN_OVERLAY",
+    "sourceDirectorySha256": "5fb9239c6eeb83f3b933555ca012aef889bcb095eb6bff78b4c53904951ae980",
+    "sources": [
+      {
+        "media_type": "image/png",
+        "original_sha256": "0cd7bce9a056cab17e36f33b980513e87f8892690711bafeb7b8417e1a017200",
+        "page_url": "https://pip-assets.raspberrypi.com/categories/584-raspberry-pi-zero-2-w/documents/RP-008358-DS-1-raspberry-pi-zero-2-w-mechanical-drawing.pdf",
+        "redistribution": "local-only",
+        "resource_url": null,
+        "retrieved_at": "2026-07-22T06:35:29.737344+00:00",
+        "type": "manufacturer-mechanical-drawing-derived"
+      },
+      {
+        "type": "manufacturer-pin-table",
+        "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio-and-the-40-pin-header"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "raspberry-pi.zero-2-wh",
+    "level": "linux-single-board-computer",
+    "lifecycle": "active",
+    "manufacturer": "Raspberry Pi Ltd",
+    "mpn": "Raspberry Pi Zero 2 W with headers",
+    "revision": "1.1.0",
+    "status": "AI_DRAWN_TOP_OFFICIAL_PINS_UNVERIFIED"
+  },
+  "packageSha256": "cb0c2d9956c68efa5bae6db4ae05d17d93962519f3b86440dfcc8776021ab40d",
+  "physical": {
+    "footprint": null,
+    "geometry": null,
+    "model": null,
+    "package": "65x30mm-board-with-40-pin-header"
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "P1:3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.12,
+        "y": 0.115
+      },
+      {
+        "pin": "P3:GPIO2/SDA",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.15684211,
+        "y": 0.115
+      },
+      {
+        "pin": "P5:GPIO3/SCL",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.19368421,
+        "y": 0.115
+      },
+      {
+        "pin": "P7:GPIO4",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.23052632,
+        "y": 0.115
+      },
+      {
+        "pin": "P9:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.26736842,
+        "y": 0.115
+      },
+      {
+        "pin": "P11:GPIO17",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.30421053,
+        "y": 0.115
+      },
+      {
+        "pin": "P13:GPIO27",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.34105263,
+        "y": 0.115
+      },
+      {
+        "pin": "P15:GPIO22",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.37789474,
+        "y": 0.115
+      },
+      {
+        "pin": "P17:3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.41473684,
+        "y": 0.115
+      },
+      {
+        "pin": "P19:GPIO10/MOSI",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.45157895,
+        "y": 0.115
+      },
+      {
+        "pin": "P21:GPIO9/MISO",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.48842105,
+        "y": 0.115
+      },
+      {
+        "pin": "P23:GPIO11/SCLK",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.52526316,
+        "y": 0.115
+      },
+      {
+        "pin": "P25:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.56210526,
+        "y": 0.115
+      },
+      {
+        "pin": "P27:GPIO0/ID_SD",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.59894737,
+        "y": 0.115
+      },
+      {
+        "pin": "P29:GPIO5",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.63578947,
+        "y": 0.115
+      },
+      {
+        "pin": "P31:GPIO6",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.67263158,
+        "y": 0.115
+      },
+      {
+        "pin": "P33:GPIO13",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.70947368,
+        "y": 0.115
+      },
+      {
+        "pin": "P35:GPIO19",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.74631579,
+        "y": 0.115
+      },
+      {
+        "pin": "P37:GPIO26",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.78315789,
+        "y": 0.115
+      },
+      {
+        "pin": "P39:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.82,
+        "y": 0.115
+      },
+      {
+        "pin": "P2:5V",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.12,
+        "y": 0.205
+      },
+      {
+        "pin": "P4:5V",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.15684211,
+        "y": 0.205
+      },
+      {
+        "pin": "P6:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.19368421,
+        "y": 0.205
+      },
+      {
+        "pin": "P8:GPIO14/TX",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.23052632,
+        "y": 0.205
+      },
+      {
+        "pin": "P10:GPIO15/RX",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.26736842,
+        "y": 0.205
+      },
+      {
+        "pin": "P12:GPIO18",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.30421053,
+        "y": 0.205
+      },
+      {
+        "pin": "P14:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.34105263,
+        "y": 0.205
+      },
+      {
+        "pin": "P16:GPIO23",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.37789474,
+        "y": 0.205
+      },
+      {
+        "pin": "P18:GPIO24",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.41473684,
+        "y": 0.205
+      },
+      {
+        "pin": "P20:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.45157895,
+        "y": 0.205
+      },
+      {
+        "pin": "P22:GPIO25",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.48842105,
+        "y": 0.205
+      },
+      {
+        "pin": "P24:GPIO8/CE0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.52526316,
+        "y": 0.205
+      },
+      {
+        "pin": "P26:GPIO7/CE1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.56210526,
+        "y": 0.205
+      },
+      {
+        "pin": "P28:GPIO1/ID_SC",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.59894737,
+        "y": 0.205
+      },
+      {
+        "pin": "P30:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.63578947,
+        "y": 0.205
+      },
+      {
+        "pin": "P32:GPIO12",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.67263158,
+        "y": 0.205
+      },
+      {
+        "pin": "P34:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.70947368,
+        "y": 0.205
+      },
+      {
+        "pin": "P36:GPIO16",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.74631579,
+        "y": 0.205
+      },
+      {
+        "pin": "P38:GPIO20",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.78315789,
+        "y": 0.205
+      },
+      {
+        "pin": "P40:GPIO21",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.82,
+        "y": 0.205
+      }
+    ],
+    "appearance": "top-view.png",
+    "appearanceSha256": "0bf64889f4f537e17ff78c077d335e742d7889f4e0feee43a32fa3337bcd3774",
+    "coordinateStatus": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+    "style": "circuitlab-ai-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top-view.png",
+        "view": "ai-drawn-orthographic-top"
+      }
+    ]
+  }
+}

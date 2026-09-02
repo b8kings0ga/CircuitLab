@@ -260,7 +260,15 @@ def main() -> None:
     if registry is not None:
         xiao_result["install"] = registry.install(xiao_package, xiao_files)["status"]
     results.append(xiao_result)
-    catalog_rows = [{"ref": row["ref"], "pins": row["pins"]} for row in results]
+    latest_rows = {}
+    for package_path in output.glob("*/*/component-package.json"):
+        package = json.loads(package_path.read_text(encoding="utf-8"))
+        identity = package["identity"]
+        ref = f'{identity["assetId"]}@{identity["revision"]}'
+        current = latest_rows.get(identity["assetId"])
+        if current is None or identity["revision"] > current["revision"]:
+            latest_rows[identity["assetId"]] = {"ref": ref, "revision": identity["revision"], "pins": len(package.get("electrical", {}).get("pins", []))}
+    catalog_rows = [{"ref": row["ref"], "pins": row["pins"]} for row in sorted(latest_rows.values(), key=lambda item: item["ref"])]
     (output / "index.json").write_text(json.dumps({"schema": "circuitlab-catalog/v1", "components": catalog_rows}, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps({"output": str(output), "components": results}, ensure_ascii=False, indent=2))
 

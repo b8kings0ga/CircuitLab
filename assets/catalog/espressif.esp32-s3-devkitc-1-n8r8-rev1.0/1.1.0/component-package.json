@@ -1,0 +1,772 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "power",
+        "functions": [
+          "3.3",
+          "V",
+          "power"
+        ],
+        "name": "J1.1:3V3",
+        "number": "J1.1"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3.3",
+          "V",
+          "power"
+        ],
+        "name": "J1.2:3V3",
+        "number": "J1.2"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "EN",
+          "reset"
+        ],
+        "name": "J1.3:RST",
+        "number": "J1.3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH3",
+          "TOUCH4"
+        ],
+        "name": "J1.4:GPIO4",
+        "number": "J1.4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH4",
+          "TOUCH5"
+        ],
+        "name": "J1.5:GPIO5",
+        "number": "J1.5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH5",
+          "TOUCH6"
+        ],
+        "name": "J1.6:GPIO6",
+        "number": "J1.6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH6",
+          "TOUCH7"
+        ],
+        "name": "J1.7:GPIO7",
+        "number": "J1.7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC2_CH4",
+          "TOUCH15"
+        ],
+        "name": "J1.8:GPIO15",
+        "number": "J1.8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC2_CH5"
+        ],
+        "name": "J1.9:GPIO16",
+        "number": "J1.9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "U1TXD",
+          "ADC2_CH6"
+        ],
+        "name": "J1.10:GPIO17",
+        "number": "J1.10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "U1RXD",
+          "ADC2_CH7"
+        ],
+        "name": "J1.11:GPIO18",
+        "number": "J1.11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH7",
+          "TOUCH8"
+        ],
+        "name": "J1.12:GPIO8",
+        "number": "J1.12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH2",
+          "TOUCH3"
+        ],
+        "name": "J1.13:GPIO3",
+        "number": "J1.13"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO46"
+        ],
+        "name": "J1.14:GPIO46",
+        "number": "J1.14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPIHD",
+          "ADC1_CH8"
+        ],
+        "name": "J1.15:GPIO9",
+        "number": "J1.15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPICS0",
+          "ADC1_CH9"
+        ],
+        "name": "J1.16:GPIO10",
+        "number": "J1.16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPID",
+          "ADC2_CH0"
+        ],
+        "name": "J1.17:GPIO11",
+        "number": "J1.17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPICLK",
+          "ADC2_CH1"
+        ],
+        "name": "J1.18:GPIO12",
+        "number": "J1.18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPIQ",
+          "ADC2_CH2"
+        ],
+        "name": "J1.19:GPIO13",
+        "number": "J1.19"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "FSPIWP",
+          "ADC2_CH3"
+        ],
+        "name": "J1.20:GPIO14",
+        "number": "J1.20"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "5",
+          "V",
+          "power"
+        ],
+        "name": "J1.21:5V",
+        "number": "J1.21"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "ground"
+        ],
+        "name": "J1.22:GND",
+        "number": "J1.22"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "ground"
+        ],
+        "name": "J3.1:GND",
+        "number": "J3.1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "U0TXD"
+        ],
+        "name": "J3.2:GPIO43",
+        "number": "J3.2"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "U0RXD"
+        ],
+        "name": "J3.3:GPIO44",
+        "number": "J3.3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH0",
+          "TOUCH1"
+        ],
+        "name": "J3.4:GPIO1",
+        "number": "J3.4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "ADC1_CH1",
+          "TOUCH2"
+        ],
+        "name": "J3.5:GPIO2",
+        "number": "J3.5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "MTMS"
+        ],
+        "name": "J3.6:GPIO42",
+        "number": "J3.6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "MTDI"
+        ],
+        "name": "J3.7:GPIO41",
+        "number": "J3.7"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "MTDO"
+        ],
+        "name": "J3.8:GPIO40",
+        "number": "J3.8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "MTCK"
+        ],
+        "name": "J3.9:GPIO39",
+        "number": "J3.9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "RGB",
+          "LED",
+          "FSPIWP"
+        ],
+        "name": "J3.10:GPIO38",
+        "number": "J3.10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "SPIDQS",
+          "FSPIQ"
+        ],
+        "name": "J3.11:GPIO37",
+        "number": "J3.11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "SPIIO7",
+          "FSPICLK"
+        ],
+        "name": "J3.12:GPIO36",
+        "number": "J3.12"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "SPIIO6",
+          "FSPID"
+        ],
+        "name": "J3.13:GPIO35",
+        "number": "J3.13"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "BOOT"
+        ],
+        "name": "J3.14:GPIO0",
+        "number": "J3.14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO45"
+        ],
+        "name": "J3.15:GPIO45",
+        "number": "J3.15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "SPICLK_N"
+        ],
+        "name": "J3.16:GPIO48",
+        "number": "J3.16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "SPICLK_P"
+        ],
+        "name": "J3.17:GPIO47",
+        "number": "J3.17"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GPIO21"
+        ],
+        "name": "J3.18:GPIO21",
+        "number": "J3.18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "USB_D+",
+          "ADC2_CH9"
+        ],
+        "name": "J3.19:GPIO20",
+        "number": "J3.19"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "USB_D-",
+          "ADC2_CH8"
+        ],
+        "name": "J3.20:GPIO19",
+        "number": "J3.20"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "ground"
+        ],
+        "name": "J3.21:GND",
+        "number": "J3.21"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "ground"
+        ],
+        "name": "J3.22:GND",
+        "number": "J3.22"
+      }
+    ],
+    "status": "UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T12:45:45Z",
+    "generatedBodySha256": "31d375e129c4df4b56bf362c1ebe0a5ac01a4b7a798b4751b406a2d69419dc8b",
+    "importedFrom": "Sindri",
+    "physicalStatus": "PHYSICAL_UNVERIFIED",
+    "rendering": "IMAGEGEN_BOARD_BODY_WITH_DETERMINISTIC_OFFICIAL_PIN_OVERLAY",
+    "sourceDirectorySha256": "caf5d04bdf4c8466a87c35555c27c1ff639d555909f7f1761909855a74a20513",
+    "sources": [
+      {
+        "media_type": "image/jpeg",
+        "original_sha256": "18d029d28cefe0f84d4602cb851ed1723bc623e61a6a1ce9550dc1460c3fda74",
+        "page_url": "https://www.adafruit.com/product/5336",
+        "redistribution": "local-only",
+        "resource_url": "https://cdn-shop.adafruit.com/970x728/5336-02.jpg",
+        "retrieved_at": "2026-07-22T09:05:48.448747+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "revision_evidence": "RGB@IO48 silkscreen; reseller description states RGB LED GPIO48",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "orthographic-top"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "primary"
+      },
+      {
+        "media_type": "image/jpeg",
+        "original_sha256": "51cab14bc58395b88347d8d94374663b34c6f428ab7af6e450ba53e04525d677",
+        "page_url": "https://www.adafruit.com/product/5336",
+        "redistribution": "local-only",
+        "resource_url": "https://cdn-shop.adafruit.com/970x728/5336-00.jpg",
+        "retrieved_at": "2026-07-22T09:05:50.303316+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "revision_evidence": "RGB@IO48 silkscreen",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "isometric-front"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "isometric"
+      },
+      {
+        "media_type": "image/jpeg",
+        "original_sha256": "2ded476074598b84692b2faea794f3fdfdb98f3fce5dcc75e1a93fc0b56596ca",
+        "page_url": "https://www.adafruit.com/product/5336",
+        "redistribution": "local-only",
+        "resource_url": "https://cdn-shop.adafruit.com/970x728/5336-03.jpg",
+        "retrieved_at": "2026-07-22T09:05:52.206561+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "revision_evidence": "ESP32-S3-DevKitC-1 v1.0 backside silkscreen",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "orthographic-bottom"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "bottom"
+      },
+      {
+        "media_type": "image/jpeg",
+        "original_sha256": "2a7f76f1f4ebe5c5558950f788a193258f21c2d9bb376a1556f6b75ff853ce13",
+        "page_url": "https://www.adafruit.com/product/5336",
+        "redistribution": "local-only",
+        "resource_url": "https://cdn-shop.adafruit.com/970x728/5336-01.jpg",
+        "retrieved_at": "2026-07-22T09:05:53.524753+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "revision_evidence": "dual Micro-USB initial PCB revision",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "connector-front"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "connector-front"
+      },
+      {
+        "type": "manufacturer-pin-table",
+        "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.0.html"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "espressif.esp32-s3-devkitc-1-n8r8-rev1.0",
+    "level": "development-board",
+    "lifecycle": "unknown",
+    "manufacturer": "Espressif Systems",
+    "mpn": "ESP32-S3-DevKitC-1-N8R8 rev1.0",
+    "revision": "1.1.0",
+    "status": "AI_DRAWN_TOP_OFFICIAL_PINS_UNVERIFIED"
+  },
+  "packageSha256": "55a69bd95060159b9269733f209419968fa555bf7ecd3b315e1e9e28e849cff2",
+  "physical": {
+    "footprint": null,
+    "geometry": null,
+    "model": null,
+    "package": "dual-row-dev-board"
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "J1.1:3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.14,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.2:3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.1747619,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.3:RST",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.20952381,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.4:GPIO4",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.24428571,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.5:GPIO5",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.27904762,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.6:GPIO6",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.31380952,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.7:GPIO7",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.34857143,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.8:GPIO15",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.38333333,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.9:GPIO16",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.41809524,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.10:GPIO17",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.45285714,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.11:GPIO18",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.48761905,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.12:GPIO8",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.52238095,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.13:GPIO3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.55714286,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.14:GPIO46",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.59190476,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.15:GPIO9",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.62666667,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.16:GPIO10",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.66142857,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.17:GPIO11",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.69619048,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.18:GPIO12",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.73095238,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.19:GPIO13",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.76571429,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.20:GPIO14",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.80047619,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.21:5V",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.8352381,
+        "y": 0.105
+      },
+      {
+        "pin": "J1.22:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.87,
+        "y": 0.105
+      },
+      {
+        "pin": "J3.1:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.14,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.2:GPIO43",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.1747619,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.3:GPIO44",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.20952381,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.4:GPIO1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.24428571,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.5:GPIO2",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.27904762,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.6:GPIO42",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.31380952,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.7:GPIO41",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.34857143,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.8:GPIO40",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.38333333,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.9:GPIO39",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.41809524,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.10:GPIO38",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.45285714,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.11:GPIO37",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.48761905,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.12:GPIO36",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.52238095,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.13:GPIO35",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.55714286,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.14:GPIO0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.59190476,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.15:GPIO45",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.62666667,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.16:GPIO48",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.66142857,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.17:GPIO47",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.69619048,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.18:GPIO21",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.73095238,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.19:GPIO20",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.76571429,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.20:GPIO19",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.80047619,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.21:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.8352381,
+        "y": 0.895
+      },
+      {
+        "pin": "J3.22:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.87,
+        "y": 0.895
+      }
+    ],
+    "appearance": "top-view.png",
+    "appearanceSha256": "31d375e129c4df4b56bf362c1ebe0a5ac01a4b7a798b4751b406a2d69419dc8b",
+    "coordinateStatus": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+    "style": "circuitlab-ai-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top-view.png",
+        "view": "ai-drawn-orthographic-top"
+      }
+    ]
+  }
+}

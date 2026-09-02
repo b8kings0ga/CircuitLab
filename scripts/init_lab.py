@@ -53,6 +53,7 @@ def main() -> None:
 
     if not args.skip_catalog:
         subprocess.run([sys.executable, str(SKILL_ROOT / "scripts" / "generate_builtin_catalog.py"), "--install"], check=True, stdout=subprocess.DEVNULL)
+        subprocess.run([sys.executable, str(SKILL_ROOT / "scripts" / "hardware_pipeline.py"), "install"], check=True, stdout=subprocess.DEVNULL)
 
     print(target)
 

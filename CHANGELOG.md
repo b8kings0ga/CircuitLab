@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 — 2026-09-03
+
+- Replace photo galleries in the latest Board revisions with one generated true-top board view.
+- Add deterministic interactive overlays for every documented usable point: 28 Feather, 30 Nano 33 IoT, 44 on each ESP32-S3 DevKitC, 40 on Pi Zero 2 WH, and 40 on Pico W.
+- Add generated concept top views for the two Sindri custom boards while keeping them explicitly physical-unverified.
+- Show semantic colored point rings directly over Board artwork with hover labels and the complete pin table below.
+- Keep ImageGen responsible only for the board-body illustration; electrical identity and coordinates remain sourced from official or project pin maps.
+
 ## 0.7.0 — 2026-09-02
 
 - Add a repeatable official-evidence → normalized specification → original top-view → touchpoint validation → immutable install workflow.

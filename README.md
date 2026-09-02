@@ -11,6 +11,7 @@ It is both a standalone application template and a Codex Skill. The repository h
 - Immutable JSON component registry with rebuildable SQLite indexes.
 - Latest-revision search for exact chip MPNs and exact board/module products.
 - Fail-closed official image discovery plus deterministic original SVG top views derived from documented dimensions and pin tables.
+- A single generated orthographic Board view with every documented usable point overlaid; product-photo and multi-angle galleries are not used for latest Board revisions.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.
@@ -39,6 +40,7 @@ Search the hardware catalog and generate the redistributable starter views:
 python3 scripts/component_assets.py search BME280
 python3 scripts/component_assets.py search ESP32-S3
 python3 scripts/generate_builtin_catalog.py --install
+python3 scripts/generate_board_topviews.py --install
 ```
 
 Run the complete evidence-to-hardware workflow. Online capture is explicit; without

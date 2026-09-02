@@ -26,6 +26,7 @@ APPROVED_DOMAINS = {
     "learn.adafruit.com", "www.adafruit.com", "cdn-learn.adafruit.com", "cdn-shop.adafruit.com",
     "www.orangepi.org", "orangepi.org", "www.waveshare.com", "files.waveshare.com",
     "wiki.seeedstudio.com", "files.seeedstudio.com", "docs.espressif.com",
+    "docs.arduino.cc", "www.raspberrypi.com", "raspberrypi.com", "datasheets.raspberrypi.com",
 }
 MAX_CAPTURE_BYTES = 4 * 1024 * 1024
 
@@ -78,6 +79,8 @@ def capture_sources(data_root: Path, *, online: bool) -> list[dict[str, Any]]:
         asset_dir = cache_root / identity["assetId"] / identity["revision"]
         for index, source in enumerate(package.get("evidence", {}).get("sources", [])):
             url = str(source.get("url", ""))
+            if not url:
+                continue
             snapshot_path = asset_dir / f"source-{index + 1}.json"
             body_path = asset_dir / f"source-{index + 1}.body"
             if not official_url(url):
@@ -139,8 +142,9 @@ def validate_catalog() -> list[dict[str, Any]]:
         if len(pins) != len(anchors) or not pins:
             raise ValueError(f"pin/anchor coverage mismatch for {reference}: {len(pins)} pins, {len(anchors)} anchors")
         for source in package.get("evidence", {}).get("sources", []):
-            if not official_url(str(source.get("url", ""))):
-                raise ValueError(f"non-official source in {reference}: {source.get('url')}")
+            source_url = source.get("url")
+            if source_url and not official_url(str(source_url)):
+                raise ValueError(f"non-official source in {reference}: {source_url}")
         style = visual.get("style", "legacy-board-style")
         results.append({"ref": reference, "status": "VALID", "pins": len(pins), "appearanceSha256": digest, "style": style})
     return results

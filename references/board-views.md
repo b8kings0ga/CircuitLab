@@ -27,3 +27,9 @@ python3 scripts/generate_board_view.py \
 ```
 
 The generated artwork is a CircuitLab-authored technical rendering. Manufacturer photos and design downloads are retained as evidence subject to their own licenses; they are not embedded into the generated SVG.
+
+## Photo-backed redraws
+
+When a board needs a more recognizable visual body, ImageGen may redraw the reviewed manufacturer image into a zero-perspective orthographic board-only layer. Place the selected working output under `assets/board-art`, then run `scripts/generate_board_topviews.py`. The script copies the final body into a new immutable catalog revision, removes the multi-angle gallery from that revision, and binds every reviewed electrical pin to a normalized visual anchor. The working copy may then be discarded; the catalog revision remains the distributable source of truth.
+
+ImageGen never supplies pin names, electrical functions, or trusted coordinates. Those come only from the manufacturer pin table or an explicit project-owned pin map. Generated bodies and their alignment remain `PHYSICAL_UNVERIFIED` until compared with the exact physical board revision.

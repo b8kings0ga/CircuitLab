@@ -1,0 +1,648 @@
+{
+  "electrical": {
+    "pins": [
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP0"
+        ],
+        "name": "P1:GP0",
+        "number": "1"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP1"
+        ],
+        "name": "P2:GP1",
+        "number": "2"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P3:GND",
+        "number": "3"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP2"
+        ],
+        "name": "P4:GP2",
+        "number": "4"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP3"
+        ],
+        "name": "P5:GP3",
+        "number": "5"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP4"
+        ],
+        "name": "P6:GP4",
+        "number": "6"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP5"
+        ],
+        "name": "P7:GP5",
+        "number": "7"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P8:GND",
+        "number": "8"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP6"
+        ],
+        "name": "P9:GP6",
+        "number": "9"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP7"
+        ],
+        "name": "P10:GP7",
+        "number": "10"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP8"
+        ],
+        "name": "P11:GP8",
+        "number": "11"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP9"
+        ],
+        "name": "P12:GP9",
+        "number": "12"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P13:GND",
+        "number": "13"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP10"
+        ],
+        "name": "P14:GP10",
+        "number": "14"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP11"
+        ],
+        "name": "P15:GP11",
+        "number": "15"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP12"
+        ],
+        "name": "P16:GP12",
+        "number": "16"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP13"
+        ],
+        "name": "P17:GP13",
+        "number": "17"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P18:GND",
+        "number": "18"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP14"
+        ],
+        "name": "P19:GP14",
+        "number": "19"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP15"
+        ],
+        "name": "P20:GP15",
+        "number": "20"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "VBUS"
+        ],
+        "name": "P40:VBUS",
+        "number": "21"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "VSYS"
+        ],
+        "name": "P39:VSYS",
+        "number": "22"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P38:GND",
+        "number": "23"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V3_EN"
+        ],
+        "name": "P37:3V3_EN",
+        "number": "24"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "3V3"
+        ],
+        "name": "P36:3V3",
+        "number": "25"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "ADC_VREF"
+        ],
+        "name": "P35:ADC_VREF",
+        "number": "26"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP28/ADC2"
+        ],
+        "name": "P34:GP28/ADC2",
+        "number": "27"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "AGND"
+        ],
+        "name": "P33:AGND",
+        "number": "28"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP27/ADC1"
+        ],
+        "name": "P32:GP27/ADC1",
+        "number": "29"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP26/ADC0"
+        ],
+        "name": "P31:GP26/ADC0",
+        "number": "30"
+      },
+      {
+        "direction": "input",
+        "functions": [
+          "RUN"
+        ],
+        "name": "P30:RUN",
+        "number": "31"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP22"
+        ],
+        "name": "P29:GP22",
+        "number": "32"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P28:GND",
+        "number": "33"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP21"
+        ],
+        "name": "P27:GP21",
+        "number": "34"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP20"
+        ],
+        "name": "P26:GP20",
+        "number": "35"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP19"
+        ],
+        "name": "P25:GP19",
+        "number": "36"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP18"
+        ],
+        "name": "P24:GP18",
+        "number": "37"
+      },
+      {
+        "direction": "power",
+        "functions": [
+          "GND"
+        ],
+        "name": "P23:GND",
+        "number": "38"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP17"
+        ],
+        "name": "P22:GP17",
+        "number": "39"
+      },
+      {
+        "direction": "bidirectional",
+        "functions": [
+          "GP16"
+        ],
+        "name": "P21:GP16",
+        "number": "40"
+      }
+    ],
+    "status": "OFFICIAL_PIN_TABLE_DERIVED_UNVERIFIED"
+  },
+  "evidence": {
+    "capturedAt": "2026-09-02T12:45:45Z",
+    "generatedBodySha256": "d998a65731a9f0ad1e20994a76fa67e2b77122677ea742ed4c014bccdb989ba2",
+    "importedFrom": "Sindri",
+    "physicalStatus": "PHYSICAL_UNVERIFIED",
+    "rendering": "IMAGEGEN_BOARD_BODY_WITH_DETERMINISTIC_OFFICIAL_PIN_OVERLAY",
+    "sourceDirectorySha256": "7ac0be1d2cba074964805a7f068c5680953085ae527f7d6760b576cc9e23fb19",
+    "sources": [
+      {
+        "media_type": "image/webp",
+        "original_sha256": "eb6776b01f9d6ad2897607b160ab3c4d32b16cf111656e4e2b982b2f0ffdfc0e",
+        "page_url": "https://argon40.com/en-ca/products/copy-of-raspberry-pi-pico-w-board",
+        "redistribution": "local-only",
+        "resource_url": "https://argon40.com/cdn/shop/products/PICO_W_01.jpg?v=1655899038&width=1920",
+        "retrieved_at": "2026-07-22T08:45:25.401254+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "revision_evidence": "Pico W 2022 top silkscreen and wireless shield",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "orthographic-top"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "primary"
+      },
+      {
+        "media_type": "image/jpeg",
+        "original_sha256": "5eecd473547da7878e9d1c78b4992077640af8152b2ebef8fb055e0c1949e364",
+        "page_url": "https://www.raspberrystore.nl/PrestaShop/nl/raspberry-pi-pico/439-raspberry-pi-pico-w-met-wifi-zonder-headers-5056561803173.html",
+        "redistribution": "local-only",
+        "resource_url": "https://www.raspberrystore.nl/PrestaShop/1402-large_default/raspberry-pi-pico-w-met-wifi-zonder-headers.jpg",
+        "retrieved_at": "2026-07-22T08:45:27.064931+00:00",
+        "selection": {
+          "image_role": "product",
+          "review": "pixel-inspected",
+          "subject_level": "development-board",
+          "subject_match": "exact",
+          "view": "isometric-front"
+        },
+        "type": "specialist-reseller-product-image",
+        "view_name": "isometric"
+      },
+      {
+        "type": "manufacturer-pin-table",
+        "url": "https://datasheets.raspberrypi.com/picow/PicoW-A4-Pinout.pdf"
+      }
+    ]
+  },
+  "identity": {
+    "assetId": "raspberry-pi.pico-w-sc0918",
+    "level": "development-board",
+    "lifecycle": "active",
+    "manufacturer": "Raspberry Pi Ltd",
+    "mpn": "SC0918",
+    "revision": "1.1.0",
+    "status": "AI_DRAWN_TOP_OFFICIAL_PINS_UNVERIFIED"
+  },
+  "packageSha256": "69e0fbf107c7a95bb87e4ed62f352c07802c924548c31826652e557229d8e612",
+  "physical": {
+    "footprint": null,
+    "geometry": null,
+    "model": null,
+    "package": "raspberry-pi-pico"
+  },
+  "schema": "component-package/v1",
+  "visual": {
+    "anchors": [
+      {
+        "pin": "P1:GP0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.105
+      },
+      {
+        "pin": "P2:GP1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.14657895
+      },
+      {
+        "pin": "P3:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.18815789
+      },
+      {
+        "pin": "P4:GP2",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.22973684
+      },
+      {
+        "pin": "P5:GP3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.27131579
+      },
+      {
+        "pin": "P6:GP4",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.31289474
+      },
+      {
+        "pin": "P7:GP5",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.35447368
+      },
+      {
+        "pin": "P8:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.39605263
+      },
+      {
+        "pin": "P9:GP6",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.43763158
+      },
+      {
+        "pin": "P10:GP7",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.47921053
+      },
+      {
+        "pin": "P11:GP8",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.52078947
+      },
+      {
+        "pin": "P12:GP9",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.56236842
+      },
+      {
+        "pin": "P13:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.60394737
+      },
+      {
+        "pin": "P14:GP10",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.64552632
+      },
+      {
+        "pin": "P15:GP11",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.68710526
+      },
+      {
+        "pin": "P16:GP12",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.72868421
+      },
+      {
+        "pin": "P17:GP13",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.77026316
+      },
+      {
+        "pin": "P18:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.81184211
+      },
+      {
+        "pin": "P19:GP14",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.85342105
+      },
+      {
+        "pin": "P20:GP15",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.255,
+        "y": 0.895
+      },
+      {
+        "pin": "P40:VBUS",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.105
+      },
+      {
+        "pin": "P39:VSYS",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.14657895
+      },
+      {
+        "pin": "P38:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.18815789
+      },
+      {
+        "pin": "P37:3V3_EN",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.22973684
+      },
+      {
+        "pin": "P36:3V3",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.27131579
+      },
+      {
+        "pin": "P35:ADC_VREF",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.31289474
+      },
+      {
+        "pin": "P34:GP28/ADC2",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.35447368
+      },
+      {
+        "pin": "P33:AGND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.39605263
+      },
+      {
+        "pin": "P32:GP27/ADC1",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.43763158
+      },
+      {
+        "pin": "P31:GP26/ADC0",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.47921053
+      },
+      {
+        "pin": "P30:RUN",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.52078947
+      },
+      {
+        "pin": "P29:GP22",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.56236842
+      },
+      {
+        "pin": "P28:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.60394737
+      },
+      {
+        "pin": "P27:GP21",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.64552632
+      },
+      {
+        "pin": "P26:GP20",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.68710526
+      },
+      {
+        "pin": "P25:GP19",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.72868421
+      },
+      {
+        "pin": "P24:GP18",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.77026316
+      },
+      {
+        "pin": "P23:GND",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.81184211
+      },
+      {
+        "pin": "P22:GP17",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.85342105
+      },
+      {
+        "pin": "P21:GP16",
+        "status": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+        "x": 0.745,
+        "y": 0.895
+      }
+    ],
+    "appearance": "top-view.png",
+    "appearanceSha256": "d998a65731a9f0ad1e20994a76fa67e2b77122677ea742ed4c014bccdb989ba2",
+    "coordinateStatus": "OFFICIAL_PIN_TABLE_VISUAL_ALIGNMENT_UNVERIFIED",
+    "style": "circuitlab-ai-top-style/v1",
+    "views": [
+      {
+        "name": "interactive-top",
+        "path": "top-view.png",
+        "view": "ai-drawn-orthographic-top"
+      }
+    ]
+  }
+}

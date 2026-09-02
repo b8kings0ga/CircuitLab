@@ -146,6 +146,8 @@
     ref.textContent = reference;
     const gallery = document.createElement("div");
     gallery.className = "component-gallery";
+    const isBoard = ["development-board", "linux-single-board-computer", "controller-board", "motor-driver-board"].includes(component.identity.level);
+    if (isBoard) gallery.classList.add("board-gallery");
     const visualRows = [];
     if (component.visual?.appearance) visualRows.push({ name: "primary", path: component.visual.appearance, view: "primary" });
     for (const row of component.visual?.views || []) {
@@ -155,13 +157,31 @@
     visualRows.sort((left, right) => viewPriority(left) - viewPriority(right));
     for (const row of visualRows) {
       const figure = document.createElement("figure");
+      if (isBoard) figure.classList.add("board-topview");
+      const visual = document.createElement("div");
+      visual.className = "board-visual";
       const image = document.createElement("img");
       image.loading = "lazy";
       image.alt = `${component.identity.mpn} ${row.view || row.name || "product view"}`;
       image.src = `/api/component-media?ref=${encodeURIComponent(reference)}&file=${encodeURIComponent(row.path)}`;
       const caption = document.createElement("figcaption");
       caption.textContent = row.view || row.name || row.path;
-      figure.append(image, caption); gallery.appendChild(figure);
+      visual.appendChild(image);
+      if (isBoard && row.path === component.visual?.appearance) {
+        for (const anchor of component.visual?.anchors || []) {
+          const marker = document.createElement("span");
+          const upper = String(anchor.pin).toUpperCase();
+          const kind = /GND|AGND/.test(upper) ? "ground" : /3V3|5V|VBUS|VSYS|VIN|BAT|AREF|VREF|24V/.test(upper) ? "power" : /SCL|SCK|CLK/.test(upper) ? "clock" : /SDA|MOSI|MISO|RX|TX|COPI|CIPO/.test(upper) ? "data" : "signal";
+          marker.className = `board-anchor ${kind}`;
+          marker.style.left = `${Number(anchor.x) * 100}%`;
+          marker.style.top = `${Number(anchor.y) * 100}%`;
+          marker.dataset.label = anchor.pin;
+          marker.title = anchor.pin;
+          marker.setAttribute("aria-label", anchor.pin);
+          visual.appendChild(marker);
+        }
+      }
+      figure.append(visual, caption); gallery.appendChild(figure);
     }
     const stats = document.createElement("div");
     stats.className = "component-stats";
