@@ -1,5 +1,5 @@
 interface:
   display_name: "CircuitLab"
-  short_description: "Build circuits, fixtures, and software HIL"
+  short_description: "Acquire MCU, sensor, and support IC assets"
   brand_color: "#6DFF9D"
-  default_prompt: "Use $circuitlab to build, inspect, validate, or operate a local circuit-development workspace."
+  default_prompt: "Use $circuitlab to acquire and inspect exact packaged MCU, SoC, sensor, and support-IC assets in a local circuit-development workspace."

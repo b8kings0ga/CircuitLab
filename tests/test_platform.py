@@ -16,7 +16,7 @@ from circuitlab_platform import COMPONENT_SCHEMA, HIL_SCHEMA, ComponentRegistry,
 def component() -> dict:
     return {
         "schema": COMPONENT_SCHEMA,
-        "identity": {"assetId": "circuitlab.test-board", "revision": "1.0.0", "manufacturer": "CircuitLab", "mpn": "TEST-BOARD", "level": "development-board", "status": "SOFTWARE_VERIFIED"},
+        "identity": {"assetId": "circuitlab.test-chip", "revision": "1.0.0", "manufacturer": "CircuitLab", "mpn": "TEST-CHIP", "level": "microcontroller", "status": "SOFTWARE_VERIFIED"},
         "electrical": {"status": "VERIFIED", "pins": [{"name": "D0", "number": "1", "direction": "bidirectional"}, {"name": "GND", "number": "2", "direction": "power"}]},
         "visual": {"appearanceSha256": "a" * 64, "coordinateStatus": "FOOTPRINT_DERIVED", "anchors": [{"pin": "D0", "x": 0.2, "y": 0.2}, {"pin": "GND", "x": 0.2, "y": 0.8}]},
         "physical": {"package": "test"},
@@ -47,7 +47,7 @@ class CircuitLabPlatformTests(unittest.TestCase):
     def test_component_revision_is_immutable_and_searchable(self) -> None:
         self.assertEqual(self.registry.install(component())["status"], "installed")
         self.assertEqual(self.registry.install(component())["status"], "unchanged")
-        self.assertEqual(self.registry.list("TEST-BOARD")[0]["ref"], "circuitlab.test-board@1.0.0")
+        self.assertEqual(self.registry.list("TEST-CHIP", scope="chips")[0]["ref"], "circuitlab.test-chip@1.0.0")
         changed = component(); changed["identity"]["mpn"] = "OTHER"
         with self.assertRaisesRegex(ValueError, "immutable component revision conflicts"):
             self.registry.install(changed)
@@ -59,17 +59,34 @@ class CircuitLabPlatformTests(unittest.TestCase):
 
     def test_component_visual_files_are_allowlisted(self) -> None:
         self.registry.install(component(), {"appearance.webp": b"image", "board.json": b"{}", "secret.txt": b"secret"})
-        package = self.registry.get("circuitlab.test-board@1.0.0")
+        package = self.registry.get("circuitlab.test-chip@1.0.0")
         package["visual"]["appearance"] = "appearance.webp"
         package["visual"]["geometry"] = "board.json"
         # The immutable package cannot be rewritten, so install the file-bearing visual as a new revision.
         package.pop("procurement", None); package.pop("packageSha256", None)
         package["identity"]["revision"] = "1.0.1"
         self.registry.install(package, {"appearance.webp": b"image", "board.json": b"{}", "secret.txt": b"secret"})
-        self.assertEqual(self.registry.visual_file("circuitlab.test-board@1.0.1", "appearance.webp").read_bytes(), b"image")
-        self.assertEqual(self.registry.visual_file("circuitlab.test-board@1.0.1", "board.json").read_bytes(), b"{}")
+        self.assertEqual(self.registry.visual_file("circuitlab.test-chip@1.0.1", "appearance.webp").read_bytes(), b"image")
+        self.assertEqual(self.registry.visual_file("circuitlab.test-chip@1.0.1", "board.json").read_bytes(), b"{}")
         with self.assertRaises(KeyError):
-            self.registry.visual_file("circuitlab.test-board@1.0.1", "secret.txt")
+            self.registry.visual_file("circuitlab.test-chip@1.0.1", "secret.txt")
+
+    def test_chip_scope_hides_boards_and_returns_latest_revision(self) -> None:
+        self.registry.install(component())
+        next_chip = component(); next_chip["identity"]["revision"] = "1.1.0"
+        self.registry.install(next_chip)
+        board = component(); board["identity"].update({"assetId": "circuitlab.board", "mpn": "DEV-BOARD", "level": "development-board"})
+        board["physical"]["package"] = "assembled-board"
+        self.registry.install(board)
+        visible = self.registry.list(scope="chips", latest_only=True)
+        self.assertEqual([row["ref"] for row in visible], ["circuitlab.test-chip@1.1.0"])
+        self.assertEqual(len(self.registry.list(scope="all")), 3)
+
+    def test_normal_acquisition_rejects_non_chip_package(self) -> None:
+        board = component(); board["identity"].update({"assetId": "circuitlab.board", "mpn": "DEV-BOARD", "level": "development-board"})
+        board["physical"]["package"] = "assembled-board"
+        with self.assertRaisesRegex(ValueError, "chip-only acquisition rejected"):
+            self.registry.install_chip(board)
 
     def test_fixture_emits_complete_unverified_package(self) -> None:
         result = generate_fixture({

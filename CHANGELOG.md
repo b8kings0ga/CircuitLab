@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 — 2026-09-02
+
+- Make packaged chips the default and enforced acquisition scope.
+- Show only the latest revision of MCU/SoC, sensor IC, and support-IC assets in the PWA.
+- Keep board, module, assembly, display, motor, switch, supply, passive, and other historical imports out of the default catalog.
+- Reject non-chip assets from normal API/CLI acquisition and official-media attachment.
+- Retain an explicit all-history audit path without deleting immutable evidence.
+
 ## 0.3.0 — 2026-09-02
 
 - Add deterministic `board-view-spec/v1` to original interactive SVG generation.

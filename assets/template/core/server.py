@@ -273,8 +273,11 @@ class Handler(BaseHTTPRequestHandler):
             self._json({"projects": circuit_platform().projects()})
             return
         if parsed.path == "/api/components":
-            query = parse_qs(parsed.query).get("q", [""])[0]
-            self._json({"components": circuit_platform().registry.list(query)})
+            params = parse_qs(parsed.query)
+            query = params.get("q", [""])[0]
+            scope = params.get("scope", ["chips"])[0]
+            latest = params.get("latest", ["1"])[0] != "0"
+            self._json({"components": circuit_platform().registry.list(query, scope=scope, latest_only=latest), "scope": scope, "latestOnly": latest})
             return
         if parsed.path == "/api/component-media":
             params = parse_qs(parsed.query)
@@ -331,7 +334,7 @@ class Handler(BaseHTTPRequestHandler):
             elif parsed.path == "/api/components/acquire":
                 if payload.get("confirmed") is not True:
                     raise ValueError("component acquisition requires confirmed=true for the exact MPN")
-                self._json(circuit_platform().registry.install(payload.get("package")))
+                self._json(circuit_platform().registry.install_chip(payload.get("package")))
             elif parsed.path == "/api/components/procurement":
                 self._json(circuit_platform().registry.add_procurement_snapshot(payload.get("ref", ""), payload.get("snapshot", {})))
             elif parsed.path == "/api/touchpoints/calibrate":

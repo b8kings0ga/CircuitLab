@@ -12,7 +12,7 @@ from _platform import COMPONENT_SCHEMA, HIL_SCHEMA, ComponentRegistry, HilEngine
 def sample_component() -> dict:
     return {
         "schema": COMPONENT_SCHEMA,
-        "identity": {"assetId": "circuitlab.demo-sensor", "revision": "1.0.0", "manufacturer": "CircuitLab", "mpn": "DEMO-SENSOR", "level": "development-board", "status": "SOFTWARE_VERIFIED"},
+        "identity": {"assetId": "circuitlab.demo-sensor", "revision": "1.0.0", "manufacturer": "CircuitLab", "mpn": "DEMO-SENSOR", "level": "sensor-ic", "status": "SOFTWARE_VERIFIED"},
         "electrical": {"status": "DATASHEET_VERIFIED", "pins": [
             {"name": "VCC", "number": "1", "direction": "power"},
             {"name": "GND", "number": "2", "direction": "power"},
@@ -99,4 +99,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

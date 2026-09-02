@@ -16,7 +16,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
-from _platform import ComponentRegistry, default_data_root
+from _platform import ComponentRegistry, default_data_root, require_chip_package
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -463,6 +463,7 @@ def attach(snapshot_path: Path, reference: str, revision: str, view: str, primar
     registry = ComponentRegistry(data_root / "registry")
     current = registry.get(reference)
     current.pop("procurement", None); current.pop("packageSha256", None)
+    require_chip_package(current)
     if normalize_token(metadata["mpn"]) not in normalize_token(current["identity"]["mpn"]) and normalize_token(current["identity"]["mpn"]) not in normalize_token(metadata["mpn"]):
         raise ValueError("snapshot MPN does not match the component identity")
     current["identity"]["revision"] = revision
@@ -493,7 +494,7 @@ def attach(snapshot_path: Path, reference: str, revision: str, view: str, primar
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Discover and freeze official MCU or development-board images.")
+    parser = argparse.ArgumentParser(description="Discover and freeze official chip-package images for MCU, SoC, sensor, and support IC assets.")
     parser.add_argument("--data", type=Path, default=default_data_root())
     sub = parser.add_subparsers(dest="command", required=True)
     find = sub.add_parser("discover")
@@ -505,7 +506,7 @@ def main() -> None:
     freeze.add_argument("--candidate", required=True); freeze.add_argument("--confirm-exact-mpn", action="store_true")
     add = sub.add_parser("attach")
     add.add_argument("snapshot", type=Path); add.add_argument("--ref", required=True); add.add_argument("--revision", required=True)
-    add.add_argument("--view", required=True, choices=("orthographic-top", "orthographic-bottom", "isometric-front", "product-photo"))
+    add.add_argument("--view", required=True, choices=("package-top", "package-bottom", "package-drawing", "pinout"))
     add.add_argument("--primary", action="store_true"); add.add_argument("--confirm-view", action="store_true")
     sub.add_parser("audit")
     args = parser.parse_args()

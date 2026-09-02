@@ -79,7 +79,7 @@
     <section id="platformShell" class="platform-shell" hidden aria-label="CircuitLab platform">
       <nav class="platform-nav" aria-label="CircuitLab workspaces">
         <button class="active" data-platform-view="projects" type="button">Projects</button>
-        <button data-platform-view="components" type="button">Components</button>
+        <button data-platform-view="components" type="button">Chips</button>
         <button data-platform-view="touchpoints" type="button">Touchpoints</button>
         <button data-platform-view="fixture" type="button">Fixture</button>
         <button data-platform-view="hil" type="button">HIL</button>
@@ -98,7 +98,7 @@
         <section class="platform-view active" data-view="projects">
           <div class="platform-hero">
             <div><span>ACTIVE PROJECT</span><strong id="projectName">Loading</strong><small id="projectSchema"></small></div>
-            <div><span>COMPONENTS</span><strong id="componentCount">0</strong><small>immutable revisions</small></div>
+            <div><span>CHIPS</span><strong id="componentCount">0</strong><small>latest MCU · sensor · IC assets</small></div>
             <div><span>MAXIMUM VOLTAGE</span><strong id="maximumVoltage">24 V</strong><small>low-voltage boundary</small></div>
           </div>
           <div class="platform-card">
@@ -109,13 +109,14 @@
         </section>
 
         <section class="platform-view" data-view="components">
+          <p class="scope-note">CHIPS ONLY · LATEST REVISION · MCU / SOC / SENSOR IC / SUPPORT IC</p>
           <div class="platform-actions">
-            <input id="componentSearch" type="search" placeholder="Search manufacturer, MPN, asset ID">
+            <input id="componentSearch" type="search" placeholder="Search MCU, sensor IC, manufacturer or exact MPN">
             <button id="componentRefresh" type="button">Refresh</button>
           </div>
           <div class="split-workspace">
             <div id="componentList" class="record-list"></div>
-            <article id="componentDetail" class="detail-card empty-state">Select an immutable component revision.</article>
+            <article id="componentDetail" class="detail-card empty-state">Select an immutable chip revision.</article>
           </div>
         </section>
 

@@ -1,7 +1,7 @@
 [project]
 name = "circuitlab"
-version = "0.3.0"
-description = "Portable local-first circuit development, fixture, and software HIL workspace"
+version = "0.4.0"
+description = "Local-first packaged-chip acquisition and circuit development workspace"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

@@ -49,7 +49,7 @@
     platformButton.textContent = "Workbench";
     document.querySelectorAll("[data-platform-view]").forEach(button => button.classList.toggle("active", button.dataset.platformView === view));
     document.querySelectorAll(".platform-view").forEach(panel => panel.classList.toggle("active", panel.dataset.view === view));
-    title.textContent = view[0].toUpperCase() + view.slice(1);
+    title.textContent = view === "components" ? "Chips" : view[0].toUpperCase() + view.slice(1);
     if (view === "components") loadComponents();
     if (view === "reports") loadReports();
   }
@@ -83,13 +83,13 @@
 
   async function loadComponents() {
     const query = encodeURIComponent(document.getElementById("componentSearch").value.trim());
-    const { components } = await request(`/api/components?q=${query}`);
+    const { components } = await request(`/api/components?scope=chips&latest=1&q=${query}`);
     const list = document.getElementById("componentList");
     list.replaceChildren(...components.map(recordButton));
     if (!components.length) {
       const empty = document.createElement("div");
       empty.className = "empty-state";
-      empty.textContent = "No component revisions. Import Sindri assets or acquire an exact MPN with the CircuitLab CLI.";
+      empty.textContent = "No chip assets found. Acquire an exact MCU, SoC, sensor IC, or support IC MPN.";
       list.appendChild(empty);
     }
   }

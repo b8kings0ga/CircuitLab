@@ -17,10 +17,11 @@ from circuitlab_platform import (  # noqa: E402,F401
     ComponentRegistry,
     HilEngine,
     generate_fixture,
+    is_chip_package,
     import_sindri_assets,
+    require_chip_package,
 )
 
 
 def default_data_root() -> Path:
     return Path(os.environ.get("CIRCUITLAB_DATA_DIR", "~/.local/share/circuitlab")).expanduser().resolve()
-

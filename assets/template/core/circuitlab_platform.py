@@ -26,6 +26,17 @@ MAX_VOLTAGE = 24.0
 PHYSICAL_STATUS = "PHYSICAL_UNVERIFIED"
 FABRICATION_STATUS = "GENERATED_UNVERIFIED_DO_NOT_FABRICATE"
 TERMINAL_STATES = {"PASSED", "FAILED", "ABORTED"}
+CHIP_LEVELS = {
+    "integrated-circuit", "analog-ic", "digital-ic", "mixed-signal-ic", "interface-ic",
+    "memory-ic", "power-management-ic", "sensor-ic", "mems-sensor", "environmental-sensor",
+    "six-axis-imu", "isolated-current-sensor", "microcontroller", "wireless-microcontroller",
+    "soc", "wireless-soc", "processor", "fpga", "motor-driver-ic", "differential-line-receiver",
+    "buck-regulator", "ldo-regulator", "safety-latch-logic",
+}
+NON_CHIP_MARKERS = {
+    "board", "module", "assembly", "computer", "display", "panel", "supply", "motor", "switch",
+    "button", "card", "connector", "resistor", "diode", "mosfet", "transistor", "relay", "fixture",
+}
 
 
 def stable_json(value: object) -> str:
@@ -67,6 +78,26 @@ def safe_segment(value: str, label: str) -> str:
 def package_ref(package: dict[str, Any]) -> str:
     identity = package.get("identity", {})
     return f"{identity.get('assetId', '')}@{identity.get('revision', '')}"
+
+
+def is_chip_package(package: dict[str, Any]) -> bool:
+    identity = package.get("identity", {})
+    physical = package.get("physical", {})
+    level = str(identity.get("level", "")).casefold().replace("_", "-")
+    package_name = str(physical.get("package", "")).casefold().replace("_", "-")
+    if level not in CHIP_LEVELS and not level.endswith("-ic"):
+        return False
+    package_words = set(filter(None, package_name.replace("/", "-").split("-")))
+    return not bool(package_words & NON_CHIP_MARKERS)
+
+
+def require_chip_package(package: dict[str, Any]) -> dict[str, Any]:
+    if not is_chip_package(package):
+        identity = package.get("identity", {})
+        raise ValueError(
+            f"chip-only acquisition rejected level {identity.get('level', '')!r} for {identity.get('mpn', '')!r}"
+        )
+    return package
 
 
 def validate_component(package: object) -> dict[str, Any]:
@@ -204,17 +235,41 @@ class ComponentRegistry:
                 )
         return {"status": "installed", "ref": reference, "packageSha256": normalized["packageSha256"]}
 
-    def list(self, query: str = "") -> list[dict[str, Any]]:
+    def list(self, query: str = "", scope: str = "all", latest_only: bool = False) -> list[dict[str, Any]]:
+        if scope not in {"chips", "all"}:
+            raise ValueError("component scope must be chips or all")
         needle = f"%{query.strip()}%"
         with self._connect() as database:
             rows = database.execute(
-                """SELECT ref, manufacturer, mpn, level, status, package_sha256, imported_at
+                """SELECT ref, asset_id, revision, manufacturer, mpn, level, status, package_path, package_sha256, imported_at
                    FROM components
                    WHERE ? = '%%' OR ref LIKE ? OR manufacturer LIKE ? OR mpn LIKE ?
                    ORDER BY manufacturer, mpn, ref""",
                 (needle, needle, needle, needle),
             ).fetchall()
-        return [dict(row) for row in rows]
+        items = []
+        for row in rows:
+            item = dict(row)
+            package = load_json(Path(item["package_path"]))
+            item["scope"] = "chip" if is_chip_package(package) else "history"
+            if scope == "chips" and item["scope"] != "chip":
+                continue
+            items.append(item)
+        if latest_only:
+            latest: dict[str, dict[str, Any]] = {}
+            for item in items:
+                current = latest.get(item["asset_id"])
+                if current is None or item["revision"] > current["revision"]:
+                    latest[item["asset_id"]] = item
+            items = sorted(latest.values(), key=lambda item: (item["manufacturer"], item["mpn"], item["ref"]))
+        for item in items:
+            item.pop("package_path", None)
+            item.pop("asset_id", None)
+            item.pop("revision", None)
+        return items
+
+    def install_chip(self, package: dict[str, Any], files: dict[str, bytes] | None = None) -> dict[str, Any]:
+        return self.install(require_chip_package(package), files)
 
     def get(self, reference: str) -> dict[str, Any]:
         path = self.package_path(reference)
@@ -699,7 +754,8 @@ class CircuitLabPlatform:
             "project": self.config["id"],
             "physicalStatus": PHYSICAL_STATUS,
             "maximumVoltage": MAX_VOLTAGE,
-            "componentCount": len(self.registry.list()),
+            "componentCount": len(self.registry.list(scope="chips", latest_only=True)),
+            "componentScope": "chips",
             "capabilities": ["projects", "components", "workbench", "touchpoints", "fixture", "hil", "reports"],
         }
 

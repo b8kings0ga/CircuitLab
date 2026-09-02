@@ -49,7 +49,7 @@ class OfficialMediaTests(unittest.TestCase):
             registry = official_media.ComponentRegistry(root / "registry")
             registry.install({
                 "schema": "component-package/v1",
-                "identity": {"assetId": "test.board", "revision": "1.0.0", "manufacturer": "Espressif Systems", "mpn": "ESP32-S3-DevKitC-1", "level": "development-board", "status": "HUMAN_CALIBRATED"},
+                "identity": {"assetId": "test.chip", "revision": "1.0.0", "manufacturer": "Espressif Systems", "mpn": "ESP32-S3", "level": "wireless-microcontroller", "status": "HUMAN_CALIBRATED"},
                 "electrical": {"pins": [{"name": "GND", "number": "1", "direction": "power"}]},
                 "visual": {"appearance": "old.png", "appearanceSha256": "a" * 64, "anchors": [{"pin": "GND", "x": 0.5, "y": 0.5}], "coordinateStatus": "HUMAN_CALIBRATED"},
                 "physical": {}, "evidence": {"capturedAt": "2026-09-02T00:00:00Z", "sources": []},
@@ -59,13 +59,34 @@ class OfficialMediaTests(unittest.TestCase):
             (snapshot / "original.png").write_bytes(image)
             (snapshot / "official-media.json").write_text(json.dumps({
                 "schema": "official-media-snapshot/v1", "image": "original.png", "imageSha256": __import__("hashlib").sha256(image).hexdigest(),
+                "mpn": "ESP32-S3", "pageUrl": "https://docs.espressif.com/product", "resourceUrl": "https://docs.espressif.com/top.png",
+                "mediaType": "image/png", "capturedAt": "2026-09-02T00:00:00Z", "redistribution": "LOCAL_ONLY_LICENSE_REVIEW_REQUIRED",
+            }))
+            official_media.attach(snapshot, "test.chip@1.0.0", "1.0.1", "package-top", True, True, root)
+            installed = registry.get("test.chip@1.0.1")
+            self.assertEqual(installed["visual"]["anchors"], [])
+            self.assertEqual(installed["visual"]["coordinateStatus"], "UNCALIBRATED_NEW_APPEARANCE")
+
+    def test_attach_rejects_development_board(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="official-media-board-reject-") as temporary:
+            root = Path(temporary)
+            registry = official_media.ComponentRegistry(root / "registry")
+            registry.install({
+                "schema": "component-package/v1",
+                "identity": {"assetId": "test.board", "revision": "1.0.0", "manufacturer": "Espressif Systems", "mpn": "ESP32-S3-DevKitC-1", "level": "development-board", "status": "UNVERIFIED"},
+                "electrical": {"pins": []}, "visual": {"anchors": []}, "physical": {"package": "assembled-board"},
+                "evidence": {"sources": []},
+            })
+            snapshot = root / "snapshot"; snapshot.mkdir()
+            image = b"\x89PNG\r\n\x1a\n" + b"\x00\x00\x00\x0dIHDR" + (640).to_bytes(4, "big") + (480).to_bytes(4, "big")
+            (snapshot / "original.png").write_bytes(image)
+            (snapshot / "official-media.json").write_text(json.dumps({
+                "schema": "official-media-snapshot/v1", "image": "original.png", "imageSha256": __import__("hashlib").sha256(image).hexdigest(),
                 "mpn": "ESP32-S3-DevKitC-1", "pageUrl": "https://docs.espressif.com/product", "resourceUrl": "https://docs.espressif.com/top.png",
                 "mediaType": "image/png", "capturedAt": "2026-09-02T00:00:00Z", "redistribution": "LOCAL_ONLY_LICENSE_REVIEW_REQUIRED",
             }))
-            official_media.attach(snapshot, "test.board@1.0.0", "1.0.1", "orthographic-top", True, True, root)
-            installed = registry.get("test.board@1.0.1")
-            self.assertEqual(installed["visual"]["anchors"], [])
-            self.assertEqual(installed["visual"]["coordinateStatus"], "UNCALIBRATED_NEW_APPEARANCE")
+            with self.assertRaisesRegex(ValueError, "chip-only acquisition rejected"):
+                official_media.attach(snapshot, "test.board@1.0.0", "1.0.1", "package-top", True, True, root)
 
 
 if __name__ == "__main__":

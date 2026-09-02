@@ -1,21 +1,20 @@
 # CircuitLab
 
-CircuitLab is a portable, local-first circuit-development workspace for interactive wiring, immutable component assets, visual and pogo touchpoints, fixture packages, software HIL, and auditable reports.
+CircuitLab is a portable, local-first circuit-development workspace. Its primary asset scope is packaged silicon: MCU/SoC, sensor IC, and supporting analog, interface, driver, logic, memory, and power-management ICs.
 
 It is both a standalone application template and a Codex Skill. The repository has no runtime dependency on Rune or Sindri. Rune can consume the shared core through its own adapter, and Sindri assets can be imported read-only.
 
 ## What is included
 
-- Single-browser PWA: Projects, Components, Workbench, Touchpoints, Fixture, HIL, and Reports.
+- Single-browser PWA with a chip-only default catalog plus Projects, Workbench, Touchpoints, Fixture, HIL, and Reports.
 - `component-package/v1`, `fixture-package/v1`, `hil-plan/v1`, and `fixture-driver/v1` contracts.
 - Immutable JSON component registry with rebuildable SQLite indexes.
-- Exact-part discovery for pinned Wokwi data and checksum-verified step.parts models.
-- Fail-closed official manufacturer image discovery, immutable capture, and human-confirmed attachment.
-- Deterministic interactive board views generated from explicit manufacturer DXF/footprint/pinout coordinates, with a reviewed XIAO ESP32S3 example.
+- Latest-revision search for exact packaged-chip MPNs; historical board/module imports stay hidden unless explicitly audited.
+- Fail-closed official chip-package image discovery, immutable capture, and human-confirmed attachment.
 - DigiKey and Mouser read-only procurement snapshots.
 - Fixture map, CSV, DXF, KiCad PCB, Gerber, drill, BOM, and assembly outputs.
 - Mock and replay HIL with expiring, hash-bound Arm sessions.
-- A generic redistributable starter board; product-specific boards remain in their project adapters.
+- Board, module, PCB fabrication, and fixture workflows remain optional secondary capabilities and are not part of ordinary component acquisition.
 
 ## Quick start
 
@@ -34,15 +33,14 @@ python3 scripts/verify_platform.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Generate the XIAO ESP32S3-style board view shown in CircuitLab:
+Search the focused chip catalog:
 
 ```bash
-python3 scripts/generate_board_view.py \
-  assets/board-specs/seeed-xiao-esp32s3.json \
-  --output /tmp/circuitlab-xiao
+python3 scripts/component_assets.py search BME280
+python3 scripts/component_assets.py search ESP32-S3
 ```
 
-This produces an original scalable SVG, explicit pin geometry, and a component package with 14 wireable touchpoints. See `references/board-views.md` for the evidence and verification boundary.
+Ordinary acquisition rejects development boards and assembled modules. Use `--all-history --all-revisions` only when auditing earlier imports.
 
 ## Install as a Codex Skill
 
