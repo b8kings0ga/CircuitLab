@@ -45,6 +45,9 @@ unverified fixture package, and runs the bounded mock HIL state machine. These
 checks establish software continuity only; they do not claim physical electrical
 validation.
 
+The latest ten-round reliability review is recorded in
+[`docs/optimization-rounds-01.md`](docs/optimization-rounds-01.md).
+
 Search the hardware catalog and generate the redistributable starter views:
 
 ```bash

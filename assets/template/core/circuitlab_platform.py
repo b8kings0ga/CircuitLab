@@ -6,6 +6,7 @@ import io
 import json
 import math
 import os
+import re
 import secrets
 import shutil
 import sqlite3
@@ -51,6 +52,13 @@ def sha256_json(value: object) -> str:
     return sha256_bytes(stable_json(value).encode("utf-8"))
 
 
+def require_sha256(value: object, label: str) -> str:
+    digest = str(value)
+    if re.fullmatch(r"[0-9a-fA-F]{64}", digest) is None:
+        raise ValueError(f"{label} must be a 64-character SHA-256 digest")
+    return digest.lower()
+
+
 def load_json(path: Path) -> dict[str, Any]:
     value = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(value, dict):
@@ -75,9 +83,37 @@ def safe_segment(value: str, label: str) -> str:
     return value
 
 
+def finite_number(value: object, label: str) -> float:
+    if isinstance(value, bool):
+        raise ValueError(f"{label} must be a finite number")
+    try:
+        number = float(value)
+    except (TypeError, ValueError) as error:
+        raise ValueError(f"{label} must be a finite number") from error
+    if not math.isfinite(number):
+        raise ValueError(f"{label} must be a finite number")
+    return number
+
+
+def safe_fixture_text(value: object, label: str) -> str:
+    if not isinstance(value, str) or not value or len(value) > 128:
+        raise ValueError(f"{label} must be a non-empty string of at most 128 characters")
+    if '"' in value or "\\" in value or any(ord(character) < 32 for character in value):
+        raise ValueError(f"{label} contains characters unsafe for manufacturing exports")
+    return value
+
+
 def package_ref(package: dict[str, Any]) -> str:
     identity = package.get("identity", {})
     return f"{identity.get('assetId', '')}@{identity.get('revision', '')}"
+
+
+def revision_key(revision: str) -> tuple[tuple[int, object], ...]:
+    return tuple(
+        (0, int(part)) if part.isdigit() else (1, part.casefold())
+        for part in re.split(r"(\d+)", revision)
+        if part
+    )
 
 
 def is_chip_package(package: dict[str, Any]) -> bool:
@@ -236,6 +272,14 @@ class ComponentRegistry:
         reference = package_ref(package)
         path = self.package_path(reference)
         normalized = json.loads(json.dumps(package))
+        file_entries: list[tuple[Path, bytes]] = []
+        for name, body in (files or {}).items():
+            relative = Path(name)
+            if relative.is_absolute() or ".." in relative.parts or relative == Path("component-package.json"):
+                raise ValueError(f"unsafe component file path: {name}")
+            if not isinstance(body, (bytes, bytearray)):
+                raise ValueError(f"component file must contain bytes: {name}")
+            file_entries.append((relative, bytes(body)))
         with self.lock:
             evidence = normalized.setdefault("evidence", {})
             current = load_json(path) if path.exists() else None
@@ -249,32 +293,45 @@ class ComponentRegistry:
                 if current.get("packageSha256") == normalized["packageSha256"]:
                     return {"status": "unchanged", "ref": reference, "packageSha256": normalized["packageSha256"]}
                 raise ValueError(f"immutable component revision conflicts with existing package: {reference}")
-            path.parent.mkdir(parents=True, exist_ok=True)
-            for name, body in (files or {}).items():
-                relative = Path(name)
-                if relative.is_absolute() or ".." in relative.parts:
-                    raise ValueError(f"unsafe component file path: {name}")
-                target = path.parent / relative
-                target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_bytes(body)
-            atomic_json(path, normalized)
-            identity = normalized["identity"]
-            with self._connect() as database:
-                database.execute(
-                    "INSERT INTO components VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                    (
-                        reference,
-                        identity["assetId"],
-                        identity["revision"],
-                        identity["manufacturer"],
-                        identity["mpn"],
-                        identity["level"],
-                        identity["status"],
-                        str(path),
-                        normalized["packageSha256"],
-                        normalized["evidence"]["capturedAt"],
-                    ),
-                )
+            destination = path.parent
+            if destination.exists():
+                raise ValueError(f"component revision directory already exists without a package: {reference}")
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            staging = destination.parent / f".{destination.name}.{uuid.uuid4().hex}.tmp"
+            published = False
+            try:
+                staging.mkdir()
+                for relative, body in file_entries:
+                    target = staging / relative
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(body)
+                atomic_json(staging / "component-package.json", normalized)
+                os.replace(staging, destination)
+                published = True
+                identity = normalized["identity"]
+                with self._connect() as database:
+                    database.execute(
+                        "INSERT INTO components VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        (
+                            reference,
+                            identity["assetId"],
+                            identity["revision"],
+                            identity["manufacturer"],
+                            identity["mpn"],
+                            identity["level"],
+                            identity["status"],
+                            str(path),
+                            normalized["packageSha256"],
+                            normalized["evidence"]["capturedAt"],
+                        ),
+                    )
+            except Exception:
+                if published and destination.exists():
+                    shutil.rmtree(destination)
+                raise
+            finally:
+                if staging.exists():
+                    shutil.rmtree(staging)
         return {"status": "installed", "ref": reference, "packageSha256": normalized["packageSha256"]}
 
     def list(self, query: str = "", scope: str = "all", latest_only: bool = False) -> list[dict[str, Any]]:
@@ -304,7 +361,7 @@ class ComponentRegistry:
             latest: dict[str, dict[str, Any]] = {}
             for item in items:
                 current = latest.get(item["asset_id"])
-                if current is None or item["revision"] > current["revision"]:
+                if current is None or revision_key(item["revision"]) > revision_key(current["revision"]):
                     latest[item["asset_id"]] = item
             items = sorted(latest.values(), key=lambda item: (item["manufacturer"], item["mpn"], item["ref"]))
         for item in items:
@@ -476,7 +533,7 @@ def validate_fixture(payload: object) -> dict[str, Any]:
     points = payload.get("testPoints")
     if not isinstance(points, list) or not points:
         raise ValueError("fixture requires at least one test point")
-    minimum_spacing = float(payload.get("minimumSpacingMm", 2.54))
+    minimum_spacing = finite_number(payload.get("minimumSpacingMm", 2.54), "minimumSpacingMm")
     if not 1.0 <= minimum_spacing <= 25:
         raise ValueError("minimumSpacingMm must be between 1 and 25")
     normalized: list[dict[str, Any]] = []
@@ -490,8 +547,9 @@ def validate_fixture(payload: object) -> dict[str, Any]:
             raise ValueError(f"duplicate test point id: {point_id}")
         ids.add(point_id)
         for key in ("pinRef", "visualAnchor", "pad", "logicalNet"):
-            if not isinstance(point.get(key), str) or not point[key]:
-                raise ValueError(f"test point {point_id} requires explicit {key}")
+            safe_fixture_text(point.get(key), f"test point {point_id} {key}")
+        if "probe" in point:
+            safe_fixture_text(point["probe"], f"test point {point_id} probe")
         x, y = point.get("xMm"), point.get("yMm")
         if not all(isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and 0 <= value <= 1000 for value in (x, y)):
             raise ValueError(f"test point {point_id} coordinates must be within 0..1000 mm")
@@ -500,18 +558,27 @@ def validate_fixture(payload: object) -> dict[str, Any]:
                 raise ValueError(f"test points {other_id} and {point_id} violate minimum spacing")
         positions.append((point_id, float(x), float(y)))
         normalized.append({**point, "id": point_id, "xMm": round(float(x), 4), "yMm": round(float(y), 4)})
-    voltage = float(payload.get("maximumVoltage", 3.3))
+    voltage = finite_number(payload.get("maximumVoltage", 3.3), "fixture maximumVoltage")
     if voltage <= 0 or voltage > MAX_VOLTAGE:
         raise ValueError(f"fixture maximumVoltage must be within 0..{MAX_VOLTAGE}V")
+    current = finite_number(payload.get("maximumCurrentMa", 500), "fixture maximumCurrentMa")
+    if current <= 0:
+        raise ValueError("fixture maximumCurrentMa must be positive")
+    revision = payload.get("revision", 1)
+    if not isinstance(revision, int) or isinstance(revision, bool) or revision < 1:
+        raise ValueError("fixture revision must be a positive integer")
+    for key in ("locatingHoles", "keepouts", "protection"):
+        if not isinstance(payload.get(key, []), list):
+            raise ValueError(f"fixture {key} must be an array")
     return {
         "schema": FIXTURE_SCHEMA,
         "id": fixture_id,
-        "revision": int(payload.get("revision", 1)),
+        "revision": revision,
         "status": FABRICATION_STATUS,
         "physicalStatus": PHYSICAL_STATUS,
         "minimumSpacingMm": minimum_spacing,
         "maximumVoltage": voltage,
-        "maximumCurrentMa": float(payload.get("maximumCurrentMa", 500)),
+        "maximumCurrentMa": current,
         "testPoints": normalized,
         "locatingHoles": payload.get("locatingHoles", []),
         "keepouts": payload.get("keepouts", []),
@@ -537,11 +604,14 @@ def _fixture_dxf(fixture: dict[str, Any]) -> bytes:
 
 
 def _fixture_kicad(fixture: dict[str, Any]) -> bytes:
+    net_ids: dict[str, int] = {}
+    for point in fixture["testPoints"]:
+        net_ids.setdefault(point["logicalNet"], len(net_ids) + 1)
     pads = "\n".join(
-        f'  (footprint "CircuitLab:Pogo" (layer "F.Cu") (at {point["xMm"]} {point["yMm"]}) (property "Reference" "{point["id"]}" (at 0 -2 0) (layer "F.SilkS")) (pad "1" thru_hole circle (at 0 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net {index + 1} "{point["logicalNet"]}")))'
-        for index, point in enumerate(fixture["testPoints"])
+        f'  (footprint "CircuitLab:Pogo" (layer "F.Cu") (at {point["xMm"]} {point["yMm"]}) (property "Reference" "{point["id"]}" (at 0 -2 0) (layer "F.SilkS")) (pad "1" thru_hole circle (at 0 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net {net_ids[point["logicalNet"]]} "{point["logicalNet"]}")))'
+        for point in fixture["testPoints"]
     )
-    nets = "\n".join(f'  (net {index + 1} "{point["logicalNet"]}")' for index, point in enumerate(fixture["testPoints"]))
+    nets = "\n".join(f'  (net {net_id} "{name}")' for name, net_id in net_ids.items())
     return f'(kicad_pcb (version 20240108) (generator circuitlab)\n  (general (thickness 1.6))\n{nets}\n{pads}\n)\n'.encode("utf-8")
 
 
@@ -562,10 +632,12 @@ def _fixture_drill(fixture: dict[str, Any]) -> bytes:
 
 def generate_fixture(payload: object, output_root: Path) -> dict[str, Any]:
     fixture = validate_fixture(payload)
-    destination = output_root / fixture["id"] / f"v{fixture['revision']}"
+    fixture_root = output_root / fixture["id"]
+    destination = fixture_root / f"v{fixture['revision']}"
     if destination.exists():
         raise ValueError(f"immutable fixture revision already exists: {fixture['id']} v{fixture['revision']}")
-    destination.mkdir(parents=True)
+    fixture_root.mkdir(parents=True, exist_ok=True)
+    staging = fixture_root / f".v{fixture['revision']}.{uuid.uuid4().hex}.tmp"
     files = {
         "test-points.csv": _fixture_csv(fixture),
         "pogo-plate.dxf": _fixture_dxf(fixture),
@@ -575,14 +647,20 @@ def generate_fixture(payload: object, output_root: Path) -> dict[str, Any]:
         "bom.csv": b"item,description,status\nPOGO,P75-B1 spring probe,UNVERIFIED\nPCB,fixture carrier,DO_NOT_FABRICATE\n",
         "assembly.svg": f'<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180"><rect width="100%" height="100%" fill="#111312"/><text x="30" y="60" fill="#6dff9d" font-family="monospace" font-size="22">CircuitLab fixture: {fixture["id"]}</text><text x="30" y="100" fill="#ff8b83" font-family="monospace" font-size="16">GENERATED_UNVERIFIED_DO_NOT_FABRICATE</text></svg>\n'.encode("utf-8"),
     }
-    records = []
-    for name, body in files.items():
-        target = destination / name
-        target.write_bytes(body)
-        records.append({"path": name, "bytes": len(body), "sha256": sha256_bytes(body)})
-    fixture["files"] = records
-    fixture["packageSha256"] = sha256_json({key: value for key, value in fixture.items() if key != "packageSha256"})
-    atomic_json(destination / "fixture-map.json", fixture)
+    try:
+        staging.mkdir()
+        records = []
+        for name, body in files.items():
+            target = staging / name
+            target.write_bytes(body)
+            records.append({"path": name, "bytes": len(body), "sha256": sha256_bytes(body)})
+        fixture["files"] = records
+        fixture["packageSha256"] = sha256_json({key: value for key, value in fixture.items() if key != "packageSha256"})
+        atomic_json(staging / "fixture-map.json", fixture)
+        os.replace(staging, destination)
+    finally:
+        if staging.exists():
+            shutil.rmtree(staging)
     return {"status": fixture["status"], "fixture": fixture, "directory": str(destination)}
 
 
@@ -642,9 +720,13 @@ class HilEngine:
         plan = payload.get("plan")
         if not isinstance(plan, dict) or plan.get("schema") != HIL_SCHEMA:
             raise ValueError(f"HIL plan schema must be {HIL_SCHEMA}")
+        if not isinstance(plan.get("id"), str) or not plan["id"].strip():
+            raise ValueError("HIL plan requires a non-empty id")
         safety = plan.get("safety", {})
-        voltage = float(safety.get("maximumVoltage", 0))
-        current = float(safety.get("maximumCurrentMa", 0))
+        if not isinstance(safety, dict):
+            raise ValueError("HIL plan safety must be an object")
+        voltage = finite_number(safety.get("maximumVoltage", 0), "HIL maximum voltage")
+        current = finite_number(safety.get("maximumCurrentMa", 0), "HIL maximum current")
         if voltage <= 0 or voltage > MAX_VOLTAGE:
             raise ValueError(f"HIL maximum voltage must be within 0..{MAX_VOLTAGE}V")
         if current <= 0:
@@ -653,12 +735,28 @@ class HilEngine:
         if not isinstance(tests, list) or not tests:
             raise ValueError("HIL plan requires tests")
         allowed = {"gpio", "pwm", "adc", "i2c", "spi", "uart", "interrupt", "pulse", "heartbeat", "reset", "backup", "flash", "restore", "power", "current"}
+        test_ids: set[str] = set()
         for test in tests:
-            if not isinstance(test, dict) or test.get("op") not in allowed or not test.get("id"):
+            if not isinstance(test, dict) or test.get("op") not in allowed or not isinstance(test.get("id"), str) or not test["id"]:
                 raise ValueError(f"unsupported or malformed HIL test: {test}")
+            if test["id"] in test_ids:
+                raise ValueError(f"duplicate HIL test id: {test['id']}")
+            test_ids.add(test["id"])
+            if test.get("onFailure", "stop") not in {"stop", "continue"}:
+                raise ValueError(f"HIL test {test['id']} has invalid onFailure policy")
+            bounds = []
+            for key in ("minimum", "maximum"):
+                if key in test:
+                    value = finite_number(test[key], f"HIL test {test['id']} {key}")
+                    bounds.append((key, value))
+            if len(bounds) == 2 and bounds[0][1] > bounds[1][1]:
+                raise ValueError(f"HIL test {test['id']} minimum cannot exceed maximum")
         devices = payload.get("devices", {})
         if not isinstance(devices, dict) or not devices.get("dut") or not devices.get("fixture"):
             raise ValueError("HIL preparation requires dut and fixture fingerprints")
+        ttl = payload.get("ttlSeconds", 600)
+        if not isinstance(ttl, int) or isinstance(ttl, bool) or not 1 <= ttl <= 600:
+            raise ValueError("HIL ttlSeconds must be an integer within 1..600")
         nonce = secrets.token_urlsafe(24)
         now = int(time.time())
         job = {
@@ -670,12 +768,12 @@ class HilEngine:
             "devices": devices,
             "plan": plan,
             "planSha256": sha256_json(plan),
-            "wiringLockSha256": str(payload.get("wiringLockSha256", "")),
-            "assetLockSha256": str(payload.get("assetLockSha256", "")),
-            "firmwareSha256": str(payload.get("firmwareSha256", "")),
+            "wiringLockSha256": require_sha256(payload.get("wiringLockSha256", ""), "wiringLockSha256"),
+            "assetLockSha256": require_sha256(payload.get("assetLockSha256", ""), "assetLockSha256"),
+            "firmwareSha256": require_sha256(payload.get("firmwareSha256", ""), "firmwareSha256"),
             "nonceSha256": sha256_bytes(nonce.encode("utf-8")),
             "createdAtEpoch": now,
-            "expiresAtEpoch": now + min(int(payload.get("ttlSeconds", 600)), 600),
+            "expiresAtEpoch": now + ttl,
             "events": [{"state": "PREPARED", "at": now}],
         }
         self._save(job)
@@ -732,7 +830,12 @@ class HilEngine:
             failure = str(error)
         with self.lock:
             job = self._load(job_id)
-            job["state"] = "PASSED" if not failure and results and all(result["passed"] for result in results) else "FAILED"
+            if job["state"] == "ABORTED":
+                failure = failure or "aborted during execution"
+            elif job["state"] == "RUNNING":
+                job["state"] = "PASSED" if not failure and results and all(result["passed"] for result in results) else "FAILED"
+            else:
+                raise ValueError(f"HIL job changed to unexpected state during run: {job['state']}")
             job["events"].append({"state": job["state"], "at": int(time.time()), **({"error": failure} if failure else {})})
             report = {
                 "schema": "hil-report/v1",

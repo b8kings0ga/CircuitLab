@@ -28,6 +28,7 @@ CONFIG: dict[str, Any] = {}
 ADAPTER: Any = None
 PLATFORM: CircuitLabPlatform | None = None
 PLATFORM_ROOT: Path | None = None
+MAX_JSON_BODY = 1_048_576
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -329,6 +330,11 @@ class Handler(BaseHTTPRequestHandler):
             return
         try:
             length = int(self.headers.get("Content-Length", "0"))
+            if length < 0:
+                raise ValueError("Content-Length cannot be negative")
+            if length > MAX_JSON_BODY:
+                self._json({"error": f"JSON request body exceeds {MAX_JSON_BODY} bytes"}, HTTPStatus.REQUEST_ENTITY_TOO_LARGE)
+                return
             payload = json.loads(self.rfile.read(length) or b"{}")
             if parsed.path == "/api/layout":
                 self._json({"ok": True, "layout": save_layout(payload)})

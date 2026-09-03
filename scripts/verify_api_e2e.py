@@ -60,6 +60,22 @@ def _wait_for_server(base: str, process: subprocess.Popen[bytes]) -> None:
     raise TimeoutError("CircuitLab test server did not become ready")
 
 
+def _oversized_request(port: int) -> bytes:
+    request = (
+        "POST /api/hil/prepare HTTP/1.0\r\n"
+        "Host: 127.0.0.1\r\n"
+        "Content-Type: application/json\r\n"
+        "Content-Length: 1048577\r\n\r\n"
+    ).encode("ascii")
+    with socket.create_connection(("127.0.0.1", port), timeout=5) as connection:
+        connection.sendall(request)
+        connection.shutdown(socket.SHUT_WR)
+        chunks = []
+        while chunk := connection.recv(65536):
+            chunks.append(chunk)
+    return b"".join(chunks)
+
+
 def verify_http_api(root: Path) -> dict[str, Any]:
     project = root / "project"
     data = root / "data"
@@ -124,6 +140,9 @@ def verify_http_api(root: Path) -> dict[str, Any]:
         status, rejected = _request(base, "/api/hil/prepare", unsafe)
         if status != 400 or "0..24.0V" not in rejected.get("error", ""):
             raise AssertionError("HTTP API did not reject a 48V HIL plan")
+        oversized_response = _oversized_request(port)
+        if b" 413 " not in oversized_response.split(b"\r\n", 1)[0] or b"exceeds" not in oversized_response:
+            raise AssertionError("HTTP API did not reject an oversized JSON body")
         status, reports = _request(base, "/api/reports")
         if status != 200 or len(reports.get("reports", [])) != len(scenarios):
             raise AssertionError("HTTP reports endpoint did not retain every E2E run")
@@ -134,6 +153,7 @@ def verify_http_api(root: Path) -> dict[str, Any]:
             "componentCount": len(installed),
             "scenarioCount": len(results),
             "unsafe48VRejected": True,
+            "oversizedBodyRejected": True,
             "scenarios": results,
         }
     finally:

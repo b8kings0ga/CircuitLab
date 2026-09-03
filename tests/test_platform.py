@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import sys
 import tempfile
+import threading
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -73,6 +74,15 @@ class CircuitLabPlatformTests(unittest.TestCase):
         with self.assertRaises(KeyError):
             self.registry.visual_file("circuitlab.test-chip@1.0.1", "secret.txt")
 
+    def test_component_install_rejects_partial_or_reserved_files_atomically(self) -> None:
+        reference_dir = self.root / "registry" / "components" / "circuitlab.test-chip" / "1.0.0"
+        with self.assertRaisesRegex(ValueError, "must contain bytes"):
+            self.registry.install(component(), {"top.svg": "not-bytes"})  # type: ignore[dict-item]
+        self.assertFalse(reference_dir.exists())
+        with self.assertRaisesRegex(ValueError, "unsafe component file path"):
+            self.registry.install(component(), {"component-package.json": b"{}"})
+        self.assertFalse(reference_dir.exists())
+
     def test_chip_scope_hides_boards_and_returns_latest_revision(self) -> None:
         self.registry.install(component())
         next_chip = component(); next_chip["identity"]["revision"] = "1.1.0"
@@ -83,6 +93,14 @@ class CircuitLabPlatformTests(unittest.TestCase):
         visible = self.registry.list(scope="chips", latest_only=True)
         self.assertEqual([row["ref"] for row in visible], ["circuitlab.test-chip@1.1.0"])
         self.assertEqual(len(self.registry.list(scope="all")), 3)
+
+    def test_latest_revision_uses_numeric_ordering(self) -> None:
+        older = component(); older["identity"]["revision"] = "1.9.0"
+        newer = component(); newer["identity"]["revision"] = "1.10.0"
+        self.registry.install(newer)
+        self.registry.install(older)
+        visible = self.registry.list(scope="chips", latest_only=True)
+        self.assertEqual([row["ref"] for row in visible], ["circuitlab.test-chip@1.10.0"])
 
     def test_normal_acquisition_rejects_non_chip_package(self) -> None:
         board = component(); board["identity"].update({"assetId": "circuitlab.board", "mpn": "DEV-BOARD", "level": "development-board"})
@@ -136,6 +154,41 @@ class CircuitLabPlatformTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "maximumVoltage"):
             generate_fixture(request, self.root / "fixtures")
 
+    def test_fixture_rejects_invalid_revision_current_and_export_text(self) -> None:
+        base = {"id": "strict", "testPoints": [{"id": "TP1", "pinRef": "a:1", "visualAnchor": "a:1", "pad": "J1.1", "logicalNet": "A", "xMm": 1, "yMm": 1}]}
+        for field, value, message in (
+            ("revision", 0, "positive integer"),
+            ("maximumCurrentMa", -1, "must be positive"),
+            ("maximumVoltage", True, "finite number"),
+        ):
+            request = {**base, field: value}
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, message):
+                generate_fixture(request, self.root / "fixtures")
+        injected = {**base, "testPoints": [{**base["testPoints"][0], "logicalNet": 'GND"\n(net 999 "INJECTED")'}]}
+        with self.assertRaisesRegex(ValueError, "unsafe for manufacturing exports"):
+            generate_fixture(injected, self.root / "fixtures")
+
+    def test_fixture_kicad_reuses_one_net_id_for_shared_logical_net(self) -> None:
+        result = generate_fixture({
+            "id": "shared-net", "testPoints": [
+                {"id": "TP1", "pinRef": "a:GND", "visualAnchor": "a:GND", "pad": "J1.1", "logicalNet": "GND", "xMm": 1, "yMm": 1},
+                {"id": "TP2", "pinRef": "b:GND", "visualAnchor": "b:GND", "pad": "J1.2", "logicalNet": "GND", "xMm": 1, "yMm": 5},
+            ],
+        }, self.root / "fixtures")
+        board = (Path(result["directory"]) / "fixture.kicad_pcb").read_text(encoding="utf-8")
+        declarations = [line for line in board.splitlines() if line.startswith("  (net ")]
+        self.assertEqual(declarations, ['  (net 1 "GND")'])
+        self.assertEqual(board.count('(net 1 "GND")'), 3)
+
+    def test_fixture_publish_is_atomic_on_generation_failure(self) -> None:
+        request = {"id": "atomic", "revision": 2, "testPoints": [{"id": "TP1", "pinRef": "a:1", "visualAnchor": "a:1", "pad": "J1.1", "logicalNet": "A", "xMm": 1, "yMm": 1}]}
+        with mock.patch("circuitlab_platform.atomic_json", side_effect=OSError("disk full")):
+            with self.assertRaisesRegex(OSError, "disk full"):
+                generate_fixture(request, self.root / "fixtures")
+        fixture_root = self.root / "fixtures" / "atomic"
+        self.assertFalse((fixture_root / "v2").exists())
+        self.assertEqual(list(fixture_root.glob(".*.tmp")), [])
+
     def test_hil_requires_arm_and_retains_pass_report(self) -> None:
         engine = HilEngine(self.root / "hil", self.registry)
         prepared = engine.prepare(hil_request())
@@ -145,6 +198,77 @@ class CircuitLabPlatformTests(unittest.TestCase):
         report = engine.run(prepared["jobId"])
         self.assertEqual(report["state"], "PASSED")
         self.assertEqual(report["physicalStatus"], "PHYSICAL_UNVERIFIED")
+
+    def test_hil_requires_real_sha256_bindings(self) -> None:
+        engine = HilEngine(self.root / "hil", self.registry)
+        request = hil_request()
+        request["assetLockSha256"] = "not-a-digest"
+        with self.assertRaisesRegex(ValueError, "assetLockSha256.*64-character"):
+            engine.prepare(request)
+        request = hil_request()
+        request["firmwareSha256"] = "A" * 64
+        prepared = engine.prepare(request)
+        self.assertEqual(prepared["binding"]["firmwareSha256"], "a" * 64)
+
+    def test_hil_plan_rejects_ambiguous_test_evidence(self) -> None:
+        engine = HilEngine(self.root / "hil", self.registry)
+        duplicate = hil_request()
+        duplicate["plan"]["tests"][1]["id"] = "gpio"
+        with self.assertRaisesRegex(ValueError, "duplicate HIL test id"):
+            engine.prepare(duplicate)
+        policy = hil_request()
+        policy["plan"]["tests"][0]["onFailure"] = "maybe"
+        with self.assertRaisesRegex(ValueError, "invalid onFailure"):
+            engine.prepare(policy)
+        bounds = hil_request()
+        bounds["plan"]["tests"][1].update({"minimum": 2, "maximum": 1})
+        with self.assertRaisesRegex(ValueError, "minimum cannot exceed maximum"):
+            engine.prepare(bounds)
+        non_finite = hil_request()
+        non_finite["plan"]["safety"]["maximumCurrentMa"] = float("nan")
+        with self.assertRaisesRegex(ValueError, "HIL maximum current must be a finite number"):
+            engine.prepare(non_finite)
+        malformed = hil_request()
+        malformed["plan"]["tests"][1]["minimum"] = "not-a-number"
+        with self.assertRaisesRegex(ValueError, "minimum must be a finite number"):
+            engine.prepare(malformed)
+
+    def test_hil_ttl_is_explicit_and_bounded(self) -> None:
+        engine = HilEngine(self.root / "hil", self.registry)
+        for invalid in (0, 601, 1.5, True):
+            request = hil_request()
+            request["ttlSeconds"] = invalid
+            with self.subTest(ttl=invalid), self.assertRaisesRegex(ValueError, "ttlSeconds"):
+                engine.prepare(request)
+        request = hil_request()
+        request["ttlSeconds"] = 30
+        with mock.patch("circuitlab_platform.time.time", return_value=1000):
+            prepared = engine.prepare(request)
+        self.assertEqual(prepared["expiresAtEpoch"], 1030)
+
+    def test_abort_during_run_cannot_be_overwritten_by_pass(self) -> None:
+        engine = HilEngine(self.root / "hil", self.registry)
+        prepared = engine.prepare(hil_request())
+        engine.arm(prepared["jobId"], prepared["nonce"], True)
+        entered = threading.Event()
+        release = threading.Event()
+        reports = []
+
+        def delayed_execute(_driver, test, sequence):
+            entered.set()
+            self.assertTrue(release.wait(timeout=2))
+            return {"sequence": sequence, "value": test.get("sample", test.get("expected", True)), "waveform": []}
+
+        with mock.patch("circuitlab_platform.MockFixtureDriver.execute", autospec=True, side_effect=delayed_execute):
+            worker = threading.Thread(target=lambda: reports.append(engine.run(prepared["jobId"])))
+            worker.start()
+            self.assertTrue(entered.wait(timeout=2))
+            self.assertEqual(engine.abort(prepared["jobId"])["state"], "ABORTED")
+            release.set()
+            worker.join(timeout=2)
+        self.assertFalse(worker.is_alive())
+        self.assertEqual(reports[0]["state"], "ABORTED")
+        self.assertEqual(engine.status(prepared["jobId"])["state"], "ABORTED")
 
     def test_hil_fault_and_abort_are_terminal(self) -> None:
         engine = HilEngine(self.root / "hil", self.registry)
